@@ -1,0 +1,68 @@
+\documentclass[11 pt]{report}
+
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{cabin}
+\usepackage{inconsolata}
+\usepackage{fourier}
+
+\hypersetup{
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Joshua Eddy MS Thesis},    % title
+    pdfauthor={Joshua Eddy},     % author
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\begin{document}
+\title{
+	{Unscented Kalman Filtering for Visual-Inertial Navigation with Applications to Small Unmanned Aircraft Navigation}\\
+	\vspace{1 em}
+	{\Large Virginia Tech}
+}
+\author{Joshua Galen Eddy}
+\date{April 1, 2017}
+
+\maketitle
+
+\chapter*{Abstract}
+
+\input{Acknowledgements.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{Introduction.tex}
+
+\chapter{Prior Work}
+
+\chapter{Thesis Statement}
+
+\chapter{Algorithm Design and Implementation}
+
+\chapter{Experimental Design}
+
+\chapter{Experimental Results}
+
+\chapter{Conclusions}
+
+\chapter{Future Work}
+
+\appendix
+
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}
