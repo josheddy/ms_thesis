@@ -1,6 +1,5 @@
 \chapter{Introduction}
 
-
 \textit{Throughout this document, there are several sections whose titles have been placed in parentheses. These sections have been included to give added context to the work, but are not strictly necessary to the reader's understanding.}
 
 \section{(Personal Motivation)}
@@ -28,9 +27,26 @@ During the summer of 2015, I began the research that eventually evolved into my 
 \section{Organization of this Document}
 
 \subsection*{Prior Work}
+
+In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and estimation. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which this work exists.
+
 \subsection*{Thesis Statement}
 \subsection*{Algorithm Design and Implementation}
+
+Because of the naturally computational nature of this work, we explore in detail the design and implementation of the \texttt{kalman\_sense} ROS package. We discuss plant model abstraction as well as code organization and data flow. We summarize the process by which one could extend \texttt{kalman\_sense}'s functionality and the advantages of system-agnostic algorithm design.
+
 \subsection*{Experimental Design}
+
+In this section, we first establish the goals of the testing regimen and then discuss the real-world execution of these goals. We discuss important statistical methods for characterizing the system's effectiveness as well as data collection procedures and post-processing. Physical testing infrastructure is explored in detail.
+
 \subsection*{Experimental Results}
+
+In Experimental Results, we evaluate the system's performance during testing and seek out any limiting factors that influence estimation accuracy. We probe for possible improvements to the algorithm and provide a notional understanding of the system's theoretical effectiveness in real-world scenarios.
+
 \subsection*{Conclusions}
+
+We briefly summarize the contributions made by this work, the effectiveness of the \texttt{kalman\_sense} package, and any miscellaneous insights acquired during programming and testing. 
+
 \subsection*{Future Work}
+
+In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for this work. Specific examples of heterogeneous fleet management and traffic control are explored.
