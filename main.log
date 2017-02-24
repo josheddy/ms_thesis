@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  23 FEB 2017 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  23 FEB 2017 21:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -629,7 +629,7 @@ Package microtype Info: Character `textemdash ' is missing
  [4
 
 ]
-<april_tag.jpg, id=110, 310.15875pt x 310.49333pt>
+<april_tag.jpg, id=114, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 13.
@@ -681,27 +681,26 @@ Overfull \hbox (10.41437pt too wide) in paragraph at lines 29--30
 -cro aerial ve-hi-cle (MAV) equipped
  []
 
-[10])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+[10]) [11] (main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+ [12
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CC37D1C96ECAA87098B4E4561844A5B5;1403.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+(rerunfilecheck)             Checksum: 0ED2B85637362F7C569421D6D1E3FD6B;1459.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 7861 strings out of 493334
- 120558 string characters out of 3136672
- 226091 words of memory out of 3000000
- 11035 multiletter control sequences out of 15000+200000
- 115071 words of font info for 233 fonts, out of 3000000 for 9000
+ 7874 strings out of 493334
+ 120694 string characters out of 3136672
+ 226153 words of memory out of 3000000
+ 11037 multiletter control sequences out of 15000+200000
+ 115467 words of font info for 236 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,8n,38p,1561b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -710,9 +709,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (12 pages, 147777 bytes).
+Output written on main.pdf (13 pages, 152255 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 28270 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 28278 words of extra memory for PDF output out of 29859 (max. 10000000)
 
