@@ -7,8 +7,9 @@
 \contentsline {subsection}{\numberline {2.0.2}A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation}{8}{subsection.2.0.2}
 \contentsline {subsection}{\numberline {2.0.3}Monocular-SLAM–Based Navigation for Autonomous Micro Helicopters in GPS-Denied Environments}{9}{subsection.2.0.3}
 \contentsline {subsection}{\numberline {2.0.4}Autonomous Multi-Floor Indoor Navigation with a Computationally Constrained MAV}{9}{subsection.2.0.4}
-\contentsline {subsection}{\numberline {2.0.5}Real-Time Metric State Estimation for Modular Vision-Inertial Systems}{9}{subsection.2.0.5}
+\contentsline {subsection}{\numberline {2.0.5}Real-Time Metric State Estimation for Modular Vision-Inertial Systems}{10}{subsection.2.0.5}
 \contentsline {subsection}{\numberline {2.0.6}Versatile Distributed Pose Estimation and Sensor Self-Calibration for an Autonomous MAV}{10}{subsection.2.0.6}
-\contentsline {subsection}{\numberline {2.0.7}Real-time Onboard Visual-Inertial State Estimation and Self-Calibration of MAVs in Unknown Environments}{10}{subsection.2.0.7}
+\contentsline {subsection}{\numberline {2.0.7}Real-time Onboard Visual-Inertial State Estimation and Self-Calibration of MAVs in Unknown Environments}{11}{subsection.2.0.7}
 \contentsline {subsection}{\numberline {2.0.8}A Quadratic-Complexity Observability-Constrained Unscented Kalman Filter for SLAM}{11}{subsection.2.0.8}
-\contentsline {chapter}{Bibliography}{12}{subsection.2.0.8}
+\contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{13}{chapter.3}
+\contentsline {chapter}{Bibliography}{14}{equation.3.0.2}

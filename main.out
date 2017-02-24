@@ -11,4 +11,5 @@
 \BOOKMARK [2][-]{subsection.2.0.6}{Versatile Distributed Pose Estimation and Sensor Self-Calibration for an Autonomous MAV}{subsection.2.0.1}% 11
 \BOOKMARK [2][-]{subsection.2.0.7}{Real-time Onboard Visual-Inertial State Estimation and Self-Calibration of MAVs in Unknown Environments}{subsection.2.0.1}% 12
 \BOOKMARK [2][-]{subsection.2.0.8}{A Quadratic-Complexity Observability-Constrained Unscented Kalman Filter for SLAM}{subsection.2.0.1}% 13
-\BOOKMARK [0][-]{subsection.2.0.8}{Bibliography}{}% 14
+\BOOKMARK [0][-]{chapter.3}{Algorithm Design and Implementation}{}% 14
+\BOOKMARK [0][-]{equation.3.0.2}{Bibliography}{}% 15
