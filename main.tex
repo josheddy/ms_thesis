@@ -1,5 +1,13 @@
 \documentclass[11 pt]{report}
 
+\usepackage{geometry}
+\geometry{
+letterpaper,
+top=1.25in,
+bottom=1.25in,
+left=1.5in,
+right=1.5in}
+
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -11,7 +19,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 
-\linespread{1.15}
+\linespread{1.6}
 
 \hypersetup{
     unicode=false,          % non-Latin characters in Acrobat’s bookmarks
@@ -40,13 +48,12 @@
 
 \maketitle
 
-\chapter*{Abstract}
+%\chapter*{Abstract}
 
-\input{Acknowledgements.tex}
-
-\tableofcontents
+%\input{Acknowledgements.tex}
 
 \begin{comment}
+\tableofcontents
 \listoffigures
 \listoftables
 \end{comment}

@@ -1,9 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{Julier1997}
+S.~J. Julier and J.~K. Uhlmann, ``{A New Extension of the Kalman Filter to
+  Nonlinear Systems},'' 1997.
+
 \bibitem{Julier2004}
-S.~Julier and J.~Uhlmann, ``{Unscented Filtering and Nonlinear Estimation},''
-  in {\em Invited Paper Proceedings of the IEEE}, vol.~92, pp.~401--422, March
-  2004.
+S.~J. Julier and J.~K. Uhlmann, ``{Unscented Filtering and Nonlinear
+  Estimation},'' in {\em Invited Paper Proceedings of the IEEE}, vol.~92,
+  pp.~401--422, March 2004.
 
 \bibitem{Shen2011}
 S.~Shen, N.~Michael, and V.~Kumar, ``{Autonomous Multi-Floor Navigation with a
