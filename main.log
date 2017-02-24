@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  24 FEB 2017 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  24 FEB 2017 11:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -765,7 +765,7 @@ been already used, duplicate ignored
 l.10 
       [1
 
-] <april_tag.jpg, id=82, 310.15875pt x 310.49333pt>
+] <april_tag.jpg, id=77, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
 
 <use april_tag.jpg>
@@ -778,14 +778,16 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [2 <./april_tag.jpg>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 20.
+
+
+LaTeX Warning: Reference `ch:alg_design' on page 3 undefined on input line 20.
+
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
- [3]) [4] (Prior_Work.tex [5]
+[3]) [4] (Prior_Work.tex [5]
 Chapter 2.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 3.
-
 [6
 
 ]
@@ -812,19 +814,9 @@ Overfull \hbox (0.33818pt too wide) in paragraph at lines 31--31
 alman
  []
 
-[9]) (Alg_Design.tex [10]
-Chapter 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
-) [11
-
-] (main.bbl)
+[9]) [10] (main.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [12
+ [11
 
 
 ]
@@ -833,31 +825,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 195F6D8C6B148AA5C172A892D33FC822;1529.
+(rerunfilecheck)             Checksum: 07900C91E4C139887EC78BE4792324AC;1426.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 9184 strings out of 493334
- 137685 string characters out of 3136672
- 246701 words of memory out of 3000000
- 12306 multiletter control sequences out of 15000+200000
- 127784 words of font info for 249 fonts, out of 3000000 for 9000
+ 9158 strings out of 493334
+ 137339 string characters out of 3136672
+ 246642 words of memory out of 3000000
+ 12298 multiletter control sequences out of 15000+200000
+ 117115 words of font info for 236 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,10n,38p,1561b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,8n,38p,1561b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (13 pages, 167860 bytes).
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (12 pages, 144354 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 29310 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 28278 words of extra memory for PDF output out of 29859 (max. 10000000)
 
