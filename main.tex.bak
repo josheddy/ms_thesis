@@ -22,9 +22,6 @@ right=1.5in}
 \linespread{1.6}
 
 \hypersetup{
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
     pdfstartview={FitH},    % fits the width of the page to the window
     pdftitle={Joshua Eddy MS Thesis},    % title
@@ -39,7 +36,7 @@ right=1.5in}
 
 \begin{document}
 \title{
-	{Unscented Kalman Filtering for Visual-Inertial Navigation with Applications to Small Unmanned Aircraft Navigation}\\
+	{A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of Small Unmanned Aircraft}\\
 	\vspace{1 em}
 	{\Large Virginia Tech}
 }
@@ -62,14 +59,14 @@ right=1.5in}
 
 \input{Prior_Work.tex}
 
-\input{Alg_Design.tex}
+%\input{Alg_Design.tex}
 
 \begin{comment}
-\chapter{Experimental Design}
-\chapter{Experimental Results}
-\chapter{Conclusions}
-\chapter{Future Work}
-\appendix
+    \chapter{Experimental Design}
+    \chapter{Experimental Results}
+    \chapter{Conclusions}
+    \chapter{Future Work}
+    \appendix
 \end{comment}
 
 \clearpage
