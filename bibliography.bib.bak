@@ -17,16 +17,18 @@
     year      = "2011"
 }
 
-@conference{Julier1997,
+@proceeding{Julier1997,
 author = {Julier, Simon J. and Uhlmann, Jeffrey K.},
 title = {{A New Extension of the Kalman Filter to Nonlinear Systems}},
-booktitle = {Proc. SPIE},
+journal = {Proc. SPIE},
 volume = {3068},
+number = {},
 pages = {182-193},
 abstract = {The Kalman Filter (KF) is one of the most widely used methods for tracking and estimation due to its simplicity, optimality, tractability and robustness. However, the application of the KF to nonlinear systems can be difficult. The most common approach is to use the Extended Kalman Filter (EKF) which simply linearizes all nonlinear models so that the traditional linear Kalman filter can be applied. Although the EKF (in its many forms) is a widely used filtering strategy, over thirty years of experience with it has led to a general consensus within the tracking and control community that it is difficult to implement, difficult to tune, and only reliable for systems which are almost linear on the time scale of the update intervals. In this paper a new linear estimator is developed and demonstrated. Using the principle that a set of discretely sampled points can be used to parameterize mean and covariance, the estimator yields performance equivalent to the KF for linear systems yet generalizes elegantly to nonlinear systems without the linearization steps required by the EKF. We show analytically that the expected performance of the new approach is superior to that of the EKF and, in fact, is directly comparable to that of the second order Gauss filter. The method is not restricted to assuming that the distributions of noise sources are Gaussian. We argue that the ease of implementation and more accurate estimation features of the new filter recommend its use over the EKF in virtually all applications.},
 year = {1997},
 doi = {10.1117/12.280797},
-URL = { http://dx.doi.org/10.1117/12.280797}
+URL = { http://dx.doi.org/10.1117/12.280797},
+eprint = {}
 }
 
 @InProceedings{klein07parallel,
@@ -39,14 +41,16 @@ URL = { http://dx.doi.org/10.1117/12.280797}
   address =	 {Nara, Japan}
 }
 
-@conference{Julier1998,
+@proceeding{Julier1998,
 author = {Julier, Simon J.},
-title = {{A Skewed Approach to Filtering}},
-booktitle = {Proc. SPIE},
+title = {{A Skewed Approach to Filtering},
+journal = {Proc. SPIE},
 volume = {3373},
+number = {},
 pages = {271-282},
 abstract = {The dynamics of many physical system are nonlinear and non- symmetric. The motion of a missile, for example, is strongly determined by aerodynamic drag whose magnitude is a function of the square of speed. Conversely, nonlinearity can arise from the coordinate system used, such as spherical coordinates for position. If a filter is applied these types of system, the distribution of its state estimate will be non-symmetric. The most widely used filtering algorithm, the Kalman filter, only utilizes mean and covariance and odes not maintain or exploit the symmetry properties of the distribution. Although the Kalman filter has been successfully applied in many highly nonlinear and non- symmetric system, this has been achieved at the cost of neglecting a potentially rich source of information. In this paper we explore methods for maintaining and utilizing information over and above that provided by means and covariances. Specifically, we extend the Kalman filter paradigm to include the skew and examine the utility of maintaining this information. We develop a tractable, convenient algorithm which can be used to predict the first three moments of a distribution. This is achieved by extending the sigma point selection scheme of the unscented transformation to capture the mean, covariance and skew. The utility of maintaining the skew and using nonlinear update rules is assessed by examining the performance of the new filter against a conventional Kalman filter in a realistic tracking scenario.},
 year = {1998},
 doi = {10.1117/12.324626},
-URL = {http://dx.doi.org/10.1117/12.324626}
+URL = { http://dx.doi.org/10.1117/12.324626},
+eprint = {}
 }

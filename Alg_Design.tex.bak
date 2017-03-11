@@ -1,0 +1,34 @@
+\chapter{Algorithm Design and Implementation} \label{ch:alg_design}
+
+We begin by defining the state vector $\mathbf{x} \in \mathbb{R}^{n}$:
+%
+\begin{equation}
+\mathbf{x} \triangleq \left\lbrace
+x,
+y,
+z,
+q_{x},
+q_{y},
+q_{z},
+q_{w},
+\dot{x},
+\dot{y},
+\dot{z},
+p,
+q,
+r,
+\ddot{x},
+\ddot{y},
+\ddot{z}
+\right\rbrace ^{T}.
+\end{equation}
+%
+The covariance associated with each state $\mathbf{x}$ is a matrix $\mathbf{P} \in \mathbb{R}^{n \times n}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$:
+%
+\begin{align}
+\mathbf{\chi}^{0} &= \mathbf{x} \nonumber\\
+\mathbf{\chi}^{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i}, \quad i = 1, \dots, n \\
+\mathbf{\chi}^{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i-n}, \quad i = n+1, \dots, 2n \nonumber
+\end{align}
+%
+where $\lambda$

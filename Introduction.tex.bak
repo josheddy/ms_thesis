@@ -1,0 +1,51 @@
+\chapter{Introduction}
+
+\textit{Throughout this document, there are several sections whose titles have been placed in parentheses. These sections have been included to give added context to the work, but are not strictly necessary to the reader's understanding.}
+
+\section{(Personal Motivation)}
+
+I first took an interest in unmanned aircraft in the fall of 2012, my sophomore year of college. In search of an exciting engineering challenge, several of my friends and I founded the Cooperative Autonomous Robotics Design (CARD) team at Virginia Tech. Our core team consisted of a dozen students devoted to designing and competing with drones and other robotic vehicles. Our team, guided by my future graduate adviser Kevin Kochersberger, entered a number of design competitions and brought home several awards for the university. My early experiences with the team brought me into contact with microcontroller programming, Proportional-Integral-Derivative (PID) controller design, mechatronics, and computer-aided design (CAD) modeling.
+
+After two years of involvement with the CARD team, I applied for an internship at the National Institute of Aerospace\footnote{\url{http://www.nianet.org}} (NIA). In the summer of 2014, I was part of a team of NIA researchers working on the Flying Donkey Challenge\footnote{\url{http://www.flyingdonkey.org}}, an international engineering competition centered around the idea of ``flying donkeys,'' full-sized autonomous airplanes capable of quickly carrying cargo between small airports in rural Africa. This competition, unfortunately now defunct, was divided into a number of sub-challenges focusing on different technical objectives such as precision landing and collision avoidance. Our team's goal was to design an inexpensive system for GPS-denied navigation that could reliably guide unmanned aircraft during a GPS blackout. This project introduced me to many of the technologies and techniques that would later become my major research interests, particularly the Robot Operating System\footnote{\url{http://wiki.ros.org}} (ROS), Kalman filtering, and sensor fusion.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.5\textwidth]{april_tag}
+  \caption[Example April tag]{Example of an April tag from the \texttt{apriltags\_ros} ROS package.}
+  \label{fig:april_tag}
+\end{figure}
+
+My internship at the NIA brought me into contact with Dr. Danette Allen, head of the NASA Langley Autonomy Incubator. During the 2014--15 academic year, Dr. Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5-lb packages to distances of up to 2.5 miles (or 5 miles, round trip). In addition, these vehicles were able to land precisely on 1 m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator.
+
+During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the unscented Kalman filter. In reading up on the unscented Kalman filter (UKF), I took a serious interest in the design of the algorithm. Unlike many other formulations of the Kalman filter, the UKF has a notably limited dependence on information about the system whose state is being estimated (this \textit{system agnosticism} is discussed in detail later on in Chapter~\ref{ch:alg_design}). In learning about the UKF, I became excited by the idea of taking advantage of this trait to build a minimalistic software interface by which a wide variety of disparate systems could one day be tracked and studied in a ROS framework. I envisioned a kind of ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of a great many researchers and roboticists with little overhead in the way of state estimation knowledge. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package and cemented my interest in state estimation and controls.
+
+\section{Project Overview}
+% i.	Relationship between Kalman filtering and Visual-Inertial Navigation (1)
+
+% ii.	Application to this work (0.5)
+
+\section{Organization of this Document}
+
+\subsection*{Prior Work}
+
+In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and estimation. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which this work exists.
+
+\subsection*{Algorithm Design and Implementation}
+
+Because of the naturally computational nature of this work, we explore in detail the design and implementation of the \texttt{kalman\_sense} ROS package. We discuss plant model abstraction as well as code organization and data flow. We summarize the process by which one could extend \texttt{kalman\_sense}'s functionality and the advantages of system-agnostic algorithm design.
+
+\subsection*{Experimental Design}
+
+In this section, we first establish the goals of the testing regimen and then discuss the real-world execution of these goals. We discuss important statistical methods for characterizing the system's effectiveness as well as data collection procedures and post-processing. Physical testing infrastructure is explored in detail.
+
+\subsection*{Experimental Results}
+
+In Experimental Results, we evaluate the system's performance during testing and seek out any limiting factors that influence estimation accuracy. We probe for possible improvements to the algorithm and provide a notional understanding of the system's theoretical effectiveness in real-world scenarios.
+
+\subsection*{Conclusions}
+
+We briefly summarize the contributions made by this work, the effectiveness of the \texttt{kalman\_sense} package, and any miscellaneous insights acquired during programming and testing. 
+
+\subsection*{Future Work}
+
+In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for this work. Specific examples of heterogeneous fleet management and unmanned traffic management (UTM) are explored.
