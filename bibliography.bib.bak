@@ -50,3 +50,15 @@ year = {1998},
 doi = {10.1117/12.324626},
 URL = {http://dx.doi.org/10.1117/12.324626}
 }
+
+@INPROCEEDINGS{Julier2002, 
+author={S. J. Julier}, 
+booktitle={Proceedings of the 2002 American Control Conference (IEEE Cat. No.CH37301)}, 
+title={{The Scaled Unscented Transformation}}, 
+year={2002}, 
+volume={6}, 
+pages={4555-4559 vol.6}, 
+keywords={filtering theory;identification;nonlinear systems;statistical analysis;Cartesian coordinates;UT;angular uncertainties;coordinate conversion;covariance prediction;mean prediction;nonlinear systems;polar coordinates;probability distribution;scaled unscented transformation;sigma points;truncated filter;Cities and towns;Filtering;Filters;Gaussian distribution;Jacobian matrices;Nonlinear systems;Random variables;Sampling methods;Statistics;Uncertainty}, 
+doi={10.1109/ACC.2002.1025369}, 
+ISSN={0743-1619}, 
+month={May},}

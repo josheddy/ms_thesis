@@ -8,4 +8,14 @@ S.~J. Julier and J.~K. Uhlmann, ``{A New Extension of the Kalman Filter to
 S.~J. Julier, ``{A Skewed Approach to Filtering},'' in {\em Proc. SPIE},
   vol.~3373, pp.~271--282, 1998.
 
+\bibitem{Julier2002}
+S.~J. Julier, ``{The Scaled Unscented Transformation},'' in {\em Proceedings of
+  the 2002 American Control Conference (IEEE Cat. No.CH37301)}, vol.~6,
+  pp.~4555--4559 vol.6, May 2002.
+
+\bibitem{Julier2004}
+S.~J. Julier and J.~K. Uhlmann, ``{Unscented Filtering and Nonlinear
+  Estimation},'' in {\em Invited Paper Proceedings of the IEEE}, vol.~92,
+  pp.~401--422, March 2004.
+
 \end{thebibliography}

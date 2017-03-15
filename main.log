@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  11 MAR 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  15 MAR 2017 15:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -762,7 +762,7 @@ been already used, duplicate ignored
 l.10 
       [1
 
-] <april_tag.jpg, id=45, 310.15875pt x 310.49333pt>
+] <april_tag.jpg, id=53, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
 
 <use april_tag.jpg>
@@ -788,7 +788,7 @@ Chapter 2.
 [5
 
 ] [6] [7] [8] [9]
-Overfull \hbox (7.98524pt too wide) in paragraph at lines 25--26
+Overfull \hbox (7.98524pt too wide) in paragraph at lines 29--30
 []\T1/futs/m/n/10.95 (-20) [Weiss, Achte-lik 2012] Weiss et al. ex-plore the ad
 -van-tages of uti-liz-ing a high-performance
  []
@@ -804,7 +804,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0B39D829FC7169F168655293150C6823;351.
+(rerunfilecheck)             Checksum: B7212F6CEE6EB9E4A9C0605D0423C566;549.
 
 
 LaTeX Warning: There were undefined references.
@@ -812,22 +812,22 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 9157 strings out of 493334
- 137214 string characters out of 3136672
- 247558 words of memory out of 3000000
- 12289 multiletter control sequences out of 15000+200000
- 118195 words of font info for 248 fonts, out of 3000000 for 9000
+ 9165 strings out of 493334
+ 137319 string characters out of 3136672
+ 247622 words of memory out of 3000000
+ 12293 multiletter control sequences out of 15000+200000
+ 118321 words of font info for 248 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,8n,38p,1592b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,8n,38p,1559b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (14 pages, 147311 bytes).
+Output written on main.pdf (14 pages, 152093 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 28214 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 28230 words of extra memory for PDF output out of 29859 (max. 10000000)
 
