@@ -18,4 +18,14 @@ S.~J. Julier and J.~K. Uhlmann, ``{Unscented Filtering and Nonlinear
   Estimation},'' in {\em Invited Paper Proceedings of the IEEE}, vol.~92,
   pp.~401--422, March 2004.
 
+\bibitem{Klein2007}
+G.~Klein and D.~Murray, ``{Parallel Tracking and Mapping for Small {AR}
+  Workspaces},'' in {\em Proc. Sixth {IEEE} and {ACM} International Symposium
+  on Mixed and Augmented Reality {(ISMAR'07)}}, (Nara, Japan), November 2007.
+
+\bibitem{Shen2011}
+S.~Shen, N.~Michael, and V.~Kumar, ``{Autonomous Multi-Floor Navigation with a
+  Computationally Constrained MAV},'' in {\em IEEE International Conference on
+  Robotics and Automation}, pp.~20--25, 2011.
+
 \end{thebibliography}

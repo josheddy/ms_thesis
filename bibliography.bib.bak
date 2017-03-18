@@ -3,7 +3,6 @@
     title     = {{Unscented Filtering and Nonlinear Estimation}},
     booktitle = "Invited Paper Proceedings of the IEEE",
     volume = "92",
-    number = "3",
     month = "March",
     pages    = "401--422",
     year      = "2004"
@@ -29,9 +28,9 @@ doi = {10.1117/12.280797},
 URL = { http://dx.doi.org/10.1117/12.280797}
 }
 
-@InProceedings{klein07parallel,
+@InProceedings{Klein2007,
   author =	 {Georg Klein and David Murray},
-  title =	 {Parallel Tracking and Mapping for Small {AR} Workspaces},
+  title =	 {{Parallel Tracking and Mapping for Small {AR} Workspaces}},
   booktitle =	 {Proc. Sixth {IEEE} and {ACM} International Symposium
                   on Mixed and Augmented Reality {(ISMAR'07)}},
   year =	 2007,

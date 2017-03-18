@@ -11,7 +11,6 @@ right=1.5in}
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{hyperref}
-
 \usepackage[T1]{fontenc}
 \usepackage{inconsolata}
 \usepackage{fourier}
@@ -36,7 +35,7 @@ right=1.5in}
 
 \begin{document}
 \title{
-	{A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of Small Unmanned Aircraft}\\
+	{A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of \\ Small Unmanned Aircraft}\\
 	\vspace{1 em}
 	{\Large Virginia Tech}
 }
@@ -45,7 +44,7 @@ right=1.5in}
 
 \maketitle
 
-%\chapter*{Abstract}
+%\input{Abstract.tex}
 
 %\input{Acknowledgements.tex}
 
@@ -54,6 +53,8 @@ right=1.5in}
 \listoffigures
 \listoftables
 \end{comment}
+
+\input{Acronyms.tex}
 
 \input{Introduction.tex}
 
@@ -72,6 +73,6 @@ right=1.5in}
 \clearpage
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{ieeetr}
-\bibliography{bibliography} 
+\bibliography{bibliography}
 
 \end{document}
