@@ -1,25 +1,22 @@
 \chapter{Algorithm Design and Implementation} \label{ch:alg_design}
 
-We begin by defining the state vector $\mathbf{x} \in \mathbb{R}^{n}$:
+\section{UKF Formulation}
+
+We begin by defining the following vector quantities:
+%
+\begin{equation}
+tk: p, q, v, \omega, a
+\end{equation}
+%
+We then define the state vector $\mathbf{x} \in \mathbb{R}^{n}$:
 %
 \begin{equation}
 \mathbf{x} \triangleq \left\lbrace
-x,
-y,
-z,
-q_{x},
-q_{y},
-q_{z},
-q_{w},
-\dot{x},
-\dot{y},
-\dot{z},
-p,
-q,
-r,
-\ddot{x},
-\ddot{y},
-\ddot{z}
+\mathbf{p},
+\mathbf{q},
+\mathbf{v},
+\mathbf{\omega},
+\mathbf{a},
 \right\rbrace ^{T}.
 \end{equation}
 %
@@ -31,4 +28,24 @@ The covariance associated with each state $\mathbf{x}$ is a matrix $\mathbf{P} \
 \mathbf{\chi}^{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i-n}, \quad i = n+1, \dots, 2n \nonumber
 \end{align}
 %
-where $\lambda$
+where $\lambda$ is defined in terms of the following constants:
+%
+\begin{equation}
+tk: \alpha, \beta, \kappa, \lambda
+\end{equation}
+
+\section{Software Design Considerations}
+
+Much of the impetus for creating the \texttt{kalman\_sense} package came from a desire to create a generic UKF framework for estimating the state of arbitrary systems using arbitrary relative and absolute measurements. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented fashion around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of methods performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in as generic a manner as possible in order to enable easy extension of \texttt{UnscentedKf} by other child classes containing concrete implementations of various systems. Currently, the package contains exactly one such child class, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to the needs of estimating the state of a quadcopter or other rotorcraft UAV.
+
+This object-oriented architecture is meant to allow for a certain degree of system agnosticism. The abstract \texttt{UnscentedKf} class encapsulates the generic mathematics of the Unscented Kalman Filter without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this knowledge, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other particulars is hidden within child classes such as \texttt{QuadUkf}.
+
+\texttt{UnscentedKf} behaves in a manner similar to a Java interface in that it requires the extending class to supply functions codifying a process model and an observation model for the system under scrutiny. These two functions, along with $n$ and $m$, form the entirety of what \texttt{UnscentedKf} ``knows about the vehicle.'' All other details, including the fact that the class is being used in a ROS environment, are hidden from \texttt{UnscentedKf}. For its part, it is worth noting that \texttt{UnscentedKf}'s only dependency is on the Eigen\footnote{\url{eigen.tuxfamily.org}} C++ linear algebra library.
+
+The child class (\texttt{QuadUkf} for the remainder of this thesis) handles all of the communications plumbing for the given system. Specifically, this class
+
+\begin{itemize}
+\item Sets up and tears down ROS Publisher and Subscriber nodes,
+\item Has callback functions for receiving sensor data,
+
+\end{itemize}

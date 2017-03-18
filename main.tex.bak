@@ -42,7 +42,7 @@ right=1.5in}
 \author{Joshua Galen Eddy}
 \date{April 1, 2017}
 
-\maketitle
+%\maketitle
 
 %\input{Abstract.tex}
 
@@ -56,11 +56,11 @@ right=1.5in}
 
 \input{Acronyms.tex}
 
-\input{Introduction.tex}
+%\input{Introduction.tex}
 
 \input{Prior_Work.tex}
 
-%\input{Alg_Design.tex}
+\input{Alg_Design.tex}
 
 \begin{comment}
     \chapter{Experimental Design}
