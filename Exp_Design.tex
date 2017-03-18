@@ -1,0 +1,40 @@
+\chapter{Experimental Design}
+
+\section{Testing Considerations}
+
+Before venturing further, we should summarize the goals of the UKF framework described previously with particular attention to unmanned aircraft system (UAS) operations. This ROS package was designed with the express intent of producing estimates of the position vector $\mathbf{p}$ and orientation quaternion $\mathbf{q}$ of a rotorcraft UAV in real time. Thus, the experiments testing \texttt{kalman\_sense}'s efficacy compare the filter's estimates of position and orientation to the ``ground truth'' as measured by a Vicon\footnote{\url{https://www.vicon.com}} motion capture system.
+
+To validate the UKF framework, it was advantageous to run all computations 
+
+\section{Materials}
+\subsection{Computation and Sensing}
+\begin{enumerate}
+\item One (1) MatrixVision mvBlueFOX-MLC Camera\footnote{\url{https://www.matrix-vision.com/USB2.0-single-board-camera-mvbluefox-mlc.html}}
+\item One (1) 1044\_0 PhidgetSpatial Precision 3/3/3 High Resolution IMU\footnote{\url{http://www.phidgets.com/products.php?product_id=1044}}
+\item One (1) Hewlett-Packard Spectre x360 Convertible Laptop 13-ac076nr\footnote{\url{http://store.hp.com/us/en/pdp/hp-spectre-x360---13-ac076nr}}
+\item Two (2) male Mini USB 2.0 to male USB Type A cables
+\end{enumerate}
+
+\subsection{Mobile Test Stand}
+\begin{enumerate}
+\item One (1) Oklahoma Sound PRC200 Premium Presentation Cart\footnote{\url{http://www.oklahomasound.com/products/product-category/single/?prod=9}}
+\item Two (2) 4-inch C-clamps
+\item One (1) 1.2-meter 80/20 1515 rail\footnote{\url{https://8020.net/1515.html}}
+\item One (1) 15 Series ``L'' Handle Linear Bearing Brake Kit\footnote{\url{https://8020.net/6800.html}}
+\item One (1) tk: other rail screw
+\item Two (2) tk: the part that goes inside the rail for both the brake and the screw
+\item Three (3) 1-inch Vicon infrared retroreflector balls
+\item Two (2) 0.5-inch Vicon infrared retroreflector balls
+\item One (1) 0.7-meter length of $\frac{1}{8}$-inch-thick carbon fiber rod
+\end{enumerate}
+
+
+\section{The Experiments}
+
+The following three experiments were devised to characterize the filter's behavior:
+\begin{enumerate}
+\item An $x$-directional ``long walk,''
+\item A $y$-directional ``long walk,'' and
+\item A square pattern translation.
+\end{enumerate}
+In each experiment, the 
