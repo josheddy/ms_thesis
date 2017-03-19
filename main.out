@@ -1,13 +1,9 @@
-\BOOKMARK [0][-]{chapter.1}{Prior Work}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Development of the Unscented Kalman Filter}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Visual-Inertial Navigation \(VIN\)}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Algorithm Design and Implementation}{}% 4
-\BOOKMARK [1][-]{section.2.1}{UKF Formulation}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Software Design Considerations}{chapter.2}% 6
-\BOOKMARK [0][-]{chapter.3}{Experimental Design}{}% 7
-\BOOKMARK [1][-]{section.3.1}{Testing Considerations}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Materials}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.2.1}{Computation and Sensing}{section.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.2.2}{Mobile Test Stand}{section.3.2}% 11
-\BOOKMARK [1][-]{section.3.3}{The Experiments}{chapter.3}% 12
-\BOOKMARK [0][-]{Item.16}{Bibliography}{}% 13
+\BOOKMARK [0][-]{chapter.1}{Algorithm Design and Implementation}{}% 1
+\BOOKMARK [1][-]{section.1.1}{UKF Formulation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Software Design Considerations}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Experimental Design}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Testing Considerations}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Materials}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Computation and Sensing}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Mobile Test Stand}{section.2.2}% 8
+\BOOKMARK [1][-]{section.2.3}{The Experiments}{chapter.2}% 9

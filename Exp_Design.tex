@@ -4,7 +4,9 @@
 
 Before venturing further, we should summarize the goals of the UKF framework described previously with particular attention to unmanned aircraft system (UAS) operations. This ROS package was designed with the express intent of producing estimates of the position vector $\mathbf{p}$ and orientation quaternion $\mathbf{q}$ of a rotorcraft UAV in real time. Thus, the experiments testing \texttt{kalman\_sense}'s efficacy compare the filter's estimates of position and orientation to the ``ground truth'' as measured by a Vicon\footnote{\url{https://www.vicon.com}} motion capture system.
 
-To validate the UKF framework, it was advantageous to run all computations 
+This system depends upon two sensors: a global-shutter camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope (Figure~\ref{fig:sensor_mount}). To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite on a large, steady, level platform allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion seen by the ventral camera. In order to validate the UKF framework's effectiveness under ideal conditions, a modern laptop computer with an Intel i7 processor and 16~GB of RAM was used for all computation.
+
+tk: figure of sensor mount
 
 \section{Materials}
 \subsection{Computation and Sensing}
@@ -18,6 +20,7 @@ To validate the UKF framework, it was advantageous to run all computations
 \subsection{Mobile Test Stand}
 \begin{enumerate}
 \item One (1) Oklahoma Sound PRC200 Premium Presentation Cart\footnote{\url{http://www.oklahomasound.com/products/product-category/single/?prod=9}}
+\item One (1) 3D-printed sensor mount (see Figure~\ref{fig:sensor_mount})
 \item Two (2) 4-inch C-clamps
 \item One (1) 1.2-meter 80/20 1515 rail\footnote{\url{https://8020.net/1515.html}}
 \item One (1) 15 Series ``L'' Handle Linear Bearing Brake Kit\footnote{\url{https://8020.net/6800.html}}
@@ -31,10 +34,6 @@ To validate the UKF framework, it was advantageous to run all computations
 
 \section{The Experiments}
 
-The following three experiments were devised to characterize the filter's behavior:
-\begin{enumerate}
-\item An $x$-directional ``long walk,''
-\item A $y$-directional ``long walk,'' and
-\item A square pattern translation.
-\end{enumerate}
-In each experiment, the 
+A series of three experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. To characterize the accuracy of state estimates in lengthy, monodimensional motion, two ``long walk'' experiments were conducted---one in the $x$-direction, the other in the $y$-direction. These experiments were meant to determine changes in estimate accuracy over large, planar translations (for example, to uncover the evolution of error in the system over time while effectively manipulating only one state variable). For each long walk, the test stand was translated without rotation along the positive $x$- and $y$-axes over distances of approximately seven meters, then returned to the starting location via the same path.
+
+The third experiment was a rectangular translation designed to characterize the the system's effectiveness when translated along two axes. Again, the cart was translated without rotation around the corners of a nearly square rectangle having sides approximately four meters in length.
