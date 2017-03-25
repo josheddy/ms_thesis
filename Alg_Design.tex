@@ -2,42 +2,80 @@
 
 \section{UKF Formulation}
 
-We begin by defining the following vector quantities:
-%
-\begin{equation}
-tk: p, q, v, \omega, a
-\end{equation}
-%
-tk: define n and m
+\subsection{Prediction Step}
 
-
-We then define the state vector $\mathbf{x} \in \mathbb{R}^{n}$:
+We begin by defining the following quantities:
 %
-\begin{equation}
-\mathbf{x} \triangleq \left\lbrace
-\mathbf{p},
-\mathbf{q},
-\mathbf{v},
-\mathbf{\omega},
-\mathbf{a},
-\right\rbrace ^{T}.
-\end{equation}
-%
-The covariance associated with each state $\mathbf{x}$ is a matrix $\mathbf{P} \in \mathbb{R}^{n \times n}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$:
-%
-\begin{align}
-\mathbf{\chi}^{0} &= \mathbf{x} \nonumber\\
-\mathbf{\chi}^{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i}, \quad i = 1, \dots, n \\
-\mathbf{\chi}^{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i-n}, \quad i = n+1, \dots, 2n \nonumber
+\begin{align} \label{eq:state_vars}
+\mathbf{p} &= \left\lbrace x, y, z \right\rbrace ^{T} \nonumber \\
+\mathbf{q} &= \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} \nonumber \\
+\mathbf{v} &= \left\lbrace \dot{x}, \dot{y}, \dot{z} \right\rbrace ^{T} \\
+\mathbf{\Omega} &= \left\lbrace \omega_{x}, \omega_{y}, \omega_{z} \right\rbrace ^{T} \nonumber \\
+\mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T} \nonumber
 \end{align}
 %
-where $\lambda$ is defined in terms of the following constants:
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. 
+
+Let $n = 16$ be the number of state variables (presented in Equation~\ref{eq:state_vars}). We now define the state vector $\mathbf{x} \in \mathbb{R}^{n}$ as:
 %
 \begin{equation}
-tk: \alpha, \beta, \kappa, \lambda
+\mathbf{x} = 
+\left\lbrace
+    \mathbf{p}^{T},
+    \mathbf{q}^{T},
+    \mathbf{v}^{T},
+    \mathbf{\Omega}^{T},
+    \mathbf{a}^{T}
+\right\rbrace ^{T}.
 \end{equation}
 
-tk: TO BE CONT'D.
+We now define the following constants:
+%
+\begin{align}
+\alpha &= 10^{-3} \nonumber \\
+\kappa &= 0 \\
+\beta &= 2 \nonumber \\
+\lambda &= \alpha^{2} \left( n + \kappa \right) - n \nonumber
+\end{align}
+%
+The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen within the filter. The value of $\beta$ governs what distribution is assumed for the states $\mathbf{x}$. Setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
+
+Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
+%
+\begin{align}
+\mathbf{\chi}_{0} &= \mathbf{x} \nonumber\\
+\mathbf{\chi}_{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}, \quad i = 1, \dots, n \\
+\mathbf{\chi}_{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
+\end{align}
+%
+where $\mathbf{\chi}_{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
+%
+\begin{equation}
+\mathbf{A} \mathbf{A}^{T} = \mathbf{B}
+\end{equation}
+%
+and is computed via Cholesky decomposition.
+
+To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined later):
+%
+\begin{equation}
+\mathbf{\chi}^{i}_{k | k-1} = f \left( \mathbf{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
+\end{equation}
+%
+These new sigma points are then used to predict the next state and covariance:
+%
+\begin{align}
+\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\chi}^{i}_{k | k-1} \\
+\mathbf{P}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T},
+\end{align}
+%
+where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
+%
+\begin{align}
+W^{0}_{s} &= \dfrac{\lambda}{n + \lambda} \nonumber \\
+W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right) \\
+W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)} . \nonumber
+\end{align}
 
 \section{Software Design Considerations}
 

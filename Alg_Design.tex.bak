@@ -2,48 +2,78 @@
 
 \section{UKF Formulation}
 
-We begin by defining the following vector quantities:
-%
-\begin{equation}
-tk: p, q, v, \omega, a
-\end{equation}
-%
-tk: define n and m
+\subsection{Prediction Step}
 
-
-We then define the state vector $\mathbf{x} \in \mathbb{R}^{n}$:
+We begin by defining the following quantities:
 %
-\begin{equation}
-\mathbf{x} \triangleq \left\lbrace
-\mathbf{p},
-\mathbf{q},
-\mathbf{v},
-\mathbf{\omega},
-\mathbf{a},
-\right\rbrace ^{T}.
-\end{equation}
-%
-The covariance associated with each state $\mathbf{x}$ is a matrix $\mathbf{P} \in \mathbb{R}^{n \times n}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$:
-%
-\begin{align}
-\mathbf{\chi}^{0} &= \mathbf{x} \nonumber\\
-\mathbf{\chi}^{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i}, \quad i = 1, \dots, n \\
-\mathbf{\chi}^{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P} } \right)_{i-n}, \quad i = n+1, \dots, 2n \nonumber
+\begin{align} \label{eq:state_vars}
+\mathbf{p} &= \left\lbrace x, y, z \right\rbrace ^{T} \nonumber \\
+\mathbf{q} &= \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} \nonumber \\
+\mathbf{v} &= \left\lbrace \dot{x}, \dot{y}, \dot{z} \right\rbrace ^{T} \\
+\mathbf{\Omega} &= \left\lbrace \omega_{x}, \omega_{y}, \omega_{z} \right\rbrace ^{T} \nonumber \\
+\mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T} \nonumber
 \end{align}
 %
-where $\lambda$ is defined in terms of the following constants:
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. 
+
+Let $n = 16$ be the number of state variables (presented in Equation~\ref{eq:state_vars}). We now define the state vector $\mathbf{x} \in \mathbb{R}^{n}$ as:
 %
 \begin{equation}
-tk: \alpha, \beta, \kappa, \lambda
+\mathbf{x} = 
+\left\lbrace
+    \mathbf{p}^{T},
+    \mathbf{q}^{T},
+    \mathbf{v}^{T},
+    \mathbf{\Omega}^{T},
+    \mathbf{a}^{T}
+\right\rbrace ^{T}.
 \end{equation}
 
-tk: TO BE CONT'D.
+We now define the following constants:
+%
+\begin{align}
+\alpha &= 10^{-3} \nonumber \\
+\kappa &= 0 \\
+\beta &= 2 \nonumber \\
+\lambda &= \alpha^{2} \left( n + \kappa \right) - n \nonumber
+\end{align}
+%
+The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen within the filter. The value of $\beta$ governs what distribution is assumed for the states $\mathbf{x}$. Setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
+
+Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
+%
+\begin{align}
+\mathbf{\chi}_{0} &= \mathbf{x} \nonumber\\
+\mathbf{\chi}_{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}, \quad i = 1, \dots, n \\
+\mathbf{\chi}_{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
+\end{align}
+%
+where $\mathbf{\chi}_{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
+%
+\begin{equation}
+\mathbf{A} \mathbf{A}^{T} = \mathbf{B}
+\end{equation}
+%
+and is computed via Cholesky decomposition.
+
+To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined later):
+%
+\begin{equation}
+\mathbf{\chi}^{i}_{k | k-1} = f \left( \mathbf{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
+\end{equation}
+%
+These new sigma points are then used to predict the next state and covariance:
+%
+\begin{align}
+\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\chi}^{i}_{k | k-1} \\
+\mathbf{P}_{k | k-1} &= \sum^{2n}
+\end{align}
 
 \section{Software Design Considerations}
 
-Much of the impetus for creating the \texttt{kalman\_sense} package came from a desire to create a generic UKF framework for estimating the state of arbitrary systems using any number of relative and absolute sensors. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented manner around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of methods performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in a generic manner in order to enable easy extension of \texttt{UnscentedKf} by other subclasses containing concrete implementations of various systems. Currently, the package contains exactly one such subclass, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to estimating the state of a quadcopter or other rotorcraft UAV.
+Much of the impetus for creating the \texttt{kalman\_sense} package came from a desire to create a generic UKF framework for estimating the state of an arbitrary system using any number of relative and absolute sensors. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented manner around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of methods performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in a generic manner in order to enable easy extension of \texttt{UnscentedKf} by other subclasses containing concrete implementations of various systems. Currently, the package contains exactly one such subclass, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to estimating the state of a quadcopter or other rotorcraft UAV.
 
-This object-oriented architecture is meant to allow for a certain degree of system agnosticism. The abstract \texttt{UnscentedKf} class encapsulates the generic mathematics of the Unscented Kalman Filter without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this knowledge, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other particulars is hidden within subclasses such as \texttt{QuadUkf}.
+This object-oriented architecture is allows for a certain degree of system agnosticism. By this, we mean that the \texttt{UnscentedKf} class encapsulates the generic mathematics of the UKF without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this knowledge, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other metrics is hidden within subclasses such as \texttt{QuadUkf}.
 
 \texttt{UnscentedKf} behaves in a manner similar to a Java interface in that it requires the extending class to supply functions codifying a process model and an observation model for the system under scrutiny. These two functions, along with $n$ and $m$, form the entirety of what \texttt{UnscentedKf} ``knows about the vehicle.'' All other details, including the fact that the class is being used in a ROS environment, are hidden from \texttt{UnscentedKf}. It is worth noting that \texttt{UnscentedKf}'s only dependency is on the Eigen\footnote{\url{www.eigen.tuxfamily.org}} C++ linear algebra library.
 
