@@ -43,12 +43,12 @@ The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen wi
 Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
 %
 \begin{align}
-\mathbf{\chi}_{0} &= \mathbf{x} \nonumber\\
-\mathbf{\chi}_{i} &= \mathbf{x} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}, \quad i = 1, \dots, n \\
-\mathbf{\chi}_{i} &= \mathbf{x} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
+\mathbf{\chi}^{0}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} \nonumber\\
+\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}, \quad i = 1, \dots, n \\
+\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
-where $\mathbf{\chi}_{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
+where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
 %
 \begin{equation}
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
@@ -66,8 +66,64 @@ These new sigma points are then used to predict the next state and covariance:
 %
 \begin{align}
 \hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\chi}^{i}_{k | k-1} \\
-\mathbf{P}_{k | k-1} &= \sum^{2n}
+\mathbf{P}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T},
 \end{align}
+%
+where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
+%
+\begin{align}
+W^{0}_{s} &= \dfrac{\lambda}{n + \lambda} \nonumber \\
+W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right) \\
+W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)} . \nonumber
+\end{align}
+
+\subsection{Correction Step}
+
+Once again, $2n + 1$ sigma points are computed as
+%
+\begin{align}
+\mathbf{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} \nonumber\\
+\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i}, \quad i = 1, \dots, n \\
+\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, \quad i = n+1, \dots, 2n. \nonumber
+\end{align}
+%
+Next, the sigma points are projected through the observation function $h$ (defined later):
+%
+\begin{equation}
+\mathbf{\gamma}^{i}_{k} = h \left( \mathbf{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
+\end{equation}
+%
+The predicted measurement $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
+%
+\begin{align}
+\hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\gamma}^{i}_{k} \\
+\mathbf{P}_{zz} &= \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} 
+\end{align}
+%
+The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then
+%
+\begin{equation}
+\mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
+\end{equation}
+%
+The Kalman gain $\mathbf{K}_{k}$ is then computed as
+%
+\begin{equation}
+\mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{-1}_{zz}.
+\end{equation}
+%
+The corrected state $\hat{\mathbf{x}}_{k | k}$ is then the sum of the predicted state and the innovation weighted by the Kalman gain:
+%
+\begin{equation}
+\hat{\mathbf{x}}_{k | k} = \hat{\mathbf{x}}_{k | k-1} + \mathbf{K}_{k} \left( \hat{\mathbf{z}}_{k} - \mathbf{z}_{k} \right) .
+\end{equation}
+%
+The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the predicted covariance and the predicted measurement covariance, weighted by the Kalman gain:
+%
+\begin{equation}
+\mathbf{P}_{k | k} = \mathbf{P}_{k | k-1} - \mathbf{K}_{k} \mathbf{P}_{k | k-1} \mathbf{K}_{k}^{T} .
+\end{equation}
+
 
 \section{Software Design Considerations}
 
