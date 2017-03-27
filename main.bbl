@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Julier1997}
 S.~J. Julier and J.~K. Uhlmann, ``{A New Extension of the Kalman Filter to
@@ -23,9 +23,31 @@ G.~Klein and D.~Murray, ``{Parallel Tracking and Mapping for Small {AR}
   Workspaces},'' in {\em Proc. Sixth {IEEE} and {ACM} International Symposium
   on Mixed and Augmented Reality {(ISMAR'07)}}, (Nara, Japan), November 2007.
 
+\bibitem{Weiss2011}
+S.~Weiss, D.~Scaramuzza, and R.~Siegwart, ``{Monocular-SLAM-Based Navigation
+  for Autonomous Micro Helicopters in GPS-denied Environments},'' {\em J. Field
+  Robot.}, vol.~28, pp.~854--874, Nov. 2011.
+
 \bibitem{Shen2011}
 S.~Shen, N.~Michael, and V.~Kumar, ``{Autonomous Multi-Floor Navigation with a
   Computationally Constrained MAV},'' in {\em IEEE International Conference on
   Robotics and Automation}, pp.~20--25, 2011.
+
+\bibitem{Weiss2011_2}
+S.~Weiss and R.~Siegwart, ``{Real-Time Metric State Estimation for Modular
+  Vision-Inertial Systems},'' in {\em 2011 IEEE International Conference on
+  Robotics and Automation}, pp.~4531--4537, May 2011.
+
+\bibitem{Weiss2012}
+S.~Weiss, M.~W. Achtelik, M.~Chli, and R.~Siegwart, ``{Versatile Distributed
+  Pose Estimation and Sensor Self-Calibration for an Autonomous MAV},'' in {\em
+  2012 IEEE International Conference on Robotics and Automation}, pp.~31--38,
+  May 2012.
+
+\bibitem{Weiss2012_2}
+S.~Weiss, M.~W. Achtelik, S.~Lynen, M.~Chli, and R.~Siegwart, ``{Real-Time
+  Onboard Visual-Inertial State Estimation and Self-Calibration of MAVs in
+  Unknown Environments},'' in {\em 2012 IEEE International Conference on
+  Robotics and Automation}, pp.~957--964, May 2012.
 
 \end{thebibliography}
