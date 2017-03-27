@@ -11,7 +11,7 @@ S.~J. Julier, ``{A Skewed Approach to Filtering},'' in {\em Proc. SPIE},
 \bibitem{Julier2002}
 S.~J. Julier, ``{The Scaled Unscented Transformation},'' in {\em Proceedings of
   the 2002 American Control Conference (IEEE Cat. No.CH37301)}, vol.~6,
-  pp.~4555--4559 vol.6, May 2002.
+  pp.~4555--4559, May 2002.
 
 \bibitem{Julier2004}
 S.~J. Julier and J.~K. Uhlmann, ``{Unscented Filtering and Nonlinear
@@ -49,5 +49,27 @@ S.~Weiss, M.~W. Achtelik, S.~Lynen, M.~Chli, and R.~Siegwart, ``{Real-Time
   Onboard Visual-Inertial State Estimation and Self-Calibration of MAVs in
   Unknown Environments},'' in {\em 2012 IEEE International Conference on
   Robotics and Automation}, pp.~957--964, May 2012.
+
+\bibitem{Huang2013}
+G.~P. Huang, A.~I. Mourikis, and S.~I. Roumeliotis, ``{A Quadratic-Complexity
+  Observability-Constrained Unscented Kalman Filter for SLAM},'' {\em IEEE
+  Transactions on Robotics}, vol.~29, pp.~1226--1243, Oct 2013.
+
+\bibitem{Lynen2013}
+S.~Lynen, M.~W. Achtelik, S.~Weiss, M.~Chli, and R.~Siegwart, ``{A Robust and
+  Modular Multi-Sensor Fusion Approach Applied to MAV Navigation},'' in {\em
+  2013 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pp.~3923--3929, Nov 2013.
+
+\bibitem{Rogers2014}
+J.~G. Rogers, J.~R. Fink, and E.~A. Stump, ``{Mapping with a Ground Robot in
+  GPS Denied and Degraded Environments},'' in {\em 2014 American Control
+  Conference}, pp.~1880--1885, June 2014.
+
+\bibitem{Faessler2016}
+M.~Faessler, F.~Fontana, C.~Forster, E.~Mueggler, M.~Pizzoli, and
+  D.~Scaramuzza, ``{Autonomous, Vision-Based Flight and Live Dense 3D Mapping
+  with a Quadrotor Micro Aerial Vehicle},'' {\em Journal of Field Robotics},
+  vol.~33, no.~4, pp.~431--450, 2016.
 
 \end{thebibliography}
