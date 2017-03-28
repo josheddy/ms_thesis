@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  27 MAR 2017 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  28 MAR 2017 10:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -805,10 +805,14 @@ e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 Å
 
 [13
 
-] [14] [15]
+] [14]
+
+LaTeX Warning: Reference `sec:Q_Matrix' on page 15 undefined on input line 80.
+
+[15]
 
 LaTeX Warning: Reference `sec:ukf_formulation' on page 16 undefined on input li
-ne 130.
+ne 133.
 
 [16]) (Exp_Design.tex [17]
 Chapter 4.
@@ -838,13 +842,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 9340 strings out of 493334
- 139446 string characters out of 3136672
- 252049 words of memory out of 3000000
- 12329 multiletter control sequences out of 15000+200000
+ 9341 strings out of 493334
+ 139460 string characters out of 3136672
+ 251049 words of memory out of 3000000
+ 12330 multiletter control sequences out of 15000+200000
  142680 words of font info for 296 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,11n,38p,1770b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,12n,38p,1770b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
@@ -856,7 +860,7 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (23 pages, 215291 bytes).
+Output written on main.pdf (23 pages, 216244 bytes).
 PDF statistics:
  360 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)

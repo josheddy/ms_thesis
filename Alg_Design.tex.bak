@@ -48,7 +48,7 @@ Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated
 \mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
-where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
+where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
 %
 \begin{equation}
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
@@ -66,7 +66,7 @@ These new sigma points are then used to predict the next state and covariance:
 %
 \begin{align}
 \hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\chi}^{i}_{k | k-1} \\
-\mathbf{P}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T},
+\mathbf{P}_{k | k-1} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T} \right) + \mathbf{Q}_{k},
 \end{align}
 %
 where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
@@ -74,12 +74,15 @@ where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
 \begin{align}
 W^{0}_{s} &= \dfrac{\lambda}{n + \lambda} \nonumber \\
 W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right) \\
-W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)} . \nonumber
+W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)} \nonumber
 \end{align}
+%
+and the process noise covariance matrix $\mathbf{Q}_{k}$ is defined in Section~\ref{sec:Q_Matrix}.
+
 
 \subsection{Correction Step}
 
-Once again, $2n + 1$ sigma points are computed as
+Given the belief defined by $\mathbf{x}_{k | k-1}$ and $\mathbf{P}_{k | k-1}$, we compute $2n + 1$ sigma points again as
 %
 \begin{align}
 \mathbf{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} \nonumber\\
