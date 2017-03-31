@@ -1,6 +1,6 @@
 \chapter{Algorithm Design and Implementation} \label{ch:alg_design}
 
-\section{UKF Formulation}
+\section{UKF Formulation} \label{sec:ukf_formulation}
 
 \subsection{Prediction Step}
 
@@ -44,8 +44,8 @@ Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated
 %
 \begin{align}
 \mathbf{\chi}^{0}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} \nonumber\\
-\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}, \quad i = 1, \dots, n \\
-\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, \quad i = n+1, \dots, 2n, \nonumber
+\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}, &&i = 1, \dots, n \\
+\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
 where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
@@ -74,7 +74,7 @@ where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
 \begin{align}
 W^{0}_{s} &= \dfrac{\lambda}{n + \lambda} \nonumber \\
 W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right) \\
-W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)} \nonumber
+W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)}, \quad i = 1, \dots, 2n \nonumber
 \end{align}
 %
 and the process noise covariance matrix $\mathbf{Q}_{k}$ is defined in Section~\ref{sec:Q_Matrix}.
@@ -85,9 +85,9 @@ and the process noise covariance matrix $\mathbf{Q}_{k}$ is defined in Section~\
 Given the belief defined by $\mathbf{x}_{k | k-1}$ and $\mathbf{P}_{k | k-1}$, we compute $2n + 1$ sigma points again as
 %
 \begin{align}
-\mathbf{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} \nonumber\\
-\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i}, \quad i = 1, \dots, n \\
-\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, \quad i = n+1, \dots, 2n. \nonumber
+\mathbf{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} & \nonumber\\
+\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i}, &&i = 1, \dots, n \\
+\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n. \nonumber
 \end{align}
 %
 Next, the sigma points are projected through the observation function $h$ (defined later):
@@ -100,16 +100,16 @@ The predicted measurement $\hat{\mathbf{z}}_{k}$ and measurement noise covarianc
 %
 \begin{align}
 \hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\gamma}^{i}_{k} \\
-\mathbf{P}_{zz} &= \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} 
+\mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R},
 \end{align}
 %
-The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then
+where $\mathbf{R}$ is the measurement noise covariance matrix defined in Section~\ref{sec:R_Matrix}. The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then defined as
 %
 \begin{equation}
 \mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
 \end{equation}
 %
-The Kalman gain $\mathbf{K}_{k}$ is then computed as
+Next, we compute the Kalman gain $\mathbf{K}_{k}$ per the definition
 %
 \begin{equation}
 \mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{-1}_{zz}.
@@ -127,6 +127,44 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 \mathbf{P}_{k | k} = \mathbf{P}_{k | k-1} - \mathbf{K}_{k} \mathbf{P}_{k | k-1} \mathbf{K}_{k}^{T} .
 \end{equation}
 
+\subsection{Process Noise Covariance} \label{sec:Q_Matrix}
+
+The process noise covariance matrix $\mathbf{Q}_{k} \in \mathbb{R}^{n \times n}$ is symmetric, time-dependent, and positive definite. We assume that its nonzero coefficients are a function of multiple integration between the linear accelerations and angular velocities measured using the vehicle's three-axis accelerometer and three-axis gyroscope.
+
+We assume that all axes of the accelerometer and gyroscope exhibit white noise with standard deviations $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that the cross-axis covariance terms (that is, between any two accelerometer axes or between any two gyroscope axes) are zero.
+
+For the sake of convenient estimation, we assume that the accelerometer and gyroscope variance terms grow linearly over each discrete time step $\Delta t$. Thus, in the case of the $x$-axis accelerometer and the $x$-axis gyroscope, the corresponding terms of $\mathbf{Q}_{k}$ would be
+%
+\begin{equation}
+Q_{a_{x},a_{x}} = \sigma_{a} \Delta t
+\end{equation}
+%
+and
+%
+\begin{equation}
+Q_{\omega_{x},\omega_{x}} = \sigma_{\omega} \Delta t ,
+\end{equation}
+%
+respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ per their integral relationships with the variances of the accelerometer and gyroscope.
+
+tk: integral equations
+
+We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption stems, in turn, from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
+
+tk: full Q matrix
+
+
+\subsection{Measurement Noise Covariance} \label{sec:R_Matrix}
+
+The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to approximately constant feature density in the experimental scene. Because the vehicle camera moves about the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariance between raw measurements from PTAM and the ground truth supplied by Vicon.
+
+The resulting $\mathbf{R}$ matrix is as follows:
+%
+\begin{equation}
+\mathbf{R} = \begin{bmatrix}
+tk
+\end{bmatrix}
+\end{equation}
 
 \section{Software Design Considerations}
 
@@ -134,7 +172,7 @@ Much of the impetus for creating the \texttt{kalman\_sense} package came from a 
 
 This object-oriented architecture allows for a certain degree of system agnosticism. By this, we mean that the \texttt{UnscentedKf} class encapsulates the generic mathematics of the UKF without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this knowledge, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other metrics is hidden within subclasses such as \texttt{QuadUkf}.
 
-\texttt{UnscentedKf} behaves in a manner similar to a Java interface in that it requires the extending class to supply functions codifying a process model and an observation model for the system under scrutiny. These two functions, along with $n$ and $m$, form the entirety of what \texttt{UnscentedKf} ``knows about the vehicle.'' All other details, including the fact that the class is being used in a ROS environment, are hidden from \texttt{UnscentedKf}. It is worth noting that \texttt{UnscentedKf}'s only dependency is on the Eigen\footnote{\url{www.eigen.tuxfamily.org}} C++ linear algebra library.
+\texttt{UnscentedKf} behaves in a manner similar to a Java interface in that it requires the extending class to supply functions codifying a process model and an observation model for the system under scrutiny. These two functions, along with $n$ and $m$, form the entirety of what \texttt{UnscentedKf} ``knows about the vehicle.'' All other details, including the fact that the class is being used in a ROS environment, are hidden from \texttt{UnscentedKf}. It is worth noting that \texttt{UnscentedKf}'s only dependency is on the Eigen C++ linear algebra library\footnote{\url{www.eigen.tuxfamily.org}}.
 
 The subclass (\texttt{QuadUkf} for the remainder of this thesis) handles all of the ROS communications for the given system. Specifically, this class has callback functions for receiving sensor data and is responsible for publishing state and covariance estimates. The \texttt{kalman\_sense} \texttt{main} method handles setup and teardown of the necessary ROS publisher and subscriber nodes.
 

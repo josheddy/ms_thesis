@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  28 MAR 2017 10:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  31 MAR 2017 18:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -768,7 +768,7 @@ Package microtype Info: Character `textemdash ' is missing
  [2
 
 ]
-<april_tag.jpg, id=105, 310.15875pt x 310.49333pt>
+<april_tag.jpg, id=113, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 15.
@@ -805,36 +805,27 @@ e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 
 
 [13
 
-] [14]
-
-LaTeX Warning: Reference `sec:Q_Matrix' on page 15 undefined on input line 80.
-
-[15]
-
-LaTeX Warning: Reference `sec:ukf_formulation' on page 16 undefined on input li
-ne 133.
-
-[16]) (Exp_Design.tex [17]
+] [14] [15] [16] [17]) (Exp_Design.tex [18]
 Chapter 4.
-[18
+[19
 
 ]
 
-LaTeX Warning: Reference `fig:sensor_mount' on page 19 undefined on input line 
+LaTeX Warning: Reference `fig:sensor_mount' on page 20 undefined on input line 
 23.
 
-[19]) [20] (main.bbl [21
+[20]) [21] (main.bbl [22
 
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [22]
+ [23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 64624C42095906E8BDCBAC0AD4A885CA;1271.
+(rerunfilecheck)             Checksum: 1BCB7390414EDE01257CDE2D55E9F2AA;1433.
 
 
 LaTeX Warning: There were undefined references.
@@ -842,11 +833,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 9341 strings out of 493334
- 139460 string characters out of 3136672
- 251049 words of memory out of 3000000
- 12330 multiletter control sequences out of 15000+200000
- 142680 words of font info for 296 fonts, out of 3000000 for 9000
+ 9359 strings out of 493334
+ 139678 string characters out of 3136672
+ 252214 words of memory out of 3000000
+ 12333 multiletter control sequences out of 15000+200000
+ 144298 words of font info for 303 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,12n,38p,1770b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -860,9 +851,9 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (23 pages, 216244 bytes).
+Output written on main.pdf (24 pages, 222887 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 34462 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 34478 words of extra memory for PDF output out of 35830 (max. 10000000)
 
