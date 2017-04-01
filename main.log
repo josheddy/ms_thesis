@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  31 MAR 2017 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  31 MAR 2017 20:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -768,7 +768,7 @@ Package microtype Info: Character `textemdash ' is missing
  [2
 
 ]
-<april_tag.jpg, id=113, 310.15875pt x 310.49333pt>
+<april_tag.jpg, id=109, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 15.
@@ -781,7 +781,7 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 25.
 
 [4 <./april_tag.jpg>]) (Prior_Work.tex [5]
 Chapter 2.
@@ -805,7 +805,17 @@ e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 Å
 
 [13
 
-] [14] [15] [16] [17]) (Exp_Design.tex [18]
+]
+
+LaTeX Warning: Reference `Process_Model' on page 14 undefined on input line 61.
+
+
+[14]
+
+LaTeX Warning: Reference `Observation_Model' on page 15 undefined on input line
+ 95.
+
+[15] [16] [17]) (Exp_Design.tex [18]
 Chapter 4.
 [19
 
@@ -825,7 +835,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1BCB7390414EDE01257CDE2D55E9F2AA;1433.
+(rerunfilecheck)             Checksum: F5ED63A4D1A6D77FB9FF0EA59083AD58;1369.
 
 
 LaTeX Warning: There were undefined references.
@@ -833,13 +843,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 9359 strings out of 493334
- 139678 string characters out of 3136672
- 252214 words of memory out of 3000000
- 12333 multiletter control sequences out of 15000+200000
- 144298 words of font info for 303 fonts, out of 3000000 for 9000
+ 9365 strings out of 493334
+ 139759 string characters out of 3136672
+ 252257 words of memory out of 3000000
+ 12335 multiletter control sequences out of 15000+200000
+ 144694 words of font info for 306 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,38p,1770b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,12n,38p,1778b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
@@ -851,9 +861,9 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (24 pages, 222887 bytes).
+Output written on main.pdf (24 pages, 223678 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
+ 381 PDF objects out of 1000 (max. 8388607)
  121 named destinations out of 1000 (max. 500000)
- 34478 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 34470 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -17,18 +17,14 @@ My internship at the NIA brought me into contact with Dr. Danette Allen, head of
   \label{fig:april_tag}
 \end{figure}
 
-During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the Unscented Kalman Filter (UKF). In reading up on the UKF, I took a serious interest in the design of the algorithm. Unlike many other formulations of the Kalman Filter, the UKF has a notably limited dependence on information about the system under scrutiny (this \textit{system agnosticism} is discussed in more detail later on in Chapter~\ref{ch:alg_design}). In learning about the UKF, I became excited by the idea of taking advantage of this trait to build a minimalistic software interface by which a wide variety of disparate systems could be tracked and studied in a ROS framework. I envisioned a kind of ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of researchers and roboticists with little knowledge of state estimation techniques. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package, cementing my interest in unmanned aerial vehicle (UAV) state estimation and controls.
+During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the Unscented Kalman Filter (UKF). As I read more and more on these subjects, I began to take a serious interest in the design of the algorithm underlying the UKF. Unlike many other formulations of the Kalman Filter, the UKF has a notably limited dependence on information about the system under scrutiny (this \textit{system agnosticism} is discussed in more detail in Chapter~\ref{ch:alg_design}). The more I learned about the UKF, the more I became excited about the idea of taking advantage of this limited dependence trait to build a minimalistic software interface by which a wide variety of disparate systems could be tracked and studied in a ROS framework. I envisioned a ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of researchers and roboticists who may have little knowledge of state estimation techniques. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package, cementing my interest in unmanned aerial vehicle (UAV) state estimation processes and controls.
 
-\section{Project Overview}
-% i.	Relationship between Kalman Filtering and Visual-Inertial Navigation (1)
-
-% ii.	Application to this work (0.5)
 
 \section{Organization of this Document}
 
 \subsection*{Prior Work}
 
-In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which this thesis exists.
+In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation processes. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which my thesis exists.
 
 \subsection*{Algorithm Design and Implementation}
 
@@ -48,4 +44,4 @@ We briefly summarize the contributions made in this thesis, the effectiveness of
 
 \subsection*{Future Work}
 
-In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for the algorithm and processes developed herein. Specific examples of heterogeneous fleet management and unmanned traffic management (UTM) are explored.
+In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for the algorithms and processes developed herein. Specific examples of heterogeneous fleet management and unmanned traffic management (UTM) are explored.

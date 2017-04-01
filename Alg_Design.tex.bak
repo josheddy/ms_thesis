@@ -16,7 +16,7 @@ We begin by defining the following quantities:
 %
 The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. 
 
-Let $n = 16$ be the number of state variables (presented in Equation~\ref{eq:state_vars}). We now define the state vector $\mathbf{x} \in \mathbb{R}^{n}$ as:
+We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
@@ -28,6 +28,8 @@ Let $n = 16$ be the number of state variables (presented in Equation~\ref{eq:sta
     \mathbf{a}^{T}
 \right\rbrace ^{T}.
 \end{equation}
+%
+and let $n = 16$ represent the number of state variables.
 
 We now define the following constants:
 %
@@ -48,7 +50,7 @@ Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated
 \mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
-where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is in turn defined here as
+where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
 \begin{equation}
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
@@ -56,7 +58,7 @@ where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n +
 %
 and is computed via Cholesky decomposition.
 
-To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined later):
+To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
 %
 \begin{equation}
 \mathbf{\chi}^{i}_{k | k-1} = f \left( \mathbf{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
@@ -90,7 +92,7 @@ Given the belief defined by $\mathbf{x}_{k | k-1}$ and $\mathbf{P}_{k | k-1}$, w
 \mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n. \nonumber
 \end{align}
 %
-Next, the sigma points are projected through the observation function $h$ (defined later):
+Next, the sigma points are projected through the observation function $h$ (defined in Section~\ref{Observation_Model}):
 %
 \begin{equation}
 \mathbf{\gamma}^{i}_{k} = h \left( \mathbf{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
@@ -129,9 +131,9 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsection{Process Noise Covariance} \label{sec:Q_Matrix}
 
-The process noise covariance matrix $\mathbf{Q}_{k} \in \mathbb{R}^{n \times n}$ is symmetric, time-dependent, and positive definite. We assume that its nonzero coefficients are a function of multiple integration between the linear accelerations and angular velocities measured using the vehicle's three-axis accelerometer and three-axis gyroscope.
+The process noise covariance matrix $\mathbf{Q}_{k} \in \mathbb{R}^{n \times n}$ is symmetric, time-dependent, and positive definite. We assume that its nonzero coefficients are a function of multiple integrations between the linear accelerations and angular velocities measured by the vehicle's 3-axis accelerometer and 3-axis gyroscope.
 
-We assume that all axes of the accelerometer and gyroscope exhibit white noise with standard deviations $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that the cross-axis covariance terms (that is, between any two accelerometer axes or between any two gyroscope axes) are zero.
+We assume that all axes of the accelerometer and gyroscope exhibit white noise with known standard deviations. Let $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that the cross-axis covariance terms (that is, between any two accelerometer axes or between any two gyroscope axes) are zero.
 
 For the sake of convenient estimation, we assume that the accelerometer and gyroscope variance terms grow linearly over each discrete time step $\Delta t$. Thus, in the case of the $x$-axis accelerometer and the $x$-axis gyroscope, the corresponding terms of $\mathbf{Q}_{k}$ would be
 %
@@ -149,7 +151,7 @@ respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ pe
 
 tk: integral equations
 
-We assume no coupling between the angular measurements ($\mathbf{q}
+We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption stems, in turn, from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
 
 tk: full Q matrix
 
