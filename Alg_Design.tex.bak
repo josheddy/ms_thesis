@@ -163,11 +163,11 @@ Q_{\omega_{x},\omega_{x}} = \sigma_{\omega} \Delta t ,
 %
 respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ according to their integral relationships with the acceleration and angular velocity measurements.
 
-tk: integral equations
+\todo{integral equations}
 
 We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption logically stems from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
 
-tk: full Q matrix
+\todo{full Q matrix}
 
 
 \subsection{Measurement Noise Covariance} \label{sec:R_Matrix}
@@ -176,11 +176,7 @@ The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance betwee
 
 The resulting $\mathbf{R}$ matrix is as follows:
 %
-\begin{equation}
-\mathbf{R} = \begin{bmatrix}
-tk
-\end{bmatrix}
-\end{equation}
+\todo{R Matrix}
 
 \section{Software Design Considerations}
 

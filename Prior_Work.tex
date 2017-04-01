@@ -2,7 +2,7 @@
 
 \section{Development of the Unscented Kalman Filter}
 
-tk: OVERVIEW
+\todo{overview paragraph}
 
 In \cite{Julier1997}, Simon Julier and Jeffrey Uhlmann presented a nonlinear estimation approach for the Kalman Filter. Recognizing that most applications for autonomous navigation are fundamentally nonlinear in both their dynamics and their observation models, Julier and Uhlmann proposed the use of a set of discretely sampled ``sigma points'' to determine the mean and covariance of a probability distribution. By recasting the prediction and correction steps of the Kalman Filter in the form of unscented transforms (UTs), this new filter eliminates the need to calculate Jacobian matrices. Julier and Uhlmann argued that for this reason their formulation was easier to implement than the EKF and went on to suggest that its use could supplant the EKF in virtually all applications, linear or nonlinear.
 
@@ -14,7 +14,7 @@ In \cite{Julier2004} Julier and Uhlmann discuss the application of the EKF as an
 
 \section{Visual-Inertial Navigation (VIN)}
 
-tk: OVERVIEW
+\todo{overview paragraph}
 
 In \cite{Klein2007}, Georg Klein and David Murray proposed a method for tracking a handheld camera in unknown environments for use in small augmented reality (AR) workspaces. In contrast to many previous Simultaneous Localization and Mapping (SLAM) approaches to camera tracking, Klein and Murray split the tracking and mapping functions into two separate computational tasks. They performed these tasks on a dual-core computer utilizing parallel threads, with one thread directly tracking erratic motion of the hand-held camera and the other thread constructing a 3D map of the environment. Through the use of this Parallel Tracking and Mapping (PTAM) algorithm, Klein and Murray were able to take advantage of computationally expensive batch-optimization techniques for map reconstruction which were rarely ever used in real-time applications previously. This, in turn, allowed Klein and Murray to forego the common approach of creating a sparse map of high quality features in favor of a much denser map whose features could vary widely in quality. The resulting system could produce detailed maps tracking thousands of features at frame-rate and could recover gracefully from a variety of intermittent tracking failures. That being said, the researchers made certain relaxing assumptions regarding the scenes to be tracked. PTAM, by nature of its orientation toward AR applications, operates best in small, static, planar environments (such as on the surface of a desk or the floor of an office). PTAM's value to the robotics community quickly became obvious due to its independence of \textit{a priori} knowledge of the scene and its minimal initialization procedure (explored in Chapter~\ref{ch:Exp_Design}). 
 
