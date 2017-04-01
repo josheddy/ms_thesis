@@ -1,6 +1,8 @@
-\chapter{Introduction}
+\textit{This document contains several sections with titles placed in parentheses. These sections are included to give added context to this thesis, but are not strictly necessary to the reader's understanding of the technical material being presented.}
 
-\textit{In this document, there are several sections containing titles that have been placed in parentheses. These sections have been included to give added context to this thesis, but are not strictly necessary to the reader's understanding of the material being presented.}
+\clearpage
+
+\chapter{Introduction}
 
 \section{(Personal Motivation)}
 
@@ -8,7 +10,7 @@ I first took an interest in unmanned aircraft in the fall of 2012, my sophomore 
 
 After two years of involvement with the CARD team, I applied for an internship at the National Institute of Aerospace\footnote{\url{http://www.nianet.org}} (NIA). In the summer of 2014, I was part of a team of NIA researchers working on the Flying Donkey Challenge\footnote{\url{http://www.flyingdonkey.org}}, an international engineering competition centered around the idea of ``flying donkeys,'' full-sized autonomous airplanes capable of quickly carrying cargo between small airports in rural Africa. This competition, unfortunately now defunct, was divided into a number of sub-challenges focusing on different technical objectives such as precision landing and collision avoidance. Our team's goal was to design an inexpensive navigation system that could reliably guide unmanned aircraft during a Global Positioning System (GPS) blackout. This project introduced me to many of the technologies and techniques that would later become my major research interests, particularly the Robot Operating System\footnote{\url{http://wiki.ros.org}} (ROS), Kalman Filtering, and sensor fusion.
 
-My internship at the NIA brought me into contact with Dr. Danette Allen, head of the NASA Langley Autonomy Incubator. During the 2014--15 academic year, Dr. Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5-lb packages to distances of up to 2.5~miles (or 5~miles, round trip). In addition, these vehicles were able to land precisely on 1~m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator.
+My internship at the NIA brought me into contact with Dr. Danette Allen, head of the NASA Langley Autonomy Incubator. During my 2014--15 academic year, Dr. Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5-lb packages to distances of up to 2.5~miles (or 5~miles, round trip). In addition, these vehicles were able to land precisely on 1~m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator.
 
 \begin{figure}
   \centering
@@ -17,18 +19,14 @@ My internship at the NIA brought me into contact with Dr. Danette Allen, head of
   \label{fig:april_tag}
 \end{figure}
 
-During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the Unscented Kalman Filter (UKF). In reading up on the UKF, I took a serious interest in the design of the algorithm. Unlike many other formulations of the Kalman Filter, the UKF has a notably limited dependence on information about the system under scrutiny (this \textit{system agnosticism} is discussed in more detail later on in Chapter~\ref{ch:alg_design}). In learning about the UKF, I became excited by the idea of taking advantage of this trait to build a minimalistic software interface by which a wide variety of disparate systems could be tracked and studied in a ROS framework. I envisioned a kind of ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of researchers and roboticists with little knowledge of state estimation techniques. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package, cementing my interest in unmanned aerial vehicle (UAV) state estimation and controls.
+During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the Unscented Kalman Filter (UKF). As I read more and more on these subjects, I became interested in the design of the algorithm underlying the UKF. Unlike many other formulations of the Kalman Filter, the UKF has a notably limited dependence on information about the system under scrutiny (this \textit{system agnosticism} is discussed in more detail in Chapter~\ref{ch:alg_design}). The more I learned about the UKF, the more I became excited about the idea of taking advantage of this limited dependence trait to build a minimalistic software interface by which a wide variety of disparate systems could be tracked and studied in a ROS framework. I envisioned a ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of researchers and roboticists who may have little knowledge of state estimation techniques. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package, cementing my interest in unmanned aerial vehicle (UAV) state estimation processes and controls.
 
-\section{Project Overview}
-% i.	Relationship between Kalman Filtering and Visual-Inertial Navigation (1)
-
-% ii.	Application to this work (0.5)
 
 \section{Organization of this Document}
 
 \subsection*{Prior Work}
 
-In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which this thesis exists.
+In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation processes. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which my thesis exists.
 
 \subsection*{Algorithm Design and Implementation}
 
@@ -48,4 +46,4 @@ We briefly summarize the contributions made in this thesis, the effectiveness of
 
 \subsection*{Future Work}
 
-In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for the algorithm and processes developed herein. Specific examples of heterogeneous fleet management and unmanned traffic management (UTM) are explored.
+In Future Work, we expand upon the possible improvements proposed in Experimental Results and also offer a number of applications for the algorithms and processes developed herein. Specific examples of heterogeneous fleet management and unmanned traffic management (UTM) are explored.

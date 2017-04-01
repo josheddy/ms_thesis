@@ -17,6 +17,8 @@ right=1.5in}
 \usepackage{verbatim}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \linespread{1.6}
 
@@ -50,10 +52,10 @@ right=1.5in}
 
 \begin{comment}
 \tableofcontents
-\listoffigures
+
 \listoftables
 \end{comment}
-
+\listoffigures
 \input{Acronyms.tex}
 
 \input{Introduction.tex}

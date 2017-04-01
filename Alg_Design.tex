@@ -114,7 +114,7 @@ where $\mathbf{R}$ is the measurement noise covariance matrix defined in Section
 Next, we compute the Kalman gain $\mathbf{K}_{k}$ per the definition
 %
 \begin{equation}
-\mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{-1}_{zz}.
+\mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{\,-1}_{zz}.
 \end{equation}
 %
 The corrected state $\hat{\mathbf{x}}_{k | k}$ is then the sum of the predicted state and the innovation weighted by the Kalman gain:
@@ -147,18 +147,18 @@ and
 Q_{\omega_{x},\omega_{x}} = \sigma_{\omega} \Delta t ,
 \end{equation}
 %
-respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ per their integral relationships with the variances of the accelerometer and gyroscope.
+respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ according to their integral relationships with the acceleration and angular velocity measurements.
 
 tk: integral equations
 
-We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption stems, in turn, from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
+We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption logically stems from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
 
 tk: full Q matrix
 
 
 \subsection{Measurement Noise Covariance} \label{sec:R_Matrix}
 
-The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to approximately constant feature density in the experimental scene. Because the vehicle camera moves about the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariance between raw measurements from PTAM and the ground truth supplied by Vicon.
+The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to nearly constant feature density in the experimental scene. Because the vehicle camera moves across the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariances between raw measurements from PTAM and the ground truth supplied by Vicon.
 
 The resulting $\mathbf{R}$ matrix is as follows:
 %
@@ -172,7 +172,7 @@ tk
 
 Much of the impetus for creating the \texttt{kalman\_sense} package came from a desire to create a generic UKF framework for estimating the state of an arbitrary system using any number of relative and absolute sensors. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented manner around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of methods performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in a generic manner to enable easy extension of \texttt{UnscentedKf} by subclasses containing concrete implementations of various systems. Currently, the package contains only one subclass, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to estimating the state of a quadcopter or other rotorcraft UAV.
 
-The \texttt{UnscentedKf} class encapsulates the generic mathematics of the UKF without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this knowledge, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other metrics is hidden within subclasses such as \texttt{QuadUkf}.
+The \texttt{UnscentedKf} class encapsulates the generic mathematics of the UKF without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this information, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other metrics is hidden within subclasses such as \texttt{QuadUkf}.
 
 \texttt{UnscentedKf} behaves in a manner similar to a Java interface in that it requires the extending class to supply functions codifying a process model and an observation model for the system under scrutiny. These two functions, along with $n$ and $m$, form the entirety of what \texttt{UnscentedKf} ``knows'' about the vehicle. All other details, including the fact that the class is being used in a ROS environment, are hidden from \texttt{UnscentedKf}. It is worth noting that \texttt{UnscentedKf}'s only dependency is on the Eigen C++ linear algebra library\footnote{\url{www.eigen.tuxfamily.org}}.
 
