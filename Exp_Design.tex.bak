@@ -11,15 +11,15 @@ This system depends upon two sensors: a global-shutter camera and an IMU. The IM
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{sensor_mount_top}
-        \caption{Top view.}
+        \caption{Top view of sensor mount. Left: Phidgets IMU. Right: mvBlueFOX camera.}
     \end{subfigure}%
     ~ 
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{sensor_mount_bottom}
-        \caption{Bottom view.}
+        \caption{Bottom view showing linear braking mechanism.}
     \end{subfigure}
-    \caption{The 3D-printed sensor mount. In the top view, the Phidgets IMU is on the left and the mvBlueFOX camera is on the right.}
+    \caption[3D-printed sensor mount]{3D-printed sensor mount.}
     \label{fig:sensor_mount}
 \end{figure}
 
