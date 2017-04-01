@@ -17,7 +17,7 @@ right=1.5in}
 \usepackage{verbatim}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{caption}
+\usepackage[margin=0.1\textwidth]{caption}
 \usepackage{subcaption}
 
 \linespread{1.6}
