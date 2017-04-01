@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  1 APR 2017 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  1 APR 2017 13:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -741,39 +741,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (Abstract.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 53.
- (main.lof
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 2.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 2.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 2.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 2.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 2.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 2.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 )
-\tf@lof=\write4
-\openout4 = `main.lof'.
-
- (Acronyms.texpdfTeX warning (ext4): destination with the same identifier (name
-{page.1}) has been already used, duplicate ignored
+(Acknowledgements.texpdfTeX warning (ext4): destination with the same identifie
+r (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            *{Acronyms} [1
+            *{Acknowledgments} [1
+
+]) [2
+
+] (main.toc
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+ [3
+
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [4] (main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+ [5
 
 ]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
-) (Introduction.tex [2
+(main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
-] [3]
+ (Acronyms.tex [6
+
+]) (Introduction.tex [7
+
+] [8]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
@@ -797,11 +814,11 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [4
+ [9
 
 
 ]
-<april_tag.jpg, id=131, 310.15875pt x 310.49333pt>
+<april_tag.jpg, id=189, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 17.
@@ -812,14 +829,14 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [5 <./april_tag.jpg>]
+ [10 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 27.
- [6]) (Prior_Work.tex [7]
+ [11]) (Prior_Work.tex [12]
 Chapter 2.
-[8
+[13
 
-] [9] [10] [11] [12]) [13] (Alg_Design.tex [14]
+] [14] [15] [16] [17]) [18] (Alg_Design.tex [19]
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
@@ -835,31 +852,20 @@ Underfull \hbox (badness 3623) in paragraph at lines 17--17
 e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 Å
  []
 
-[15
+[20
 
-] [16] [17] [18] [19] [20]) (Exp_Design.tex [21]
+] [21] [22] [23] [24] [25]) (Exp_Design.tex [26]
 Chapter 4.
-[22
+[27
 
-]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \begin{figure}[H]
-                     
-Option `H' ignored and `p' used.
-
-<sensor_mount_top.jpg, id=293, 1606.0pt x 1204.5pt>
+] <sensor_mount_top.jpg, id=353, 1606.0pt x 1204.5pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
- <use sensor_mount_top.jpg>
+
+<use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 13.
 (pdftex.def)             Requested size: 158.9946pt x 119.24402pt.
 
-<sensor_mount_bottom.jpg, id=294, 1606.0pt x 1204.5pt>
+<sensor_mount_bottom.jpg, id=354, 1606.0pt x 1204.5pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
@@ -870,27 +876,35 @@ Overfull \hbox (3.43825pt too wide) in paragraph at lines 11--22
  [][]  [] 
  []
 
-[23]) [24] [25 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] (main.bbl
-[26
+[28 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] [29])
+(Conclusions.tex [30]
+Chapter 5.
+) (Future_Work.tex [31
+
+]
+Chapter 6.
+) [32
+
+] (main.bbl [33
 
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
- [27]
+ [34]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 211BC681D0501C3EC4D4087EF098276B;1509.
+(rerunfilecheck)             Checksum: C302E8F4CDD4BDBB1BBE5A089F2D499B;1601.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 10487 strings out of 493334
- 160131 string characters out of 3136672
- 273292 words of memory out of 3000000
- 13422 multiletter control sequences out of 15000+200000
- 149593 words of font info for 314 fonts, out of 3000000 for 9000
+ 10530 strings out of 493334
+ 160567 string characters out of 3136672
+ 273293 words of memory out of 3000000
+ 13425 multiletter control sequences out of 15000+200000
+ 149863 words of font info for 317 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,12n,40p,1778b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -904,9 +918,9 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (28 pages, 10092947 bytes).
+Output written on main.pdf (35 pages, 10107469 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 40640 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 40656 words of extra memory for PDF output out of 42996 (max. 10000000)
 

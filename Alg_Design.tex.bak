@@ -97,8 +97,14 @@ Next, the sigma points are projected through the observation function $h$ (defin
 \begin{equation}
 \mathbf{\gamma}^{i}_{k} = h \left( \mathbf{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
+
+Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read into \texttt{kalman\_sense} as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
 %
-The predicted measurement $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
+\begin{equation}
+\mathbf{z}_{k} = \left\lbrace x_{meas}, y_{meas}, z_{meas}, q_{x, meas}, q_{y, meas}, q_{z, meas}, q_{w, meas} \right\rbrace ^{T} .
+\end{equation}
+%
+The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
 %
 \begin{align}
 \hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\gamma}^{i}_{k} \\
@@ -135,7 +141,7 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsubsection{Quaternion Continuity Correction}
 
-
+\subsubsection{Pseudovelocity Correction}
 
 \subsection{Process Noise Covariance} \label{sec:Q_Matrix}
 

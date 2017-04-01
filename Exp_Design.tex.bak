@@ -17,7 +17,7 @@ This system depends upon two sensors: a global-shutter camera and an IMU. The IM
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{sensor_mount_bottom}
-        \caption{Bottom view showing linear braking mechanism.}
+        \caption{Bottom view of linear braking mechanism.}
     \end{subfigure}
     \caption[3D-printed sensor mount]{3D-printed sensor mount.}
     \label{fig:sensor_mount}
