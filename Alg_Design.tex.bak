@@ -178,7 +178,7 @@ Here $R^{g}_{b} \left( \mathbf{q}_{k-1} \right)$ is the rotation matrix represen
 
 The process noise covariance matrix $\mathbf{Q}_{k} \in \mathbb{R}^{n \times n}$ is symmetric, time-dependent, and positive definite. We assume that its nonzero coefficients are a function of multiple integrations between the linear accelerations and angular velocities measured by the vehicle's 3-axis accelerometer and 3-axis gyroscope.
 
-We assume that all axes of the accelerometer and gyroscope exhibit white noise with known standard deviations $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that the cross-axis covariance terms (that is, between any two accelerometer axes or between any two gyroscope axes) are zero.
+We assume that all axes of the accelerometer and gyroscope exhibit white noise with known standard deviations $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that no cross-axis covariance exists between any two accelerometer axes or any two gyroscope axes.
 
 For the sake of convenient estimation, we assume that the accelerometer and gyroscope variance terms grow linearly over each discrete time step $\Delta t$. Thus, in the case of the $x$-axis accelerometer and the $x$-axis gyroscope, the corresponding terms of $\mathbf{Q}_{k}$ would be
 %
@@ -203,7 +203,7 @@ We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{
 
 \subsection{Measurement Noise Covariance Matrix} \label{sec:R_Matrix}
 
-The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to nearly constant feature density in the experimental scene. Because the vehicle camera moves across the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariances between raw measurements from PTAM and the ground truth supplied by Vicon.
+The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance matrix $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to nearly constant feature density in the experimental scene. Because the vehicle camera moves across the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariances between raw measurements from PTAM and the ``ground truth'' supplied by a Vicon motion capture system\footnote{\url{https://www.vicon.com/}}.
 
 The resulting $\mathbf{R}$ matrix is as follows:
 %

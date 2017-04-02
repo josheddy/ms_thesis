@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  1 APR 2017 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  2 APR 2017 00:33
 entering extended mode
 **./main.tex
 (main.tex
@@ -541,6 +541,14 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count118
 \c@subtable=\count119
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen134
+\WF@size=\dimen135
+\c@WF@wrappedlines=\count120
+\WF@box=\box28
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty"
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
@@ -553,10 +561,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks25
-\XKV@tempa@toks=\toks26
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count120
+\XKV@depth=\count121
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
@@ -581,15 +589,15 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
 x"
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen134
-\pgfutil@tempdimb=\dimen135
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen136
+\pgfutil@tempdimb=\dimen137
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
 sts.tex"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
 "
-\pgfutil@abb=\box28
+\pgfutil@abb=\box29
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -604,30 +612,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
 "
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
 ode.tex"
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks31
 ))
-\pgf@x=\dimen136
-\pgf@y=\dimen137
-\pgf@xa=\dimen138
-\pgf@ya=\dimen139
-\pgf@xb=\dimen140
-\pgf@yb=\dimen141
-\pgf@xc=\dimen142
-\pgf@yc=\dimen143
+\pgf@x=\dimen138
+\pgf@y=\dimen139
+\pgf@xa=\dimen140
+\pgf@ya=\dimen141
+\pgf@xb=\dimen142
+\pgf@yb=\dimen143
+\pgf@xc=\dimen144
+\pgf@yc=\dimen145
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count121
-\c@pgf@countb=\count122
-\c@pgf@countc=\count123
-\c@pgf@countd=\count124
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
+\c@pgf@counta=\count122
+\c@pgf@countb=\count123
+\c@pgf@countc=\count124
+\c@pgf@countd=\count125
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -645,8 +653,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
 code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count125
-\pgfsyssoftpath@bigbuffer@items=\count126
+\pgfsyssoftpath@smallbuffer@items=\count126
+\pgfsyssoftpath@bigbuffer@items=\count127
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
 code.tex"
@@ -660,12 +668,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
 "
-\pgfmath@dimen=\dimen144
-\pgfmath@count=\count127
-\pgfmath@box=\box29
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@dimen=\dimen146
+\pgfmath@count=\count128
+\pgfmath@box=\box30
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
 tex"
@@ -686,57 +694,57 @@ code.tex")
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
 erarithmetics.code.tex")))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count128
+\c@pgfmathroundto@lastzeros=\count129
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
 de.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen145
-\pgf@picmaxx=\dimen146
-\pgf@picminy=\dimen147
-\pgf@picmaxy=\dimen148
-\pgf@pathminx=\dimen149
-\pgf@pathmaxx=\dimen150
-\pgf@pathminy=\dimen151
-\pgf@pathmaxy=\dimen152
-\pgf@xx=\dimen153
-\pgf@xy=\dimen154
-\pgf@yx=\dimen155
-\pgf@yy=\dimen156
-\pgf@zx=\dimen157
-\pgf@zy=\dimen158
+\pgf@picminx=\dimen147
+\pgf@picmaxx=\dimen148
+\pgf@picminy=\dimen149
+\pgf@picmaxy=\dimen150
+\pgf@pathminx=\dimen151
+\pgf@pathmaxx=\dimen152
+\pgf@pathminy=\dimen153
+\pgf@pathmaxy=\dimen154
+\pgf@xx=\dimen155
+\pgf@xy=\dimen156
+\pgf@yx=\dimen157
+\pgf@yy=\dimen158
+\pgf@zx=\dimen159
+\pgf@zy=\dimen160
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
 ruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen159
-\pgf@path@lasty=\dimen160
+\pgf@path@lastx=\dimen161
+\pgf@path@lasty=\dimen162
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
 .code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen161
-\pgf@shorten@start@additional=\dimen162
+\pgf@shorten@end@additional=\dimen163
+\pgf@shorten@start@additional=\dimen164
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
 de.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box30
-\pgf@hbox=\box31
-\pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count129
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count130
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
 ate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen163
+\pgflinewidth=\dimen165
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
 ations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen164
-\pgf@pt@y=\dimen165
-\pgf@pt@temp=\dimen166
+\pgf@pt@x=\dimen166
+\pgf@pt@y=\dimen167
+\pgf@pt@temp=\dimen168
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
 e.tex"
@@ -753,13 +761,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
 de.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen167
+\pgfarrowsep=\dimen169
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
 e.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen168
-\pgf@sys@shading@range@num=\count130
+\pgf@max=\dimen170
+\pgf@sys@shading@range@num=\count131
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
 e.tex"
@@ -768,7 +776,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
 code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box33
+\pgfexternal@startupbox=\box34
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
 de.tex"
@@ -785,7 +793,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
 e.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box34
+\pgfnodeparttextbox=\box35
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
 tex"
@@ -794,8 +802,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
 -0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen169
-\pgf@nodesepend=\dimen170
+\pgf@nodesepstart=\dimen171
+\pgf@nodesepend=\dimen172
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
 -1-18.sty"
@@ -810,10 +818,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen171
-\pgffor@skip=\dimen172
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+\pgffor@iter=\dimen173
+\pgffor@skip=\dimen174
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
 e.tex"
@@ -822,32 +830,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
 dlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count131
-\pgfplotmarksize=\dimen173
+\pgf@plot@mark@count=\count132
+\pgfplotmarksize=\dimen175
 )
-\tikz@lastx=\dimen174
-\tikz@lasty=\dimen175
-\tikz@lastxsaved=\dimen176
-\tikz@lastysaved=\dimen177
-\tikzleveldistance=\dimen178
-\tikzsiblingdistance=\dimen179
-\tikz@figbox=\box35
-\tikz@figbox@bg=\box36
-\tikz@tempbox=\box37
-\tikz@tempbox@bg=\box38
-\tikztreelevel=\count132
-\tikznumberofchildren=\count133
-\tikznumberofcurrentchild=\count134
-\tikz@fig@count=\count135
+\tikz@lastx=\dimen176
+\tikz@lasty=\dimen177
+\tikz@lastxsaved=\dimen178
+\tikz@lastysaved=\dimen179
+\tikzleveldistance=\dimen180
+\tikzsiblingdistance=\dimen181
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count133
+\tikznumberofchildren=\count134
+\tikznumberofcurrentchild=\count135
+\tikz@fig@count=\count136
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
 e.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count136
-\pgfmatrixcurrentcolumn=\count137
-\pgf@matrix@numberofcolumns=\count138
+\pgfmatrixcurrentrow=\count137
+\pgfmatrixcurrentcolumn=\count138
+\pgf@matrix@numberofcolumns=\count139
 )
-\tikz@expandcount=\count139
+\tikz@expandcount=\count140
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarytopaths.code.tex"
@@ -859,71 +867,71 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count140
-\calc@Bcount=\count141
-\calc@Adimen=\dimen180
-\calc@Bdimen=\dimen181
+\calc@Acount=\count141
+\calc@Bcount=\count142
+\calc@Adimen=\dimen182
+\calc@Bdimen=\dimen183
 \calc@Askip=\skip48
 \calc@Bskip=\skip49
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count142
+\calc@Ccount=\count143
 \calc@Cskip=\skip50
 )
-\c@@todonotes@numberoftodonotes=\count143
+\c@@todonotes@numberoftodonotes=\count144
 )
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 33.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 33.
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 34.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 35.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 36.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 36.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 36.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 36.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -964,17 +972,17 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count144
-\scratchdimen=\dimen182
-\scratchbox=\box39
-\nofMPsegments=\count145
-\nofMParguments=\count146
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count147
-\MPscratchDim=\dimen183
-\MPnumerator=\count148
-\makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count145
+\scratchdimen=\dimen184
+\scratchbox=\box40
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count148
+\MPscratchDim=\dimen185
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -988,7 +996,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \microtypecontext on input line 35.
+LaTeX Info: Redefining \microtypecontext on input line 36.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1002,8 +1010,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 35.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring ON on input line 36.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1011,11 +1019,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count150
+\c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (main.out) (main.out)
 \@outlinefile=\write4
@@ -1027,28 +1035,29 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 45
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 46
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 45.
+(Font)              scaled to size 11.03998pt on input line 46.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 45.
+(Font)              scaled to size 8.27998pt on input line 46.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 45.
+(Font)              scaled to size 6.43999pt on input line 46.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 45.
+(Font)              scaled to size 11.03998pt on input line 46.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 45.
+(Font)              scaled to size 8.27998pt on input line 46.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 45.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+(Font)              scaled to size 6.43999pt on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1056,7 +1065,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1135,24 +1144,19 @@ Package microtype Info: Character `textemdash ' is missing
  [3
 
 ]
-<april_tag.jpg, id=187, 310.15875pt x 310.49333pt>
-File: april_tag.jpg Graphic file (type jpg)
- <use april_tag.jpg>
-Package pdftex.def Info: april_tag.jpg used on input line 15.
-(pdftex.def)             Requested size: 198.7425pt x 198.95667pt.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [4 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 25.
- [5]) (Prior_Work.tex [6]
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 18.
+
+[4] [5]) (Prior_Work.tex [6]
 Chapter 2.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 6.
+ine 5.
 [7
 
 ] [8] [9] [10] [11]) [12] (Alg_Design.tex [13]
@@ -1185,28 +1189,110 @@ LaTeX Warning: Marginpar on page 18 moved.
 
 [18] [19] [20]) (Exp_Design.tex [21]
 Chapter 4.
-[22
-
-] <sensor_mount_top.jpg, id=368, 1606.0pt x 1204.5pt>
+<sensor_mount_top.jpg, id=360, 1606.0pt x 1204.5pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
-
-<use sensor_mount_top.jpg>
-Package pdftex.def Info: sensor_mount_top.jpg used on input line 13.
+ <use sensor_mount_top.jpg>
+Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
 (pdftex.def)             Requested size: 158.9946pt x 119.24402pt.
 
-<sensor_mount_bottom.jpg, id=369, 1606.0pt x 1204.5pt>
+<sensor_mount_bottom.jpg, id=361, 1606.0pt x 1204.5pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
-Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 19.
+Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 17.
 (pdftex.def)             Requested size: 158.9946pt x 119.24402pt.
 
-Overfull \hbox (3.43825pt too wide) in paragraph at lines 11--22
+Overfull \hbox (3.43825pt too wide) in paragraph at lines 9--20
  [][]  [] 
  []
 
-[23 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] [24])
-(Conclusions.tex [25]
+<april_tag.jpg, id=364, 310.15875pt x 310.49333pt>
+File: april_tag.jpg Graphic file (type jpg)
+ <use april_tag.jpg>
+Package pdftex.def Info: april_tag.jpg used on input line 28.
+(pdftex.def)             Requested size: 139.12216pt x 139.27061pt.
+ [22
+
+]
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 33
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 34
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 36
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 37
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 38
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 39
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 45
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 46
+.
+
+[23 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>]
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 47
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 48
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 49
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 50
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 51
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 52
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 53
+.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 57
+.
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 59--60
+\T1/futs/m/n/10.95 (+20) signed to char-ac-ter-ize the UKF frame-
+ []
+
+[24 <./april_tag.jpg>]) (Conclusions.tex [25]
 Chapter 5.
 ) (Future_Work.tex [26
 
@@ -1245,35 +1331,48 @@ LaTeX Warning: Marginpar on page 27 moved.
 
 
 ]) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8872275B83E4B1CAC5579642C1ABAD27;1607.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: F4A44C8843D0E123FBB2FCF19706FE82;1607
+(rerunfilecheck)             After:  8872275B83E4B1CAC5579642C1ABAD27;1607.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 21059 strings out of 493334
- 385788 string characters out of 3136672
- 494723 words of memory out of 3000000
- 23712 multiletter control sequences out of 15000+200000
- 150133 words of font info for 320 fonts, out of 3000000 for 9000
+ 21115 strings out of 493334
+ 386556 string characters out of 3136672
+ 495934 words of memory out of 3000000
+ 23766 multiletter control sequences out of 15000+200000
+ 150027 words of font info for 318 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1778b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
-:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (35 pages, 10118935 bytes).
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C:/
+Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (35 pages, 10119377 bytes).
 PDF statistics:
  514 PDF objects out of 1000 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)

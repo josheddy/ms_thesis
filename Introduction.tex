@@ -10,13 +10,6 @@ After two years of involvement with the CARD team, I applied for an internship a
 
 Through my internship at the NIA, I met Dr. Danette Allen, head of the NASA Langley Autonomy Incubator. During my 2014--15 academic year, Dr. Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5-lb packages to distances of up to 2.5~miles (or 5~miles, round trip). In addition, these vehicles were able to land precisely on 1~m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator.
 
-\begin{figure}
-  \centering
-    \includegraphics[width=0.5\textwidth]{april_tag}
-  \caption[Example April tag]{Example of an April tag from the \texttt{apriltags\_ros} ROS package.}
-  \label{fig:april_tag}
-\end{figure}
-
 During the summer of 2015, I began the research that eventually evolved into my thesis project, studying Visual-Inertial Navigation (VIN) and the Unscented Kalman Filter (UKF). As I read more and more on these subjects, I became interested in the design of the algorithm underlying the UKF. Unlike many other formulations of the Kalman Filter, the UKF has a notably limited dependence on information about the system under scrutiny (this \textit{system agnosticism} is discussed in more detail in Chapter~\ref{ch:Alg_Design}). The more I learned about the UKF, the more I became excited about the idea of taking advantage of this limited dependence trait to build a minimalistic software interface by which a wide variety of disparate systems could be tracked and studied in a ROS framework. I envisioned a ``one-stop shopping'' experience for massively reusable and customizable filtering profiles that could fulfill the needs of researchers and roboticists who may have little knowledge of state estimation techniques. This vision eventually drove my development of the \texttt{kalman\_sense} ROS package, cementing my interest in unmanned aerial vehicle (UAV) state estimation processes and controls.
 
 
