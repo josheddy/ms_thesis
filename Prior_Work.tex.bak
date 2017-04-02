@@ -2,8 +2,8 @@
 
 \section{Development of Unscented Kalman Filter}
 
-Since the late 1990s, the Unscented Kalman Filter (UKF) has been a frequent topic of interest in the field of guidance, navigation, and controls. This extension of the Kalman filter is often appealing to roboticists and controls engineers for two reasons:
-
+Since the late 1990s, the Unscented Kalman Filter (UKF) has been a frequent topic of interest in the field of guidance, navigation, and controls. This extension of the Kalman Filter is often appealing to roboticists and controls engineers for two reasons:
+\todo{overview}
 \begin{enumerate}
 \item Using the unscented transform (described in 
 \end{enumerate}
@@ -16,7 +16,7 @@ In \cite{Julier2002}, Julier describes a novel approach to modifying the unscent
 
 In \cite{Julier2004} Julier and Uhlmann discuss the application of the EKF as an estimation algorithm and the associated difficulties in doing so. Because the EKF is fundamentally a linearizing approach to estimation, its effectiveness is thus tied to the veracity of the local linearity assumption for the system under scrutiny. These limitations led to the development of the UT for nonlinear applications. In this paper, Julier and Uhlmann describe the UT and its benefits, including easier implementation and improved accuracy. The UT offers greater accuracy and reliability by applying higher order information, using sigma point sampling, to the traditional mean and covariance information associated with linear applications. The authors provide examples, which may be tailored to various process and observation models, that show how the UT overcomes the limitations of the EKF.
 
-\section{Visual-Inertial Navigation (VIN)}
+\section{Visual-Inertial Navigation}
 
 \todo{overview paragraph}
 

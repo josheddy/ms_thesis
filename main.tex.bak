@@ -43,6 +43,8 @@
 
 \maketitle
 
+\pagenumbering{roman}
+
 \input{Abstract.tex}
 
 \input{Acknowledgements.tex}
@@ -54,6 +56,7 @@
 \listoffigures
 
 \input{Acronyms.tex}
+\pagenumbering{arabic}
 
 \input{Introduction.tex}
 
