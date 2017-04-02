@@ -18,6 +18,11 @@ S.~J. Julier and J.~K. Uhlmann, ``{Unscented Filtering and Nonlinear
   Estimation},'' in {\em Invited Paper Proceedings of the IEEE}, vol.~92,
   pp.~401--422, March 2004.
 
+\bibitem{Donavanik2016}
+D.~Donavanik, A.~Hardt-Stremayr, G.~Gremillion, S.~Weiss, and W.~Nothwang,
+  ``{Multi-Sensor Fusion Techniques for State Estimation of Micro Air
+  Vehicles},'' 2016.
+
 \bibitem{Klein2007}
 G.~Klein and D.~Murray, ``{Parallel Tracking and Mapping for Small {AR}
   Workspaces},'' in {\em Proc. Sixth {IEEE} and {ACM} International Symposium

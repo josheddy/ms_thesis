@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  2 APR 2017 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  2 APR 2017 12:38
 entering extended mode
 **./main.tex
 (main.tex
@@ -880,58 +880,58 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count144
 )
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 34.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 34.
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 35.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 35.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 36.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 36.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 37.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 37.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 36.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 37.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 37.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 36.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 37.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 37.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 36.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 37.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -996,7 +996,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \microtypecontext on input line 36.
+LaTeX Info: Redefining \microtypecontext on input line 37.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1011,7 +1011,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 37.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1021,9 +1021,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (main.out) (main.out)
 \@outlinefile=\write4
@@ -1039,25 +1039,25 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 46
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 47
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 46.
+(Font)              scaled to size 11.03998pt on input line 47.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 46.
+(Font)              scaled to size 8.27998pt on input line 47.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 46.
+(Font)              scaled to size 6.43999pt on input line 47.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 46.
+(Font)              scaled to size 11.03998pt on input line 47.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 46.
+(Font)              scaled to size 8.27998pt on input line 47.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 46.
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+(Font)              scaled to size 6.43999pt on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1065,7 +1065,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1114,13 +1114,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
  (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2 
-     [1
+l.1 \chapter
+            {Introduction} [1
 
-] [2]
+]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1141,7 +1141,7 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [3
+ [2
 
 ]
 Package microtype Info: Character `textendash ' is missing
@@ -1150,16 +1150,21 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+
+[3]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 18.
-
-[4] [5]) (Prior_Work.tex [6]
+ [4]) (Prior_Work.tex [5]
 Chapter 2.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 5.
-[7
+[6
 
-] [8] [9] [10] [11]) [12] (Alg_Design.tex [13]
+] [7]
+Overfull \hbox (7.25548pt too wide) in paragraph at lines 17--19
+\T1/futs/m/n/10.95 (-20) Recent ad-vance-ments in com-put-ing power have given 
+rise to a plethora of once-inaccessible
+ []
+
+[8] [9] [10] [11]) (Alg_Design.tex [12] [13]
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
@@ -1178,6 +1183,9 @@ e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 Å
 [14
 
 ] [15] [16] [17]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 156.
+
 
 LaTeX Warning: Marginpar on page 18 moved.
 
@@ -1189,13 +1197,13 @@ LaTeX Warning: Marginpar on page 18 moved.
 
 [18] [19] [20]) (Exp_Design.tex [21]
 Chapter 4.
-<sensor_mount_top.jpg, id=360, 1606.0pt x 1204.5pt>
+<sensor_mount_top.jpg, id=366, 1606.0pt x 1204.5pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
  <use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
 (pdftex.def)             Requested size: 158.9946pt x 119.24402pt.
 
-<sensor_mount_bottom.jpg, id=361, 1606.0pt x 1204.5pt>
+<sensor_mount_bottom.jpg, id=367, 1606.0pt x 1204.5pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
@@ -1206,7 +1214,7 @@ Overfull \hbox (3.43825pt too wide) in paragraph at lines 9--20
  [][]  [] 
  []
 
-<april_tag.jpg, id=364, 310.15875pt x 310.49333pt>
+<april_tag.jpg, id=370, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 28.
@@ -1292,14 +1300,18 @@ Underfull \hbox (badness 1077) in paragraph at lines 59--60
 \T1/futs/m/n/10.95 (+20) signed to char-ac-ter-ize the UKF frame-
  []
 
-[24 <./april_tag.jpg>]) (Conclusions.tex [25]
+[24 <./april_tag.jpg>]) (Exp_Results.tex [25]
 Chapter 5.
-) (Future_Work.tex [26
+) (Conclusions.tex [26
 
 ]
 Chapter 6.
+) (Future_Work.tex [27
 
-LaTeX Warning: Marginpar on page 27 moved.
+]
+Chapter 7.
+
+LaTeX Warning: Marginpar on page 28 moved.
 
 
 Overfull \hbox (4.93048pt too wide) in paragraph at lines 9--9
@@ -1323,58 +1335,45 @@ Overfull \hbox (4.93048pt too wide) in paragraph at lines 9--9
 
 )
 
-LaTeX Warning: Marginpar on page 27 moved.
+LaTeX Warning: Marginpar on page 28 moved.
 
-[27
+[28
 
-] (main.bbl [28
+] (main.bbl [29
 
 
-]) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: F4A44C8843D0E123FBB2FCF19706FE82;1607
-(rerunfilecheck)             After:  8872275B83E4B1CAC5579642C1ABAD27;1607.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E655F44E204BC97A307E89CD1057A341;1664.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 21115 strings out of 493334
- 386556 string characters out of 3136672
- 495934 words of memory out of 3000000
- 23766 multiletter control sequences out of 15000+200000
- 150027 words of font info for 318 fonts, out of 3000000 for 9000
+ 21117 strings out of 493334
+ 386492 string characters out of 3136672
+ 493700 words of memory out of 3000000
+ 23760 multiletter control sequences out of 15000+200000
+ 150423 words of font info for 321 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,77p,1778b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.23} has been referenced but does n
-ot exist, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C:/
-Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (35 pages, 10119377 bytes).
+ 62i,12n,77p,1760b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
+:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (36 pages, 10123049 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
- 40668 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 524 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 40676 words of extra memory for PDF output out of 42996 (max. 10000000)
 

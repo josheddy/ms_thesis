@@ -19,6 +19,7 @@
 \usepackage{todonotes} % DELETE WHEN FINISHED
 
 \linespread{1.6}
+%\linespread{1.15}
 
 \hypersetup{
     pdffitwindow=false,     % window fit to page when opened
@@ -44,7 +45,7 @@
 
 \maketitle
 
-\pagenumbering{roman}
+\pagenumbering{roman} % 
 
 \input{Abstract.tex}
 
@@ -57,20 +58,14 @@
 \listoffigures
 
 \input{Acronyms.tex}
-\pagenumbering{arabic}
+\pagenumbering{arabic} % Starts arabic pagination in Acronyms chapter.
 
 \input{Introduction.tex}
-
 \input{Prior_Work.tex}
-
 \input{Alg_Design.tex}
-
 \input{Exp_Design.tex}
-
-%\chapter{Experimental Results}
-
+\input{Exp_Results.tex}
 \input{Conclusions.tex}
-
 \input{Future_Work.tex}
 
 \clearpage
