@@ -1,7 +1,7 @@
 \documentclass[11 pt]{report}
 
 \usepackage{geometry}
-\geometry{letterpaper,top=1.25in,bottom=1.25in,left=1.5in,right=1.5in}
+\geometry{letterpaper, top=1.25in, bottom=1.25in, left=1.5in, right=1.5in}
 
 \usepackage{graphicx}
 \usepackage{microtype}
@@ -15,7 +15,7 @@
 \usepackage[margin=0.1\textwidth]{caption}
 \usepackage{subcaption}
 
-\usepackage{todonotes}
+\usepackage{todonotes} % DELETE WHEN FINISHED
 
 \linespread{1.6}
 
@@ -49,7 +49,7 @@
 
 \tableofcontents
 
-\listoftables
+%\listoftables % DELETE IF UNUSED
 
 \listoffigures
 
@@ -75,5 +75,6 @@
 \bibliography{bibliography}
 
 %\appendix
+% http://tex.stackexchange.com/questions/49643/making-appendix-for-thesis
 
 \end{document}

@@ -1,8 +1,12 @@
 \chapter{Prior Work}
 
-\section{Development of the Unscented Kalman Filter}
+\section{Development of Unscented Kalman Filter}
 
-\todo{overview paragraph}
+Since the late 1990s, the Unscented Kalman Filter (UKF) has been a frequent topic of interest in the field of guidance, navigation, and controls. This extension of the Kalman filter is often appealing to roboticists and controls engineers for two reasons:
+\todo{overview}
+\begin{enumerate}
+\item Using the unscented transform (described in 
+\end{enumerate}
 
 In \cite{Julier1997}, Simon Julier and Jeffrey Uhlmann presented a nonlinear estimation approach for the Kalman Filter. Recognizing that most applications for autonomous navigation are fundamentally nonlinear in both their dynamics and their observation models, Julier and Uhlmann proposed the use of a set of discretely sampled ``sigma points'' to determine the mean and covariance of a probability distribution. By recasting the prediction and correction steps of the Kalman Filter in the form of unscented transforms (UTs), this new filter eliminates the need to calculate Jacobian matrices. Julier and Uhlmann argued that for this reason their formulation was easier to implement than the EKF and went on to suggest that its use could supplant the EKF in virtually all applications, linear or nonlinear.
 

@@ -14,9 +14,7 @@ We begin by defining the following quantities:
 \mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. 
-
-We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
@@ -101,7 +99,7 @@ Next, the sigma points are projected through the observation function $h$ (defin
 Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read into \texttt{kalman\_sense} as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
 %
 \begin{equation}
-\mathbf{z}_{k} = \left\lbrace x_{meas}, y_{meas}, z_{meas}, q_{x, meas}, q_{y, meas}, q_{z, meas}, q_{w, meas} \right\rbrace ^{T} .
+\mathbf{z}_{k} = \left\lbrace x, y, z, q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} _{meas.} .
 \end{equation}
 %
 The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
@@ -123,7 +121,7 @@ Next, we compute the Kalman gain $\mathbf{K}_{k}$ per the definition
 \mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{\,-1}_{zz}.
 \end{equation}
 %
-The corrected state $\hat{\mathbf{x}}_{k | k}$ is then the sum of the predicted state and the innovation weighted by the Kalman gain:
+The corrected state $\hat{\mathbf{x}}_{k | k}$ is then the sum of the predicted state and the innovation, weighted by $\mathbf{K}_{k}$:
 %
 \begin{equation}
 \hat{\mathbf{x}}_{k | k} = \hat{\mathbf{x}}_{k | k-1} + \mathbf{K}_{k} \left( \hat{\mathbf{z}}_{k} - \mathbf{z}_{k} \right) .
@@ -136,6 +134,33 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 \end{equation}
 
 \subsection{Process Model} \label{Process_Model}
+
+To propagate the vehicle's state forward in time, we perform a number of integral operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\mathbf{\Omega}_{k}$ per the relationship
+%
+\begin{equation}
+\mathbf{q}_{k | k-1} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t ,
+\end{equation}
+%
+where $\mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) \in \mathbb{R}^{4 \times 4}$ is the angular rate integration matrix defined by
+%
+\begin{equation}
+\mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) =
+\begin{bmatrix}
+0 & \omega_{z} & -\omega_{y} & \omega_{x} \\
+-\omega_{z} & 0 & \omega_{x} & \omega_{y} \\
+\omega_{y} & -\omega_{x} & 0 & \omega_{z} \\
+-\omega_{x} & -\omega_{y} & -\omega_{z} & 0
+\end{bmatrix} .
+\end{equation}
+%
+We rotate the measured acceleration vector $\mathbf{a}_{k}$ into the inertial frame using the equation \todo{Have Sam look over this}
+%
+\begin{equation}
+\mathbf{a}_{k | k-1} = R^{g}_{b} \left( \mathbf{q}_{k-1} \right) \mathbf{a}_{k} ,
+\end{equation}
+%
+where $R^{g}_{b} \left( \mathbf{q}_{k-1} \right)$ is the rotation matrix representation of the previous quaternion $\mathbf{q}_{k-1}$. \todo{What does this work out to be?}
+
 
 \subsection{Observation Model} \label{Observation_Model}
 
