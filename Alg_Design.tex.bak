@@ -10,21 +10,21 @@ We begin by defining the following quantities:
 \mathbf{p} &= \left\lbrace x, y, z \right\rbrace ^{T} \\
 \mathbf{q} &= \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} \\
 \mathbf{v} &= \left\lbrace \dot{x}, \dot{y}, \dot{z} \right\rbrace ^{T} \\
-\mathbf{\Omega} &= \left\lbrace \omega_{x}, \omega_{y}, \omega_{z} \right\rbrace ^{T} \\
+\bm{\Omega} &= \left\lbrace \omega_{x}, \omega_{y}, \omega_{z} \right\rbrace ^{T} \\
 \mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\mathbf{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
-\left\lbrace
+\Big\{
     \mathbf{p}^{T},
     \mathbf{q}^{T},
     \mathbf{v}^{T},
-    \mathbf{\Omega}^{T},
+    \bm{\Omega}^{T},
     \mathbf{a}^{T}
-\right\rbrace ^{T}.
+\Big\} ^{T}
 \end{equation}
 %
 and let $n = 16$ represent the number of state variables.
@@ -43,12 +43,12 @@ The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen wi
 Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
 %
 \begin{align}
-\mathbf{\chi}^{0}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} \nonumber\\
-\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}, &&i = 1, \dots, n \\
-\mathbf{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n, \nonumber
+\bm{\chi}^{0}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} \nonumber\\
+\bm{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}, &&i = 1, \dots, n \\
+\bm{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
-where $\mathbf{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
+where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
 \begin{equation}
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
@@ -59,14 +59,14 @@ and is computed via Cholesky decomposition.
 To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
 %
 \begin{equation}
-\mathbf{\chi}^{i}_{k | k-1} = f \left( \mathbf{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
+\bm{\chi}^{i}_{k | k-1} = f \left( \bm{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
 %
 These new sigma points are then used to predict the next state and covariance:
 %
 \begin{align}
-\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\chi}^{i}_{k | k-1} \\
-\mathbf{P}_{k | k-1} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T} \right) + \mathbf{Q}_{k},
+\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\chi}^{i}_{k | k-1} \\
+\mathbf{P}_{k | k-1} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T} \right) + \mathbf{Q}_{k},
 \end{align}
 %
 where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
@@ -85,15 +85,15 @@ and the process noise covariance matrix $\mathbf{Q}_{k}$ is defined in Section~\
 Given the belief defined by $\mathbf{x}_{k | k-1}$ and $\mathbf{P}_{k | k-1}$, we compute $2n + 1$ sigma points again as
 %
 \begin{align}
-\mathbf{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} & \nonumber\\
-\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i}, &&i = 1, \dots, n \\
-\mathbf{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n. \nonumber
+\bm{\chi}^{0}_{k | k-1} &= \mathbf{x}_{k | k-1} & \nonumber\\
+\bm{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} + \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i}, &&i = 1, \dots, n \\
+\bm{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n. \nonumber
 \end{align}
 %
 Next, the sigma points are projected through the observation function $h$ (defined in Section~\ref{Observation_Model}):
 %
 \begin{equation}
-\mathbf{\gamma}^{i}_{k} = h \left( \mathbf{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
+\bm{\gamma}^{i}_{k} = h \left( \bm{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
 
 Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read into \texttt{kalman\_sense} as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
@@ -105,14 +105,14 @@ Let $m = 7$ represent the number of measurements taken from each PTAM message. E
 The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
 %
 \begin{align}
-\hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \mathbf{\gamma}^{i}_{k} \\
-\mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R},
+\hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\gamma}^{i}_{k} \\
+\mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R},
 \end{align}
 %
 where $\mathbf{R}$ is the measurement noise covariance matrix defined in Section~\ref{sec:R_Matrix}. The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then defined as
 %
 \begin{equation}
-\mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \mathbf{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \mathbf{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
+\mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
 \end{equation}
 %
 Next, we compute the Kalman gain $\mathbf{K}_{k}$ per the definition
@@ -135,44 +135,99 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsection{Process Model} \label{Process_Model}
 
-To propagate the vehicle's state forward in time, we perform a number of integral operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\mathbf{\Omega}_{k}$ per the relationship
+To propagate the vehicle's state forward in time, we perform a number of integral operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{meas.}$ per the relationship
 %
-\begin{equation}
-\mathbf{q}_{k | k-1} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t ,
+\begin{equation} \label{eq:proc_quat}
+\mathbf{q}_{k} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t ,
 \end{equation}
 %
-where $\mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) \in \mathbb{R}^{4 \times 4}$ is the angular rate integration matrix defined by
+where $\mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \in \mathbb{R}^{4 \times 4}$ is the angular rate integration matrix defined by
 %
 \begin{equation}
-\mathbf{\Theta} \left( \mathbf{\Omega}_{k} \right) =
+\mathbf{\Theta} \left( \bm{\Omega}_{k} \right) =
 \begin{bmatrix}
 0 & \omega_{z} & -\omega_{y} & \omega_{x} \\
 -\omega_{z} & 0 & \omega_{x} & \omega_{y} \\
 \omega_{y} & -\omega_{x} & 0 & \omega_{z} \\
 -\omega_{x} & -\omega_{y} & -\omega_{z} & 0
-\end{bmatrix} .
+\end{bmatrix}
 \end{equation}
 %
-To calculate the vehicle's current acceleration, we first subtract gravity from the measured acceleration vector $\mathbf{a}_{k}$ and then rotate the difference into the inertial frame: \todo{Have Sam look over this}
+and the vehicle's current angular velocity vector is measured directly by the gyroscope:
 %
-\begin{equation}
-\mathbf{a}_{k | k-1} = R^{g}_{b} \left( \mathbf{q}_{k-1} \right) \left( \mathbf{a}_{k} - \mathbf{g} \right) .
+\begin{equation} \label{eq:proc_ang_vel}
+\bm{\Omega}_{k} = \bm{\Omega}_{meas.} .
+\end{equation}
+
+To calculate the vehicle's current acceleration, we first subtract gravity from the measured acceleration vector $\mathbf{a}_{meas.}$ and then rotate the difference into the inertial frame: \todo{Have Sam look over this. Are subscripts right?}
+%
+\begin{equation} \label{eq:proc_acc}
+\mathbf{a}_{k} = R^{g}_{b} \left( \mathbf{q}_{k-1} \right) \left( \mathbf{a}_{meas.} - \mathbf{g} \right) .
 \end{equation}
 %
 Here $R^{g}_{b} \left( \mathbf{q}_{k-1} \right)$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. \todo{What is R(q)?}
 
-\todo{velocity equation}
+With the vehicle's current acceleration known, we can compute the current velocity of the vehicle by integrating the vehicle's average acceleration between the current and previous time steps:
+%
+\begin{equation} \label{eq:proc_vel}
+\mathbf{v}_{k} = \mathbf{v}_{k-1} + \frac{1}{2} \left( \mathbf{a}_{k} + \mathbf{a}_{k-1} \right) \Delta t .
+\end{equation}
+%
+Similarly, we compute the vehicle's current position using the vehicle's average velocity:
+%
+\begin{equation} \label{eq:proc_pos}
+\mathbf{p}_{k} = \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t .
+\end{equation}
 
-\todo{position equation}
+Together, Equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:
 
-\todo{ang vel equation}
-
+\todo{write out f explicitly}
 
 \subsection{Observation Model} \label{Observation_Model}
 
 \subsubsection{Quaternion Continuity Correction}
 
 \subsubsection{Pseudovelocity Correction}
+
+Of the vehicle's states, the acceleration vector $\mathbf{a}$ and angular rate vector $\bm{\Omega}$ are measured directly by the IMU:
+%
+\begin{equation}
+\mathbf{x} = 
+\Big\{   
+    \mathbf{p}^{T},
+    \mathbf{q}^{T},
+    \mathbf{v}^{T},
+    \underbrace{
+    \bm{\Omega}^{T},
+    \mathbf{a}^{T}}_{IMU}
+\Big\} ^{T}.
+\end{equation}
+%
+The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured directly by PTAM:
+%
+\begin{equation}
+\mathbf{x} = 
+\Big\{
+\underbrace{
+    \mathbf{p}^{T},
+    \mathbf{q}^{T}}_{PTAM},
+    \mathbf{v}^{T},
+    \bm{\Omega}^{T},
+    \mathbf{a}^{T}
+\Big\} ^{T}.
+\end{equation}
+%
+The velocity $\mathbf{v}$, however, is not measured by either. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Velocity must thus be determined through a derived measurement.
+
+Because velocity is predicted via integration of the vehicle's acceleration (Section~\ref{Process_Model}) and velocity is not directly measured by PTAM, noise in the accelerometer can cause unbounded drift in the velocity. The erroneous velocity is integrated during each succeeding prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The filter corrects the position each time that a PTAM message arrives only to drift wildly a fraction of a second later when the next IMU message arrives.
+
+To prevent this catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
+%
+\begin{equation}
+\mathbf{v}_{k} = \frac{\mathbf{p}_{k,\ meas.} - \mathbf{p}_{k-1,\ meas.}}{\Delta t_{P}} .
+\end{equation}
+
+This pseudovelocity correction prevents unbounded velocity drift, which in turns makes the filter numerical stable.
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 
@@ -196,7 +251,7 @@ respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ ac
 
 \todo{integral equations}
 
-We assume no coupling between the angular quantities ($\mathbf{q}$ and $\mathbf{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption logically stems from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
+We assume no coupling between the angular quantities ($\mathbf{q}$ and $\bm{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption logically stems from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
 
 \todo{full Q matrix}
 
