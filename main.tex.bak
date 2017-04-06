@@ -16,6 +16,9 @@
 \usepackage{subcaption}
 \usepackage{wrapfig}
 \usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
 
 \usepackage{todonotes} % DELETE WHEN FINISHED
 

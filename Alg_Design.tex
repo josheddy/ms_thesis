@@ -162,10 +162,10 @@ and the vehicle's current angular velocity vector is measured directly by the gy
 To calculate the vehicle's current acceleration, we first subtract gravity from the measured acceleration vector $\mathbf{a}_{meas.}$ and then rotate the difference into the inertial frame: \todo{Have Sam look over this. Are subscripts right?}
 %
 \begin{equation} \label{eq:proc_acc}
-\mathbf{a}_{k} = R^{g}_{b} \left( \mathbf{q}_{k-1} \right) \left( \mathbf{a}_{meas.} - \mathbf{g} \right) .
+\mathbf{a}_{k} = R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right) .
 \end{equation}
 %
-Here $R^{g}_{b} \left( \mathbf{q}_{k-1} \right)$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. \todo{What is R(q)?}
+Here $R^{g}_{b} \left[ \mathbf{q}_{k-1} \right]$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. \todo{What is R(q)?}
 
 With the vehicle's current acceleration known, we can compute the current velocity of the vehicle by integrating the vehicle's average acceleration between the current and previous time steps:
 %
@@ -179,13 +179,36 @@ Similarly, we compute the vehicle's current position using the vehicle's average
 \mathbf{p}_{k} = \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t .
 \end{equation}
 
-Together, Equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:
-
-\todo{write out f explicitly}
+Together, Equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:\todo{fill out f}
+%
+\begin{equation}
+f\left( \mathbf{x}_{k} \right) = 
+\begin{Bmatrix}
+    tk
+\end{Bmatrix}
+\end{equation}
 
 \subsection{Observation Model} \label{Observation_Model}
 
 \subsubsection{Quaternion Continuity Correction}
+
+Due to a bug in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent discontinuous quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip has occurred:\todo{fill this out more?}
+
+\begin{algorithm}
+  \caption{Check for continuity between quaternion estimates}
+    \label{alg:checkQuatContinuity}
+  \begin{algorithmic}[1]
+    \Statex
+    \Function{CheckQuaternionContinuity}{$\mathbf{q}_{k-1},\ \mathbf{q}_{k}$}
+     \State $\text{sum} = \left| \left| \mathbf{q}_{k-1} + \mathbf{q}_{k} \right| \right|$
+     \State $\text{diff} = \left| \left| \mathbf{q}_{k-1} - \mathbf{q}_{k} \right| \right|$
+        \If{$\text{diff} \leq \text{sum}}$
+        \State $\mathbf{q}_{k} = - \mathbf{q}_{k}$
+        \EndIf
+      \State \Return{$\mathbf{q}_{k}$}
+    \EndFunction
+  \end{algorithmic}
+\end{algorithm}
 
 \subsubsection{Pseudovelocity Correction}
 
@@ -230,7 +253,7 @@ To prevent this catastrophic drift, velocity is estimated by numerical different
 This pseudovelocity correction prevents unbounded velocity drift, which in turns makes the filter numerically stable.
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
-
+\todo{diagonality?}
 The process noise covariance matrix $\mathbf{Q}_{k} \in \mathbb{R}^{n \times n}$ is symmetric, time-dependent, and positive definite. We assume that its nonzero coefficients are a function of multiple integrations between the linear accelerations and angular velocities measured by the vehicle's 3-axis accelerometer and 3-axis gyroscope.
 
 We assume that all axes of the accelerometer and gyroscope exhibit white noise with known standard deviations $\sigma_{a}$ and $\sigma_{\omega}$, respectively\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.}. We further assume that no cross-axis covariance exists between any two accelerometer axes or any two gyroscope axes.
@@ -257,7 +280,7 @@ We assume no coupling between the angular quantities ($\mathbf{q}$ and $\bm{\Ome
 
 
 \subsection{Measurement Noise Covariance Matrix} \label{sec:R_Matrix}
-
+\todo{diagonality? Q-R ratio?}
 The matrix $\mathbf{R} \in \mathbb{R}^{m \times m}$ models the covariance between measurements made by the pose sensor, PTAM. Like the process noise covariance matrix $\mathbf{Q}_{k}$, the measurement noise covariance matrix $\mathbf{R}$ is symmetric and positive definite. However, for the purposes of this experiment, $\mathbf{R}$ is assumed to be time-invariant due to nearly constant feature density in the experimental scene. Because the vehicle camera moves across the scene at an almost constant height (that is, at a nearly constant distance to the features it observes on the floor), the measurement noise covariance of the pose sensor is assumed to be approximately constant in time. The coefficients of $\mathbf{R}$ were estimated by numerically computing the covariances between raw measurements from PTAM and the ``ground truth'' supplied by a Vicon motion capture system\footnote{\url{https://www.vicon.com/}}.
 
 The resulting $\mathbf{R}$ matrix is as follows:
