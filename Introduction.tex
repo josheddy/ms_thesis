@@ -1,5 +1,7 @@
 \chapter{Introduction}
 
+\pagenumbering{arabic}
+
 \textit{This document contains several sections with titles placed in parentheses. These sections are included to give added context to this thesis, but are not strictly necessary to the reader's understanding of the technical material being presented.}
 
 \section{(Personal Motivation)}
@@ -7,6 +9,13 @@
 I first took an interest in unmanned aircraft in the fall of 2012, my sophomore year of college. In search of an exciting engineering challenge, several of my friends and I founded the Cooperative Autonomous Robotics Design (CARD) team at Virginia Tech. Our core team consisted of a dozen students devoted to designing and competing with drones and other robotic vehicles. Our team, guided by my future graduate adviser Dr.~Kevin Kochersberger, entered a number of design competitions and brought home several awards for the university. My early experiences with the team brought me into contact with microcontroller programming, Proportional-Integral-Derivative (PID) controller design, mechatronics, and computer-aided design (CAD) modeling.
 
 After two years of involvement with the CARD team, I applied for an internship at the National Institute of Aerospace\footnote{\url{http://www.nianet.org}} (NIA) in Hampton, Virginia. In the summer of 2014, I was part of a team of NIA researchers working on the Flying Donkey Challenge\footnote{\url{http://www.flyingdonkey.org}}, an international engineering competition centered around the idea of ``flying donkeys,'' full-sized autonomous airplanes capable of quickly carrying cargo between small airports in rural Africa. This competition, unfortunately now defunct, was divided into a number of sub-challenges focusing on different technical objectives such as precision landing and collision avoidance. Our team's goal was to design an inexpensive navigation system that could reliably guide unmanned aircraft during a Global Positioning System (GPS) blackout. This project introduced me to many of the technologies and techniques that would later become my major research interests, particularly the Robot Operating System\footnote{\url{http://wiki.ros.org}} (ROS), Kalman Filtering, and sensor fusion.
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+  \centering
+    \includegraphics[width=0.3\textwidth]{april_tag}
+  \caption[Example April tag]{An example of an April tag.}
+  \label{fig:april_tag}
+\end{wrapfigure}
 
 Through my internship at the NIA, I met Dr. Danette Allen, head of the NASA Langley Autonomy Incubator. During my 2014--15 academic year, Dr. Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5-lb packages to distances of up to 2.5~miles (or 5~miles, round trip). In addition, these vehicles were able to land precisely on 1~m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator.
 
@@ -17,7 +26,7 @@ During the summer of 2015, I began the research that eventually evolved into my 
 
 \subsection*{Prior Work}
 
-In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation processes. We focus primarily on a number of impactful publications coming from ETH Zurich's Autonomous Systems Lab (ASL) and the University of Pennsylvania's GRASP Lab. We define the current state of the art in filter-based navigation and establish the research context in which my thesis exists.
+In Prior Work, we explore recent contributions to loosely coupled filter-based navigation and state estimation processes. We focus primarily on a number of impactful publications coming from the Autonomous Systems Lab\footnote{\url{www.asl.ethz.ch}} (ASL) at ETH Zurich\footnote{\textit{Eidgen{\"o}ssische Technische Hochschule Z{\"u}rich}, the Swiss Federal Institute of Technology in Zurich.} and the University of Pennsylvania's GRASP Lab\footnote{\url{www.grasp.upenn.edu}}. We define the current state of the art in filter-based navigation and establish the research context in which my thesis exists.
 
 \subsection*{Algorithm Design and Implementation}
 
@@ -33,7 +42,7 @@ In Experimental Results, we evaluate the system's performance during testing and
 
 \subsection*{Conclusions}
 
-We briefly summarize the contributions made in this thesis, the effectiveness of the \texttt{kalman\_sense} package, and any insights acquired during programming and testing. 
+We briefly summarize the contributions made in this thesis, the effectiveness of the \texttt{kalman\_sense} ROS package, and any insights acquired during programming and testing. 
 
 \subsection*{Future Work}
 

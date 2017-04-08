@@ -14,7 +14,7 @@ We begin by defining the following quantities:
 \mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
@@ -32,13 +32,14 @@ and let $n = 16$ represent the number of state variables.
 We now define the following constants:
 %
 \begin{align}
-\alpha &= 10^{-3} \nonumber \\
-\kappa &= 0 \\
-\beta &= 2 \nonumber \\
-\lambda &= \alpha^{2} \left( n + \kappa \right) - n \nonumber
+\alpha &= 0.75 \nonumber \\
+\kappa &= 0 \nonumber \\
+\beta &= 2 \\
+\lambda &= \alpha^{2} \left( n + \kappa \right) - n \nonumber \\
+&= -7 \nonumber
 \end{align}
 %
-The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen within the filter. The value of $\beta$ governs what distribution is assumed for the states $\mathbf{x}$. Setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
+The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen within the filter. The value of $\beta$ governs what distribution is assumed for the states $\mathbf{x}$. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
 
 Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
 %
@@ -54,7 +55,7 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
 \end{equation}
 %
-and is computed via Cholesky decomposition.
+and is computed via Cholesky decomposition\todo{citation? example in appendix?}.
 
 To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
 %
@@ -77,7 +78,7 @@ W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right
 W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)}, \quad i = 1, \dots, 2n \nonumber
 \end{align}
 %
-and the process noise covariance matrix $\mathbf{Q}_{k}$ is defined in Section~\ref{sec:Q_Matrix}.
+and the process noise covariance matrix $\mathbf{Q}_{k}$ will be defined in Section~\ref{sec:Q_Matrix}.
 
 
 \subsection{Correction Step}
@@ -96,7 +97,7 @@ Next, the sigma points are projected through the observation function $h$ (defin
 \bm{\gamma}^{i}_{k} = h \left( \bm{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
 
-Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read into \texttt{kalman\_sense} as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
+Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read in as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
 %
 \begin{equation}
 \mathbf{z}_{k} = \left\lbrace x, y, z, q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} _{meas.} .
@@ -109,7 +110,7 @@ The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise co
 \mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R},
 \end{align}
 %
-where $\mathbf{R}$ is the measurement noise covariance matrix defined in Section~\ref{sec:R_Matrix}. The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then defined as
+where $\mathbf{R}$ is the measurement noise covariance matrix (defined in Section~\ref{sec:R_Matrix}). The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then defined as
 %
 \begin{equation}
 \mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
@@ -135,7 +136,7 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsection{Process Model} \label{Process_Model}
 
-To propagate the vehicle's state forward in time, we perform a number of integral operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{meas.}$ per the relationship
+To propagate the vehicle's state forward in time, we perform a number of integration operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{meas.}$ per the relationship
 %
 \begin{equation} \label{eq:proc_quat}
 \mathbf{q}_{k} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t ,
@@ -179,7 +180,7 @@ Similarly, we compute the vehicle's current position using the vehicle's average
 \mathbf{p}_{k} = \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t .
 \end{equation}
 
-Together, Equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:\todo{fill out f}
+Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:\todo{fill out f}
 %
 \begin{equation}
 f\left( \mathbf{x}_{k} \right) = 
@@ -192,17 +193,17 @@ f\left( \mathbf{x}_{k} \right) =
 
 \subsubsection{Quaternion Continuity Correction}
 
-Due to a bug in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent discontinuous quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip has occurred:
+Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent loss of continuity in quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip has occurred:\todo{fill this out more?}
 
 \begin{algorithm}
-  \caption{ quaternion estimates }
-%    \label{alg:packed-dna-hamming}}
+  \caption{Check for continuity between quaternion estimates}
+    \label{alg:checkQuatContinuity}
   \begin{algorithmic}[1]
     \Statex
-    \Function{checkQuatContinuity}{$\mathbf{q}_{k-1},\ \mathbf{q}_{k}$}
+    \Function{CheckQuaternionContinuity}{$\mathbf{q}_{k-1},\ \mathbf{q}_{k}$}
      \State $\text{sum} = \left| \left| \mathbf{q}_{k-1} + \mathbf{q}_{k} \right| \right|$
      \State $\text{diff} = \left| \left| \mathbf{q}_{k-1} - \mathbf{q}_{k} \right| \right|$
-        \If{$\text{diff.} \leq \text{sum}}$
+        \If{$\text{diff} \leq \text{sum}}$
         \State $\mathbf{q}_{k} = - \mathbf{q}_{k}$
         \EndIf
       \State \Return{$\mathbf{q}_{k}$}
@@ -212,7 +213,7 @@ Due to a bug in the ROS PTAM implementation, quaternion estimates switch sign wi
 
 \subsubsection{Pseudovelocity Correction}
 
-Of the vehicle's states, the acceleration vector $\mathbf{a}$ and angular rate vector $\bm{\Omega}$ are measured directly by the IMU:
+Of the various states being measured, only the acceleration vector $\mathbf{a}$ and angular rate vector $\bm{\Omega}$ are measured directly by the IMU:
 %
 \begin{equation}
 \mathbf{x} = 
@@ -240,9 +241,9 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 \Big\} ^{T}.
 \end{equation}
 %
-The velocity $\mathbf{v}$, however, is not measured by either. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Velocity must thus be determined through a derived measurement.
+The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 
-Because velocity is predicted via integration of the vehicle's acceleration (Section~\ref{Process_Model}) and velocity is not directly measured by PTAM, noise in the accelerometer can cause unbounded drift in the velocity. The erroneous velocity is integrated during each succeeding prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The filter corrects the position each time that a PTAM message arrives only to drift wildly a fraction of a second later when the next IMU message arrives.
+Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}) and velocity is not directly measured by PTAM, noise in the accelerometer can cause unbounded drift in the velocity. The erroneous velocity is integrated during each succeeding prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The filter corrects the position each time that a PTAM message arrives only to drift wildly a fraction of a second later when the next IMU message arrives.
 
 To prevent this catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
 %

@@ -40,6 +40,8 @@
 
 \begin{document}
 
+\pagenumbering{roman}
+
 \title{
 	{A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of \\ Small Unmanned Aircraft}\\
 	\vspace{1 em}
@@ -49,15 +51,14 @@
 \date{April 20, 2017}
 \maketitle
 
-\pagenumbering{roman} % Roman numeral pagination in all front matter up to the List of Figures
 \input{Abstract.tex}
 \input{Acknowledgements.tex}
 \tableofcontents
 %\listoftables % DELETE IF UNUSED
 \listoffigures
-
 \input{Acronyms.tex}
-\pagenumbering{arabic} % Starts arabic pagination in Acronyms chapter.
+
+% Arabic pagination starts in Introduction chapter.
 \input{Introduction.tex}
 \input{Prior_Work.tex}
 \input{Alg_Design.tex}

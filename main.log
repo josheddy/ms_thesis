@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  6 APR 2017 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  8 APR 2017 14:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -1080,25 +1080,25 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 51
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 53
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 51.
+(Font)              scaled to size 11.03998pt on input line 53.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 51.
+(Font)              scaled to size 8.27998pt on input line 53.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 51.
+(Font)              scaled to size 6.43999pt on input line 53.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 51.
+(Font)              scaled to size 11.03998pt on input line 53.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 51.
+(Font)              scaled to size 8.27998pt on input line 53.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 51.
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+(Font)              scaled to size 6.43999pt on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1106,7 +1106,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1119,7 +1119,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 )
-(Acknowledgements.tex [1
+(Acknowledgements.texpdfTeX warning (ext4): destination with the same identifie
+r (name{page.i}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            *{Acknowledgments} [1
 
 ]) [2
 
@@ -1148,27 +1153,22 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- (Acronyms.tex
-[5
 
-]) (Introduction.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Introduction} [1
+(Acronyms.tex [5
+
+]) (Introduction.tex [6
 
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 9.
+(Font)              scaled to size 6.99199pt on input line 11.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 9.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 9.
+(Font)              scaled to size 6.99199pt on input line 11.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 11.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
@@ -1182,33 +1182,37 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [2
+ [1
 
 ]
+<april_tag.jpg, id=184, 310.15875pt x 310.49333pt>
+File: april_tag.jpg Graphic file (type jpg)
+ <use april_tag.jpg>
+Package pdftex.def Info: april_tag.jpg used on input line 15.
+(pdftex.def)             Requested size: 119.2467pt x 119.3721pt.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-[3]
+ [2 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 18.
- [4]) (Prior_Work.tex [5]
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 27.
+ [3]) (Prior_Work.tex [4]
 Chapter 2.
-[6
+[5
 
-] [7]
+] [6]
 Overfull \hbox (7.25548pt too wide) in paragraph at lines 17--19
 \T1/futs/m/n/10.95 (-20) Recent ad-vance-ments in com-put-ing power have given 
 rise to a plethora of once-inaccessible
  []
 
-[8]
+[7]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 27.
- [9] [10] [11]) (Alg_Design.tex [12] [13]
+ [8] [9] [10]) (Alg_Design.tex [11] [12]
 Chapter 3.
 
 Underfull \hbox (badness 3623) in paragraph at lines 17--17
@@ -1216,64 +1220,64 @@ Underfull \hbox (badness 3623) in paragraph at lines 17--17
 e-sented ac-cord-ing to the con-ven-tion $\T1/futs/b/n/9 q \FMS/futm/m/n/9 Å
  []
 
-[14
+[13
 
-] [15] [16] [17]
+] [14] [15] [16]
 
-LaTeX Warning: Marginpar on page 18 moved.
+LaTeX Warning: Marginpar on page 17 moved.
 
-[18]
+[17]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 198.
- [19]
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 256--256
+put line 199.
+ [18]
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 257--257
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 256--256
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 257--257
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 256--256
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 257--257
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 256--256
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 257--257
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
-[20]
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 283--283
+[19]
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 284--284
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 283--283
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 284--284
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 283--283
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 284--284
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 283--283
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 284--284
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
-[21]) (Exp_Design.tex [22]
+[20]) (Exp_Design.tex [21]
 Chapter 4.
-<sensor_mount_top.jpg, id=388, 1606.0pt x 1204.5pt>
+<sensor_mount_top.jpg, id=400, 1606.0pt x 1204.5pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
  <use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
 (pdftex.def)             Requested size: 158.9946pt x 119.24402pt.
 
-<sensor_mount_bottom.jpg, id=389, 1606.0pt x 1204.5pt>
+<sensor_mount_bottom.jpg, id=401, 1606.0pt x 1204.5pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
@@ -1284,93 +1288,16 @@ Overfull \hbox (3.43825pt too wide) in paragraph at lines 9--20
  [][]  [] 
  []
 
-<april_tag.jpg, id=392, 310.15875pt x 310.49333pt>
-File: april_tag.jpg Graphic file (type jpg)
- <use april_tag.jpg>
-Package pdftex.def Info: april_tag.jpg used on input line 28.
-(pdftex.def)             Requested size: 139.12216pt x 139.27061pt.
- [23
+[22
+
+] [23 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] [24
+
+] [25
+
+])
+(Exp_Results.tex [26
 
 ]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 33
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 34
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 36
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 37
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 38
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 39
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 44
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 45
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 46
-.
-
-[24 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 47
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 48
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 49
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 50
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 51
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 52
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 53
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 57
-.
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 59--60
-\T1/futs/m/n/10.95 (+20) signed to char-ac-ter-ize the UKF frame-
- []
-
-[25 <./april_tag.jpg>]) (Exp_Results.tex [26]
 Chapter 5.
 ) (Conclusions.tex [27
 
@@ -1413,21 +1340,25 @@ LaTeX Warning: Marginpar on page 29 moved.
 
 
 ]) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D37C65164892AE2EC0C8D5FADACB96F;1664.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+(rerunfilecheck)             Checksum: 9CDB13734B4A09BF9863B49150B41854;1664.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 21843 strings out of 493334
- 397206 string characters out of 3136672
- 509595 words of memory out of 3000000
- 24437 multiletter control sequences out of 15000+200000
- 176940 words of font info for 348 fonts, out of 3000000 for 9000
+ 21877 strings out of 493334
+ 397714 string characters out of 3136672
+ 513105 words of memory out of 3000000
+ 24448 multiletter control sequences out of 15000+200000
+ 182245 words of font info for 359 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1826b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -1443,9 +1374,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (37 pages, 10140426 bytes).
+Output written on main.pdf (38 pages, 10145471 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 47332 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
+ 53476 words of extra memory for PDF output out of 61914 (max. 10000000)
 
