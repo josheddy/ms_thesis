@@ -9,20 +9,20 @@
 \usepackage[T1]{fontenc}
 \usepackage{inconsolata}
 \usepackage{fourier}
-\usepackage{verbatim}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage[margin=0.1\textwidth]{caption}
-\usepackage{subcaption}
-\usepackage{wrapfig}
-\usepackage{bm}
-\usepackage{algorithm}
-\usepackage{algorithmicx}
+\usepackage[margin=0.1\textwidth]{caption} % Adjust caption text column width
+\usepackage{subcaption} % Subfigures with subcaptions
+\usepackage{wrapfig} % Text wrapping around figures
+\usepackage[export]{adjustbox} % Fine-tuned figure placement
+\usepackage{bm} % Bold Greek math
+\usepackage{algorithm} % Algorithm environment
+\usepackage{algorithmicx} % Improved algorithm options
 \usepackage[noend]{algpseudocode}
 
 \usepackage{todonotes} % DELETE WHEN FINISHED
 
-\linespread{1.6} % Double-space for initial drafts
+\linespread{1.6} % DELETE WHEN FINISHED
 %\linespread{1.15} % Better line spacing for final copy
 
 \hypersetup{
@@ -58,9 +58,10 @@
 \listoffigures
 \input{Acronyms.tex}
 
-% Arabic pagination starts in Introduction chapter.
+% Arabic page numbers start in Introduction chapter.
 \input{Introduction.tex}
 \input{Prior_Work.tex}
+\todo{add Direct IMU integration section}
 \input{Alg_Design.tex}
 \input{Exp_Design.tex}
 \input{Exp_Results.tex}
