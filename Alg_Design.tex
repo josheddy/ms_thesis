@@ -39,7 +39,7 @@ We now define the following constants:
 &= -7 \nonumber
 \end{align}
 %
-The constants $\alpha$ and $\kappa$ control the spread of sigma points chosen within the filter. The value of $\beta$ governs what distribution is assumed for the states $\mathbf{x}$. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
+The constants $\alpha$, $\beta$, and $\kappa$ control the spread of sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
 
 Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
 %
@@ -215,7 +215,7 @@ Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign
 
 Of the various states being measured, only the acceleration vector $\mathbf{a}$ and angular rate vector $\bm{\Omega}$ are measured directly by the IMU:
 %
-\begin{equation}
+\begin{equation*}
 \mathbf{x} = 
 \Big\{   
     \mathbf{p}^{T},
@@ -223,23 +223,23 @@ Of the various states being measured, only the acceleration vector $\mathbf{a}$ 
     \mathbf{v}^{T},
     \underbrace{
     \bm{\Omega}^{T},
-    \mathbf{a}^{T}}_{IMU}
+    \mathbf{a}^{T}}_{\text{IMU}}
 \Big\} ^{T}.
-\end{equation}
+\end{equation*}
 %
 The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured directly by PTAM:
 %
-\begin{equation}
+\begin{equation*}
 \mathbf{x} = 
 \Big\{
 \underbrace{
     \mathbf{p}^{T},
-    \mathbf{q}^{T}}_{PTAM},
+    \mathbf{q}^{T}}_{\text{PTAM}},
     \mathbf{v}^{T},
     \bm{\Omega}^{T},
     \mathbf{a}^{T}
 \Big\} ^{T}.
-\end{equation}
+\end{equation*}
 %
 The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 

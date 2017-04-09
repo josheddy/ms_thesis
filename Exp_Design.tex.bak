@@ -23,6 +23,8 @@ Before venturing further, we should summarize the goals of the UKF framework des
 
 This system depends upon two sensors: a single global-shutter camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope. To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite on a large, steady, level platform allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion seen by the ventral camera. In order to validate the UKF framework's effectiveness under ideal conditions, a modern laptop computer containing an Intel i7 processor with 16~GB of RAM was used for all computations. The floor of the motion capture environment was strewn with a mixture of April tags and modified Quick Response\footnote{\url{https://en.wikipedia.org/wiki/QR_code}} (QR) codes in order to provide sufficient visual features for PTAM to track.
 
+\clearpage
+
 \section{Materials}
 \subsection{Computation and Sensing}
 \begin{enumerate}
@@ -31,6 +33,8 @@ This system depends upon two sensors: a single global-shutter camera and an IMU.
 \item One (1) Hewlett-Packard Spectre x360 Convertible Laptop 13-ac076nr\footnote{\url{http://store.hp.com/us/en/pdp/hp-spectre-x360---13-ac076nr}}
 \item Two (2) male Mini USB 2.0 to male USB Type A cables
 \end{enumerate}
+
+\clearpage
 
 \subsection{Mobile Test Stand}
 \begin{enumerate}
@@ -46,6 +50,7 @@ This system depends upon two sensors: a single global-shutter camera and an IMU.
 \item One (1) 0.7-meter Length of $\frac{1}{8}$"-thick Carbon Fiber Rod
 \end{enumerate}
 
+\clearpage
 
 \section{The Experiments}
 
