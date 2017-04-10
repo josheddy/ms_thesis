@@ -41,23 +41,23 @@ This system depends upon two sensors: a single global-shutter camera and an IMU.
 \item One (1) Oklahoma Sound PRC200 Premium Presentation Cart\footnote{\url{http://www.oklahomasound.com/products/product-category/single/?prod=9}}
 \item One (1) 3D-printed Sensor Mount (see Figure~\ref{fig:sensor_mount})
 \item Two (2) 4" C-Clamps
-\item One (1) 1.2-meter 80/20 1515 Rail\footnote{\url{https://8020.net/1515.html}}
+\item One (1) 1.2-meter 80/20\textsuperscript{\textregistered}~Inc.\ 1515 Rail\footnote{\url{https://8020.net/1515.html}}
 \item One (1) 15 Series ``L'' Handle Linear Bearing Brake Kit\footnote{\url{https://8020.net/6800.html}}
 \item One (1) $\frac{5}{16}$-18 $\times$ 0.687" Black FBHSCS (Screw)\footnote{\url{https://8020.net/shop/3320.html}}
 \item Two (2) Slide-In Economy T-Nuts\footnote{Also available at \url{https://8020.net/shop/3320.html}}
 \item Three (3) 1" Vicon Infrared Retroreflector Balls
 \item Two (2) $\frac{1}{2}$" Vicon Infrared Retroreflector Balls
-\item One (1) 0.7-meter Length of $\frac{1}{8}$"-thick Carbon Fiber Rod
+\item One (1) 0.7-meter Length of $\frac{1}{8}$"-thick Carbon Fiber Tube
 \end{enumerate}
 
 \clearpage
 
 \section{The Experiments}
 
-A series of three experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. The first two experiments consisted of ``long walks'' in the $x$-direction and $y$-direction in order to characterize the accuracy of the filter in lengthy, unidimensional translations. These experiments were meant to determine changes in estimate accuracy over large, planar translations (for example, to uncover the evolution of error in the system over time while effectively manipulating only one state variable). For each long walk, the test stand was translated without rotation along the positive $x$- and $y$-axes over distances of approximately seven meters, then returned to the starting location via the same path.
+Two experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. The first two experiments consisted of ``long walks'' in the $x$-direction and $y$-direction in order to characterize the accuracy of the filter in lengthy, unidimensional translations. These experiments were meant to determine changes in estimate accuracy over large, planar translations (for example, to uncover the evolution of error in the system over time while effectively manipulating only one state variable). For each long walk, the test stand was translated without rotation along the positive $x$- and $y$-axes over distances of approximately seven meters, then returned to the starting location via the same path.
 
 The third experiment was a rectangular translation designed to characterize the system's effectiveness when translated along two axes. Again, the cart was translated without rotation around the corners of a nearly square rectangle having sides approximately four meters in length.
 
-Three data streams were collected for analysis using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} ROS data recording utility.
+Three data streams were collected for analysis using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} data recording utility.
 
 \todo{more explanation of post processing}

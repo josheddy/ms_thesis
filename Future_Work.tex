@@ -1,12 +1,22 @@
 \chapter{Future Work}
 
-Experimentation with \texttt{kalman\_sense} has revealed a number of areas for improvement. Speaking generally, the system needs to be made more accurate and more robust to sensor dropout. Specifically, further development of this work would likely center on three main areas:
+Experimentation with \texttt{kalman\_sense} has revealed a number of areas for improvement. Speaking generally, the system needs enhancements to become more accurate and more robust to sensor dropout. Specifically, further development of this work would likely center on three main areas:
 \begin{enumerate}
 \item Integration of new sensors,
 \item Improvements for current sensors, and
 \item Refinements to the underlying algorithm.
 \end{enumerate}
-The accuracy and robustness of the system would be markedly increased by the integration of several additional sensors, such as one or more GPS receivers, a pressure altimeter, one or more laser range finders, LIDAR\footnote{``Light Detection and Ranging,'' \url{https://en.wikipedia.org/wiki/Lidar}}, etc. The organization of the code base is such that the integration of new sensors would require only the addition of new code, not a full redesign or any major edits to the existing code. A new SLAM or VO algorithm could also be used to replace PTAM, allowing an ``apples-to-apples'' comparison of different vision algorithms. In terms of improvements to current sensors, a more robust implementation of PTAM could be written and the same experiments could be repeated for comparison.
+Each of these could produce a marked improvement to the system in accuracy, robustness, or both. Particular uses cases, Concepts of Operations (CONOPS), and desired performance metrics would likely drive the selection of which of these areas to tackle.
+
+\section{Integration of New Sensors}
+The accuracy and robustness of the system could be augmented by the integration of additional sensors, including but not limited to
+\begin{enumerate}
+\item One or more GPS receivers (particularly Real Time Kinematic\footnote{\url{https://en.wikipedia.org/wiki/Real_Time_Kinematic}} GPS),
+\item A pressure altimeter,
+\item One or more laser rangefinders,
+\item One-dimensional, multi-dimensional, or scanning LIDAR\footnote{``Light Detection and Ranging,'' \url{https://en.wikipedia.org/wiki/Lidar}}
+\end{enumerate}
+The organization of the code base is such that the integration of new sensors would require only the addition of new code, not a full redesign or any major edits to the existing code. A new SLAM or VO algorithm could also be used to replace PTAM, allowing an ``apples-to-apples'' comparison of different vision algorithms. In terms of improvements to current sensors, a more robust implementation of PTAM could be written and the same experiments could be repeated for comparison.
 
 We have previously mentioned work from the GRASP Lab (\cite{Shen2011}) that has demonstrated the efficacy of systems similar to \texttt{kalman\_sense} in indoor-outdoor transitions and in navigating confined spaces with an expanded suite of sensors. In the case where more than one sensor can be used to observe a given vehicle state variable, those multiple sensors can be used to check one another and even perform real-time in-air calibration. The system developed in this thesis has the advantage of being hardware-minimal in that it depends on only two sensors (the IMU and ventral camera), but this convenience comes at the cost of robustness as either sense presents a single point of failure in the event of a sensor blackout. Moreover, the sensors have no overlap in that neither can observe any of the states observed by the other. This eliminates the possibility of checking one sensor against the other with high confidence.
 
