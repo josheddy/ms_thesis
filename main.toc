@@ -25,4 +25,5 @@
 \contentsline {chapter}{\numberline {6}Conclusions}{32}{chapter.6}
 \contentsline {chapter}{\numberline {7}Future Work}{33}{chapter.7}
 \contentsline {section}{\numberline {7.1}Integration of New Sensors}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Improvements for Current Sensors}{34}{section.7.2}
 \contentsline {chapter}{Bibliography}{35}{section*.34}
