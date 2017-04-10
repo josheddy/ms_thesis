@@ -7,11 +7,11 @@
 We begin by defining the following quantities:
 %
 \begin{align} \label{eq:state_vars}
-\mathbf{p} &= \left\lbrace x, y, z \right\rbrace ^{T} \\
-\mathbf{q} &= \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} \\
-\mathbf{v} &= \left\lbrace \dot{x}, \dot{y}, \dot{z} \right\rbrace ^{T} \\
-\bm{\Omega} &= \left\lbrace \omega_{x}, \omega_{y}, \omega_{z} \right\rbrace ^{T} \\
-\mathbf{a} &= \left\lbrace \ddot{x}, \ddot{y}, \ddot{z} \right\rbrace ^{T}
+\mathbf{p} &= \left\lbrace x,\ y,\ z \right\rbrace ^{T} \\
+\mathbf{q} &= \left\lbrace q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T} \\
+\mathbf{v} &= \left\lbrace \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} \\
+\bm{\Omega} &= \left\lbrace \omega_{x},\ \omega_{y},\ \omega_{z} \right\rbrace ^{T} \\
+\mathbf{a} &= \left\lbrace \ddot{x},\ \ddot{y},\ \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
 The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
@@ -19,10 +19,10 @@ The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's
 \begin{equation}
 \mathbf{x} = 
 \Big\{
-    \mathbf{p}^{T},
-    \mathbf{q}^{T},
-    \mathbf{v}^{T},
-    \bm{\Omega}^{T},
+    \mathbf{p}^{T},\
+    \mathbf{q}^{T},\
+    \mathbf{v}^{T},\
+    \bm{\Omega}^{T},\
     \mathbf{a}^{T}
 \Big\} ^{T}
 \end{equation}
@@ -46,7 +46,7 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 \lambda &= \alpha^{2} \left( n + \kappa \right) - n = -7
 \end{align}
 %
-These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ caused the filter to become slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and in steady state would frequently undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
+These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and in steady state would frequently undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
 
 The square root matrix $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
@@ -99,7 +99,7 @@ Next, the sigma points are projected into the sensor space through the observati
 Let $m = 7$ represent the number of measurements taken from each PTAM message. Each of these messages is read in as an $m$-dimensional measurement vector $\mathbf{z}_{k}$ of the form
 %
 \begin{equation}
-\mathbf{z}_{k} = \left\lbrace x, y, z, q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T} _{meas.} .
+\mathbf{z}_{k} = \left\lbrace x,\ y,\ z,\ q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T} _{meas.} .
 \end{equation}
 %
 The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
@@ -183,7 +183,7 @@ Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}
 %
 \begin{equation}
 f \left( \mathbf{x}_{k} \right) = 
-\begin{Bmatrix}
+\begin{Bmatrix}[1.5]
    \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t \\
    \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t \\
    \mathbf{v}_{k-1} + \frac{1}{2} \left( \mathbf{a}_{k} + \mathbf{a}_{k-1} \right) \Delta t \\
@@ -221,11 +221,11 @@ Of the various states being measured, only the acceleration vector $\mathbf{a}$ 
 \begin{equation*}
 \mathbf{x} = 
 \Big\{   
-    \mathbf{p}^{T},
-    \mathbf{q}^{T},
-    \mathbf{v}^{T},
+    \mathbf{p}^{T},\
+    \mathbf{q}^{T},\
+    \mathbf{v}^{T},\
     \underbrace{
-    \bm{\Omega}^{T},
+    \bm{\Omega}^{T},\
     \mathbf{a}^{T}}_{\text{IMU}}
 \Big\} ^{T}.
 \end{equation*}
@@ -236,10 +236,10 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 \mathbf{x} = 
 \Big\{
 \underbrace{
-    \mathbf{p}^{T},
-    \mathbf{q}^{T}}_{\text{PTAM}},
-    \mathbf{v}^{T},
-    \bm{\Omega}^{T},
+    \mathbf{p}^{T},\
+    \mathbf{q}^{T}}_{\text{PTAM}},\
+    \mathbf{v}^{T},\
+    \bm{\Omega}^{T},\
     \mathbf{a}^{T}
 \Big\} ^{T}.
 \end{equation*}

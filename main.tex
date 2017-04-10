@@ -11,7 +11,7 @@
 \usepackage{fourier}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage[margin=0.1\textwidth]{caption} % Adjust caption text column width
+\usepackage[margin=0.1\textwidth]{caption} % Adjust caption text column margins
 \usepackage{subcaption} % Subfigures with subcaptions
 \usepackage{wrapfig} % Text wrapping around figures
 \usepackage[export]{adjustbox} % Fine-tuned figure placement
@@ -37,6 +37,14 @@
     filecolor=magenta,      % color of file links
     urlcolor=blue           % color of external links
 }
+
+\makeatletter
+\renewcommand*\env@matrix[1][\arraystretch]{%
+  \edef\arraystretch{#1}%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols c}}
+\makeatother
 
 \begin{document}
 
