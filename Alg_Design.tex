@@ -29,18 +29,6 @@ The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's
 %
 and let $n = 16$ represent the number of state variables.
 
-We now define the following constants:
-%
-\begin{align}
-\alpha &= 0.75 \nonumber \\
-\kappa &= 0 \nonumber \\
-\beta &= 2 \\
-\lambda &= \alpha^{2} \left( n + \kappa \right) - n \nonumber \\
-&= -7 \nonumber
-\end{align}
-%
-The constants $\alpha$, $\beta$, and $\kappa$ control the spread of sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, which we assume throughout. With these constants defined, we can now describe the selection of sigma points.
-
 Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated with the state $\mathbf{x}$. A set of $2n + 1$ sigma points is then derived from $\mathbf{x}$ and $\mathbf{P}$ as
 %
 \begin{align}
@@ -49,7 +37,18 @@ Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be the covariance matrix associated
 \bm{\chi}^{i}_{k-1 | k-1} &= \mathbf{x}_{k-1 | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n, \nonumber
 \end{align}
 %
-where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
+where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}} \right)_{i}$ is the $i$-th column of the square root matrix $\sqrt{\left( n + \lambda \right) \mathbf{P}_{k-1 | k-1}}$. The constants $\alpha$, $\beta$, $\kappa$, and $\lambda$ are defined as
+%
+\begin{align}
+\alpha &= 0.75 \\
+\kappa &= 0 \\
+\beta &= 2 \\
+\lambda &= \alpha^{2} \left( n + \kappa \right) - n = -7
+\end{align}
+%
+These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ caused the filter to become slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and in steady state would frequently undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
+
+The matrix square root $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
 \begin{equation}
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
@@ -57,13 +56,13 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 %
 and is computed via Cholesky decomposition\todo{citation? example in appendix?}.
 
-To predict the next state, these sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
+To predict the next state, the sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
 %
 \begin{equation}
 \bm{\chi}^{i}_{k | k-1} = f \left( \bm{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
 %
-These new sigma points are then used to predict the next state and covariance:
+These transformed sigma points are then used to predict the state and covariance:
 %
 \begin{align}
 \hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\chi}^{i}_{k | k-1} \\
@@ -91,7 +90,7 @@ Given the belief defined by $\mathbf{x}_{k | k-1}$ and $\mathbf{P}_{k | k-1}$, w
 \bm{\chi}^{i}_{k | k-1} &= \mathbf{x}_{k | k-1} - \left( \sqrt{\left( n + \lambda \right) \mathbf{P}_{k | k-1}} \right)_{i-n}, &&i = n+1, \dots, 2n. \nonumber
 \end{align}
 %
-Next, the sigma points are projected through the observation function $h$ (defined in Section~\ref{Observation_Model}):
+Next, the sigma points are projected into the sensor space through the observation function $h$ (defined in Section~\ref{Observation_Model}):
 %
 \begin{equation}
 \bm{\gamma}^{i}_{k} = h \left( \bm{\chi}^{i}_{k | k-1} \right), \quad i = 0, \dots, 2n.
@@ -180,13 +179,17 @@ Similarly, we compute the vehicle's current position using the vehicle's average
 \mathbf{p}_{k} = \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t .
 \end{equation}
 
-Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:\todo{fill out f}
+Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:
 %
 \begin{equation}
-f\left( \mathbf{x}_{k} \right) = 
+f \left( \mathbf{x}_{k} \right) = 
 \begin{Bmatrix}
-    tk
-\end{Bmatrix}
+   \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t \\
+   \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t \\
+   \mathbf{v}_{k-1} + \frac{1}{2} \left( \mathbf{a}_{k} + \mathbf{a}_{k-1} \right) \Delta t \\
+   \bm{\Omega}_{meas.} \\
+   R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right)
+\end{Bmatrix} .
 \end{equation}
 
 \subsection{Observation Model} \label{Observation_Model}
@@ -243,7 +246,7 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 %
 The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 
-Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of any corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and undermines any variety of desired numerical stability.
+Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of any corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter numerically unstable.
 
 To prevent this potentially catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
 %
