@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  11 APR 2017 00:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  11 APR 2017 12:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -1168,28 +1168,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [3
 
-]
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 27.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
-File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-)
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [4]
-(main.lof)
+
+[4] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1211,21 +1195,35 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 11.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 11.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 11.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
+File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-[1
+ [1
 
-] <april_tag.jpg, id=223, 310.15875pt x 310.49333pt>
+]
+<april_tag.jpg, id=223, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
 Package pdftex.def Info: april_tag.jpg used on input line 15.
 (pdftex.def)             Requested size: 119.2467pt x 119.3721pt.
-
-[2 <./april_tag.jpg>]
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `T1/zi4/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `T1/zi4/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 27.
  [3]) (Prior_Work.tex [4]
@@ -1429,54 +1427,45 @@ Chapter 6.
 
 ]
 Chapter 7.
-LaTeX Font Info:    Font shape `T1/zi4/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/zi4/b/n' tried instead on input line 3.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
 [34
 
-] [35] [36]) [37] (main.bbl [38
+] [35] [36] [37]) [38] [39] (main.bbl [40
 
 
-] [39]) [40]
+] [41]) [42]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4F2343FE5C5C0B6DE2236697DEA8F6FC;2132.
+(rerunfilecheck)             Checksum: 2FAE63A15E9CB8084D53D9EB9EE9034D;2130.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 22411 strings out of 493334
- 406097 string characters out of 3136672
- 508742 words of memory out of 3000000
- 24922 multiletter control sequences out of 15000+200000
- 158250 words of font info for 330 fonts, out of 3000000 for 9000
+ 22415 strings out of 493334
+ 406113 string characters out of 3136672
+ 508744 words of memory out of 3000000
+ 24919 multiletter control sequences out of 15000+200000
+ 158342 words of font info for 332 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1826b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlb.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (47 pages, 10801152 bytes).
+les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlb.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (49 pages, 10791866 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 212 named destinations out of 1000 (max. 500000)
- 48966 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 705 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 48454 words of extra memory for PDF output out of 51595 (max. 10000000)
 
