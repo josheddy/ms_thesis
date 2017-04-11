@@ -84,8 +84,8 @@ E.~A. Wan and R.~V.~D. Merwe, ``{The Unscented Kalman Filter for Nonlinear
   pp.~153--158, 2000.
 
 \bibitem{Mur-Artal2015}
-R.~Mur-Artal, J.~M.~M. Montiel, and J.~D. Tardós, ``{ORB-SLAM: A Versatile and
-  Accurate Monocular SLAM System},'' {\em IEEE Transactions on Robotics},
+R.~Mur-Artal, J.~M.~M. Montiel, and J.~D. Tard{\'o}s, ``{ORB-SLAM: A Versatile
+  and Accurate Monocular SLAM System},'' {\em IEEE Transactions on Robotics},
   vol.~31, pp.~1147--1163, Oct 2015.
 
 \end{thebibliography}

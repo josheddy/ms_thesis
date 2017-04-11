@@ -1,0 +1,39 @@
+\thispagestyle{empty}
+
+\begin{center}
+
+{\Large 
+A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of Small Unmanned Aircraft
+}
+\vfill
+
+Joshua Galen Eddy
+
+\vfill
+
+Thesis submitted to the Faculty of the \\
+Virginia Polytechnic Institute and State University \\
+in partial fulfillment of the requirements for the degree of
+
+\vfill
+
+Master of Science \\
+in \\
+Aerospace Engineering
+
+\vfill
+
+Kevin Kochersberger, Chair \\
+Mazen Farhood \\
+Craig Woolsey
+
+\vfill
+
+May 5, 2017 \\
+Blacksburg, Virginia
+
+\vfill
+
+\end{center}
+
+\pagebreak

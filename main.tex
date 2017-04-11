@@ -3,23 +3,32 @@
 \usepackage{geometry} % DELETE WHEN FINISHED
 \geometry{letterpaper, top=1.25in, bottom=1.25in, left=1.5in, right=1.5in} % DELETE WHEN FINISHED
 
-\usepackage{graphicx}
+% Typography packages
 \usepackage{microtype}
-\usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{inconsolata}
 \usepackage{fourier}
+\usepackage{setspace}
+
+% Math packages
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{bm} % Bold Greek math
+
+% Figure and captioning packages
 \usepackage[margin=0.1\textwidth]{caption} % Adjust caption text column margins
 \usepackage{subcaption} % Subfigures with subcaptions
 \usepackage{wrapfig} % Text wrapping around figures
 \usepackage[export]{adjustbox} % Fine-tuned figure placement
-\usepackage{bm} % Bold Greek math
+
+% Algorithm packages
 \usepackage{algorithm} % Algorithm environment
 \usepackage{algorithmicx} % Improved algorithm options
 \usepackage[noend]{algpseudocode}
 
+% Other miscellaneous packages
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{todonotes} % DELETE WHEN FINISHED
 
 \linespread{1.6} % DELETE WHEN FINISHED
@@ -38,6 +47,7 @@
     urlcolor=blue           % color of external links
 }
 
+% Better vertical spacing within matrices
 \makeatletter
 \renewcommand*\env@matrix[1][\arraystretch]{%
   \edef\arraystretch{#1}%
@@ -50,15 +60,7 @@
 
 \pagenumbering{roman}
 
-\title{
-	{A Hardware-Minimal Unscented Kalman Filtering Framework for Visual-Inertial Navigation of \\ Small Unmanned Aircraft}\\
-	\vspace{1 em}
-	{\Large Virginia Tech}
-}
-\author{Joshua Galen Eddy}
-\date{April 20, 2017}
-\maketitle
-
+\input{Title_Page.tex}
 \input{Abstract.tex}
 \input{Acknowledgements.tex}
 \tableofcontents
@@ -66,7 +68,6 @@
 \listoffigures
 \input{Acronyms.tex}
 
-% Arabic page numbers start in Introduction chapter.
 \input{Introduction.tex}
 \input{Prior_Work.tex}
 \todo{add Direct IMU integration section}

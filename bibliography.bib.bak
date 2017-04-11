@@ -187,3 +187,16 @@ pages={153--158},
 keywords={adaptive Kalman filters;computational complexity;covariance analysis;filtering theory;learning (artificial intelligence);nonlinear estimation;nonlinear systems;parameter estimation;state estimation;Gaussian random variable;computational complexity;covariance;deterministic sampling approach;dual estimation problems;extended Kalman filter;machine learning;neural networks training;nonlinear control;nonlinear estimation;nonlinear system;nonlinear system identification;posterior mean;sample points;state distribution;state-estimation;system dynamics;unscented Kalman filter;Computational complexity;Filters;Machine learning;Neural networks;Nonlinear dynamical systems;Nonlinear systems;Performance gain;Random variables;Sampling methods;Taylor series}, 
 doi={10.1109/ASSPCC.2000.882463}, 
 month={},}
+
+@ARTICLE{Mur-Artal2015, 
+author={R. Mur-Artal and J. M. M. Montiel and J. D. Tard{\'o}s}, 
+journal={IEEE Transactions on Robotics}, 
+title={{ORB-SLAM: A Versatile and Accurate Monocular SLAM System}}, 
+year={2015}, 
+volume={31}, 
+number={5}, 
+pages={1147--1163}, 
+keywords={SLAM (robots);ORB-SLAM system;feature-based monocular simultaneous localization and mapping system;survival of the fittest strategy;Cameras;Computational modeling;Feature extraction;Optimization;Real-time systems;Simultaneous localization and mapping;Visualization;Lifelong mapping;localization;monocular vision;recognition;simultaneous localization and mapping (SLAM)}, 
+doi={10.1109/TRO.2015.2463671}, 
+ISSN={1552-3098}, 
+month={Oct},}
