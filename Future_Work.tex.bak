@@ -40,7 +40,9 @@ The UKF formulation itself presents another set of opportunities for improvement
 
 \section{Future Experiments}
 
-Using a better SLAM/VO algorithm would be perhaps the easiest and cheapest way to improve the system. Testing out different vision algorithms would thus be an appealing avenue of inquiry. It would behoove the researcher to characterize the system's behavior under the same conditions which caused PTAM to fail. In particular, test flights that include pure rotations, longer translations, and motion over non-flat terrain would be of interest. \todo{finish this} 
+Using a better SLAM/VO algorithm would be perhaps the easiest and cheapest way to improve the system. Testing out different vision algorithms would thus be an appealing avenue of inquiry. It would behoove the researcher to characterize the system's behavior under the same conditions which caused PTAM to fail. In particular, experiments that include pure rotations, longer translations, and motion over non-flat terrain would be of interest. Mounting the sensor suite on the underside of a real UAV would allow for collection of true flight data, perhaps exposing the limits of the system's limits at speed and in the presence of vehicle vibrations.
+
+After integrating new sensors, new experiments could be devised to characterize the system's effectiveness during sensor blackouts---for example, during an indoor-outdoor transition after integrating a GPS receiver. Experiments such as this could then inform the design of heuristic models for sensor degradation and perhaps even consensus-based estimation strategies. 
 
 \section{System Applications}
 
@@ -56,11 +58,37 @@ What all of these applications have in common is the need for robust localizatio
 
 \subsubsection{Mapping and 3D Reconstruction}
 
-Growing demand for so-called ``precision agriculture'' has brought with it the need to map large areas of cropland at a high speed and low cost point. 
+Growing demand for so-called ``precision agriculture'' has brought with it the need to map large areas of cropland at a high speed and a low cost point. In the past, this need has been met using satellite imagery and human-captured photography. With the arrival of low-cost drones, this work has been offloaded to aerial robots. Outfitted with special sensors such as hyperspectral cameras\footnote{\url{https://en.wikipedia.org/wiki/Hyperspectral_imaging}}, small UAS are able to provide minute-by-minute coverage of large expanses of land. More interesting still, these robots can be outfitted with reservoirs of pesticide or fertilizer and deployed to spray individual plants autonomously. It is in roles such as this where high-accuracy robust localization becomes a necessity. The precision required for precision agriculture can be provided using the sensor fusion techniques discussed in this thesis.
+
+The surfaces of buildings and other structures can be mapped in a similar fashion, given the appropriate sensors and the right framework by which to fuse them. 3D reconstruction has become popular among real estate agents, safety inspectors, and other parties with a vested interest in precise 3D rendering of large geometries. In this case, the aircraft must be able to localize itself precisely in order to take full advantage of onboard sense-and-avoid technologies. The ability of the aircraft to estimate its position is crucial to its ability to map hard-to-reach areas and maintain stable flight. Sensor fusion systems shine when GPS and other sensors are inevitably compromised under overhangs or in the presence of electromagnetic interference.
+
+\subsubsection{Emergency Response}
+
+UAS technologies have become a desirable tool for first responders in many parts of the world. The ability to deploy a UAV to survey forest fires or search for missing persons has been a game changer for law enforcement and emergency personnel. In the case of looking for survivors of a natural disaster, the requirements on a vehicle system are accurate localization and overall robustness. Vehicles sent into harm's way will have to be able to navigate in sensor-compromised environments, sometimes at substantial speed. This use case obviates the need for redundant sensors and intelligent, failure-resistant sensor fusion.
 
 \subsubsection{Infrastructure Inspection}
 
+Infrastructure inspection is similar in several respects to 3D mapping. In both cases, small drones are preferable to manned aircraft because of their low cost, high maneuverability, and ease of use. In recent years, governments and private corporations have taken an interest in using small aircraft to automate the inspection of many types of infrastructure, including
 \begin{enumerate}
     \item Power lines,
-    \i
+    \item Oil rigs,
+    \item Gas pipelines,
+    \item Railroads, and
+    \item Buildings.
 \end{enumerate}
+UAVs make an obvious ally to companies servicing most types of static infrastructure. Inspecting miles of wires or railroad track is a task well-suited to today's UAVs, which commonly ship with intuitive flight planning software. Operators---even those who have no experience flying remote-control aircraft---are now able to program missions and deploy drones with ease. The aircraft are able to cover miles of infrastructure regardless of conditions on the ground, such as flooding or ill-maintained rural roads. Operators with First-Person View (FPV) hardware can watch video streaming live from the aircraft as if they were onboard themselves. The need for robust localization here is obvious: the UAV cannot inspect anything to which it cannot navigate. Operating in the wilderness may require flying below the forest canopy or under natural overhangs that could block GPS reception. The same is true in urban environments, where tall buildings create so-called ``urban canyons'' which compromise GPS effectiveness. Large metal structures can also distort magnetometry readings and thus undermine the aircraft's ability to maintain heading. In any case, UAVs used for large-scale inspections will be dependent on intelligently combined sensing modalities.
+
+\subsubsection{Autonomous Package Delivery}
+
+A number of organizations, most notably Amazon\footnote{\url{https://www.amazon.com/Amazon-Prime-Air/b?node=8037720011}}, have made big bets on drones as the future of delivery services. The task of delivering goods to individual homes is no trifling matter. American homes come in all shapes and sizes and are surrounded by numerous structures and natural obstacles that could endanger a delivery aircraft and by extension the people and property nearby. Moreover, any drone delivery service would have to be predicated upon the ability to land with sub-meter accuracy. In scenarios such as this, visual navigation will be extremely important. Delivery drones will have to land precisely in cluttered environments amid dynamic obstacles, meaning that simple GPS will not be enough to guide the vehicle away from danger. 
+
+\subsubsection{Military/Defense Solutions}
+
+Perhaps the most obvious application of a UKF fusion framework is in military operations, where precision navigation and robustness to sensor blackouts are paramount for protecting soldiers in the field. UAVs have been used in combat for years at the time of this writing, but augmented navigation could still make game changing contributions in areas such as
+\begin{enumerate}
+    \item Robust tracking of friendly and hostile elements,
+    \item Remote observation of roads and vehicle-related hazards,
+    \item Autonomous deliveries of materiel in theater, and
+    \item Human-machine teaming.
+\end{enumerate}
+Every combat zone will constitute a hostile environment for UAV operations, especially in the presence of GPS spoofing/jamming technologies. Combat UAVs would have to be able to tolerate multiple simultaneous sensor failures. Urban flight operations bring with them all of the same difficulties mentioned earlier, only with the added challenge of violent enemy intervention. Robust sensor fusion could automate the task of operational overwatch and provide mission-critical intelligence in a timely manner---but only if the vehicle can fly in sensor-hostile locales.

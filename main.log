@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  12 APR 2017 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  12 APR 2017 22:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -1429,24 +1429,25 @@ Chapter 6.
 Chapter 7.
 [34
 
-] [35] [36] [37] [38]) [39] (main.bbl [40
+] [35] [36] [37] [38] [39] [40] [41]) [42] (main.bbl [43
 
 
-] [41]) [42]
+] [44]) [45]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
- (main.aux)
+
+(main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8296F4119128C167D5F8951C6523306C;2126.
+(rerunfilecheck)             Checksum: 3C2290B9D7F2737B159B43C263C81BC2;2126.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 22447 strings out of 493334
- 406605 string characters out of 3136672
- 512424 words of memory out of 3000000
- 24936 multiletter control sequences out of 15000+200000
+ 22445 strings out of 493334
+ 406472 string characters out of 3136672
+ 512189 words of memory out of 3000000
+ 24928 multiletter control sequences out of 15000+200000
  157946 words of font info for 329 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1826b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1463,9 +1464,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (49 pages, 10796702 bytes).
+Output written on main.pdf (52 pages, 10806859 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 235 named destinations out of 1000 (max. 500000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 241 named destinations out of 1000 (max. 500000)
  48454 words of extra memory for PDF output out of 51595 (max. 10000000)
 
