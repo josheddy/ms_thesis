@@ -14,7 +14,7 @@ We begin by defining the following quantities:
 \mathbf{a} &= \left\lbrace \ddot{x},\ \ddot{y},\ \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x}, q_{y}, q_{z}, q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
@@ -46,7 +46,7 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 \lambda &= \alpha^{2} \left( n + \kappa \right) - n = -7
 \end{align}
 %
-These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and in steady state would frequently undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
+These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and, in steady state, would undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
 
 The square root matrix $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
@@ -246,7 +246,7 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 %
 The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 
-Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of any corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter numerically unstable.
+Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter numerically unstable.
 
 To prevent this potentially catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
 %
@@ -254,7 +254,7 @@ To prevent this potentially catastrophic drift, velocity is estimated by numeric
 \mathbf{v}_{k} = \frac{\mathbf{p}_{k,\ meas.} - \mathbf{p}_{k-1,\ meas.}}{\Delta t_{P}} .
 \end{equation}
 %
-This pseudovelocity correction prevents unbounded velocity drift, which in turns makes the filter's output numerically stable.
+This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable.
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 \todo{diagonality?}
