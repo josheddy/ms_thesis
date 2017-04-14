@@ -6,14 +6,14 @@
 \contentsline {section}{\numberline {2.2}Visual-Inertial Navigation}{8}{section.2.2}
 \contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}UKF Formulation}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{14}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{15}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{17}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{18}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{20}{subsection.3.1.4}
 \contentsline {subsubsection}{Quaternion Continuity Correction}{20}{section*.17}
-\contentsline {subsubsection}{Pseudovelocity Correction}{20}{section*.19}
-\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{21}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{22}{subsection.3.1.6}
+\contentsline {subsubsection}{Pseudovelocity Correction}{21}{section*.19}
+\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{22}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{23}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{23}{section.3.2}
 \contentsline {chapter}{\numberline {4}Experimental Design}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{25}{section.4.1}

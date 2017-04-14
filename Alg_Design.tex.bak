@@ -2,6 +2,8 @@
 
 \section{UKF Formulation} \label{sec:ukf_formulation}
 
+In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, Prediction and Correction. Then we develop a process m
+
 \subsection{Prediction Step}
 
 We begin by defining the following quantities:
@@ -46,7 +48,7 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 \lambda &= \alpha^{2} \left( n + \kappa \right) - n = -7
 \end{align}
 %
-These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and, in steady state, would undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
+These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and, in steady state, would undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
 
 For the purpose of sigma point sampling, the square root matrix $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %

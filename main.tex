@@ -56,6 +56,10 @@
   \array{*\c@MaxMatrixCols c}}
 \makeatother
 
+\newenvironment{myquote}[1]%
+  {\list{}{\leftmargin=#1\rightmargin=#1}\item[]}%
+  {\endlist}
+
 \begin{document}
 
 \pagenumbering{roman}
