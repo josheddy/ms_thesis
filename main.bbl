@@ -83,6 +83,11 @@ E.~A. Wan and R.~V.~D. Merwe, ``{The Unscented Kalman Filter for Nonlinear
   Signal Processing, Communications, and Control Symposium (Cat. No.00EX373)},
   pp.~153--158, 2000.
 
+\bibitem{Stevens2015}
+B.~L. Stevens, F.~L. Lewis, and E.~N. Johnson, {\em {Aircraft Control and
+  Simulation: Dynamics, Controls Design, and Autonomous Systems}}, pp.~1--62.
+\newblock Wiley, 2015.
+
 \bibitem{Mur-Artal2015}
 R.~Mur-Artal, J.~M.~M. Montiel, and J.~D. Tard{\'o}s, ``{ORB-SLAM: A Versatile
   and Accurate Monocular SLAM System},'' {\em IEEE Transactions on Robotics},

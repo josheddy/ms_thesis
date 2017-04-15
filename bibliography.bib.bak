@@ -199,4 +199,17 @@ pages={1147--1163},
 keywords={SLAM (robots);ORB-SLAM system;feature-based monocular simultaneous localization and mapping system;survival of the fittest strategy;Cameras;Computational modeling;Feature extraction;Optimization;Real-time systems;Simultaneous localization and mapping;Visualization;Lifelong mapping;localization;monocular vision;recognition;simultaneous localization and mapping (SLAM)}, 
 doi={10.1109/TRO.2015.2463671}, 
 ISSN={1552-3098}, 
-month={Oct},}
+month={Oct}
+}
+
+@inbook {Stevens2015,
+author = {Stevens, Brian L. and Lewis, Frank L. and Johnson, Eric N.},
+publisher = {Wiley},
+isbn = {9781119174882},
+url = {http://dx.doi.org/10.1002/9781119174882.ch1},
+doi = {10.1002/9781119174882.ch1},
+pages = {1--62},
+keywords = {aircraft motion, coordinate systems, Earth's gravity, Euler angles, geodesy, matrix operations, rigid-body dynamics, rotational kinematics, translational kinematics, vector operations},
+title = {{Aircraft Control and Simulation: Dynamics, Controls Design, and Autonomous Systems}},
+year = {2015},
+}

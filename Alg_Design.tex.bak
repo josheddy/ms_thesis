@@ -2,7 +2,7 @@
 
 \section{UKF Formulation} \label{sec:ukf_formulation}
 
-In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, Prediction and Correction. Then we develop a process m
+In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, Prediction and Correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the random error present in the process and observation models.
 
 \subsection{Prediction Step}
 
@@ -48,7 +48,7 @@ where $\bm{\chi}^{i}$ is the $i$-th sigma point and $\left( \sqrt{\left( n + \la
 \lambda &= \alpha^{2} \left( n + \kappa \right) - n = -7
 \end{align}
 %
-These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.01$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and, in steady state, would undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
+These constants control the spread of the sigma points chosen within the filter. According to Wan et al.\ in \cite{Wan2000}, setting $\beta = 2$ is optimal for a Gaussian state distribution, and $\kappa$ is commonly set to zero. The value of $\alpha$ is usually small and positive. Here, we chose $\alpha$ by trial and error after observing the rate at which the filter converged in a number of preliminary experiments. We found that choosing $0 < \alpha \leq 0.5$ made the filter slow to converge. The filter's estimates would lag behind the pose sensor's readings by an interval that was sometimes several seconds in length and, in steady state, would undershoot the pose sensor. Conversely, choosing $\alpha \geq 1$ caused the filter to diverge. At $\alpha \approx 0.75$, the filter had no distinguishable lag and was highly stable.
 
 For the purpose of sigma point sampling, the square root matrix $\mathbf{A}$ of a matrix $\mathbf{B}$ is defined here as
 %
@@ -56,7 +56,7 @@ For the purpose of sigma point sampling, the square root matrix $\mathbf{A}$ of 
 \mathbf{A} \mathbf{A}^{T} = \mathbf{B}
 \end{equation}
 %
-and is computed via Cholesky decomposition\footnote{\url{https://en.wikipedia.org/wiki/Cholesky_decomposition\#The_Cholesky_algorithm}}.
+and is evaluated using Cholesky decomposition\footnote{\url{https://en.wikipedia.org/wiki/Cholesky_decomposition\#The_Cholesky_algorithm}} for computational efficiency.
 
 To predict the next state, the sigma points are propagated through the nonlinear process function $f$ (defined in Section~\ref{Process_Model}):
 %
@@ -137,7 +137,7 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsection{Process Model} \label{Process_Model}
 
-To propagate the vehicle's state forward in time, we perform a number of integration operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{meas.}$ per the relationship
+To propagate the vehicle's state forward in time, we perform a number of integration operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{meas.}$ per the relationship given in \cite{Stevens2015},
 %
 \begin{equation} \label{eq:proc_quat}
 \mathbf{q}_{k} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t ,
@@ -193,6 +193,7 @@ f \left( \mathbf{x}_{k} \right) =
    R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right)
 \end{Bmatrix} .
 \end{equation}
+\todo{
 
 \subsection{Observation Model} \label{Observation_Model}
 
@@ -248,7 +249,7 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 %
 The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 
-Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter numerically unstable.
+Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter's output numerically unstable.
 
 To prevent this potentially catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
 %
