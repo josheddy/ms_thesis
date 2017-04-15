@@ -76,3 +76,38 @@
     \caption[Box Pattern Trial 5 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~5.}
     \label{box5_traj}
 \end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{longWalk1_xyz}
+  \caption[Long Walk Trial 1]{Long Walk Trial 1 coordinate plots. The shaded region highlights aberrant behavior coinciding with maximal displacement from the origin.}
+  \label{fig:longWalk1_xyz}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{longWalk2_xyz}
+  \caption[Long Walk Trial 2]{Long Walk Trial 2 coordinate plots.}
+  \label{fig:longWalk2_xyz}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{longWalk3_xyz}
+  \caption[Long Walk Trial 3]{Long Walk Trial 3 coordinate plots.}
+  \label{fig:longWalk3_xyz}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{longWalk4_xyz}
+  \caption[Long Walk Trial 4]{Long Walk Trial 4 coordinate plots.}
+  \label{fig:longWalk4_xyz}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{longWalk5_xyz}
+  \caption[Long Walk Trial 5]{Long Walk Trial 5 coordinate plots.}
+  \label{fig:longWalk5_xyz}
+\end{figure}

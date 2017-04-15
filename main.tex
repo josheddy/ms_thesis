@@ -1,8 +1,5 @@
 \documentclass[11 pt]{report}
 
-\usepackage{geometry} % DELETE WHEN FINISHED
-\geometry{letterpaper, top=1.25in, bottom=1.25in, left=1.5in, right=1.5in} % DELETE WHEN FINISHED
-
 % Typography packages
 \usepackage{microtype}
 \usepackage[T1]{fontenc}
@@ -33,8 +30,7 @@
 \usepackage{todonotes} % DELETE WHEN FINISHED
 \usepackage{verbatim} % DELETE WHEN FINISHED
 
-\linespread{1.6} % DELETE WHEN FINISHED
-%\linespread{1.15} % Better line spacing for final copy
+\linespread{1.15}
 
 \hypersetup{
     pdffitwindow=false,     % window fit to page when opened
@@ -49,7 +45,7 @@
     urlcolor=blue           % color of external links
 }
 
-% Better vertical spacing within matrices
+% Change vertical spacing within matrices
 \makeatletter
 \renewcommand*\env@matrix[1][\arraystretch]{%
   \edef\arraystretch{#1}%
@@ -58,6 +54,7 @@
   \array{*\c@MaxMatrixCols c}}
 \makeatother
 
+% Control the margins on block quotes
 \newenvironment{myquote}[1]%
   {\list{}{\leftmargin=#1\rightmargin=#1}\item[]}%
   {\endlist}

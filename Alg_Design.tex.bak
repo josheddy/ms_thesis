@@ -2,7 +2,7 @@
 
 \section{UKF Formulation} \label{sec:ukf_formulation}
 
-In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, Prediction and Correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the random error present in the process and observation models.
+In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, Prediction and Correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
 
 \subsection{Prediction Step}
 
@@ -193,13 +193,13 @@ f \left( \mathbf{x}_{k} \right) =
    R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right)
 \end{Bmatrix} .
 \end{equation}
-\todo{
+\todo{order of these expressions within f?}
 
 \subsection{Observation Model} \label{Observation_Model}
 
 \subsubsection{Quaternion Continuity Correction}
 
-Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent loss of continuity in quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip has occurred:\todo{fill this out more?}
+Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent loss of continuity in quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip occurs:\todo{fill this out more?}
 
 \begin{algorithm}
   \caption{Check for continuity between quaternion estimates}
@@ -207,10 +207,10 @@ Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign
   \begin{algorithmic}[1]
     \Statex
     \Function{CheckQuaternionContinuity}{$\mathbf{q}_{k-1},\ \mathbf{q}_{k}$}
-     \State $\text{sum} = \left| \left| \mathbf{q}_{k-1} + \mathbf{q}_{k} \right| \right|$
-     \State $\text{diff} = \left| \left| \mathbf{q}_{k-1} - \mathbf{q}_{k} \right| \right|$
+     \State $\text{sum} \gets \left| \left| \mathbf{q}_{k-1} + \mathbf{q}_{k} \right| \right|$
+     \State $\text{diff} \gets \left| \left| \mathbf{q}_{k-1} - \mathbf{q}_{k} \right| \right|$
         \If{$\text{diff} \leq \text{sum}}$
-        \State $\mathbf{q}_{k} = - \mathbf{q}_{k}$
+        \State $\mathbf{q}_{k} \gets - \mathbf{q}_{k}$
         \EndIf
       \State \Return{$\mathbf{q}_{k}$}
     \EndFunction
@@ -296,7 +296,7 @@ The resulting $\mathbf{R}$ matrix is as follows:
 
 \section{Software Design Considerations}
 
-Much of the impetus for creating the \texttt{kalman\_sense} ROS package came from a desire to create a generic UKF framework for estimating the state of an arbitrary system using any number of relative and absolute sensors. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented manner around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of methods performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in a generic manner to enable easy extension of \texttt{UnscentedKf} by subclasses containing concrete implementations of various systems. Currently, the package contains only one subclass, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to estimating the state of a quadcopter or other rotorcraft UAV.
+Much of the impetus for creating the \texttt{kalman\_sense} ROS package came from a desire to create a generic UKF framework for estimating the state of an arbitrary system using any number of relative and absolute sensors. To achieve this, the \texttt{kalman\_sense} package is organized in an object-oriented manner around an overarching abstract class called \texttt{UnscentedKf}. This abstract class contains a number of member functions (``methods'') performing the different mathematical operations defined in Section~\ref{sec:ukf_formulation}. These methods have been written in a generic manner to enable easy extension of \texttt{UnscentedKf} by subclasses containing concrete implementations of various systems. Currently, the package contains only one subclass, known as \texttt{QuadUkf}. This subclass contains methods and data structures related directly to estimating the state of a quadcopter or other rotorcraft UAV.
 
 The \texttt{UnscentedKf} class encapsulates the generic mathematics of the UKF without knowledge of particular system constraints. This class does little other than matrix mathematics and is designed to take as input the number of a system's states $n$ and its number of sensors $m$. With this information, \texttt{UnscentedKf} is able to populate a set of mean and covariance weights and then intelligently perform all of the requisite linear algebra for the UKF formulation. All other knowledge of particular states, sensors, vehicle geometry, and other metrics is hidden within subclasses such as \texttt{QuadUkf}.
 

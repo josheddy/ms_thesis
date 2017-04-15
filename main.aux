@@ -39,140 +39,150 @@
 \citation{Klein2007}
 \citation{Weiss2011}
 \citation{Shen2011}
+\@writefile{tdo}{\contentsline {todo}{write up PTAM init procedure in Exp Design}{9}{section*.13}}
+\pgfsyspdfmark {pgfid1}{12324027}{16863423}
+\pgfsyspdfmark {pgfid4}{34440477}{16860193}
+\pgfsyspdfmark {pgfid5}{36357404}{16626609}
 \citation{Weiss2011_2}
 \citation{Weiss2012}
 \citation{Weiss2012_2}
-\@writefile{tdo}{\contentsline {todo}{write up PTAM init procedure in Exp Design}{10}{section*.13}}
-\pgfsyspdfmark {pgfid1}{10404035}{45694713}
-\pgfsyspdfmark {pgfid4}{35726294}{45691483}
-\pgfsyspdfmark {pgfid5}{37643221}{45457899}
 \citation{Huang2013}
 \citation{Lynen2013}
 \citation{Weiss2012}
 \citation{Rogers2014}
 \citation{Faessler2016}
-\@writefile{tdo}{\contentsline {todo}{add Direct IMU integration section}{13}{section*.14}}
-\pgfsyspdfmark {pgfid6}{20305722}{42842575}
-\pgfsyspdfmark {pgfid9}{35726294}{42839345}
-\pgfsyspdfmark {pgfid10}{37643221}{42605761}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{14}{chapter.3}}
+\@writefile{tdo}{\contentsline {todo}{add Direct IMU integration section}{12}{section*.14}}
+\pgfsyspdfmark {pgfid6}{14891662}{23603115}
+\pgfsyspdfmark {pgfid9}{34440477}{23599885}
+\pgfsyspdfmark {pgfid10}{36357404}{23366301}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{13}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Alg_Design}{{3}{14}{Algorithm Design and Implementation}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}UKF Formulation}{14}{section.3.1}}
-\newlabel{sec:ukf_formulation}{{3.1}{14}{UKF Formulation}{section.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{15}{subsection.3.1.1}}
-\newlabel{eq:state_vars}{{3.1}{15}{Prediction Step}{equation.3.1.1}{}}
+\newlabel{ch:Alg_Design}{{3}{13}{Algorithm Design and Implementation}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}UKF Formulation}{13}{section.3.1}}
+\newlabel{sec:ukf_formulation}{{3.1}{13}{UKF Formulation}{section.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{13}{subsection.3.1.1}}
+\newlabel{eq:state_vars}{{3.1}{13}{Prediction Step}{equation.3.1.1}{}}
 \citation{Wan2000}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Correction Step}{17}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}}
 \citation{Stevens2015}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Process Model}{18}{subsection.3.1.3}}
-\newlabel{Process_Model}{{3.1.3}{18}{Process Model}{subsection.3.1.3}{}}
-\newlabel{eq:proc_quat}{{3.26}{19}{Process Model}{equation.3.1.26}{}}
-\newlabel{eq:proc_ang_vel}{{3.28}{19}{Process Model}{equation.3.1.28}{}}
-\@writefile{tdo}{\contentsline {todo}{Have Sam look over this. Are subscripts right?}{19}{section*.15}}
-\pgfsyspdfmark {pgfid11}{7104430}{22301432}
-\pgfsyspdfmark {pgfid14}{35726294}{22298202}
-\pgfsyspdfmark {pgfid15}{37643221}{22064618}
-\newlabel{eq:proc_acc}{{3.29}{19}{Process Model}{equation.3.1.29}{}}
-\@writefile{tdo}{\contentsline {todo}{What is R(q)?}{19}{section*.16}}
-\pgfsyspdfmark {pgfid16}{29097366}{17341648}
-\pgfsyspdfmark {pgfid19}{35726294}{15098566}
-\pgfsyspdfmark {pgfid20}{37643221}{14864982}
-\newlabel{eq:proc_vel}{{3.30}{19}{Process Model}{equation.3.1.30}{}}
-\newlabel{eq:proc_pos}{{3.31}{19}{Process Model}{equation.3.1.31}{}}
-\@writefile{tdo}{\contentsline {todo}{order of these expressions within f?}{20}{section*.17}}
-\pgfsyspdfmark {pgfid21}{7104430}{32360232}
-\pgfsyspdfmark {pgfid24}{35726294}{32357002}
-\pgfsyspdfmark {pgfid25}{37643221}{32123418}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Observation Model}{20}{subsection.3.1.4}}
-\newlabel{Observation_Model}{{3.1.4}{20}{Observation Model}{subsection.3.1.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Quaternion Continuity Correction}{20}{section*.18}}
-\@writefile{tdo}{\contentsline {todo}{fill this out more?}{20}{section*.19}}
-\pgfsyspdfmark {pgfid26}{11132419}{20362356}
-\pgfsyspdfmark {pgfid29}{35726294}{20359126}
-\pgfsyspdfmark {pgfid30}{37643221}{20125542}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Check for continuity between quaternion estimates\relax }}{20}{algorithm.1}}
-\newlabel{alg:checkQuatContinuity}{{1}{20}{Check for continuity between quaternion estimates\relax }{algorithm.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Pseudovelocity Correction}{21}{section*.20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{22}{subsection.3.1.5}}
-\newlabel{sec:Q_Matrix}{{3.1.5}{22}{Process Noise Covariance Matrix}{subsection.3.1.5}{}}
-\@writefile{tdo}{\contentsline {todo}{diagonality?}{22}{section*.21}}
-\pgfsyspdfmark {pgfid31}{7104430}{39874741}
-\pgfsyspdfmark {pgfid34}{35726294}{39871511}
-\pgfsyspdfmark {pgfid35}{37643221}{39637927}
-\@writefile{tdo}{\contentsline {todo}{integral equations}{22}{section*.22}}
-\pgfsyspdfmark {pgfid36}{8218542}{15694483}
-\pgfsyspdfmark {pgfid39}{35726294}{15691253}
-\pgfsyspdfmark {pgfid40}{37643221}{15457669}
-\@writefile{tdo}{\contentsline {todo}{full Q matrix}{22}{section*.23}}
-\pgfsyspdfmark {pgfid41}{8218542}{45694713}
-\pgfsyspdfmark {pgfid44}{35726294}{45691483}
-\pgfsyspdfmark {pgfid45}{37643221}{45457899}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{23}{subsection.3.1.6}}
-\newlabel{sec:R_Matrix}{{3.1.6}{23}{Measurement Noise Covariance Matrix}{subsection.3.1.6}{}}
-\@writefile{tdo}{\contentsline {todo}{diagonality? Q-R ratio?}{23}{section*.24}}
-\pgfsyspdfmark {pgfid46}{7104430}{41300810}
-\pgfsyspdfmark {pgfid49}{35726294}{41297580}
-\pgfsyspdfmark {pgfid50}{37643221}{41063996}
-\@writefile{tdo}{\contentsline {todo}{R Matrix}{23}{section*.25}}
-\pgfsyspdfmark {pgfid51}{18882336}{27040120}
-\pgfsyspdfmark {pgfid54}{35726294}{27036890}
-\pgfsyspdfmark {pgfid55}{37643221}{26803306}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Software Design Considerations}{23}{section.3.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experimental Design}{25}{chapter.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}}
+\newlabel{Process_Model}{{3.1.3}{17}{Process Model}{subsection.3.1.3}{}}
+\newlabel{eq:proc_quat}{{3.26}{17}{Process Model}{equation.3.1.26}{}}
+\newlabel{eq:proc_ang_vel}{{3.28}{17}{Process Model}{equation.3.1.28}{}}
+\@writefile{tdo}{\contentsline {todo}{Have Sam look over this. Are subscripts right?}{17}{section*.15}}
+\pgfsyspdfmark {pgfid11}{12688576}{13657067}
+\pgfsyspdfmark {pgfid14}{34440477}{13653837}
+\pgfsyspdfmark {pgfid15}{36357404}{13420253}
+\newlabel{eq:proc_acc}{{3.29}{17}{Process Model}{equation.3.1.29}{}}
+\@writefile{tdo}{\contentsline {todo}{What is R(q)?}{17}{section*.16}}
+\pgfsyspdfmark {pgfid16}{31868190}{10092254}
+\pgfsyspdfmark {pgfid19}{34440477}{8058565}
+\pgfsyspdfmark {pgfid20}{36357404}{7824981}
+\newlabel{eq:proc_vel}{{3.30}{18}{Process Model}{equation.3.1.30}{}}
+\newlabel{eq:proc_pos}{{3.31}{18}{Process Model}{equation.3.1.31}{}}
+\@writefile{tdo}{\contentsline {todo}{order of these expressions within f?}{18}{section*.17}}
+\pgfsyspdfmark {pgfid21}{8275230}{23632229}
+\pgfsyspdfmark {pgfid24}{34440477}{23628999}
+\pgfsyspdfmark {pgfid25}{36357404}{23395415}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}}
+\newlabel{Observation_Model}{{3.1.4}{18}{Observation Model}{subsection.3.1.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Quaternion Continuity Correction}{18}{section*.18}}
+\@writefile{tdo}{\contentsline {todo}{fill this out more?}{18}{section*.19}}
+\pgfsyspdfmark {pgfid26}{20329051}{14453787}
+\pgfsyspdfmark {pgfid29}{34440477}{14450557}
+\pgfsyspdfmark {pgfid30}{36357404}{14216973}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Check for continuity between quaternion estimates\relax }}{19}{algorithm.1}}
+\newlabel{alg:checkQuatContinuity}{{1}{19}{Check for continuity between quaternion estimates\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{20}{subsection.3.1.5}}
+\newlabel{sec:Q_Matrix}{{3.1.5}{20}{Process Noise Covariance Matrix}{subsection.3.1.5}{}}
+\@writefile{tdo}{\contentsline {todo}{diagonality?}{20}{section*.21}}
+\pgfsyspdfmark {pgfid31}{8275230}{32582059}
+\pgfsyspdfmark {pgfid34}{34440477}{32578829}
+\pgfsyspdfmark {pgfid35}{36357404}{32345245}
+\@writefile{tdo}{\contentsline {todo}{integral equations}{20}{section*.22}}
+\pgfsyspdfmark {pgfid36}{9389342}{13152697}
+\pgfsyspdfmark {pgfid39}{34440477}{13149467}
+\pgfsyspdfmark {pgfid40}{36357404}{12915883}
+\@writefile{tdo}{\contentsline {todo}{full Q matrix}{21}{section*.23}}
+\pgfsyspdfmark {pgfid41}{9389342}{41027741}
+\pgfsyspdfmark {pgfid44}{34440477}{41024511}
+\pgfsyspdfmark {pgfid45}{36357404}{40790927}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{21}{subsection.3.1.6}}
+\newlabel{sec:R_Matrix}{{3.1.6}{21}{Measurement Noise Covariance Matrix}{subsection.3.1.6}{}}
+\@writefile{tdo}{\contentsline {todo}{diagonality? Q-R ratio?}{21}{section*.24}}
+\pgfsyspdfmark {pgfid46}{8275230}{37447817}
+\pgfsyspdfmark {pgfid49}{34440477}{37444587}
+\pgfsyspdfmark {pgfid50}{36357404}{37211003}
+\@writefile{tdo}{\contentsline {todo}{R Matrix}{21}{section*.25}}
+\pgfsyspdfmark {pgfid51}{20053136}{26173059}
+\pgfsyspdfmark {pgfid54}{34440477}{26169829}
+\pgfsyspdfmark {pgfid55}{36357404}{25936245}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Software Design Considerations}{21}{section.3.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experimental Design}{23}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Exp_Design}{{4}{25}{Experimental Design}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Testing Considerations}{25}{section.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 3D-printed sensor mount}}{26}{figure.caption.26}}
-\newlabel{fig:sensor_mount}{{4.1}{26}{3D-printed sensor mount}{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Materials}{27}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Computation and Sensing}{27}{subsection.4.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Mobile Test Stand}{28}{subsection.4.2.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}The Experiments}{29}{section.4.3}}
-\@writefile{tdo}{\contentsline {todo}{more explanation of post processing}{29}{section*.27}}
-\pgfsyspdfmark {pgfid56}{7104430}{43542414}
-\pgfsyspdfmark {pgfid59}{35726294}{43539184}
-\pgfsyspdfmark {pgfid60}{37643221}{43305600}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results}{30}{chapter.5}}
+\newlabel{ch:Exp_Design}{{4}{23}{Experimental Design}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Testing Considerations}{23}{section.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 3D-printed sensor mount}}{24}{figure.caption.26}}
+\newlabel{fig:sensor_mount}{{4.1}{24}{3D-printed sensor mount}{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Materials}{25}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Computation and Sensing}{25}{subsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Mobile Test Stand}{26}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}The Experiments}{27}{section.4.3}}
+\@writefile{tdo}{\contentsline {todo}{more explanation of post processing}{27}{section*.27}}
+\pgfsyspdfmark {pgfid56}{8275230}{41326489}
+\pgfsyspdfmark {pgfid59}{34440477}{41323259}
+\pgfsyspdfmark {pgfid60}{36357404}{41089675}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results}{28}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Box Pattern Trial 1 Trajectory}}{31}{figure.caption.28}}
-\newlabel{box1_traj}{{5.1}{31}{Box Pattern Trial 1 Trajectory}{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Box Pattern Trial 2 Trajectory}}{31}{figure.caption.29}}
-\newlabel{box2_traj}{{5.2}{31}{Box Pattern Trial 2 Trajectory}{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Box Pattern Trial 3 Trajectory}}{32}{figure.caption.30}}
-\newlabel{box3_traj}{{5.3}{32}{Box Pattern Trial 3 Trajectory}{figure.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Box Pattern Trial 4 Trajectory}}{32}{figure.caption.31}}
-\newlabel{box4_traj}{{5.4}{32}{Box Pattern Trial 4 Trajectory}{figure.caption.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Box Pattern Trial 5 Trajectory}}{33}{figure.caption.32}}
-\newlabel{box5_traj}{{5.5}{33}{Box Pattern Trial 5 Trajectory}{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{34}{chapter.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Box Pattern Trial 1 Trajectory}}{29}{figure.caption.28}}
+\newlabel{box1_traj}{{5.1}{29}{Box Pattern Trial 1 Trajectory}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Box Pattern Trial 2 Trajectory}}{29}{figure.caption.29}}
+\newlabel{box2_traj}{{5.2}{29}{Box Pattern Trial 2 Trajectory}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Box Pattern Trial 3 Trajectory}}{30}{figure.caption.30}}
+\newlabel{box3_traj}{{5.3}{30}{Box Pattern Trial 3 Trajectory}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Box Pattern Trial 4 Trajectory}}{30}{figure.caption.31}}
+\newlabel{box4_traj}{{5.4}{30}{Box Pattern Trial 4 Trajectory}{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Box Pattern Trial 5 Trajectory}}{31}{figure.caption.32}}
+\newlabel{box5_traj}{{5.5}{31}{Box Pattern Trial 5 Trajectory}{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Long Walk Trial 1}}{31}{figure.caption.33}}
+\newlabel{fig:longWalk1_xyz}{{5.6}{31}{Long Walk Trial 1}{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Long Walk Trial 2}}{32}{figure.caption.34}}
+\newlabel{fig:longWalk2_xyz}{{5.7}{32}{Long Walk Trial 2}{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Long Walk Trial 3}}{33}{figure.caption.35}}
+\newlabel{fig:longWalk3_xyz}{{5.8}{33}{Long Walk Trial 3}{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Long Walk Trial 4}}{34}{figure.caption.36}}
+\newlabel{fig:longWalk4_xyz}{{5.9}{34}{Long Walk Trial 4}{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Long Walk Trial 5}}{35}{figure.caption.37}}
+\newlabel{fig:longWalk5_xyz}{{5.10}{35}{Long Walk Trial 5}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{36}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{tdo}{\contentsline {todo}{draw conclusions}{34}{section*.33}}
-\pgfsyspdfmark {pgfid61}{7104430}{31292494}
-\pgfsyspdfmark {pgfid64}{35726294}{31289264}
-\pgfsyspdfmark {pgfid65}{37643221}{31055680}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Future Work}{35}{chapter.7}}
+\@writefile{tdo}{\contentsline {todo}{draw conclusions}{36}{section*.38}}
+\pgfsyspdfmark {pgfid61}{8275230}{30698629}
+\pgfsyspdfmark {pgfid64}{34440477}{30695399}
+\pgfsyspdfmark {pgfid65}{36357404}{30461815}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Future Work}{37}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}System Improvements}{35}{section.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}System Improvements}{37}{section.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{37}{subsection.7.1.1}}
 \citation{Shen2011}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{36}{subsection.7.1.1}}
 \citation{Donavanik2016}
 \citation{Mur-Artal2015}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{39}{subsection.7.1.2}}
 \citation{Weiss2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{38}{subsection.7.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{39}{subsection.7.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Future Experiments}{39}{section.7.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}System Applications}{40}{section.7.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Mapping and 3D Reconstruction}{40}{section*.34}}
-\@writefile{toc}{\contentsline {subsubsection}{Emergency Response}{41}{section*.35}}
-\@writefile{toc}{\contentsline {subsubsection}{Infrastructure Inspection}{42}{section*.36}}
-\@writefile{toc}{\contentsline {subsubsection}{Autonomous Package Delivery}{43}{section*.37}}
-\@writefile{toc}{\contentsline {subsubsection}{Military/Defense Solutions}{43}{section*.38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{40}{subsection.7.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Future Experiments}{41}{section.7.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}System Applications}{41}{section.7.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Mapping and 3D Reconstruction}{42}{section*.39}}
+\@writefile{toc}{\contentsline {subsubsection}{Emergency Response}{42}{section*.40}}
+\@writefile{toc}{\contentsline {subsubsection}{Infrastructure Inspection}{43}{section*.41}}
+\@writefile{toc}{\contentsline {subsubsection}{Autonomous Package Delivery}{44}{section*.42}}
+\@writefile{toc}{\contentsline {subsubsection}{Military/Defense Solutions}{44}{section*.43}}
 \bibstyle{ieeetr}
 \bibdata{bibliography}
 \bibcite{Julier1997}{1}
@@ -184,7 +194,7 @@
 \bibcite{Weiss2011}{7}
 \bibcite{Shen2011}{8}
 \bibcite{Weiss2011_2}{9}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{45}{Item.37}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{46}{Item.37}}
 \bibcite{Weiss2012}{10}
 \bibcite{Weiss2012_2}{11}
 \bibcite{Huang2013}{12}
