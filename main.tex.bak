@@ -20,8 +20,8 @@
 
 % Algorithm packages
 \usepackage{algorithm} % Algorithm environment
-\usepackage{algorithmicx} % Improved algorithm options
-\usepackage[noend]{algpseudocode}
+\usepackage{algorithmicx} % Improvements to Algorithm environment
+\usepackage[noend]{algpseudocode} % No "end" statement at the end of an algorithm
 
 % Other miscellaneous packages
 \usepackage{array} % For fixed-length tables
@@ -61,7 +61,7 @@
 
 \begin{document}
 
-\pagenumbering{roman}
+%\pagenumbering{roman}
 
 \input{Title_Page.tex}
 \input{Abstract.tex}

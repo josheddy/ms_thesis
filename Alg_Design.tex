@@ -170,7 +170,7 @@ Here $R^{g}_{b} \left[ \mathbf{q}_{k-1} \right]$ is the rotation matrix represen
 %
 \begin{equation}
 R^{g}_{b} \left[ \mathbf{q} \right] =
-\begin{bmatrix}
+\begin{bmatrix}[1.5]
     1 - 2 q_{y}^2 - 2 q_{z}^2 & 2 q_{x} q_{y} - 2 q_{z} q_{w} & 2 q_{x} q_{z} + 2 q_{y} q_{w} \\
     2 q_{x} q_{y} + 2 q_{z} q_{w} & 1 - 2 q_{x}^2 - 2 q_{z}^2 & 2 q_{y} q_{z} - 2 q_{x} q_{w} \\
     2 q_{x} q_{z} - 2 q_{y} q_{w} & 2 q_{y} q_{z} + 2 q_{x} q_{w} & 1 - 2 q_{x}^2 - 2 q_{y}^2
@@ -204,10 +204,12 @@ f \left( \mathbf{x}_{k} \right) =
 \todo{order of these expressions within f?}
 
 \subsection{Observation Model} \label{Observation_Model}
-
+\todo{observation model h}
 \subsubsection{Quaternion Continuity Correction}
 
-Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. To prevent loss of continuity in quaternion estimates, we keep the previous quaternion estimate $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct the incoming quaternion estimate if a sign-flip occurs:\todo{fill this out more?}
+Due to a defect in the ROS PTAM implementation, quaternion estimates switch sign without warning after rotations of approximately 270 degrees. Because two quaternions $\mathbf{q}$ and $- \mathbf{q}$ encode precisely the same \textit{angles}, but opposite \textit{rotations}, a sign flip in PTAM's quaternion output implies a 360-degree rotation in the direction opposite to the vehicle's true rotation. A simple way to detect this type of errant behavior is to check, upon receipt of each new quaternion $\mathbf{q}_{k}$, whether $- \mathbf{q}_{k}$ implies a smaller rotation from the previous quaternion $\mathbf{q}_{k-1}$. Given that PTAM produces pose estimates at a rate of about 20~Hz, we assume only small-angle rotations between pose estimates. Thus, the smaller of the two rotations should always come from the correct $\mathbf{q}_{k}$.
+
+To preserve rotational continuity, we keep the last quaternion $\mathbf{q}_{k-1}$ in memory and employ the following algorithm to correct $\mathbf{q}_{k}$ if a sign flip occurs:
 
 \begin{algorithm}
   \caption{Check for continuity between quaternion estimates}

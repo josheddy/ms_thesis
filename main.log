@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  15 APR 2017 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  16 APR 2017 12:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -1080,18 +1080,13 @@ LaTeX Info: Redefining \nameref on input line 62.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 )
-(Acknowledgements.tex
-Overfull \hbox (1.25955pt too wide) in paragraph at lines 5--1
+(Acknowledgments.tex
+Overfull \hbox (1.25955pt too wide) in paragraph at lines 3--1
 \T1/futs/m/n/10.95 (-20) This the-sis presents the for-mu-la-tion and im-ple-me
 n-ta-tion of an Un-scented Kalman
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            *{Acknowledgments} [1
+[1
 
 ]) [2
 
@@ -1144,26 +1139,31 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  (Acronyms.tex [5
 
-]) (Introduction.tex [6
+]) [6
 
-]
+] (Introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-[1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 
+     [1
 
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 9.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 17.
+(Font)              scaled to size 6.99199pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 17.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 17.
+(Font)              scaled to size 6.99199pt on input line 15.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 15.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
@@ -1181,15 +1181,15 @@ Package microtype Info: Character `textemdash ' is missing
 [2] <april_tag.jpg, id=239, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
  <use april_tag.jpg>
-Package pdftex.def Info: april_tag.jpg used on input line 21.
+Package pdftex.def Info: april_tag.jpg used on input line 19.
 (pdftex.def)             Requested size: 180.0pt x 180.19048pt.
 
-Underfull \hbox (badness 1038) in paragraph at lines 26--27
+Underfull \hbox (badness 1038) in paragraph at lines 24--25
 \T1/futs/m/n/10.95 (+20) mul-ti-ro-tor de-liv-ery drones. These
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 26--27
+Underfull \hbox (badness 1484) in paragraph at lines 24--25
 \T1/futs/m/n/10.95 (+20) air-craft were ca-pa-ble of de-liv-er-ing
  []
 
@@ -1201,7 +1201,7 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [3 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 31.
  [4]) (Prior_Work.tex [5]
 Chapter 2.
 [6
@@ -1213,46 +1213,69 @@ ine 25.
 Chapter 3.
 [13
 
-] [14] [15] [16] [17] [18]
+] [14] [15] [16] [17]
+Overfull \hbox (2.86179pt too wide) in paragraph at lines 207--207
+[][][][]\T1/futs/m/n/10.95 (-20) observation 
+ []
+
+
+Overfull \hbox (2.86179pt too wide) in paragraph at lines 207--207
+[][][][]\T1/futs/m/n/10.95 (-20) observation 
+ []
+
+
+Overfull \hbox (2.86179pt too wide) in paragraph at lines 207--207
+[][][][]\T1/futs/m/n/10.95 (-20) observation 
+ []
+
+
+Overfull \hbox (2.86179pt too wide) in paragraph at lines 207--207
+[][][][]\T1/futs/m/n/10.95 (-20) observation 
+ []
+
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+[18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 213.
+put line 215.
  [19]
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 273--273
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 273--273
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 273--273
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 273--273
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 [20]
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 298--298
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 298--298
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 298--298
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 298--298
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
@@ -1424,22 +1447,22 @@ Chapter 7.
 
 
 ] [45]) [46]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 926D7D18DB8812CF58CBAC906A968CCC;2130.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 22111 strings out of 493334
- 401499 string characters out of 3136672
- 500078 words of memory out of 3000000
+ 22115 strings out of 493334
+ 401540 string characters out of 3136672
+ 499081 words of memory out of 3000000
  24596 multiletter control sequences out of 15000+200000
- 157151 words of font info for 324 fonts, out of 3000000 for 9000
+ 157547 words of font info for 327 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1814b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -1455,7 +1478,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (53 pages, 11425991 bytes).
+Output written on main.pdf (53 pages, 11426221 bytes).
 PDF statistics:
  780 PDF objects out of 1000 (max. 8388607)
  249 named destinations out of 1000 (max. 500000)

@@ -10,11 +10,11 @@
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}
-\contentsline {subsubsection}{Quaternion Continuity Correction}{18}{section*.17}
+\contentsline {subsubsection}{Quaternion Continuity Correction}{19}{section*.18}
 \contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.19}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{20}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{21}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Software Design Considerations}{21}{section.3.2}
+\contentsline {section}{\numberline {3.2}Software Design Considerations}{22}{section.3.2}
 \contentsline {chapter}{\numberline {4}Experimental Design}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Materials}{24}{section.4.2}
