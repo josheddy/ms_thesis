@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  16 APR 2017 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  16 APR 2017 15:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -950,11 +950,7 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 46.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 46.
 Package hyperref Info: Option `colorlinks' set `true' on input line 46.
- (main.aux
-
-LaTeX Warning: Label `fig:sensor_mount_vicon' multiply defined.
-
-)
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -971,7 +967,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 62.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 62.
@@ -1158,16 +1155,23 @@ l.6
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
+ <CARD_gearREALLYBIG.png, id=239, 1854.127pt x 728.321pt>
+File: CARD_gearREALLYBIG.png Graphic file (type png)
+
+<use CARD_gearREALLYBIG.png>
+Package pdftex.def Info: CARD_gearREALLYBIG.png used on input line 15.
+(pdftex.def)             Requested size: 143.9978pt x 56.55542pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
+(Font)              scaled to size 8.27998pt on input line 22.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
+(Font)              scaled to size 6.99199pt on input line 22.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
+(Font)              scaled to size 8.27998pt on input line 22.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 15.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
+(Font)              scaled to size 6.99199pt on input line 22.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 22.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
 Package microtype Info: Loading generic settings for font family
@@ -1180,31 +1184,22 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-
-[2] <april_tag.jpg, id=247, 310.15875pt x 310.49333pt>
+ [2 <./CARD_gearREALLYBIG.png>] <april_tag.jpg, id=255, 310.15875pt x 310.49333
+pt>
 File: april_tag.jpg Graphic file (type jpg)
- <use april_tag.jpg>
-Package pdftex.def Info: april_tag.jpg used on input line 19.
-(pdftex.def)             Requested size: 180.0pt x 180.19048pt.
 
-Underfull \hbox (badness 1038) in paragraph at lines 24--25
-\T1/futs/m/n/10.95 (+20) mul-ti-ro-tor de-liv-ery drones. These
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 24--25
-\T1/futs/m/n/10.95 (+20) air-craft were ca-pa-ble of de-liv-er-ing
- []
-
+<use april_tag.jpg>
+Package pdftex.def Info: april_tag.jpg used on input line 26.
+(pdftex.def)             Requested size: 143.9978pt x 144.15048pt.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[3 <./april_tag.jpg>]
+ [3 <./april_tag.jpg>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 31.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
  [4]) (Prior_Work.tex [5]
 Chapter 2.
 [6
@@ -1284,13 +1279,13 @@ Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 
 [21]) (Exp_Design.tex [22]
 Chapter 4.
-<sensor_mount_top.jpg, id=473, 1606.0pt x 1204.5pt>
+<sensor_mount_top.jpg, id=483, 1606.0pt x 1204.5pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
  <use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
 (pdftex.def)             Requested size: 144.00055pt x 107.99597pt.
 
-<sensor_mount_bottom.jpg, id=474, 1606.0pt x 1204.5pt>
+<sensor_mount_bottom.jpg, id=484, 1606.0pt x 1204.5pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
@@ -1301,58 +1296,73 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 9--20
  [][]  [] 
  []
 
-<whole_cart.jpg, id=475, 1606.0pt x 1204.5pt>
+<whole_cart.jpg, id=485, 1606.0pt x 1204.5pt>
 File: whole_cart.jpg Graphic file (type jpg)
  <use whole_cart.jpg>
 Package pdftex.def Info: whole_cart.jpg used on input line 26.
 (pdftex.def)             Requested size: 360.0pt x 269.98994pt.
 
-<cart_at_AI.jpg, id=476, 1606.0pt x 1204.5pt>
+<cart_at_AI.jpg, id=486, 1606.0pt x 1204.5pt>
 File: cart_at_AI.jpg Graphic file (type jpg)
  <use cart_at_AI.jpg>
 Package pdftex.def Info: cart_at_AI.jpg used on input line 33.
 (pdftex.def)             Requested size: 360.0pt x 269.98994pt.
 
-<sensor_mount_vicon.jpg, id=477, 1606.0pt x 1204.5pt>
+<sensor_mount_vicon.jpg, id=487, 1606.0pt x 1204.5pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
 <use sensor_mount_vicon.jpg>
 Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 40.
 (pdftex.def)             Requested size: 360.0pt x 269.98994pt.
- [23
+
+<bowl-shaped_world.png, id=488, 614.295pt x 215.30438pt>
+File: bowl-shaped_world.png Graphic file (type png)
+
+<use bowl-shaped_world.png>
+Package pdftex.def Info: bowl-shaped_world.png used on input line 47.
+(pdftex.def)             Requested size: 360.0pt x 126.17758pt.
+
+<rot_bug_rviz.png, id=489, 362.85562pt x 425.33907pt>
+File: rot_bug_rviz.png Graphic file (type png)
+ <use rot_bug_rviz.png>
+Package pdftex.def Info: rot_bug_rviz.png used on input line 54.
+(pdftex.def)             Requested size: 245.70319pt x 288.0011pt.
+
+[23
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 75.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [24 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] [25 <./whole_cart.jp
-g>] [26 <./cart_at_AI.jpg>] [27 <./sensor_mount_vicon.jpg>]
-<good_box_5_cropped.png, id=530, 496.10344pt x 367.3725pt>
+
+[24 <./sensor_mount_top.jpg> <./sensor_mount_bottom.jpg>] [25 <./whole_cart.jpg
+>] [26 <./cart_at_AI.jpg>] [27 <./sensor_mount_vicon.jpg> <./bowl-shaped_world.
+png>] [28 <./rot_bug_rviz.png>]
+<good_box_5_cropped.png, id=546, 496.10344pt x 367.3725pt>
 File: good_box_5_cropped.png Graphic file (type png)
 
 <use good_box_5_cropped.png>
-Package pdftex.def Info: good_box_5_cropped.png used on input line 76.
+Package pdftex.def Info: good_box_5_cropped.png used on input line 90.
 (pdftex.def)             Requested size: 360.0pt x 266.58768pt.
 ) (Exp_Results.tex
 
-LaTeX Warning: Marginpar on page 28 moved.
+LaTeX Warning: Marginpar on page 29 moved.
 
-[28] [29 <./good_box_5_cropped.png>]
+[29] [30 <./good_box_5_cropped.png>]
 Chapter 5.
-<box1_2d.jpg, id=555, 656.4525pt x 711.4078pt>
+<box1_2d.jpg, id=572, 656.4525pt x 711.4078pt>
 File: box1_2d.jpg Graphic file (type jpg)
  <use box1_2d.jpg>
 Package pdftex.def Info: box1_2d.jpg used on input line 6.
 (pdftex.def)             Requested size: 143.9978pt x 156.05428pt.
 
-<box1_3d.jpg, id=556, 1264.725pt x 948.54375pt>
+<box1_3d.jpg, id=573, 1264.725pt x 948.54375pt>
 File: box1_3d.jpg Graphic file (type jpg)
  <use box1_3d.jpg>
 Package pdftex.def Info: box1_3d.jpg used on input line 11.
@@ -1362,13 +1372,13 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 5--13
  []$[]$  $[]$ 
  []
 
-<box2_2d.jpg, id=557, 933.4875pt x 948.54375pt>
+<box2_2d.jpg, id=574, 933.4875pt x 948.54375pt>
 File: box2_2d.jpg Graphic file (type jpg)
  <use box2_2d.jpg>
 Package pdftex.def Info: box2_2d.jpg used on input line 20.
 (pdftex.def)             Requested size: 143.9978pt x 146.31355pt.
 
-<box2_3d.jpg, id=558, 1264.725pt x 948.54375pt>
+<box2_3d.jpg, id=575, 1264.725pt x 948.54375pt>
 File: box2_3d.jpg Graphic file (type jpg)
  <use box2_3d.jpg>
 Package pdftex.def Info: box2_3d.jpg used on input line 25.
@@ -1378,13 +1388,13 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 19--27
  []$[]$  $[]$ 
  []
 
-<box3_2d.jpg, id=559, 937.5025pt x 948.54375pt>
+<box3_2d.jpg, id=576, 937.5025pt x 948.54375pt>
 File: box3_2d.jpg Graphic file (type jpg)
  <use box3_2d.jpg>
 Package pdftex.def Info: box3_2d.jpg used on input line 34.
 (pdftex.def)             Requested size: 143.9978pt x 145.6912pt.
 
-<box3_3d.jpg, id=560, 1264.725pt x 948.54375pt>
+<box3_3d.jpg, id=577, 1264.725pt x 948.54375pt>
 File: box3_3d.jpg Graphic file (type jpg)
  <use box3_3d.jpg>
 Package pdftex.def Info: box3_3d.jpg used on input line 39.
@@ -1394,13 +1404,13 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 33--41
  []$[]$  $[]$ 
  []
 
-<box4_2d.jpg, id=561, 940.51375pt x 948.54375pt>
+<box4_2d.jpg, id=578, 940.51375pt x 948.54375pt>
 File: box4_2d.jpg Graphic file (type jpg)
  <use box4_2d.jpg>
 Package pdftex.def Info: box4_2d.jpg used on input line 48.
 (pdftex.def)             Requested size: 143.9978pt x 145.22803pt.
 
-<box4_3d.jpg, id=562, 1264.725pt x 948.54375pt>
+<box4_3d.jpg, id=579, 1264.725pt x 948.54375pt>
 File: box4_3d.jpg Graphic file (type jpg)
  <use box4_3d.jpg>
 Package pdftex.def Info: box4_3d.jpg used on input line 53.
@@ -1410,13 +1420,13 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 47--55
  []$[]$  $[]$ 
  []
 
-<box5_2d.jpg, id=563, 919.435pt x 948.54375pt>
+<box5_2d.jpg, id=580, 919.435pt x 948.54375pt>
 File: box5_2d.jpg Graphic file (type jpg)
  <use box5_2d.jpg>
 Package pdftex.def Info: box5_2d.jpg used on input line 62.
 (pdftex.def)             Requested size: 143.9978pt x 148.55696pt.
 
-<box5_3d.jpg, id=564, 1264.725pt x 948.54375pt>
+<box5_3d.jpg, id=581, 1264.725pt x 948.54375pt>
 File: box5_3d.jpg Graphic file (type jpg)
  <use box5_3d.jpg>
 Package pdftex.def Info: box5_3d.jpg used on input line 67.
@@ -1426,56 +1436,56 @@ Overfull \hbox (3.43826pt too wide) in paragraph at lines 61--69
  []$[]$  $[]$ 
  []
 
-<longWalk1_xyz.jpg, id=565, 684.156pt x 542.025pt>
+<longWalk1_xyz.jpg, id=582, 684.156pt x 542.025pt>
 File: longWalk1_xyz.jpg Graphic file (type jpg)
  <use longWalk1_xyz.jpg>
 Package pdftex.def Info: longWalk1_xyz.jpg used on input line 75.
 (pdftex.def)             Requested size: 360.0pt x 285.22076pt.
 
-<longWalk2_xyz.jpg, id=566, 1518.67375pt x 1222.5675pt>
+<longWalk2_xyz.jpg, id=583, 1518.67375pt x 1222.5675pt>
 File: longWalk2_xyz.jpg Graphic file (type jpg)
 
 <use longWalk2_xyz.jpg>
 Package pdftex.def Info: longWalk2_xyz.jpg used on input line 82.
 (pdftex.def)             Requested size: 360.0pt x 289.80315pt.
 
-<longWalk3_xyz.jpg, id=567, 1527.7075pt x 1179.40625pt>
+<longWalk3_xyz.jpg, id=584, 1527.7075pt x 1179.40625pt>
 File: longWalk3_xyz.jpg Graphic file (type jpg)
 
 <use longWalk3_xyz.jpg>
 Package pdftex.def Info: longWalk3_xyz.jpg used on input line 89.
 (pdftex.def)             Requested size: 360.0pt x 277.91635pt.
 
-<longWalk4_xyz.jpg, id=568, 1739.49875pt x 1352.05125pt>
+<longWalk4_xyz.jpg, id=585, 1739.49875pt x 1352.05125pt>
 File: longWalk4_xyz.jpg Graphic file (type jpg)
 
 <use longWalk4_xyz.jpg>
 Package pdftex.def Info: longWalk4_xyz.jpg used on input line 96.
 (pdftex.def)             Requested size: 360.0pt x 279.81302pt.
 
-<longWalk5_xyz.jpg, id=569, 1731.46875pt x 1390.19376pt>
+<longWalk5_xyz.jpg, id=586, 1731.46875pt x 1390.19376pt>
 File: longWalk5_xyz.jpg Graphic file (type jpg)
 
 <use longWalk5_xyz.jpg>
 Package pdftex.def Info: longWalk5_xyz.jpg used on input line 103.
 (pdftex.def)             Requested size: 360.0pt x 289.04317pt.
-) (Conclusions.tex [30
+) (Conclusions.tex [31
 
-] [31 <./box1_2d.jpg> <./box1_3d.jpg> <./box2_2d.jpg> <./box2_3d.jpg>] [32 <./b
-ox3_2d.jpg> <./box3_3d.jpg> <./box4_2d.jpg> <./box4_3d.jpg>] [33 <./box5_2d.jpg
-> <./box5_3d.jpg> <./longWalk1_xyz.jpg>] [34 <./longWalk2_xyz.jpg>] [35 <./long
-Walk3_xyz.jpg>] [36 <./longWalk4_xyz.jpg>] [37 <./longWalk5_xyz.jpg>]
+] [32 <./box1_2d.jpg> <./box1_3d.jpg> <./box2_2d.jpg> <./box2_3d.jpg>] [33 <./b
+ox3_2d.jpg> <./box3_3d.jpg> <./box4_2d.jpg> <./box4_3d.jpg>] [34 <./box5_2d.jpg
+> <./box5_3d.jpg> <./longWalk1_xyz.jpg>] [35 <./longWalk2_xyz.jpg>] [36 <./long
+Walk3_xyz.jpg>] [37 <./longWalk4_xyz.jpg>] [38 <./longWalk5_xyz.jpg>]
 Chapter 6.
-) (Future_Work.tex [38
+) (Future_Work.tex [39
 
 ]
 Chapter 7.
-[39
+[40
 
-] [40] [41] [42] [43] [44] [45]) [46] [47] (main.bbl [48
+] [41] [42] [43] [44] [45] [46]) [47] [48] (main.bbl [49
 
 
-] [49]) [50]
+] [50]) [51]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 
@@ -1484,18 +1494,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 926D7D18DB8812CF58CBAC906A968CCC;2130.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 22146 strings out of 493334
- 402128 string characters out of 3136672
- 502125 words of memory out of 3000000
- 24615 multiletter control sequences out of 15000+200000
- 157547 words of font info for 327 fonts, out of 3000000 for 9000
+ 22170 strings out of 493334
+ 402622 string characters out of 3136672
+ 502596 words of memory out of 3000000
+ 24632 multiletter control sequences out of 15000+200000
+ 156970 words of font info for 326 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1814b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -1511,9 +1517,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (57 pages, 26442910 bytes).
+Output written on main.pdf (58 pages, 26563881 bytes).
 PDF statistics:
- 811 PDF objects out of 1000 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
- 48499 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 48514 words of extra memory for PDF output out of 51595 (max. 10000000)
 

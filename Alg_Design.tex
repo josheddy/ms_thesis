@@ -10,13 +10,13 @@ We begin by defining the following quantities:
 %
 \begin{align} \label{eq:state_vars}
 \mathbf{p} &= \left\lbrace x,\ y,\ z \right\rbrace ^{T} \\
-\mathbf{q} &= \left\lbrace q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T} \\
+\mathbf{q} &= \left\lbrace q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T} \label{eq:quat_convention} \\
 \mathbf{v} &= \left\lbrace \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} \\
 \bm{\Omega} &= \left\lbrace \omega_{x},\ \omega_{y},\ \omega_{z} \right\rbrace ^{T} \\
 \mathbf{a} &= \left\lbrace \ddot{x},\ \ddot{y},\ \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{From here on, all quaternion quantities are represented according to the convention $\mathbf{q} = \left\lbrace q_{x},\ q_{y},\ q_{z},\ q_{w} \right\rbrace ^{T}$, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{All quaternion quantities are represented here according to the convention used in equation~\ref{eq:quat_convention}, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 

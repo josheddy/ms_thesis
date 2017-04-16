@@ -17,7 +17,7 @@ Before venturing further, we should summarize the goals of the UKF framework des
         \includegraphics[width=0.8\textwidth]{sensor_mount_bottom}
         \caption{Bottom view of sensor mount.}
     \end{subfigure}
-    \caption[3D-printed sensor mount]{The 3D-printed sensor mount. In (a), the Phidgets IMU is on the left and the mvBlueFOX camera is on the right. In (b), the linear braking handle is visible.}
+    \caption[3D-printed sensor mount]{The 3D-printed sensor mount. In (a), the Phidgets IMU is on the left and the mvBlueFOX camera is on the right. In (b), the linear braking handle and camera lens are visible.}
     \label{fig:sensor_mount}
 \end{figure}
 
@@ -40,6 +40,20 @@ Before venturing further, we should summarize the goals of the UKF framework des
     \includegraphics[width=\textwidth]{sensor_mount_vicon}
   \caption[Sensor Mount Instrumented with Vicon Retroreflectors]{Close-up view of the sensor mount instrumented with Vicon infrared retroreflectors.}
   \label{fig:sensor_mount_vicon}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{bowl-shaped_world}
+  \caption[Rviz Visualization of Translational (Lens) Distortion]{An Rviz visualization of the ``bowl-shaped'' world seen by PTAM during a long translational motion. This image was created by translating the mobile test stand 3--4~meters in the $+x$ direction and then translating back 4--5~meters past the origin in the $-x$ direction.}
+  \label{fig:bowl-shaped_world}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[height=0.8\textwidth]{rot_bug_rviz}
+  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of aberrant rotational behavior. This image was created by moving the cart in a square (3~m~$\times$~3~m) pattern, making clockwise 90-degree turns at each corner.}
+  \label{fig:rot_bug_rviz}
 \end{figure}
 
 This system depends upon two sensors: a single global-shutter camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope. To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite on a large, steady, level platform allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion captured by the ventral camera. In order to validate the UKF framework's effectiveness under ideal conditions, a modern laptop computer containing an Intel i7 processor with 16~GB of RAM was used for all computations. The floor of the motion capture environment was strewn with a mixture of April tags and modified Quick Response\footnote{\url{https://en.wikipedia.org/wiki/QR_code}} (QR) codes in order to provide sufficient visual features for PTAM to track.
@@ -75,7 +89,7 @@ Two experiments were designed to characterize the UKF framework's effectiveness 
   \centering
     \includegraphics[width=\textwidth]{good_box_5_cropped}
   \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory. In this image, the orange segments are actually composed of arrows pointing along the vehicle's $x$-axis (parallel to the red axis at the origin). The experiment starts one meter above the origin and the cart is pushed in a rectangular pattern, coming to rest at the origin again.}
-  \label{fig:sensor_mount_vicon}
+  \label{fig:good_box}
 \end{figure}
 
 \todo{describe each experiment}
