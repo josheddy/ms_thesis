@@ -61,16 +61,18 @@
 
 \begin{document}
 
-%\pagenumbering{roman}
-
 \input{Title_Page.tex}
+
+\pagenumbering{roman}
 \input{Abstract.tex}
-\input{Acknowledgements.tex}
+\input{Acknowledgments.tex}
 \tableofcontents
 %\listoftables % DELETE IF UNUSED
 \listoffigures
 \input{Acronyms.tex}
+\pagebreak
 
+\pagenumbering{arabic}
 \input{Introduction.tex}
 \input{Prior_Work.tex}
 \todo{add Direct IMU integration section}
