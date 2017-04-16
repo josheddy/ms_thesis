@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  16 APR 2017 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  16 APR 2017 17:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -1279,18 +1279,19 @@ Overfull \hbox (3.21547pt too wide) in paragraph at lines 300--300
 
 [21]) (Exp_Design.tex [22]
 Chapter 4.
-<sensor_mount_top.jpg, id=483, 1606.0pt x 1204.5pt>
+<sensor_mount_top.jpg, id=483, 462.39417pt x 326.21875pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
- <use sensor_mount_top.jpg>
-Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
-(pdftex.def)             Requested size: 144.00055pt x 107.99597pt.
 
-<sensor_mount_bottom.jpg, id=484, 1606.0pt x 1204.5pt>
+<use sensor_mount_top.jpg>
+Package pdftex.def Info: sensor_mount_top.jpg used on input line 11.
+(pdftex.def)             Requested size: 144.00055pt x 101.58968pt.
+
+<sensor_mount_bottom.jpg, id=484, 498.19458pt x 373.72958pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
 Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 17.
-(pdftex.def)             Requested size: 144.00055pt x 107.99597pt.
+(pdftex.def)             Requested size: 144.00055pt x 108.02524pt.
 
 Overfull \hbox (3.43826pt too wide) in paragraph at lines 9--20
  [][]  [] 
@@ -1486,22 +1487,22 @@ Chapter 7.
 
 
 ] [50]) [51]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 926D7D18DB8812CF58CBAC906A968CCC;2130.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 22170 strings out of 493334
- 402622 string characters out of 3136672
- 502596 words of memory out of 3000000
+ 22174 strings out of 493334
+ 402666 string characters out of 3136672
+ 501608 words of memory out of 3000000
  24632 multiletter control sequences out of 15000+200000
- 156970 words of font info for 326 fonts, out of 3000000 for 9000
+ 157366 words of font info for 329 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1814b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -1517,7 +1518,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (58 pages, 26563881 bytes).
+Output written on main.pdf (58 pages, 16969249 bytes).
 PDF statistics:
  828 PDF objects out of 1000 (max. 8388607)
  261 named destinations out of 1000 (max. 500000)
