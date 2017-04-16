@@ -64,23 +64,22 @@ To predict the next state, the sigma points are propagated through the nonlinear
 \bm{\chi}^{i}_{k | k-1} = f \left( \bm{\chi}^{i}_{k-1 | k-1} \right), \quad i = 0, \dots, 2n.
 \end{equation}
 %
-These transformed sigma points are then used to predict the state and covariance:
+These transformed sigma points are then used to determine the predicted state $\hat{\mathbf{x}}_{k | k-1}$ and its associated covariance $\mathbf{P}_{k | k-1}$ as
 %
 \begin{align}
-\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\chi}^{i}_{k | k-1} \\
-\mathbf{P}_{k | k-1} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T} \right) + \mathbf{Q}_{k},
+\hat{\mathbf{x}}_{k | k-1} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\chi}^{i}_{k | k-1} \label{eq:pred_state} \\
+\mathbf{P}_{k | k-1} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right)^{T} \right) + \mathbf{Q} , \label{eq:pred_cov}
 \end{align}
 %
-where the state weights $W_{s}$ and covariance weights $W_{c}$ are defined as
+where $\mathbf{Q}$ is the process noise covariance matrix (defined in Section~\ref{sec:Q_Matrix}).
+
+The state weights $W_{s}$ and covariance weights $W_{c}$ used in equations~\ref{eq:pred_state} and \ref{eq:pred_cov} (and later in equations~\ref{eq:zHat}, \ref{eq:P_zz}, and \ref{eq:P_xz}) are defined as
 %
 \begin{align}
 W^{0}_{s} &= \dfrac{\lambda}{n + \lambda} \nonumber \\
 W^{0}_{c} &= \dfrac{\lambda}{n + \lambda} + \left( 1 - \alpha^{2} + \beta \right) \\
 W^{i}_{s} &= W^{i}_{c} = \dfrac{1}{2 \left(n + \lambda \right)}, \quad i = 1, \dots, 2n \nonumber
 \end{align}
-%
-and the process noise covariance matrix $\mathbf{Q}_{k}$ (defined in Section~\ref{sec:Q_Matrix}).
-
 
 \subsection{Correction Step}
 
@@ -107,13 +106,13 @@ Let $m = 7$ represent the number of measurements taken from each PTAM message. E
 The predicted measurement vector $\hat{\mathbf{z}}_{k}$ and measurement noise covariance $\mathbf{P}_{zz}$ are then computed as
 %
 \begin{align}
-\hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\gamma}^{i}_{k} \\
-\mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R},
+\hat{\mathbf{z}}_{k} &= \sum^{2n}_{i=0} W^{i}_{s} \bm{\gamma}^{i}_{k} \label{eq:zHat} \\
+\mathbf{P}_{zz} &= \left( \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} \right) + \mathbf{R} , \label{eq:P_zz}
 \end{align}
 %
 where $\mathbf{R}$ is the measurement noise covariance matrix (defined in Section~\ref{sec:R_Matrix}). The state-measurement cross-covariance $\mathbf{P}_{xz}$ is then defined as
 %
-\begin{equation}
+\begin{equation} \label{eq:P_xz}
 \mathbf{P}_{xz} = \sum^{2n}_{i=0} W^{i}_{c} \left( \bm{\chi}^{i}_{k | k-1} - \hat{\mathbf{x}}_{k | k-1} \right) \left( \bm{\gamma}^{i}_{k} - \hat{\mathbf{z}}_{k} \right)^{T} .
 \end{equation}
 %
@@ -167,7 +166,16 @@ To calculate the vehicle's current acceleration, we first subtract gravity from 
 \mathbf{a}_{k} = R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right) .
 \end{equation}
 %
-Here $R^{g}_{b} \left[ \mathbf{q}_{k-1} \right]$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. \todo{What is R(q)?}
+Here $R^{g}_{b} \left[ \mathbf{q}_{k-1} \right]$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. For a given quaternion $\mathbf{q}$, the rotation matrix $R^{g}_{b} \left[ \mathbf{q} \right]$ would be
+%
+\begin{equation}
+R^{g}_{b} \left[ \mathbf{q} \right] =
+\begin{bmatrix}
+    1 - 2 q_{y}^2 - 2 q_{z}^2 & 2 q_{x} q_{y} - 2 q_{z} q_{w} & 2 q_{x} q_{z} + 2 q_{y} q_{w} \\
+    2 q_{x} q_{y} + 2 q_{z} q_{w} & 1 - 2 q_{x}^2 - 2 q_{z}^2 & 2 q_{y} q_{z} - 2 q_{x} q_{w} \\
+    2 q_{x} q_{z} - 2 q_{y} q_{w} & 2 q_{y} q_{z} + 2 q_{x} q_{w} & 1 - 2 q_{x}^2 - 2 q_{y}^2
+\end{bmatrix} .
+\end{equation}
 
 With the vehicle's current acceleration known, we can compute the current velocity of the vehicle by integrating the vehicle's average acceleration between the current and previous time steps:
 %
