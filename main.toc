@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}
-\contentsline {subsubsection}{Quaternion Continuity Correction}{19}{section*.19}
-\contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.20}
+\contentsline {subsubsection}{Quaternion Continuity Correction}{18}{section*.17}
+\contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.18}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{20}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{21}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{22}{section.3.2}
@@ -30,9 +30,9 @@
 \contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{43}{subsection.7.1.3}
 \contentsline {section}{\numberline {7.2}Future Experiments}{44}{section.7.2}
 \contentsline {section}{\numberline {7.3}System Applications}{44}{section.7.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{45}{section*.46}
-\contentsline {subsubsection}{Emergency Response}{45}{section*.47}
-\contentsline {subsubsection}{Infrastructure Inspection}{46}{section*.48}
-\contentsline {subsubsection}{Autonomous Package Delivery}{47}{section*.49}
-\contentsline {subsubsection}{Military/Defense Solutions}{47}{section*.50}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{45}{section*.44}
+\contentsline {subsubsection}{Emergency Response}{45}{section*.45}
+\contentsline {subsubsection}{Infrastructure Inspection}{46}{section*.46}
+\contentsline {subsubsection}{Autonomous Package Delivery}{47}{section*.47}
+\contentsline {subsubsection}{Military/Defense Solutions}{47}{section*.48}
 \contentsline {chapter}{Bibliography}{49}{Item.37}
