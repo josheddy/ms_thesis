@@ -11,28 +11,28 @@
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}
 \contentsline {subsubsection}{Quaternion Continuity Correction}{18}{section*.17}
-\contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.18}
+\contentsline {subsubsection}{Pseudovelocity Correction}{19}{section*.19}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{20}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{21}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{22}{section.3.2}
 \contentsline {chapter}{\numberline {4}Experimental Design}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Materials}{24}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Computation and Sensing}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Mobile Test Stand}{24}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Experimental Procedures}{29}{section.4.3}
-\contentsline {chapter}{\numberline {5}Experimental Results}{31}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{39}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{40}{chapter.7}
-\contentsline {section}{\numberline {7.1}System Improvements}{40}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{40}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{42}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{43}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Future Experiments}{44}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Applications}{44}{section.7.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{45}{section*.44}
-\contentsline {subsubsection}{Emergency Response}{45}{section*.45}
-\contentsline {subsubsection}{Infrastructure Inspection}{46}{section*.46}
-\contentsline {subsubsection}{Autonomous Package Delivery}{47}{section*.47}
-\contentsline {subsubsection}{Military/Defense Solutions}{47}{section*.48}
-\contentsline {chapter}{Bibliography}{49}{Item.37}
+\contentsline {section}{\numberline {4.2}Experimental Procedures}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Materials}{29}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{29}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Experimental Results}{32}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{40}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{41}{chapter.7}
+\contentsline {section}{\numberline {7.1}System Improvements}{41}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{41}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{43}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{44}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Future Experiments}{45}{section.7.2}
+\contentsline {section}{\numberline {7.3}System Applications}{45}{section.7.3}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{46}{section*.45}
+\contentsline {subsubsection}{Emergency Response}{46}{section*.46}
+\contentsline {subsubsection}{Infrastructure Inspection}{47}{section*.47}
+\contentsline {subsubsection}{Autonomous Package Delivery}{48}{section*.48}
+\contentsline {subsubsection}{Military/Defense Solutions}{48}{section*.49}
+\contentsline {chapter}{Bibliography}{50}{Item.37}
