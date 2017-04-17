@@ -60,21 +60,7 @@ Two experiments were designed to characterize the UKF framework's effectiveness 
 Two data streams were collected for analysis using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} data recording utility.
 \todo{more explanation of post processing}
 
-\begin{figure}
-  \centering
-    \includegraphics[width=\textwidth]{bowl-shaped_world}
-  \caption[Rviz Visualization of Translational (Lens) Distortion]{An Rviz visualization of the ``bowl-shaped'' world seen by PTAM during a long translational motion. This image was created by translating the mobile test stand 3--4~meters in the $+x$ direction and then translating back 4--5~meters past the origin in the $-x$ direction.}
-  \label{fig:bowl-shaped_world}
-\end{figure}
-
-\begin{figure}
-  \centering
-    \includegraphics[height=0.8\textwidth]{rot_bug_rviz}
-  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of aberrant rotational behavior. This image was created by moving the cart in a square (3~m~$\times$~3~m) pattern, making clockwise 90-degree turns at each corner.}
-  \label{fig:rot_bug_rviz}
-\end{figure}
-
-\pagebreak
+\clearpage
 \section{Materials}
 \subsection{Computation and Sensing}
 \begin{enumerate}
@@ -97,3 +83,18 @@ Two data streams were collected for analysis using the \texttt{rosbag}\footnote{
 \item One (1) 0.7-meter Length of $\frac{1}{8}$"-thick Carbon Fiber Tube
 \end{enumerate}
 \pagebreak
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{bowl-shaped_world}
+  \caption[Rviz Visualization of Translational (Lens) Distortion]{An Rviz visualization of the ``bowl-shaped'' world seen by PTAM during a long translational motion. This image was created by translating the mobile test stand 3--4~meters in the $+x$ direction and then translating back 4--5~meters past the origin in the $-x$ direction.}
+  \label{fig:bowl-shaped_world}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics[height=0.8\textwidth]{rot_bug_rviz}
+  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of aberrant rotational behavior. This image was created by moving the cart in a square (3~m~$\times$~3~m) pattern, making clockwise 90-degree turns at each corner.}
+  \label{fig:rot_bug_rviz}
+\end{figure}
+\todo{write out explanation of figure}

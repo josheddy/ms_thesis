@@ -1,74 +1,91 @@
 \chapter{Experimental Results}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth,left]{box1_2d}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth,right]{box1_3d}
-    \end{subfigure}
-    \caption[Box Pattern Trial 1 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~1.}
-    \label{fig:box1_traj}
+\clearpage
+% Box 1
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.6\textwidth]{box1_2d}
+  \caption[Box Pattern Trial 1 2D Trajectory]{Box Pattern Trial 1 2D Trajectory.}
+  \label{fig:box1_2d}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth,left]{box2_2d}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth,right]{box2_3d}
-    \end{subfigure}
-    \caption[Box Pattern Trial 2 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~2.}
-    \label{fig:box2_traj}
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.7\textwidth]{box1_3d}
+  \caption[Box Pattern Trial 1 3D Trajectory]{Box Pattern Trial 1 3D Trajectory.}
+  \label{fig:box1_3d}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth,left]{box3_2d}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth,right]{box3_3d}
-    \end{subfigure}
-    \caption[Box Pattern Trial 3 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~3.}
-    \label{fig:box3_traj}
+\clearpage
+% Box 2
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.6\textwidth]{box2_2d}
+  \caption[Box Pattern Trial 2 2D Trajectory]{Box Pattern Trial 2 2D Trajectory.}
+  \label{fig:box2_2d}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth,left]{box4_2d}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth,right]{box4_3d}
-    \end{subfigure}
-    \caption[Box Pattern Trial 4 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~4.}
-    \label{fig:box4_traj}
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.7\textwidth]{box2_3d}
+  \caption[Box Pattern Trial 2 3D Trajectory]{Box Pattern Trial 2 3D Trajectory.}
+  \label{fig:box2_3d}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth,left]{box5_2d}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth,right]{box5_3d}
-    \end{subfigure}
-    \caption[Box Pattern Trial 5 Trajectory]{2D and 3D trajectory plots from Box Pattern Trial~5.}
-    \label{fig:box5_traj}
+\clearpage
+% Box 3
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.6\textwidth]{box3_2d}
+  \caption[Box Pattern Trial 3 2D Trajectory]{Box Pattern Trial 3 2D Trajectory.}
+  \label{fig:box3_2d}
 \end{figure}
+
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.7\textwidth]{box3_3d}
+  \caption[Box Pattern Trial 3 3D Trajectory]{Box Pattern Trial 3 3D Trajectory.}
+  \label{fig:box3_3d}
+\end{figure}
+
+\clearpage
+% Box 4
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.6\textwidth]{box4_2d}
+  \caption[Box Pattern Trial 4 2D Trajectory]{Box Pattern Trial 4 2D Trajectory.}
+  \label{fig:box4_2d}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.7\textwidth]{box4_3d}
+  \caption[Box Pattern Trial 4 3D Trajectory]{Box Pattern Trial 4 3D Trajectory.}
+  \label{fig:box4_3d}
+\end{figure}
+
+\clearpage
+% Box 5
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.6\textwidth]{box5_2d}
+  \caption[Box Pattern Trial 5 2D Trajectory]{Box Pattern Trial 5 2D Trajectory.}
+  \label{fig:box5_2d}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+    \includegraphics[height=0.7\textwidth]{box5_3d}
+  \caption[Box Pattern Trial 5 3D Trajectory]{Box Pattern Trial 5 3D Trajectory.}
+  \label{fig:box5_3d}
+\end{figure}
+
+\clearpage
+
+
+\section{Long Walk Trials}
+
+Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each experimental trial. The plots also show that the UKF pose estimates exhibit some amount of aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of $\sim 1.4$~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
 
 \begin{figure}
   \centering
