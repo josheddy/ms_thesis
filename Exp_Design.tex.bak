@@ -2,7 +2,7 @@
 
 \section{Testing Considerations}
 
-Before venturing further, we now summarize the goals of the UKF framework described previously, paying particular attention to unmanned aircraft system (UAS) operations. This ROS package was designed with the express intent of producing estimates of the position vector $\mathbf{p}$ and orientation quaternion $\mathbf{q}$ of a rotorcraft UAV in real time. Thus, the experiments testing the system's efficacy compare the filter's estimates of position and orientation to the ground truth as measured by Vicon. Vicon, like many commercially available motion capture systems, works by using a number of infrared cameras (usually 8--12) to track the positions of retroreflector balls in the cameras' field of view. Each camera illuminates the area with infrared light, which is in turn reflected by the retroreflector balls. Sets of these retroreflectors can be grouped together in software to represent rigid objects, thus allowing the system to track not only the position of an object, but its orientation as well.
+Before venturing further, we now summarize the goals of the UKF framework described previously, paying particular attention to the needs of unmanned aircraft system (UAS) operations. This ROS package was designed with the intent of producing estimates of the position vector $\mathbf{p}$ and orientation quaternion $\mathbf{q}$ of a rotorcraft UAV in real time. Thus, the experiments testing the system's efficacy compare the filter's estimates of position and orientation to the ground truth as measured by Vicon. Vicon, like many commercially available motion capture systems, works by using a number of infrared cameras (usually 8--12) to track the positions of retroreflector balls in the cameras' field of view. Each camera illuminates the area with infrared light, which is in turn reflected by the retroreflector balls. Sets of these retroreflectors can be grouped together in software to represent rigid objects, thus allowing the system to track not only the position of an object, but its orientation as well.
 
 \begin{figure}[t]
     \centering
@@ -38,17 +38,21 @@ Before venturing further, we now summarize the goals of the UKF framework descri
 \begin{figure}
   \centering
     \includegraphics[width=\textwidth]{sensor_mount_vicon}
-  \caption[Sensor Mount Instrumented with Vicon Retroreflectors]{Close-up view of the sensor mount instrumented with Vicon infrared retroreflector balls.}
+  \caption[Sensor Mount Instrumented with Retroreflectors]{Close-up view of the sensor mount instrumented with Vicon infrared retroreflector balls.}
   \label{fig:sensor_mount_vicon}
 \end{figure}
 
-This system depends upon two sensors: a global-shutter monocular camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope. To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite on a large, steady, level platform allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion captured by the ventral camera. In order to validate the UKF framework's effectiveness under ideal conditions, a modern laptop computer containing an Intel i7 processor with 16~GB of RAM was used for all computations. The floor of the motion capture environment was strewn with a mixture of April tags and modified Quick Response\footnote{\url{https://en.wikipedia.org/wiki/QR_code}} (QR) codes in order to provide sufficient visual features for PTAM to track.
+This system depends upon two sensors: a global-shutter monocular camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope. To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite (Figure~\ref{fig:sensor_mount}) on a large, steady, level platform (Figure~\ref{fig:whole_cart}) allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion captured by the ventral camera. In order to validate the UKF framework's effectiveness under ideal conditions, a modern laptop computer containing an Intel i7 processor with 16~GB of RAM was used for all computations. The floor of the motion capture environment was strewn with a mixture of April tags and modified Quick Response\footnote{\url{https://en.wikipedia.org/wiki/QR_code}} (QR) codes in order to provide sufficient visual features for PTAM to track.
+
+\subsection{PTAM Anomalies}
+
+The experiments chosen to test the system's effectiveness were influenced largely by the known capabilities and limitations of the ROS PTAM implementation\footnote{From here on, ``PTAM'' refers to the particular ROS implementation of PTAM used in the experiments, not to the algorithm in general.}. In previous exploratory experiments\footnote{Performed both by the author and by various other parties at NASA Langley, where the experiments described here took place.}, PTAM was frequently shown to lose tracking\footnote{``Tracking'' here refers to current pose knowledge.} during large rotations. PTAM is particularly susceptible to losing tracking during pure rotations, in which the camera rotates in place without translational motion. Worse, when PTAM undergoes a rotation, it interprets this as an arc-like motion
 
 \section{Experimental Procedures}
 
-Two experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. In the first experiment, the mobile test stand was moved in a rectangular ``box'' pattern at approximately constant speed, without rotation.
+Two experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. In the second experiment, the mobile test stand was moved in a rectangular ``box'' pattern at approximately constant speed, without rotation.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
     \includegraphics[width=\textwidth]{good_box_5_cropped}
   \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory. In this image, the orange segments are actually composed of arrows pointing along the vehicle's $x$-axis (parallel to the red axis at the origin). The experiment starts one meter above the origin and the cart is pushed in a rectangular pattern, coming to rest at the origin again.}
