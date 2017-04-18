@@ -48,6 +48,14 @@ This system depends upon two sensors: a global-shutter monocular camera and an I
 
 The experiments chosen to test the system's effectiveness were influenced largely by the known capabilities and limitations of the ROS PTAM implementation\footnote{From here on, ``PTAM'' refers to the particular ROS implementation of PTAM used in the experiments, not to the algorithm in general.}. In previous exploratory experiments\footnote{Performed both by the author and by various other parties at NASA Langley, where the experiments described here took place.}, PTAM was frequently shown to lose tracking\footnote{``Tracking'' here refers to current pose knowledge.} during large rotations. PTAM is particularly susceptible to losing tracking during pure rotations, in which the camera rotates in place without translational motion. Worse, whenever PTAM undergoes a rotation, it interprets this as an arc-like motion, regardless of whether any translation took place.
 
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \includegraphics[width=0.4\textwidth]{rot_bug_rviz}
+  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of PTAM's rotation bug. This image was created by moving the cart in a 3~m square pattern, turning 90\textdegree\ CCW at each corner.}
+  \label{fig:rot_bug_rviz}
+\end{wrapfigure}
+
+Figure~\ref{fig:rot_bug_rviz} shows this error in action. This image was produced by moving the cart in a square trajectory and turning the cart by 90 degrees at each corner. The vehicle started at the origin (Point~1), then moved in a straight line to Point~2. At Point~2, the vehicle was turned 90 degrees counterclockwise, producing the arc between Points~2 and 3. As the figure shows, this arc extends \textit{opposite} the camera's true direction of travel. After rotating 90 degrees, the vehicle moves in a straight line (Point~3 to Point~4), then rotates again (Point~4 to 5). Again, the arc goes backward from the actual direction of travel, but this time its length is much greater. This was caused by rotating the vehicle at a higher speed than during the first turn, meaning that this rotation bug is velocity-dependent. From Point~5, the vehicle moves in a straight line to Point~6, rotates (Point~6 to 7), and moves in a straight line back to the starting position (Point~8).
+
 
 
 
@@ -99,11 +107,3 @@ Two data streams were collected for analysis using the \texttt{rosbag}\footnote{
   \caption[Rviz Visualization of Translational (Lens) Distortion]{An Rviz visualization of the ``bowl-shaped'' world seen by PTAM during a long translational motion. This image was created by translating the mobile test stand 3--4~meters in the $+x$ direction and then translating back 4--5~meters past the origin in the $-x$ direction.}
   \label{fig:bowl-shaped_world}
 \end{figure}
-
-\begin{figure}
-  \centering
-    \includegraphics[height=0.8\textwidth]{rot_bug_rviz}
-  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of aberrant rotational behavior. This image was created by moving the cart in a square (3~m~$\times$~3~m) pattern, making clockwise 90-degree turns at each corner.}
-  \label{fig:rot_bug_rviz}
-\end{figure}
-\todo{write out explanation of figure}
