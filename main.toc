@@ -24,19 +24,19 @@
 \contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{30}{subsection.4.3.2}
 \contentsline {chapter}{\numberline {5}Experimental Results}{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Long Walk Trials}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Box Pattern Trials}{31}{section.5.2}
-\contentsline {section}{\numberline {5.3}Post Processing}{42}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{44}{chapter.7}
-\contentsline {section}{\numberline {7.1}System Improvements}{44}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{44}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{46}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{47}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Future Experiments}{48}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Applications}{48}{section.7.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{49}{section*.48}
-\contentsline {subsubsection}{Emergency Response}{49}{section*.49}
-\contentsline {subsubsection}{Infrastructure Inspection}{50}{section*.50}
-\contentsline {subsubsection}{Autonomous Package Delivery}{51}{section*.51}
-\contentsline {subsubsection}{Military/Defense Solutions}{51}{section*.52}
-\contentsline {chapter}{Bibliography}{53}{Item.37}
+\contentsline {section}{\numberline {5.2}Box Pattern Trials}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Post Processing}{43}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusions}{44}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}System Improvements}{45}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{45}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{47}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{48}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Future Experiments}{49}{section.7.2}
+\contentsline {section}{\numberline {7.3}System Applications}{49}{section.7.3}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{50}{section*.49}
+\contentsline {subsubsection}{Emergency Response}{50}{section*.50}
+\contentsline {subsubsection}{Infrastructure Inspection}{51}{section*.51}
+\contentsline {subsubsection}{Autonomous Package Delivery}{52}{section*.52}
+\contentsline {subsubsection}{Military/Defense Solutions}{52}{section*.53}
+\contentsline {chapter}{Bibliography}{54}{Item.37}

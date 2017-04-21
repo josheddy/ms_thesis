@@ -2,42 +2,43 @@
 
 \section{Long Walk Trials}
 
-Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each experimental trial. The plots also show that the UKF pose estimates exhibit aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of about 1.4~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
+Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each long walk trial. The plots also show that the UKF pose estimates exhibit aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of about 1.4~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{longWalk1_xyz}
   \caption[Long Walk Trial 1]{Long Walk Trial 1 coordinate plots. The shaded region highlights aberrant behavior coinciding with maximal displacement from the origin.}
   \label{fig:longWalk1_xyz}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{longWalk2_xyz}
   \caption[Long Walk Trial 2]{Long Walk Trial 2 coordinate plots.}
   \label{fig:longWalk2_xyz}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{longWalk3_xyz}
   \caption[Long Walk Trial 3]{Long Walk Trial 3 coordinate plots.}
   \label{fig:longWalk3_xyz}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{longWalk4_xyz}
   \caption[Long Walk Trial 4]{Long Walk Trial 4 coordinate plots.}
   \label{fig:longWalk4_xyz}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{longWalk5_xyz}
   \caption[Long Walk Trial 5]{Long Walk Trial 5 coordinate plots.}
   \label{fig:longWalk5_xyz}
 \end{figure}
+\clearpage
 
 \section{Box Pattern Trials}
 
