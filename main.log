@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  20 APR 2017 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  20 APR 2017 23:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -1328,142 +1328,145 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [26 <./rot_bug_rviz.png>] <bowl-shaped_world.png, id=550, 545.37083pt x 189.70
+ [26 <./rot_bug_rviz.png>] <bowl-shaped_world.png, id=551, 545.37083pt x 189.70
 876pt>
 File: bowl-shaped_world.png Graphic file (type png)
 
 <use bowl-shaped_world.png>
 Package pdftex.def Info: bowl-shaped_world.png used on input line 51.
 (pdftex.def)             Requested size: 360.0pt x 125.23131pt.
-
-<good_box_5_cropped.png, id=551, 441.31541pt x 325.88417pt>
+ [27]
+<good_box_5_cropped.png, id=557, 441.31541pt x 325.88417pt>
 File: good_box_5_cropped.png Graphic file (type png)
 
 <use good_box_5_cropped.png>
-Package pdftex.def Info: good_box_5_cropped.png used on input line 67.
+Package pdftex.def Info: good_box_5_cropped.png used on input line 62.
 (pdftex.def)             Requested size: 360.0pt x 265.83441pt.
- [27 <./bowl-shaped_world.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: Marginpar on page 28 moved.
 
-[28 <./good_box_5_cropped.png>] [29
+[28 <./bowl-shaped_world.png>] [29 <./good_box_5_cropped.png>] [30
 
 ]
-<cart_at_AI.jpg, id=610, 1606.0pt x 1204.5pt>
+<cart_at_AI.jpg, id=617, 1606.0pt x 1204.5pt>
 File: cart_at_AI.jpg Graphic file (type jpg)
  <use cart_at_AI.jpg>
-Package pdftex.def Info: cart_at_AI.jpg used on input line 103.
+Package pdftex.def Info: cart_at_AI.jpg used on input line 98.
 (pdftex.def)             Requested size: 360.0pt x 269.98994pt.
 
-<sensor_mount_vicon.jpg, id=611, 1606.0pt x 1204.5pt>
+<sensor_mount_vicon.jpg, id=618, 1606.0pt x 1204.5pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
 <use sensor_mount_vicon.jpg>
-Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 110.
+Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 105.
 (pdftex.def)             Requested size: 360.0pt x 269.98994pt.
-) (Exp_Results.tex [30 <./cart_at_AI.jpg>] [31 <./sensor_mount_vicon.jpg>]
+) (Exp_Results.tex [31 <./cart_at_AI.jpg>] [32 <./sensor_mount_vicon.jpg>]
 Chapter 5.
-<longWalk1_xyz.jpg, id=624, 684.156pt x 542.025pt>
+<longWalk1_xyz.jpg, id=630, 684.156pt x 542.025pt>
 File: longWalk1_xyz.jpg Graphic file (type jpg)
  <use longWalk1_xyz.jpg>
 Package pdftex.def Info: longWalk1_xyz.jpg used on input line 9.
 (pdftex.def)             Requested size: 360.0pt x 285.22076pt.
 
-<longWalk2_xyz.jpg, id=625, 1518.67375pt x 1222.5675pt>
+<longWalk2_xyz.jpg, id=631, 1518.67375pt x 1222.5675pt>
 File: longWalk2_xyz.jpg Graphic file (type jpg)
 
 <use longWalk2_xyz.jpg>
 Package pdftex.def Info: longWalk2_xyz.jpg used on input line 16.
 (pdftex.def)             Requested size: 360.0pt x 289.80315pt.
 
-<longWalk3_xyz.jpg, id=626, 1527.7075pt x 1179.40625pt>
+<longWalk3_xyz.jpg, id=632, 1527.7075pt x 1179.40625pt>
 File: longWalk3_xyz.jpg Graphic file (type jpg)
 
 <use longWalk3_xyz.jpg>
 Package pdftex.def Info: longWalk3_xyz.jpg used on input line 23.
 (pdftex.def)             Requested size: 360.0pt x 277.91635pt.
 
-<longWalk4_xyz.jpg, id=627, 1739.49875pt x 1352.05125pt>
+<longWalk4_xyz.jpg, id=633, 1739.49875pt x 1352.05125pt>
 File: longWalk4_xyz.jpg Graphic file (type jpg)
 
 <use longWalk4_xyz.jpg>
 Package pdftex.def Info: longWalk4_xyz.jpg used on input line 30.
 (pdftex.def)             Requested size: 360.0pt x 279.81302pt.
 
-<longWalk5_xyz.jpg, id=628, 1731.46875pt x 1390.19376pt>
+<longWalk5_xyz.jpg, id=634, 1731.46875pt x 1390.19376pt>
 File: longWalk5_xyz.jpg Graphic file (type jpg)
 
 <use longWalk5_xyz.jpg>
 Package pdftex.def Info: longWalk5_xyz.jpg used on input line 37.
 (pdftex.def)             Requested size: 360.0pt x 289.04317pt.
- [32
+ [33
 
-] [33 <./longWalk1_xyz.jpg>] [34 <./longWalk2_xyz.jpg>] [35 <./longWalk3_xyz.jp
-g>] [36 <./longWalk4_xyz.jpg>] [37 <./longWalk5_xyz.jpg>] <box1_2d.jpg, id=657,
+] [34 <./longWalk1_xyz.jpg>] [35 <./longWalk2_xyz.jpg>] [36 <./longWalk3_xyz.jp
+g>] [37 <./longWalk4_xyz.jpg>] [38 <./longWalk5_xyz.jpg>] <box1_2d.jpg, id=663,
  993.7125pt x 948.54375pt>
 File: box1_2d.jpg Graphic file (type jpg)
  <use box1_2d.jpg>
 Package pdftex.def Info: box1_2d.jpg used on input line 51.
 (pdftex.def)             Requested size: 226.28981pt x 216.0022pt.
 
-<box1_3d.jpg, id=658, 1264.725pt x 948.54375pt>
+<box1_3d.jpg, id=664, 1264.725pt x 948.54375pt>
 File: box1_3d.jpg Graphic file (type jpg)
  <use box1_3d.jpg>
 Package pdftex.def Info: box1_3d.jpg used on input line 57.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [38 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=663, 961.5925pt x 948.54
+ [39 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=669, 961.5925pt x 948.54
 375pt>
 File: box2_2d.jpg Graphic file (type jpg)
 
 <use box2_2d.jpg>
 Package pdftex.def Info: box2_2d.jpg used on input line 66.
 (pdftex.def)             Requested size: 218.97539pt x 216.0022pt.
- <box2_3d.jpg, id=664, 1264.725pt x 948.54375pt>
+ <box2_3d.jpg, id=670, 1264.725pt x 948.54375pt>
 File: box2_3d.jpg Graphic file (type jpg)
 
 <use box2_3d.jpg>
 Package pdftex.def Info: box2_3d.jpg used on input line 72.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [39 <./box2_2d.jpg> <./box2_3d.jpg>]
-<box3_2d.jpg, id=669, 1001.7425pt x 948.54375pt>
+ [40 <./box2_2d.jpg> <./box2_3d.jpg>]
+<box3_2d.jpg, id=675, 1001.7425pt x 948.54375pt>
 File: box3_2d.jpg Graphic file (type jpg)
  <use box3_2d.jpg>
 Package pdftex.def Info: box3_2d.jpg used on input line 81.
 (pdftex.def)             Requested size: 228.11841pt x 216.0022pt.
 
-<box3_3d.jpg, id=670, 1264.725pt x 948.54375pt>
+<box3_3d.jpg, id=676, 1264.725pt x 948.54375pt>
 File: box3_3d.jpg Graphic file (type jpg)
  <use box3_3d.jpg>
 Package pdftex.def Info: box3_3d.jpg used on input line 87.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [40 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=675, 997.7275pt x 948.54
+ [41 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=681, 997.7275pt x 948.54
 375pt>
 File: box4_2d.jpg Graphic file (type jpg)
 
 <use box4_2d.jpg>
 Package pdftex.def Info: box4_2d.jpg used on input line 96.
 (pdftex.def)             Requested size: 227.2041pt x 216.0022pt.
- <box4_3d.jpg, id=676, 1264.725pt x 948.54375pt>
+ <box4_3d.jpg, id=682, 1264.725pt x 948.54375pt>
 File: box4_3d.jpg Graphic file (type jpg)
 
 <use box4_3d.jpg>
 Package pdftex.def Info: box4_3d.jpg used on input line 102.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [41 <./box4_2d.jpg> <./box4_3d.jpg>]
-<box5_2d.jpg, id=681, 971.63pt x 948.54375pt>
+ [42 <./box4_2d.jpg> <./box4_3d.jpg>]
+<box5_2d.jpg, id=688, 971.63pt x 948.54375pt>
 File: box5_2d.jpg Graphic file (type jpg)
  <use box5_2d.jpg>
 Package pdftex.def Info: box5_2d.jpg used on input line 111.
 (pdftex.def)             Requested size: 221.26114pt x 216.0022pt.
 
-<box5_3d.jpg, id=682, 1264.725pt x 948.54375pt>
+<box5_3d.jpg, id=689, 1264.725pt x 948.54375pt>
 File: box5_3d.jpg Graphic file (type jpg)
  <use box5_3d.jpg>
 Package pdftex.def Info: box5_3d.jpg used on input line 117.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [42 <./box5_2d.jpg> <./box5_3d.jpg>]) (Conclusions.tex
+ [43 <./box5_2d.jpg> <./box5_3d.jpg>]) (Conclusions.tex
 Chapter 6.
-) (Future_Work.tex [43
+) (Future_Work.tex [44
 
 
 
@@ -1473,12 +1476,12 @@ Chapter 6.
 
 ]
 Chapter 7.
-[44
+[45
 
-] [45] [46] [47] [48] [49] [50]) [51] [52] (main.bbl [53
+] [46] [47] [48] [49] [50] [51]) [52] [53] (main.bbl [54
 
 
-] [54]) [55]
+] [55]) [56]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 
@@ -1490,11 +1493,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 22208 strings out of 493334
- 403119 string characters out of 3136672
- 497767 words of memory out of 3000000
+ 22205 strings out of 493334
+ 403078 string characters out of 3136672
+ 500660 words of memory out of 3000000
  24643 multiletter control sequences out of 15000+200000
- 158100 words of font info for 334 fonts, out of 3000000 for 9000
+ 157704 words of font info for 331 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,77p,1748b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
@@ -1510,9 +1513,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
 iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (62 pages, 17659016 bytes).
+Output written on main.pdf (63 pages, 17661169 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 279 named destinations out of 1000 (max. 500000)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 280 named destinations out of 1000 (max. 500000)
  49050 words of extra memory for PDF output out of 51595 (max. 10000000)
 
