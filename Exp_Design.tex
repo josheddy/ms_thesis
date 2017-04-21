@@ -54,20 +54,17 @@ In other preliminary experiments, anomalous behavior was discovered in PTAM's $z
 \end{figure}
 
 \section{Experimental Procedures}
-\todo{PTAM init process}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+  \centering
+    \includegraphics[width=0.4\textwidth]{good_box_5_cropped}
+  \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory.}
+  \label{fig:good_box}
+\end{wrapfigure}
+
 Two experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. The first experiment was a ``long walk'' in which the mobile test stand was translated in a straight line for several meters along the $y$-axis. This test was designed to characterize the effect of lens distortion on PTAM's $z$-position output, as discussed previously. In the second experiment, the mobile test stand was moved in a rectangular ``box'' pattern (Figure~\ref{fig:good_box}) to determine the system's efficacy in planar motions indicative of hovering flight. Both experiments took place on a level floor to more accurately capture $z$-directional distortion. Because of the rotation-translation coupling defect found in PTAM, the mobile test stand was moved carefully in each experiment such that it would undergo minimal rotation and thus accurately capture translational motion.
 
-\begin{figure}[h]
-  \centering
-    \includegraphics[width=\textwidth]{good_box_5_cropped}
-  \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory. The camera remains one meter above the ground at all times and the mobile test stand is pushed in a rectangular pattern.}
-  \label{fig:good_box}
-\end{figure}
-
-\todo{describe each experiment}
-
-Two data streams were collected for analysis using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} data recording utility.
-\todo{more explanation of post processing}
+Prior to each trial of each experiment, PTAM was initialized according to the procedure outlined in the documentation. To initialize the algorithm, the camera was placed parallel to the floor at a distance of one meter and then perturbed by 10\% of the distance to the floor (that is, 10~cm). This perturbation tells PTAM its distance to the planar surface in view and thus initializes the map. This initialization procedure was performed by releasing the linear bearing brake on the sensor mount and sliding the mount along the aluminum rail, using the attached adhesive ruler to perturb the camera by exactly 10~cm. After perturbing the camera, the brake was tightened, and the data recording began.
 
 \clearpage
 \section{Materials}
