@@ -2,7 +2,7 @@
 
 \section{Long Walk Trials}
 
-Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each experimental trial. The plots also show that the UKF pose estimates exhibit some amount of aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of $\sim 1.4$~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
+Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each experimental trial. The plots also show that the UKF pose estimates exhibit aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of about 1.4~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
 
 \begin{figure}
   \centering
@@ -41,7 +41,7 @@ Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-
 
 \section{Box Pattern Trials}
 
-Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured trajectories of the vehicle during all five box pattern trials. \todo{more}
+Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured trajectories of the mobile test stand during all five box pattern trials. \todo{more}
 
 \clearpage
 
@@ -119,4 +119,16 @@ Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured tra
   \label{fig:box5_3d}
 \end{figure}
 \clearpage
+
+\section{Post Processing}
+
+Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} recording utility: the pose messages published by \texttt{kalman\_sense} and the pose messages published by Vicon. To determine the effectiveness of the UKF framework in estimating the position of the vehicle, positional errors were computed per the following relations:
+%
+\begin{align}
+\varepsilon_{x} &= | x_{\text{Vicon}} - x_{\text{UKF}} | \\
+\varepsilon_{y} &= | y_{\text{Vicon}} - y_{\text{UKF}} | \\
+\varepsilon_{z} &= | z_{\text{Vicon}} - z_{\text{UKF}} |
+\end{align}
+%
+These positional errors were computed over the \todo{finish}
 
