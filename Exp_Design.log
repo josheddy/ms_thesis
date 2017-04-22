@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  21 APR 2017 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  21 APR 2017 22:02
 entering extended mode
 **./Exp_Design.tex
 (Exp_Design.tex
@@ -4501,7 +4501,7 @@ LaTeX Warning: Reference `fig:rot_bug_rviz' on page  undefined on input line 42
 ! Undefined control sequence.
 <write> ...g:sensor_mount_vicon' on page \thepage 
                                                   \space undefined\on@line .
-l.42 ...stand (Figure~\ref{fig:sensor_mount_vicon}
+l.42 ...suite (Figure~\ref{fig:sensor_mount_vicon}
                                                   ).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5104,23 +5104,18 @@ Overfull \hbox (13.88892pt too wide) in paragraph at lines 42--43
  []
 
 
-Overfull \hbox (16.6667pt too wide) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 mo-
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 sen-
  []
 
 
-Overfull \hbox (15.55559pt too wide) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 bile
+Overfull \hbox (12.86113pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 sor
  []
 
 
-Overfull \hbox (16.16669pt too wide) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 test
- []
-
-
-Overfull \hbox (23.9445pt too wide) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 stand
+Overfull \hbox (20.61115pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 suite
  []
 
 
@@ -5859,18 +5854,8 @@ Overfull \hbox (18.08339pt too wide) in paragraph at lines 51--52
  []
 
 
-Overfull \hbox (25.83339pt too wide) in paragraph at lines 51--52
-\OT1/cmr/m/n/10 would
- []
-
-
-Overfull \hbox (21.16669pt too wide) in paragraph at lines 51--52
-\OT1/cmr/m/n/10 seem
- []
-
-
-Overfull \hbox (8.88892pt too wide) in paragraph at lines 51--52
-\OT1/cmr/m/n/10 to
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 51--52
+\OT1/cmr/m/n/10 may
  []
 
 
@@ -7935,38 +7920,8 @@ Overfull \hbox (19.16669pt too wide) in paragraph at lines 73--74
  []
 
 
-Overfull \hbox (18.36116pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 trial
- []
-
-
-Overfull \hbox (8.05559pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 of
- []
-
-
-Overfull \hbox (19.16669pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 each
- []
-
-
-Overfull \hbox (13.05557pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 ex-
- []
-
-
-Overfull \hbox (17.5278pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 per-
- []
-
-
-Overfull \hbox (6.11111pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 i-
- []
-
-
-Overfull \hbox (24.72227pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10 ment,
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 73--74
+\OT1/cmr/m/n/10 trial,
  []
 
 
@@ -12004,7 +11959,7 @@ Overfull \hbox (22.22226pt too wide) in paragraph at lines 109--110
 Here is how much of TeX's memory you used:
  50 strings out of 493334
  768 string characters out of 3136672
- 117121 words of memory out of 3000000
+ 117090 words of memory out of 3000000
  3675 multiletter control sequences out of 15000+200000
  4294 words of font info for 16 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
