@@ -2,7 +2,9 @@
 
 \section{Long Walk Trials}
 
-Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each long walk trial. The plots also show that the UKF pose estimates exhibit aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's altitude as estimated by the UKF rises steadily to a maximum of about 1.4~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$. 
+Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-, $y$-, and $z$-coordinates over time. These plots demonstrate that the UKF's pose estimates were able to track the vehicle's $y$-position accurately over the length of each long walk trial. The plots also show that the UKF pose estimates exhibit aberrant behavior causing the vehicle's $z$-position to rise the farther the vehicle moves from the origin. The shaded region in Figure~\ref{fig:longWalk1_xyz} clearly highlights this behavior. The vehicle's estimated altitude rises steadily to a maximum of about 1.4~meters, although in truth the vehicle's altitude was constant throughout. The vehicle's maximum vertical error coincides with its maximal displacement from $\left( 0,\ 0,\ 0 \right)$.
+
+In each trial, the UKF output showed increased ``shakiness'' in the form of large oscillations as the vehicle's $y$-position increased. As the mobile test stand moved farther and farther away from the origin, visualizations of the output would show erroneous vertical spikes in conjunction with the altitude generally trending upward. The magnitude of these spikes increased with displacement from the origin, always achieving a maximal magnitude at the point of maximal displacement. Moreover, this behavior was coupled with aberrant displacements along the $x$-axis as well. This behavior seems to follow the intuition posited earlier in Chapter~\ref{ch:Exp_Results} that the ROS PTAM implementation was not correctly eliminating lens distortion and was thus perceiving a bowl-shaped world. If PTAM's view of the environment were curved, the large erroneous readings in $x$ and $z$ would reasonably be coupled to displacement along the $y$-axis, as the $y$-displacement would affect the vehicle's ``height'' along the inside of the ``bowl.'' The farther the vehicle moved from the bottom of the bowl at the origin, the more $z$ would increase and the more $x$ would become susceptible to overestimating small lateral perturbations. This trend can be seen to varying degrees in all five trials, with maximal error in the $z$ coordinate being accompanied by maximal ``shakiness'' in the $x$ coordinate---all coinciding with maximal displacement from the origin.
 
 \begin{figure}[H]
   \centering
@@ -42,7 +44,11 @@ Figures~\ref{fig:longWalk1_xyz}--\ref{fig:longWalk5_xyz} plot the vehicle's $x$-
 
 \section{Box Pattern Trials}
 
-Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured trajectories of the mobile test stand during all five box pattern trials. \todo{more}
+Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured trajectories of the mobile test stand during all five box pattern trials. The 3D trajectory plots all exhibit the same bowl-shaped distortion seen previously in the long walk experiment. The $z$-position of the vehicle can been seen trending upward the farther the vehicle is displaced from the origin. This causes the apparent slantedness of the estimated trajectories. This altitudinal error is most pronounced at the forward-left corner in each 3D plot, where the vehicle is farthest from the origin. The estimated trajectory also becomes noticeably shakier in terms of vertical oscillations in the neighborhood of the forward-left corner. These oscillations present on the first (right-side) leg of the trajectory and increase in magnitude up to the forward-left corner, at which point they begin to decrease in magnitude on the way back to the starting position.
+
+The 2D trajectory plots are presented alongside the 3D plots to demonstrate the general accuracy of the UKF's estimates in planar motion. The UKF output follows the Vicon output faithfully with some exceptions near the corners of the box pattern. This is partly caused by the bowl-shaped distortion mentioned previously and partly caused by the fact that the mobile test stand moves on caster wheels. When the test stand changes direction, the caster wheels rotate underneath the cart and subsequently cause lateral disturbances in the test stand's trajectory. This is particularly apparent in Figures~\ref{fig:box2_2d} and \ref{fig:box4_2d}, where a clear ``wiggling'' can be seen as the vehicle was pulled back from the top left corner of the pattern, and in Figure~\ref{fig:box5_2d}, where the estimated trajectory ``sags'' in the bottom left corner. These lateral disturbances, though small in magnitude (likely on the order of 3--5~cm) were picked up by PTAM and overestimated due to lens distortion.
+
+Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous $x$-directional offset along the first leg of the trajectory. This was most likely caused by inadvertently jostling the test stand before initializing PTAM. The test stand was rotated at an angle to Vicon's $x$-axis at the outset of the trial, causing the estimated trajectory to be computed at an angle to the ground truth trajectory. Once the test stand reached the first corner, it must have been rotated slightly, causing the estimated trajectory to rejoin ground truth.
 
 \clearpage
 
@@ -121,7 +127,7 @@ Figures~\ref{fig:box1_2d}--\ref{fig:box5_3d} plot the estimated and measured tra
 \end{figure}
 \clearpage
 
-\section{Post Processing}
+\section{Error Analysis}
 
 Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} recording utility: the pose messages published by \texttt{kalman\_sense} and the pose messages published by Vicon. To determine the effectiveness of the UKF framework in estimating the position of the vehicle, positional errors were computed per the following relations:
 %
@@ -131,5 +137,21 @@ Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wi
 \varepsilon_{z} &= | z_{\text{Vicon}} - z_{\text{UKF}} |
 \end{align}
 %
-These positional errors were computed over the \todo{finish}
+These positional errors were then composed into a positional error vector $\bm{\varepsilon}$:
+%
+\begin{equation}
+\bm{\varepsilon} = \left\lbrace \varepsilon_{x},\ \varepsilon_{y},\ \varepsilon_{z} \right\rbrace ^{T} .
+\end{equation}
+%
+The error terms were computed over the length of each coordinate time history, creating an error history for each experimental trial. These error terms were then combined to compute the total Euclidean offset $\| \bm{\varepsilon} \|$:
+%
+\begin{equation}
+\| \bm{\varepsilon} \| = \sqrt{\varepsilon_{x}^{2} + \varepsilon_{y}^{2} + \varepsilon_{z}^{2}} . 
+\end{equation}
+%
+This total Euclidean offset encodes the straight-line distance between the ground truth position and the estimated position, providing a measure of total positional error at each point in time. This magnitudinal error history was then analyzed for each experimental trial in order to determine the mean total error, total error variance, and maximum total error. These three statistics characterize the effectiveness of the filter by providing not only the mean and variance which describe its Gaussian error distribution, but also by revealing the ``worst-case scenario'' measurement error in the form of maximum total error. These statistics are presented in the following table:
+
+\todo{Get stats. Make table.}
+
+From the statistical analysis, we see that, in the long walk trials, \todo{describe error}. In the box pattern trials, \todo{describe other error}. From this, we can say that the system \todo{general insight}.
 
