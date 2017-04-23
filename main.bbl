@@ -88,6 +88,11 @@ B.~L. Stevens, F.~L. Lewis, and E.~N. Johnson, {\em {Aircraft Control and
   Simulation: Dynamics, Controls Design, and Autonomous Systems}}, pp.~1--62.
 \newblock Wiley, 2015.
 
+\bibitem{Brown2012}
+R.~G. Brown and P.~Y.~C. Hwang, {\em {Introduction to Random Signals and
+  Applied Kalman Filtering}}.
+\newblock Wiley, 2012.
+
 \bibitem{GpsGov}
 ``{GPS Accuracy}.'' \url{http://www.gps.gov/systems/gps/performance/accuracy/}.
 \newblock Accessed: 2017-04-23.

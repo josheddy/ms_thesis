@@ -15,7 +15,6 @@
 \usepackage{bm} % Bold Greek math
 
 % Figure and captioning packages
-\usepackage[export]{adjustbox}
 \usepackage[margin=0.1\textwidth]{caption} % Adjust caption text column margins
 \usepackage{subcaption} % Subfigures with subcaptions
 \usepackage{wrapfig} % Text wrapping around figures
