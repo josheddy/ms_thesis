@@ -129,7 +129,7 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 
 \section{Error Analysis}
 
-To determine the effectiveness of the UKF framework in estimating the position of the vehicle, we develop a number of statistical metrics to characterize the varieties and magnitudes of error in the filter's output. In this section, we perform statistical analyses on the data streams collected during the box pattern trials only, as the positional error in the long walk trials is effectively unbounded. Because of the bowl-shaped lens distortion defect mentioned previously, moving the vehicle in long translations provokes ever-increasing altitudinal error and distorts lateral sensitivity. Thus, we examine the box pattern trials instead to characterize the system's error in a scenario where this combination of sensors would be a more reasonable choice.
+To determine the effectiveness of the UKF framework in estimating the position of a vehicle, we develop a number of statistical metrics to characterize the varieties and magnitudes of error in the filter's output. In this section, we perform statistical analyses on the data streams collected during the box pattern trials. The positional error in the long walk trials is effectively unbounded. Because of the bowl-shaped lens distortion defect mentioned previously, moving the vehicle in long translations produces ever-increasing altitudinal error and distorts lateral sensitivity. As a result, we examine only the box pattern trials to characterize the system's error in a scenario where the combination of sensors being used would be a more reasonable choice.
 
 Positional errors in the UKF output were computed after each trial per the following relationships:
 %
@@ -153,7 +153,7 @@ Trial & $\mu_{x}$ [m] & $\sigma_{x}^{2}$ [m$^{2}$] & $\mu_{y}$ [m] & $\sigma_{y}
 4 & $-$3.9788e$-$04 & 7.5902e$-$04 & 0.0199 & 8.0152e$-$04 & $-$0.0219 & 0.0033 \\
 5 & $-$0.0170 & 0.0019 & 0.0279 & 0.0036 & $-$0.0372 & 0.0034 \\
 \hline
-\textbf{Overall} & $-$0.0129 &  & 0.0143 &  & $-$0.0351 & \\
+\textbf{Grand Mean} & $-$0.0129 &  & 0.0143 &  & $-$0.0351 & \\
 \bottomrule
 \end{tabular}
 \label{tab:means_and_vars}
@@ -185,10 +185,12 @@ Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}
 4 & 0.0636 & 0.1508 \\
 5 & 0.0856 & 0.2497 \\
 \hline
-\textbf{Overall} & 0.0668 \\
+\textbf{Grand Mean} & 0.0668 \\
+\hline
+\textbf{Maximum Error} && 0.2596 \\
 \bottomrule
 \end{tabular}
 \label{tab:total_err}
 \end{table}
 
-From the statistical analysis, we see that \todo{describe error}. In the box pattern trials, \todo{describe other error}. From this, we can say that the system \todo{general insight}.
+From Table~\ref{tab:means_and_vars}, we can see that the mean coordinate errors are (1) small in magnitude, being less than 4~cm in any direction, and (2) close to zero, supporting our intuition of a zero-mean Gaussian distribution. The variance values are also small in magnitude, being on the order of $10^{-3}$~m$^{2}$ or less in all cases. This indicates a tight distribution of error about the mean, implying that large erroneous spikes were rare during testing. Table~\ref{tab:total_err} shows that the system ran with a mean total error of 0.0668~m and a maximum error of 0.2596~m. This indicates that the system was able to estimate the vehicle's position consistently with sub-meter accuracy over the length of each trial. The maximum error, though large, still falls well within the 4.9-m radius generally realizable with current smartphone GPS receivers (\cite{GpsGov}), indicating that the system could prove to be a reasonable choice for outdoor navigation or for indoor navigation in open areas where centimeter-level accuracy would not be required.
