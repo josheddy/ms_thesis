@@ -9,35 +9,35 @@
 \contentsline {subsection}{\numberline {3.1.1}Prediction Step}{13}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Observation Model}{19}{subsection.3.1.4}
 \contentsline {subsubsection}{Quaternion Continuity Correction}{19}{section*.15}
 \contentsline {subsubsection}{Pseudovelocity Correction}{20}{section*.16}
 \contentsline {subsubsection}{Observation Modeling}{21}{section*.17}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{21}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{22}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Software Design Considerations}{22}{section.3.2}
-\contentsline {chapter}{\numberline {4}Experimental Design}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Testing Considerations}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{26}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Experimental Procedures}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Materials}{30}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{30}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{31}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Experimental Results}{32}{chapter.5}
-\contentsline {section}{\numberline {5.1}Long Walk Trials}{32}{section.5.1}
-\contentsline {section}{\numberline {5.2}Box Pattern Trials}{38}{section.5.2}
-\contentsline {section}{\numberline {5.3}Error Analysis}{44}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions}{47}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{48}{chapter.7}
-\contentsline {section}{\numberline {7.1}System Improvements}{48}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{48}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{50}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{51}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Future Experiments}{52}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Applications}{52}{section.7.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{53}{section*.50}
-\contentsline {subsubsection}{Emergency Response}{53}{section*.51}
-\contentsline {subsubsection}{Infrastructure Inspection}{54}{section*.52}
-\contentsline {subsubsection}{Autonomous Package Delivery}{55}{section*.53}
-\contentsline {subsubsection}{Military/Defense Solutions}{55}{section*.54}
-\contentsline {chapter}{Bibliography}{57}{Item.37}
+\contentsline {section}{\numberline {3.2}Software Design Considerations}{23}{section.3.2}
+\contentsline {chapter}{\numberline {4}Experimental Design}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Testing Considerations}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{27}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Experimental Procedures}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Materials}{31}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{31}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{32}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Experimental Results}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Long Walk Trials}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Box Pattern Trials}{39}{section.5.2}
+\contentsline {section}{\numberline {5.3}Error Analysis}{45}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusions}{48}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}System Improvements}{49}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Integration of New Sensors}{49}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Improvements for Current Sensors}{51}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{52}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Future Experiments}{53}{section.7.2}
+\contentsline {section}{\numberline {7.3}System Applications}{53}{section.7.3}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{54}{section*.49}
+\contentsline {subsubsection}{Emergency Response}{54}{section*.50}
+\contentsline {subsubsection}{Infrastructure Inspection}{55}{section*.51}
+\contentsline {subsubsection}{Autonomous Package Delivery}{56}{section*.52}
+\contentsline {subsubsection}{Military/Defense Solutions}{56}{section*.53}
+\contentsline {chapter}{Bibliography}{58}{Item.37}

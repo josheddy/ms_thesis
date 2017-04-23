@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  23 APR 2017 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  23 APR 2017 14:39
 entering extended mode
 **./main.tex
 (main.tex
@@ -380,35 +380,6 @@ Package: bm 2016/07/07 v1.2b Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
 LaTeX Info: Redefining \bm on input line 208.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen126
-\captionmargin@=\dimen127
-\captionwidth=\dimen128
-\caption@tempdima=\dimen129
-\caption@indent=\dimen130
-\caption@parindent=\dimen131
-\caption@hangindent=\dimen132
-)
-\c@ContinuedFloat=\count107
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count108
-\c@subtable=\count109
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
-\wrapoverhang=\dimen133
-\WF@size=\dimen134
-\c@WF@wrappedlines=\count110
-\WF@box=\box28
-\WF@everypar=\toks22
-Package: wrapfig 2003/01/31  v 3.6
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
@@ -417,10 +388,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
 )
-\XKV@depth=\count111
+\XKV@depth=\count107
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
@@ -453,40 +424,69 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count112
+\Gread@gobject=\count108
 ))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box29
+\collectedbox=\box28
 )
-\tc@llx=\dimen137
-\tc@lly=\dimen138
-\tc@urx=\dimen139
-\tc@ury=\dimen140
+\tc@llx=\dimen128
+\tc@lly=\dimen129
+\tc@urx=\dimen130
+\tc@ury=\dimen131
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen141
-\adjbox@Height=\dimen142
-\adjbox@Depth=\dimen143
-\adjbox@Totalheight=\dimen144
+\adjbox@Width=\dimen132
+\adjbox@Height=\dimen133
+\adjbox@Depth=\dimen134
+\adjbox@Totalheight=\dimen135
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count113
+\c@checkoddpage=\count109
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box30
-\sift@deathcycles=\count114
-\@vwid@loff=\dimen145
-\@vwid@roff=\dimen146
+\@vwid@box=\box29
+\sift@deathcycles=\count110
+\@vwid@loff=\dimen136
+\@vwid@roff=\dimen137
 ))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen138
+\captionmargin@=\dimen139
+\captionwidth=\dimen140
+\caption@tempdima=\dimen141
+\caption@indent=\dimen142
+\caption@parindent=\dimen143
+\caption@hangindent=\dimen144
+)
+\c@ContinuedFloat=\count111
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count112
+\c@subtable=\count113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen145
+\WF@size=\dimen146
+\c@WF@wrappedlines=\count114
+\WF@box=\box30
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count115
@@ -967,63 +967,63 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks42
 \verbatim@in@stream=\read2
 )
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 49.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 49.
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 50.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 50.
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 68.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 67.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 68.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 68.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 67.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 68.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 68.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 67.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 68.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 68.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 68.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \microtypecontext on input line 67.
+LaTeX Info: Redefining \microtypecontext on input line 68.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1042,12 +1042,6 @@ Package microtype Info: Loading generic settings for font family
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count157
@@ -1074,8 +1068,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 68.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1085,9 +1084,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 
 (main.out) (main.out)
 \@outlinefile=\write4
@@ -1236,74 +1235,74 @@ Chapter 3.
 
 ] [14] [15] [16] [17] [18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 218.
+put line 227.
  [19] [20]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 288.
+ine 316.
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 316--316
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 316--316
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 316--316
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 316--316
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality?  
  []
 
 [21]
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 343--343
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 343--343
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 343--343
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
 
-Overfull \hbox (3.21547pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.21547pt too wide) in paragraph at lines 343--343
 [][][][]\T1/futs/m/n/10.95 (-20) diagonality? 
  []
 
-[22]) (Exp_Design.tex [23]
+[22] [23]) (Exp_Design.tex [24]
 Chapter 4.
-<sensor_mount_top.jpg, id=532, 462.39417pt x 326.21875pt>
+<sensor_mount_top.jpg, id=542, 462.39417pt x 326.21875pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
 
 <use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 7.
 (pdftex.def)             Requested size: 143.9978pt x 101.58968pt.
- <whole_cart.jpg, id=535, 1606.0pt x 1204.5pt>
+ <whole_cart.jpg, id=545, 1606.0pt x 1204.5pt>
 File: whole_cart.jpg Graphic file (type jpg)
 
 <use whole_cart.jpg>
 Package pdftex.def Info: whole_cart.jpg used on input line 16.
 (pdftex.def)             Requested size: 287.98929pt x 216.0022pt.
- <cart_at_AI.jpg, id=536, 1606.0pt x 1204.5pt>
+ <cart_at_AI.jpg, id=546, 1606.0pt x 1204.5pt>
 File: cart_at_AI.jpg Graphic file (type jpg)
 
 <use cart_at_AI.jpg>
 Package pdftex.def Info: cart_at_AI.jpg used on input line 23.
 (pdftex.def)             Requested size: 143.9978pt x 107.99597pt.
- [24
+ [25
 
- <./sensor_mount_top.jpg>] [25 <./whole_cart.jpg> <./cart_at_AI.jpg>] <rot_bug_
-rviz.png, id=553, 256.29083pt x 302.79791pt>
+ <./sensor_mount_top.jpg>] [26 <./whole_cart.jpg> <./cart_at_AI.jpg>] <rot_bug_
+rviz.png, id=563, 256.29083pt x 302.79791pt>
 File: rot_bug_rviz.png Graphic file (type png)
 
 <use rot_bug_rviz.png>
@@ -1324,8 +1323,8 @@ Underfull \hbox (badness 1577) in paragraph at lines 38--39
 \T1/futs/m/n/10.95 (+20) known ca-pa-bil-i-ties and lim-i-ta-tions of the
  []
 
-[26 <./rot_bug_rviz.png>]
-<sensor_mount_vicon.jpg, id=573, 333.245pt x 250.60292pt>
+[27 <./rot_bug_rviz.png>]
+<sensor_mount_vicon.jpg, id=583, 333.245pt x 250.60292pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
 <use sensor_mount_vicon.jpg>
@@ -1336,131 +1335,131 @@ Underfull \hbox (badness 1275) in paragraph at lines 47--47
 []\T1/futs/m/n/10.95 (+20) Figure 4.5: |Close-up view of
  []
 
-[27 <./sensor_mount_vicon.jpg>]
-<bowl-shaped_world.png, id=579, 545.37083pt x 189.70876pt>
+[28 <./sensor_mount_vicon.jpg>]
+<bowl-shaped_world.png, id=590, 545.37083pt x 189.70876pt>
 File: bowl-shaped_world.png Graphic file (type png)
 
 <use bowl-shaped_world.png>
 Package pdftex.def Info: bowl-shaped_world.png used on input line 55.
 (pdftex.def)             Requested size: 323.9978pt x 112.70876pt.
 
-<good_box_5_cropped.png, id=580, 441.31541pt x 325.88417pt>
+<good_box_5_cropped.png, id=591, 441.31541pt x 325.88417pt>
 File: good_box_5_cropped.png Graphic file (type png)
 
 <use good_box_5_cropped.png>
 Package pdftex.def Info: good_box_5_cropped.png used on input line 64.
 (pdftex.def)             Requested size: 143.9978pt x 106.33376pt.
- [28 <./bowl-shaped_world.png> <./good_box_5_cropped.png>] <sensor_mount_bottom
-.jpg, id=592, 498.19458pt x 373.72958pt>
+ [29 <./bowl-shaped_world.png> <./good_box_5_cropped.png>] <sensor_mount_bottom
+.jpg, id=602, 498.19458pt x 373.72958pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
 Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 77.
 (pdftex.def)             Requested size: 180.0pt x 135.02727pt.
- [29 <./sensor_mount_bottom.jpg>] [30]) [31]
+ [30 <./sensor_mount_bottom.jpg>] [31]) [32]
 (Exp_Results.tex
 Chapter 5.
-[32
+[33
 
-] <longWalk1_xyz.jpg, id=654, 684.156pt x 542.025pt>
+] <longWalk1_xyz.jpg, id=664, 684.156pt x 542.025pt>
 File: longWalk1_xyz.jpg Graphic file (type jpg)
 
 <use longWalk1_xyz.jpg>
 Package pdftex.def Info: longWalk1_xyz.jpg used on input line 11.
 (pdftex.def)             Requested size: 360.0pt x 285.22076pt.
 
-<longWalk2_xyz.jpg, id=655, 1518.67375pt x 1222.5675pt>
+<longWalk2_xyz.jpg, id=665, 1518.67375pt x 1222.5675pt>
 File: longWalk2_xyz.jpg Graphic file (type jpg)
 
 <use longWalk2_xyz.jpg>
 Package pdftex.def Info: longWalk2_xyz.jpg used on input line 18.
 (pdftex.def)             Requested size: 360.0pt x 289.80315pt.
- [33 <./longWalk1_xyz.jpg>]
-<longWalk3_xyz.jpg, id=660, 1527.7075pt x 1179.40625pt>
+ [34 <./longWalk1_xyz.jpg>]
+<longWalk3_xyz.jpg, id=671, 1527.7075pt x 1179.40625pt>
 File: longWalk3_xyz.jpg Graphic file (type jpg)
 
 <use longWalk3_xyz.jpg>
 Package pdftex.def Info: longWalk3_xyz.jpg used on input line 25.
 (pdftex.def)             Requested size: 360.0pt x 277.91635pt.
- [34 <./longWalk2_xyz.jpg>]
-<longWalk4_xyz.jpg, id=666, 1739.49875pt x 1352.05125pt>
+ [35 <./longWalk2_xyz.jpg>]
+<longWalk4_xyz.jpg, id=676, 1739.49875pt x 1352.05125pt>
 File: longWalk4_xyz.jpg Graphic file (type jpg)
 
 <use longWalk4_xyz.jpg>
 Package pdftex.def Info: longWalk4_xyz.jpg used on input line 32.
 (pdftex.def)             Requested size: 360.0pt x 279.81302pt.
- [35 <./longWalk3_xyz.jpg>]
-<longWalk5_xyz.jpg, id=671, 1731.46875pt x 1390.19376pt>
+ [36 <./longWalk3_xyz.jpg>]
+<longWalk5_xyz.jpg, id=681, 1731.46875pt x 1390.19376pt>
 File: longWalk5_xyz.jpg Graphic file (type jpg)
 
 <use longWalk5_xyz.jpg>
 Package pdftex.def Info: longWalk5_xyz.jpg used on input line 39.
 (pdftex.def)             Requested size: 360.0pt x 289.04317pt.
- [36 <./longWalk4_xyz.jpg>] [37 <./longWalk5_xyz.jpg>]
-[38
+ [37 <./longWalk4_xyz.jpg>] [38 <./longWalk5_xyz.jpg>]
+[39
 
-] <box1_2d.jpg, id=699, 1005.7575pt x 948.54375pt>
+] <box1_2d.jpg, id=709, 1005.7575pt x 948.54375pt>
 File: box1_2d.jpg Graphic file (type jpg)
  <use box1_2d.jpg>
 Package pdftex.def Info: box1_2d.jpg used on input line 58.
 (pdftex.def)             Requested size: 229.03271pt x 216.0022pt.
 
-<box1_3d.jpg, id=700, 1264.725pt x 948.54375pt>
+<box1_3d.jpg, id=710, 1264.725pt x 948.54375pt>
 File: box1_3d.jpg Graphic file (type jpg)
  <use box1_3d.jpg>
 Package pdftex.def Info: box1_3d.jpg used on input line 64.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [39 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=705, 949.5475pt x 948.54
+ [40 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=716, 949.5475pt x 948.54
 375pt>
 File: box2_2d.jpg Graphic file (type jpg)
 
 <use box2_2d.jpg>
 Package pdftex.def Info: box2_2d.jpg used on input line 73.
 (pdftex.def)             Requested size: 216.23248pt x 216.0022pt.
- <box2_3d.jpg, id=706, 1264.725pt x 948.54375pt>
+ <box2_3d.jpg, id=717, 1264.725pt x 948.54375pt>
 File: box2_3d.jpg Graphic file (type jpg)
 
 <use box2_3d.jpg>
 Package pdftex.def Info: box2_3d.jpg used on input line 79.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [40 <./box2_2d.jpg> <./box2_3d.jpg>]
-<box3_2d.jpg, id=712, 983.675pt x 948.54375pt>
+ [41 <./box2_2d.jpg> <./box2_3d.jpg>]
+<box3_2d.jpg, id=722, 983.675pt x 948.54375pt>
 File: box3_2d.jpg Graphic file (type jpg)
  <use box3_2d.jpg>
 Package pdftex.def Info: box3_2d.jpg used on input line 88.
 (pdftex.def)             Requested size: 224.00404pt x 216.0022pt.
 
-<box3_3d.jpg, id=713, 1264.725pt x 948.54375pt>
+<box3_3d.jpg, id=723, 1264.725pt x 948.54375pt>
 File: box3_3d.jpg Graphic file (type jpg)
  <use box3_3d.jpg>
 Package pdftex.def Info: box3_3d.jpg used on input line 94.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [41 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=718, 952.55875pt x 948.5
+ [42 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=728, 952.55875pt x 948.5
 4375pt>
 File: box4_2d.jpg Graphic file (type jpg)
 
 <use box4_2d.jpg>
 Package pdftex.def Info: box4_2d.jpg used on input line 103.
 (pdftex.def)             Requested size: 216.91821pt x 216.0022pt.
- <box4_3d.jpg, id=719, 1264.725pt x 948.54375pt>
+ <box4_3d.jpg, id=729, 1264.725pt x 948.54375pt>
 File: box4_3d.jpg Graphic file (type jpg)
 
 <use box4_3d.jpg>
 Package pdftex.def Info: box4_3d.jpg used on input line 109.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [42 <./box4_2d.jpg> <./box4_3d.jpg>]
-<box5_2d.jpg, id=724, 1029.8475pt x 948.54375pt>
+ [43 <./box4_2d.jpg> <./box4_3d.jpg>]
+<box5_2d.jpg, id=734, 1029.8475pt x 948.54375pt>
 File: box5_2d.jpg Graphic file (type jpg)
  <use box5_2d.jpg>
 Package pdftex.def Info: box5_2d.jpg used on input line 118.
 (pdftex.def)             Requested size: 234.51852pt x 216.0022pt.
 
-<box5_3d.jpg, id=725, 1264.725pt x 948.54375pt>
+<box5_3d.jpg, id=735, 1264.725pt x 948.54375pt>
 File: box5_3d.jpg Graphic file (type jpg)
  <use box5_3d.jpg>
 Package pdftex.def Info: box5_3d.jpg used on input line 124.
 (pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [43 <./box5_2d.jpg> <./box5_3d.jpg>]
+ [44 <./box5_2d.jpg> <./box5_3d.jpg>]
 Overfull \hbox (48.38878pt too wide) in paragraph at lines 146--160
  [][] 
  []
@@ -1468,22 +1467,22 @@ Overfull \hbox (48.38878pt too wide) in paragraph at lines 146--160
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44
+[45
 
 
 
 
 
 
-]) (Conclusions.tex [45] [46]
+]) (Conclusions.tex [46] [47]
 Chapter 6.
-) (Future_Work.tex [47
+) (Future_Work.tex [48
 
 ]
 Chapter 7.
-[48
+[49
 
-] [49] [50] [51] [52] [53] [54]) [55] [56] (main.bbl [57
+] [50] [51] [52] [53] [54] [55]) [56] [57] (main.bbl [58
 
 
 ]
@@ -1492,40 +1491,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--94
 / www . gps . gov / systems / gps / performance /
  []
 
-[58]) [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+[59]) [60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9617D030A020ABA9442083B71EF5B20B;2391.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 22218 strings out of 493334
- 402769 string characters out of 3136672
- 485812 words of memory out of 3000000
+ 22221 strings out of 493334
+ 402727 string characters out of 3136672
+ 486707 words of memory out of 3000000
  24648 multiletter control sequences out of 15000+200000
  152679 words of font info for 323 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,77p,1748b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,92p,1748b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlb.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (68 pages, 12756044 bytes).
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlb.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (69 pages, 12763946 bytes).
 PDF statistics:
- 970 PDF objects out of 1000 (max. 8388607)
- 293 named destinations out of 1000 (max. 500000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 296 named destinations out of 1000 (max. 500000)
  42914 words of extra memory for PDF output out of 42996 (max. 10000000)
 

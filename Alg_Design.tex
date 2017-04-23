@@ -192,7 +192,7 @@ Similarly, we compute the vehicle's current position using the vehicle's average
 Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:
 %
 \begin{equation}
-f \left( \mathbf{x}_{k} \right) = 
+f \left( \mathbf{x}_{k-1 | k-1} \right) = 
 \begin{Bmatrix}[1.5]
    \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t \\
    \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t \\
@@ -201,6 +201,15 @@ f \left( \mathbf{x}_{k} \right) =
    R^{g}_{b,\ k-1} \left( \mathbf{a}_{\text{meas.}} - \mathbf{g} \right)
 \end{Bmatrix}
 \end{equation}
+
+For purposes of noise modeling, the process function $f$ is modeled according to the relationship
+%
+\begin{equation}
+\mathbf{x}_{k | k-1} = f \left( \mathbf{x}_{k-1 | k-1},\ \bm{\delta}_{k} \right)
+\end{equation}
+%
+where $\bm{\delta}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{Q} \right)$ is additive Gaussian-distributed process noise, assumed to have zero mean and covariance $\mathbf{Q}$ (explored further in Section~\ref{sec:Q_Matrix}).
+
 
 \subsection{Observation Model} \label{Observation_Model}
 
@@ -212,7 +221,7 @@ A defect was discovered in the ROS implementation of PTAM during preliminary tes
 
 Quaternions are defined mathematically such that any quaternion $\mathbf{q}$ and its negative, $- \mathbf{q}$, encode precisely the same \textit{orientation}, but opposite \textit{rotations}. If $\mathbf{q}$ encodes a clockwise rotation of 90 degrees about the $z$-axis, $- \mathbf{q}$ will encode a counterclockwise 270-degree rotation about the same axis. The final orientation is the same in either case, but the two quaternions imply rotations in opposite directions. This has major implications for motion tracking. For example, when estimating the orientation of a vehicle moving in the $xy$-plane, such a sign flip would be visualized as an instantaneous 360-degree rotation about the $z$-axis, implying a massive angular acceleration that never took place. 
 
-A simple way to detect this type of errant behavior is to check, upon receipt of each new quaternion $\mathbf{q}_{k}$, whether $- \mathbf{q}_{k}$ implies a smaller rotation from the previous quaternion $\mathbf{q}_{k-1}$. Given that PTAM produces pose estimates at a rate of about 20~Hz, we assume only small-angle rotations between pose estimates. Thus, the smaller of the two rotations should always come from the correct quaternion. We can compare the relative magnitude of each possible rotation by taking the norm of the ``delta-quaternions'' $\mathbf{q}_{k-1} - \mathbf{q}_{k}$ and $\mathbf{q}_{k-1} - \left( - \mathbf{q}_{k} \right)$. The smaller delta-quaternion is associated with the correct quaternion estimate. We implement this logic using the following algorithm:
+A simple way to detect this type of errant behavior is to check, upon receipt of each new quaternion $\mathbf{q}_{k}$, whether $- \mathbf{q}_{k}$ implies a smaller rotation from the previous quaternion $\mathbf{q}_{k-1}$. Given that PTAM produces pose estimates at a rate of about 20~Hz, we assume only small-angle rotations between pose estimates. Thus, the smaller of the two rotations should always come from the correct quaternion. We can compare the relative magnitude of each possible rotation by taking the norm of the ``delta-quaternions'' $\mathbf{q}_{k-1} - \mathbf{q}_{k}$ and $\mathbf{q}_{k-1} - \left( - \mathbf{q}_{k} \right)$. The smaller delta-quaternion is associated with the correct quaternion estimate. We implement this logic using Algorithm~\ref{alg:checkQuatContinuity}.
 
 \begin{algorithm}
   \caption{Check for continuity between quaternion estimates.}
@@ -274,7 +283,7 @@ This pseudovelocity correction prevents unbounded velocity drift, which in turn 
 
 \subsubsection{Observation Modeling}
 
-After implementing the quaternion and velocity corrections developed above, the measurement vector is augmented with the new pseudovelocity:
+After implementing the quaternion and velocity corrections developed above, the $m$-dimensional measurement vector is augmented with the new pseudovelocity, giving it dimension $m_{a} = 10$:
 %
 \begin{equation}
 \mathbf{z}_{k} = \left\lbrace x,\ y,\ z,\ q_{x},\ q_{y},\ q_{z},\ q_{w},\ \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} _{\text{meas.}} 
@@ -283,9 +292,25 @@ After implementing the quaternion and velocity corrections developed above, the 
 The observation function $h$ is then
 %
 \begin{equation}
-h \left( \mathbf{x}_{k} \right) = \mathbf{I}_{10 \times 10} \mathbf{z}_{k}
+h \left( \mathbf{x}_{k | k-1} \right) = \mathbf{H} \mathbf{x}_{k | k-1}
 \end{equation}
-\todo{check with Sam}
+%
+The matrix $\mathbf{H}$ is defined as
+%
+\begin{equation}
+\mathbf{H} = 
+\begin{bmatrix}
+\mathbf{I}_{m_{a} \times m_{a}} & \mathbf{0}_{m_{a} \times \left(n-m_{a}\right)}
+\end{bmatrix}
+\end{equation}
+%
+where $\mathbf{I}_{m_{a} \times m_{a}}$ is a $10 \times 10$ identity matrix and $\mathbf{0}_{m_{a} \times \left(n-m_{a}\right)}$ is an empty $10 \times 6$ matrix. We model the observation function $h$ according to the relationship
+%
+\begin{equation}
+\hat{\mathbf{z}}_{k} = h \left( \mathbf{x}_{k | k-1},\ \bm{\epsilon}_{k} \right)
+\end{equation}
+%
+where $\bm{\epsilon}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{R} \right)$ is additive Gaussian measurement noise assumed to have zero mean and covariance $\mathbf{R}$ (explored in Section~\ref{sec:R_Matrix}).
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 \todo{diagonality?}
