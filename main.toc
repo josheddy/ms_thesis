@@ -10,10 +10,11 @@
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{18}{subsection.3.1.4}
-\contentsline {subsubsection}{Quaternion Continuity Correction}{18}{section*.16}
-\contentsline {subsubsection}{Pseudovelocity Correction}{20}{section*.17}
+\contentsline {subsubsection}{Quaternion Continuity Correction}{19}{section*.15}
+\contentsline {subsubsection}{Pseudovelocity Correction}{20}{section*.16}
+\contentsline {subsubsection}{Observation Modeling}{21}{section*.17}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{21}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{21}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{22}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{22}{section.3.2}
 \contentsline {chapter}{\numberline {4}Experimental Design}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{24}{section.4.1}
@@ -34,9 +35,9 @@
 \contentsline {subsection}{\numberline {7.1.3}Refinements to the Underlying Algorithm}{51}{subsection.7.1.3}
 \contentsline {section}{\numberline {7.2}Future Experiments}{52}{section.7.2}
 \contentsline {section}{\numberline {7.3}System Applications}{52}{section.7.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{53}{section*.49}
-\contentsline {subsubsection}{Emergency Response}{53}{section*.50}
-\contentsline {subsubsection}{Infrastructure Inspection}{54}{section*.51}
-\contentsline {subsubsection}{Autonomous Package Delivery}{55}{section*.52}
-\contentsline {subsubsection}{Military/Defense Solutions}{55}{section*.53}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{53}{section*.50}
+\contentsline {subsubsection}{Emergency Response}{53}{section*.51}
+\contentsline {subsubsection}{Infrastructure Inspection}{54}{section*.52}
+\contentsline {subsubsection}{Autonomous Package Delivery}{55}{section*.53}
+\contentsline {subsubsection}{Military/Defense Solutions}{55}{section*.54}
 \contentsline {chapter}{Bibliography}{57}{Item.37}

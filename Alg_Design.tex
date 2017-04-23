@@ -203,7 +203,9 @@ f \left( \mathbf{x}_{k} \right) =
 \end{equation}
 
 \subsection{Observation Model} \label{Observation_Model}
-\todo{observation model h}
+
+Before presenting the observation function $h$, we will first explore several corrective measures employed to improve the numerical stability of the filter. The first of these is an algorithmic approach to quaternion continuity checking. The second is a derived measurement of the vehicle's velocity designed to prevent drift in the absence of direct velocity measurements.
+
 \subsubsection{Quaternion Continuity Correction}
 
 A defect was discovered in the ROS implementation of PTAM during preliminary testing. PTAM's quaternion estimates switch sign without warning after the camera rotates approximately 270 degrees, clockwise or counterclockwise. This aberrant behavior was provoked predictably in dozens of early tests in multiple testing areas, precluding the possibility of a one-off mapping error caused by a particular environment.
@@ -269,6 +271,21 @@ To prevent this potentially catastrophic drift, velocity is estimated by numeric
 \end{equation}
 %
 This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable.
+
+\subsubsection{Observation Modeling}
+
+After implementing the quaternion and velocity corrections developed above, the measurement vector is augmented with the new pseudovelocity:
+%
+\begin{equation}
+\mathbf{z}_{k} = \left\lbrace x,\ y,\ z,\ q_{x},\ q_{y},\ q_{z},\ q_{w},\ \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} _{\text{meas.}} 
+\end{equation}
+%
+The observation function $h$ is then
+%
+\begin{equation}
+h \left( \mathbf{x}_{k} \right) = \mathbf{I}_{10 \times 10} \mathbf{z}_{k}
+\end{equation}
+\todo{check with Sam}
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 \todo{diagonality?}
