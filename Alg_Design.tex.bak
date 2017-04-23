@@ -205,10 +205,10 @@ f \left( \mathbf{x}_{k-1 | k-1} \right) =
 For purposes of noise modeling, the process function $f$ is modeled according to the relationship
 %
 \begin{equation}
-\mathbf{x}_{k | k-1} = f \left( \mathbf{x}_{k-1 | k-1},\ \bm{\delta}_{p,\ k} \right)
+\mathbf{x}_{k | k-1} = f \left( \mathbf{x}_{k-1 | k-1},\ \bm{\delta}_{k} \right)
 \end{equation}
 %
-where $\bm{\delta}_{p,\ k} \sim \mathcal{N} \left( 0,\ \mathbf{Q} \right)$ is additive Gaussian-distributed process noise, assumed to have zero mean and covariance $\mathbf{Q}$ (explored further in Section~\ref{sec:Q_Matrix}).
+where $\bm{\delta}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{Q} \right)$ is additive Gaussian-distributed process noise, assumed to have zero mean and covariance $\mathbf{Q}$ (explored further in Section~\ref{sec:Q_Matrix}).
 
 
 \subsection{Observation Model} \label{Observation_Model}
@@ -283,7 +283,7 @@ This pseudovelocity correction prevents unbounded velocity drift, which in turn 
 
 \subsubsection{Observation Modeling}
 
-After implementing the quaternion and velocity corrections developed above, the $m$-dimensional measurement vector is augmented with the new pseudovelocity, making:
+After implementing the quaternion and velocity corrections developed above, the $m$-dimensional measurement vector is augmented with the new pseudovelocity, giving it dimension $m_{a} = 10$:
 %
 \begin{equation}
 \mathbf{z}_{k} = \left\lbrace x,\ y,\ z,\ q_{x},\ q_{y},\ q_{z},\ q_{w},\ \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} _{\text{meas.}} 
@@ -300,17 +300,17 @@ The matrix $\mathbf{H}$ is defined as
 \begin{equation}
 \mathbf{H} = 
 \begin{bmatrix}
-\mathbf{I}_{10 \times 10} & \mathbf{0}_{10 \times 6}
+\mathbf{I}_{m_{a} \times m_{a}} & \mathbf{0}_{m_{a} \times \left(n-m_{a}\right)}
 \end{bmatrix}
 \end{equation}
 %
-where $\mathbf{I}_{10 \times 10}$ is a $10 \times 10$ identity matrix and $\mathbf{0}_{10 \times 6}$ is an empty $10 \times 6$ matrix. We model the observation function $h$ according to the relationship
+where $\mathbf{I}_{m_{a} \times m_{a}}$ is a $10 \times 10$ identity matrix and $\mathbf{0}_{m_{a} \times \left(n-m_{a}\right)}$ is an empty $10 \times 6$ matrix. We model the observation function $h$ according to the relationship
 %
 \begin{equation}
-\hat{\mathbf{z}}_{k} = h \left( \mathbf{x}_{k | k-1},\ \bm{\delta}_{o,\ k} \right)
+\hat{\mathbf{z}}_{k} = h \left( \mathbf{x}_{k | k-1},\ \bm{\epsilon}_{k} \right)
 \end{equation}
 %
-where $\bm{\delta}_{o,\ k} \sim \mathcal{N} \left( 0,\ \mathbf{R} \right)$ is additive Gaussian measurement noise assumed to have zero mean and covariance $\mathbf{R}$ (explored in Section~\ref{sec:R_Matrix}).
+where $\bm{\epsilon}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{R} \right)$ is additive Gaussian measurement noise assumed to have zero mean and covariance $\mathbf{R}$ (explored in Section~\ref{sec:R_Matrix}).
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 \todo{diagonality?}
