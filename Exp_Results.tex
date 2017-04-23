@@ -129,29 +129,19 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 
 \section{Error Analysis}
 
-Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} recording utility: the pose messages published by \texttt{kalman\_sense} and the pose messages published by Vicon. To determine the effectiveness of the UKF framework in estimating the position of the vehicle, positional errors were computed per the following relationships:
+To determine the effectiveness of the UKF framework in estimating the position of the vehicle, we develop a number of statistical metrics to characterize the varieties and magnitudes of error in the filter's output. In this section, we perform statistical analyses on the data streams collected during the box pattern trials only, as the positional error in the long walk trials is effectively unbounded. Because of the bowl-shaped lens distortion defect mentioned previously, moving the vehicle in long translations provokes ever-increasing altitudinal error and distorts lateral sensitivity. Thus, we examine the box pattern trials instead to characterize the system's error in a scenario where this combination of sensors would be a more reasonable choice.
+
+Positional errors in the UKF output were computed after each trial per the following relationships:
 %
 \begin{align}
-\varepsilon_{x} &= | x_{\text{Vicon}} - x_{\text{UKF}} | \\
-\varepsilon_{y} &= | y_{\text{Vicon}} - y_{\text{UKF}} | \\
-\varepsilon_{z} &= | z_{\text{Vicon}} - z_{\text{UKF}} |
+\varepsilon_{x} &= x_{\text{Vicon}} - x_{\text{UKF}} \\
+\varepsilon_{y} &= y_{\text{Vicon}} - y_{\text{UKF}} \\
+\varepsilon_{z} &= z_{\text{Vicon}} - z_{\text{UKF}}
 \end{align}
 %
-These positional errors were then composed into a positional error vector $\bm{\varepsilon}$:
-%
-\begin{equation}
-\bm{\varepsilon} = \left\lbrace \varepsilon_{x},\ \varepsilon_{y},\ \varepsilon_{z} \right\rbrace ^{T} .
-\end{equation}
-%
-The error terms were computed over the length of each coordinate time history, creating an error history for each experimental trial. These error terms were then combined to compute the total Euclidean offset $\| \bm{\varepsilon} \|$:
-%
-\begin{equation}
-\| \bm{\varepsilon} \| = \sqrt{\varepsilon_{x}^{2} + \varepsilon_{y}^{2} + \varepsilon_{z}^{2}} . 
-\end{equation}
-%
-This total Euclidean offset encodes the straight-line distance between the ground truth position and the estimated position, providing a measure of total positional error at each point in time. This magnitudinal error history was then analyzed for each experimental trial in order to determine its mean total error, total error variance, and maximum total error. These three statistics characterize the effectiveness of the filter by revealing not only the mean and variance (which describe its Gaussian error distribution), but also the ``worst-case scenario'' measurement error in the form of maximum total error. These statistics are presented in Table~\ref{tab:means_and_vars}.
+These positional errors were computed over the length of each coordinate time history, creating an error history for each trial. The mean coordinate errors and their variances were then computed from these error histories to characterize the Gaussian noise distribution in each data set. The terms $\mu_{x}$, $\mu_{y}$, and $\mu_{z}$ encode the mean error in $x$, $y$, and $z$, respectively. The associated variances of these errors are represented by $\sigma_{x}^{2}$, $\sigma_{y}^{2}$, and $\sigma_{z}^{2}$. These statistics are presented in Table~\ref{tab:means_and_vars}.
 
-\begin{table}\centering
+\begin{table}[h]\centering
 \caption[Coordinate Error]{Coordinate error mean and variance values by trial.}
 \begin{tabular}[c]{crr|rr|rr}
 \toprule
@@ -162,16 +152,28 @@ Trial & $\mu_{x}$ [m] & $\sigma_{x}^{2}$ [m$^{2}$] & $\mu_{y}$ [m] & $\sigma_{y}
 3 & $-$0.0341 & 0.0043 & 0.0033 & 1.9481e$-$04 & $-$0.0333 & 0.0028 \\
 4 & $-$3.9788e$-$04 & 7.5902e$-$04 & 0.0199 & 8.0152e$-$04 & $-$0.0219 & 0.0033 \\
 5 & $-$0.0170 & 0.0019 & 0.0279 & 0.0036 & $-$0.0372 & 0.0034 \\
+\hline
+\textbf{Overall} & $-$0.0129 &  & 0.0143 &  & $-$0.0351 & \\
 \bottomrule
 \end{tabular}
 \label{tab:means_and_vars}
 \end{table}
 
+The positional errors were composed into a positional error vector $\bm{\varepsilon}$ describing the offset between ground truth and the estimated trajectory at a given point in time:
+%
+\begin{equation}
+\bm{\varepsilon} = \left\lbrace \varepsilon_{x},\ \varepsilon_{y},\ \varepsilon_{z} \right\rbrace ^{T}
+\end{equation}
+%
+The norm of this error vector is the total Euclidean offset $\| \bm{\varepsilon} \|$:
+%
+\begin{equation}
+\| \bm{\varepsilon} \| = \sqrt{\varepsilon_{x}^{2} + \varepsilon_{y}^{2} + \varepsilon_{z}^{2}} 
+\end{equation}
+%
+The total Euclidean offset encodes the straight-line distance between the ground truth position and the estimated position, providing a measure of total positional error at each point in time. The total Euclidean offset was computed over the entire error history in order to characterize the evolution of the error over time. This magnitudinal error history was then analyzed for each experimental trial in order to determine the mean total error and maximum total error ($\| \bm{\varepsilon} \|_{\text{max.}}$). These statistics are presented in Table~\ref{tab:total_err}.
 
-
-From the statistical analysis, we see that, in the long walk trials, \todo{describe error}. In the box pattern trials, \todo{describe other error}. From this, we can say that the system \todo{general insight}.
-
-\begin{table}\centering
+\begin{table}[h]\centering
 \caption[Mean and Maximum Total Error]{Mean and maximum total error by trial.}
 \begin{tabular}[c]{crr}
 \toprule
@@ -182,7 +184,11 @@ Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}
 3 & 0.0695 & 0.2596 \\
 4 & 0.0636 & 0.1508 \\
 5 & 0.0856 & 0.2497 \\
+\hline
+\textbf{Overall} & 0.0668 \\
 \bottomrule
 \end{tabular}
 \label{tab:total_err}
 \end{table}
+
+From the statistical analysis, we see that \todo{describe error}. In the box pattern trials, \todo{describe other error}. From this, we can say that the system \todo{general insight}.
