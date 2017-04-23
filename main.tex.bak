@@ -7,6 +7,7 @@
 \usepackage{fourier}
 \usepackage{setspace}
 \usepackage{textcomp}
+\usepackage{booktabs}
 
 % Math packages
 \usepackage{amssymb}
@@ -60,6 +61,8 @@
 \newenvironment{myquote}[1]%
   {\list{}{\leftmargin=#1\rightmargin=#1}\item[]}%
   {\endlist}
+  
+\renewcommand{\arraystretch}{1.2}
 
 \begin{document}
 
@@ -68,7 +71,7 @@
 \input{Abstract.tex}
 \input{Acknowledgments.tex}
 \tableofcontents
-%\listoftables % DELETE IF UNUSED
+\listoftables
 \listoffigures
 \input{Acronyms.tex}
 \pagebreak

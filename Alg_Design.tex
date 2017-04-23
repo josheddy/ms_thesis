@@ -160,7 +160,7 @@ and the vehicle's current angular velocity vector is measured directly by the gy
 \bm{\Omega}_{k} = \bm{\Omega}_{meas.} .
 \end{equation}
 
-To calculate the vehicle's current acceleration, we first subtract gravity from the measured acceleration vector $\mathbf{a}_{meas.}$ and then rotate the difference into the inertial frame: \todo{Have Sam look over this. Are subscripts right?}
+To calculate the vehicle's current acceleration, we first subtract gravity from the measured acceleration vector $\mathbf{a}_{meas.}$ and then rotate the difference into the inertial frame:
 %
 \begin{equation} \label{eq:proc_acc}
 \mathbf{a}_{k} = R^{g}_{b} \left[ \mathbf{q}_{k-1} \right] \left( \mathbf{a}_{meas.} - \mathbf{g} \right) .

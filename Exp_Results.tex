@@ -149,9 +149,40 @@ The error terms were computed over the length of each coordinate time history, c
 \| \bm{\varepsilon} \| = \sqrt{\varepsilon_{x}^{2} + \varepsilon_{y}^{2} + \varepsilon_{z}^{2}} . 
 \end{equation}
 %
-This total Euclidean offset encodes the straight-line distance between the ground truth position and the estimated position, providing a measure of total positional error at each point in time. This magnitudinal error history was then analyzed for each experimental trial in order to determine its mean total error, total error variance, and maximum total error. These three statistics characterize the effectiveness of the filter by revealing not only the mean and variance (which describe its Gaussian error distribution), but also the ``worst-case scenario'' measurement error in the form of maximum total error. These statistics are presented in the following table:
+This total Euclidean offset encodes the straight-line distance between the ground truth position and the estimated position, providing a measure of total positional error at each point in time. This magnitudinal error history was then analyzed for each experimental trial in order to determine its mean total error, total error variance, and maximum total error. These three statistics characterize the effectiveness of the filter by revealing not only the mean and variance (which describe its Gaussian error distribution), but also the ``worst-case scenario'' measurement error in the form of maximum total error. These statistics are presented in Table~\ref{tab:means_and_vars}.
 
-\todo{Get stats. Make table.}
+\begin{table}\centering
+\caption[Coordinate Error]{Coordinate error mean and variance values by trial.}
+\begin{tabular}[c]{crr|rr|rr}
+\toprule
+Trial & $\mu_{x}$ [m] & $\sigma_{x}^{2}$ [m$^{2}$] & $\mu_{y}$ [m] & $\sigma_{y}^{2}$ [m$^{2}$] & $\mu_{z}$ [m] & $\sigma_{z}^{2}$ [m$^{2}$] \\
+\hline
+1 & $-$0.0048 & 9.4976e$-$04 & 0.0126 & 2.6861e$-$04 & $-$0.0247 & 0.0015 \\
+2 & $-$0.0084 & 0.0013 & 0.0079 & 1.9425e$-$04 & $-$0.0583 & 0.0030 \\
+3 & $-$0.0341 & 0.0043 & 0.0033 & 1.9481e$-$04 & $-$0.0333 & 0.0028 \\
+4 & $-$3.9788e$-$04 & 7.5902e$-$04 & 0.0199 & 8.0152e$-$04 & $-$0.0219 & 0.0033 \\
+5 & $-$0.0170 & 0.0019 & 0.0279 & 0.0036 & $-$0.0372 & 0.0034 \\
+\bottomrule
+\end{tabular}
+\label{tab:means_and_vars}
+\end{table}
+
+
 
 From the statistical analysis, we see that, in the long walk trials, \todo{describe error}. In the box pattern trials, \todo{describe other error}. From this, we can say that the system \todo{general insight}.
 
+\begin{table}\centering
+\caption[Mean and Maximum Total Error]{Mean and maximum total error by trial.}
+\begin{tabular}[c]{crr}
+\toprule
+Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}}$ [m] \\
+\hline
+1 & 0.0460 & 0.1145 \\
+2 & 0.0691 & 0.1999 \\
+3 & 0.0695 & 0.2596 \\
+4 & 0.0636 & 0.1508 \\
+5 & 0.0856 & 0.2497 \\
+\bottomrule
+\end{tabular}
+\label{tab:total_err}
+\end{table}
