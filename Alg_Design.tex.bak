@@ -279,8 +279,13 @@ After implementing the quaternion and velocity corrections developed above, the 
 \begin{equation}
 \mathbf{z}_{k} = \left\lbrace x,\ y,\ z,\ q_{x},\ q_{y},\ q_{z},\ q_{w},\ \dot{x},\ \dot{y},\ \dot{z} \right\rbrace ^{T} _{\text{meas.}} 
 \end{equation}
-
-\todo{finish obs model}
+%
+The observation function $h$ is then
+%
+\begin{equation}
+h \left( \mathbf{x}_{k} \right) = \mathbf{I}_{10 \times 10} \mathbf{z}_{k}
+\end{equation}
+\todo{check with Sam}
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 \todo{diagonality?}
