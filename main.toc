@@ -16,29 +16,29 @@
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{21}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{23}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{23}{section.3.2}
-\contentsline {chapter}{\numberline {4}Experimental Design}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Testing Considerations}{25}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{27}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Experimental Procedures}{29}{section.4.2}
-\contentsline {section}{\numberline {4.3}Materials}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{31}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{32}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Experimental Results}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Long Walk Trials}{33}{section.5.1}
-\contentsline {section}{\numberline {5.2}Box Pattern Trials}{39}{section.5.2}
-\contentsline {section}{\numberline {5.3}Error Analysis}{45}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{48}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{48}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{50}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}System Improvements}{50}{subsection.6.2.1}
-\contentsline {subsubsection}{Integration of New Sensors}{50}{section*.42}
-\contentsline {subsubsection}{Improvements for Current Sensors}{52}{section*.43}
-\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{53}{section*.44}
-\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{53}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}System Applications}{54}{subsection.6.2.3}
-\contentsline {subsubsection}{Mapping and 3D Reconstruction}{54}{section*.45}
-\contentsline {subsubsection}{Emergency Response}{55}{section*.46}
-\contentsline {subsubsection}{Infrastructure Inspection}{55}{section*.47}
-\contentsline {subsubsection}{Autonomous Package Delivery}{56}{section*.48}
-\contentsline {subsubsection}{Military/Defense Solutions}{57}{section*.49}
-\contentsline {chapter}{Bibliography}{58}{Item.37}
+\contentsline {chapter}{\numberline {4}Experimental Design}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Testing Considerations}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{28}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Experimental Procedures}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Materials}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{33}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Experimental Results}{34}{chapter.5}
+\contentsline {section}{\numberline {5.1}Long Walk Trials}{34}{section.5.1}
+\contentsline {section}{\numberline {5.2}Box Pattern Trials}{40}{section.5.2}
+\contentsline {section}{\numberline {5.3}Error Analysis}{46}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{51}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}System Improvements}{51}{subsection.6.2.1}
+\contentsline {subsubsection}{Integration of New Sensors}{51}{section*.44}
+\contentsline {subsubsection}{Improvements for Current Sensors}{53}{section*.45}
+\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.46}
+\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{54}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}System Applications}{55}{subsection.6.2.3}
+\contentsline {subsubsection}{Mapping and 3D Reconstruction}{55}{section*.47}
+\contentsline {subsubsection}{Emergency Response}{56}{section*.48}
+\contentsline {subsubsection}{Infrastructure Inspection}{56}{section*.49}
+\contentsline {subsubsection}{Autonomous Package Delivery}{57}{section*.50}
+\contentsline {subsubsection}{Military/Defense Solutions}{58}{section*.51}
+\contentsline {chapter}{Bibliography}{59}{Item.37}
