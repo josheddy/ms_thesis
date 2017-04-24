@@ -30,8 +30,7 @@
 \usepackage{array} % For fixed-length tables
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage[toc,page]{appendix}
-%\usepackage{minted}
+\usepackage[toc]{appendix}
 
 \linespread{1.15}
 
@@ -88,12 +87,13 @@
 \bibliographystyle{ieeetr}
 \bibliography{bibliography}
 
-\appendix
+\begin{appendices}
 \input{node_listing.tex}
 \input{UnscentedKf_h_listing.tex}
 \input{UnscentedKf_cpp_listing.tex}
 \input{QuadUkf_h_listing.tex}
 \input{QuadUkf_cpp_listing.tex}
 \input{CMakeLists_listing.tex}
+\end{appendices}
 
 \end{document}
