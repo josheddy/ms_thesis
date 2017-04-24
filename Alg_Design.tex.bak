@@ -314,7 +314,7 @@ where $\bm{\epsilon}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{R} \right)$ is addi
 
 \subsection{Process Noise Covariance Matrix} \label{sec:Q_Matrix}
 
-The process noise covariance matrix $\mathbf{Q} \in \mathbb{R}^{n \times n}$ is symmetric and positive definite. We assume that its nonzero coefficients are a function of multiple integrations between the linear accelerations and angular velocities measured by the vehicle's 3-axis accelerometer and 3-axis gyroscope. We further assume that all axes of the accelerometer and gyroscope exhibit white noise with known variances\footnote{This claim of equal standard deviations between axes is supported by the IMU data sheet.} $\sigma_{a}^{2} = 8.66125 \times 10^{-6}$~m$^{2}$/s$^{4}$ and $\sigma_{\omega}^{2} = 1.21847 \times 10^{-7}$~rad$^{2}$/s$^{2}$, as reported by the IMU during operation. We further assume that no cross-axis covariance exists between any two accelerometer axes or any two gyroscope axes\footnote{Also reported by the IMU.}.
+The process noise covariance matrix $\mathbf{Q} \in \mathbb{R}^{n \times n}$ is symmetric and positive definite. We assume that its nonzero coefficients are a function of multiple integrations between the linear accelerations and angular velocities measured by the vehicle's 3-axis accelerometer and 3-axis gyroscope. We further assume that all axes of the accelerometer and gyroscope exhibit white noise with known variances\footnote{This claim of equal variances between axes is supported by the IMU data sheet.} $\sigma_{a}^{2} = 8.66125 \times 10^{-6}$~m$^{2}$/s$^{4}$ and $\sigma_{\omega}^{2} = 1.21847 \times 10^{-7}$~rad$^{2}$/s$^{2}$, as reported by the IMU during operation. We further assume that no cross-axis covariance exists between any two accelerometer axes or any two gyroscope axes\footnote{Also reported by the IMU.}.
 
 Because the IMU runs at a constant rate of 250~Hz, we assume $\mathbf{Q}$ is time-invariant. We further assume that the nonzero covariance terms associated with the unmeasured quantities $\mathbf{p}$, $\mathbf{q}$, and $\mathbf{v}$ are related to the variance terms by integration over a constant time step $\Delta t$. Let the variance terms for the accelerations and angular rates be set as
 %
@@ -328,25 +328,19 @@ and
 Q_{\omega_{x},\ \omega_{x}} = \sigma_{\omega}^{2}
 \end{equation}
 %
-respectively. We can now estimate the other nonzero terms of $\mathbf{Q}_{k}$ according to their integral relationships with the acceleration and angular velocity measurements. In the example case of the $x$-velocity, the variance would be computed as
+respectively. We can now estimate the other nonzero terms of $\mathbf{Q}$ according to their integral relationships with the acceleration and angular velocity measurements. In the example case of the $x$-velocity, the variance would be computed as
 %
 \begin{align}
 Q_{\dot{x},\ \dot{x}} = \int^{\Delta t}_{0} \sigma_{a}^2\ dt
 \end{align}
-%
-This process of integrating known noise coefficients to determine the covariance terms associated with integrated terms, detailed in \cite{Brown2012}, proved ineffective in preliminary experiments, as the resulting $\mathbf{Q}$ matrix made the filter numerically unstable. To compensate, this matrix was replaced by a diagonal estimated $\mathbf{Q}$ in which all of the coefficients were overestimated. The original terms were on the order of $10^{-6}$ or smaller, whereas the new matrix was defined as
+
+This process of integrating known noise coefficients to determine the covariance terms associated with integrated quantities, detailed in \cite{Brown2012}, proved ineffective in preliminary experiments, as the resulting $\mathbf{Q}$ matrix made the filter numerically unstable. To compensate, this matrix was replaced by a diagonal estimated $\mathbf{Q}$ in which all of the coefficients were overestimated in an attempt to account for any unknown sources of error. The original terms were on the order of $10^{-6}$ or smaller, whereas the new matrix was defined as
 %
 \begin{equation}
-\mathbf{Q} = k_{\mathbf{Q}\ \mathbf{I}_{n \times n}
+\mathbf{Q} = k_{\mathbf{Q}}\ \mathbf{I}_{n \times n}
 \end{equation}
 %
-with $
-
- 
-We assume no coupling between the angular quantities ($\mathbf{q}$ and $\bm{\Omega}$) and the linear quantities ($\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$), making the process noise covariance matrix largely sparse. This assumption logically stems from the small angle assumption. Because the IMU runs at 250~Hz, we assume that the vehicle makes only small rotations between IMU measurements. 
-
-\todo{full Q matrix}
-
+with $k_{\mathbf{Q}} = 0.01$. This replacement produced numerically stable output and was used for all of the experimental trials detailed in Chapters~\ref{ch:Exp_Design} and \ref{ch:Exp_Results}.
 
 \subsection{Measurement Noise Covariance Matrix} \label{sec:R_Matrix}
 
