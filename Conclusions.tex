@@ -35,21 +35,6 @@ The accuracy and robustness of the system could be augmented by the integration 
     \item One-dimensional, multi-dimensional, or scanning LIDAR\footnote{``Light Detection and Ranging,'' \url{https://en.wikipedia.org/wiki/Lidar}}.
 \end{enumerate}
 
-\begin{comment}
-\begin{center}
-\begin{tabular}{ m{0.25\textwidth} | m{0.65\textwidth} }
- GPS & Position (and orientation, if using multiple receivers for differential GPS) \\
- Pressure Altimeter & Altitude \\
- 3-Axis Magnetometer & Heading angle \\
- Ventral Laser Rangefinder & Altitude \\
- Longitudinal/Lateral Laser Rangefinders & Distance to obstacles \\
- Forward-Facing Camera & Roll angle, distance to obstacles \\
- 1D LIDAR & Similar to Laser Rangefinder \\
- Multi-dimensional/Scanning LIDAR & Full 3D map of surroundings, distance to obstacles
-\end{tabular}
-\end{center}
-\end{comment}
-
 We previously mentioned work from the GRASP Lab (\cite{Shen2011}) that demonstrated the efficacy of similar UKF frameworks in indoor-outdoor transitions and in navigating confined spaces using an expanded suite of sensors. In the case where more than one sensor is used to observe a given vehicle state variable, those multiple sensors check one another and can even perform real-time, in-air calibration. The system developed in this thesis has the advantage of being hardware-minimal in that it depends on only two sensors (the IMU and the ventral camera), but this convenience comes at the cost of robustness because either sensor presents a single point of possible failure. Moreover, the sensors have no overlap. Neither can observe any of the states observed by the other. This eliminates the possibility of checking one sensor against the other. Introducing a ventral laser rangefinder or pressure altimeter would allow for much more precise measurement of the vehicle's altitude and would allow for in-flight re-initialization of any metric SLAM/VO algorithm.
 
 With the exception of certain sensors such as scanning LIDAR, which can cost tens of thousands of dollars, and RTK-GPS, which often falls in the same price range, these proposed new sensors would be inexpensive additions to the vehicle. Given the sophistication of current miniaturized sensors, it is not unreasonable to expect sub-meter or centimeter-level position accuracy from vehicles weighing fewer than fifteen pounds (including a substantial sensor payload) and costing less than 20,000~USD. It has been the case for a number of years now that meter-level accuracy could be taken for granted with ``toy'' quadcopters using only MEMS\footnote{``Microelectromechanical systems,''\\ \url{https://en.wikipedia.org/wiki/Microelectromechanical_systems}} IMUs and sub-\$100 GPS receivers. The trend of miniaturization has made more and more sensors of better and better quality increasingly available in the weight- and cost-constrained world of aerial robotics. A variety of inexpensive off-the-shelf autopilots, such as the Pixhawk~2.1\footnote{\url{http://www.proficnc.com/}}, already boast triple-redundant IMUs and support for multiple GPS modules. Many of the hardware integration challenges that once plagued hobbyists and researchers have been resolved by engineering developments stemming from popular demand for user-friendly drones.
