@@ -25,7 +25,7 @@
 \contentsline {chapter}{\numberline {4}Experimental Design}{28}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{28}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{30}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Experimental Procedures}{33}{section.4.2}
+\contentsline {section}{\numberline {4.2}Experimental Procedures}{32}{section.4.2}
 \contentsline {section}{\numberline {4.3}Materials}{35}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{35}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{35}{subsection.4.3.2}
@@ -33,19 +33,19 @@
 \contentsline {section}{\numberline {5.1}Long Walk Trials}{36}{section.5.1}
 \contentsline {section}{\numberline {5.2}Box Pattern Trials}{42}{section.5.2}
 \contentsline {section}{\numberline {5.3}Error Analysis}{48}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{51}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{52}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}System Improvements}{52}{subsection.6.2.1}
-\contentsline {subsubsection}{Integration of New Sensors}{53}{section*.49}
-\contentsline {subsubsection}{Improvements for Current Sensors}{55}{section*.50}
-\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{55}{section*.51}
-\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{56}{subsection.6.2.2}
-\contentsline {chapter}{Bibliography}{57}{subsection.6.2.2}
-\contentsline {chapter}{Appendices}{59}{section*.53}
-\contentsline {chapter}{\numberline {A}node.cpp Listing}{59}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{60}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{63}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{69}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{72}{Appendix.1.E}
-\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{82}{Appendix.1.F}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{50}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{51}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}System Improvements}{51}{subsection.6.2.1}
+\contentsline {subsubsection}{Integration of New Sensors}{52}{section*.49}
+\contentsline {subsubsection}{Improvements for Current Sensors}{54}{section*.50}
+\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.51}
+\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{55}{subsection.6.2.2}
+\contentsline {chapter}{Bibliography}{56}{subsection.6.2.2}
+\contentsline {chapter}{Appendices}{58}{section*.53}
+\contentsline {chapter}{\numberline {A}node.cpp Listing}{58}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{59}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{62}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{68}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{71}{Appendix.1.E}
+\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{81}{Appendix.1.F}

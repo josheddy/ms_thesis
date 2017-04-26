@@ -4,7 +4,7 @@
 
 In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, prediction and correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
 
-\subsection{Prediction Step}
+\subsection{Prediction Step} \label{sec:Prediction_Step}
 
 We begin by defining the following quantities:
 %
@@ -188,7 +188,7 @@ Similarly, we compute the vehicle's current position using the vehicle's average
 \begin{equation} \label{eq:proc_pos}
 \mathbf{p}_{k} = \mathbf{p}_{k-1} + \frac{1}{2} \left( \mathbf{v}_{k} + \mathbf{v}_{k-1} \right) \Delta t
 \end{equation}
-
+%
 Together, equations~\ref{eq:proc_quat}, \ref{eq:proc_ang_vel}, \ref{eq:proc_acc}, \ref{eq:proc_vel}, and \ref{eq:proc_pos} constitute the nonlinear process function $f$:
 %
 \begin{equation}
@@ -201,7 +201,7 @@ f \left( \mathbf{x}_{k-1 | k-1} \right) =
    R^{g}_{b,\ k-1} \left( \mathbf{a}_{\text{meas.}} - \mathbf{g} \right)
 \end{Bmatrix}
 \end{equation}
-
+%
 For purposes of noise modeling, the process function $f$ is modeled according to the relationship
 %
 \begin{equation}
@@ -279,7 +279,7 @@ To prevent this potentially catastrophic drift, velocity is estimated by numeric
 \mathbf{v}_{k} = \frac{\mathbf{p}_{k,\ \text{meas.}} - \mathbf{p}_{k-1,\ \text{meas.}}}{\Delta t_{P}}
 \end{equation}
 %
-This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable. Including this derived measurement of velocity during each correction step prevents the predicted velocities computed by integration from drifting as quickly. This, in turn, increases the reliability of those predicted velocities and makes the IMU-derived state estimates computed between PTAM corrections substantially more trustworthy.
+This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable. Including this derived measurement of velocity in each correction step prevents the predicted velocities from drifting as quickly as they would otherwise. This, in turn, increases the reliability of the predicted velocities and makes the IMU-derived state estimates that are computed between PTAM corrections more trustworthy.
 
 \subsubsection{Observation Modeling}
 
