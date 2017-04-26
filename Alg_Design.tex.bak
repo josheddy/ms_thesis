@@ -122,7 +122,7 @@ Next, we compute the Kalman gain $\mathbf{K}_{k}$ per the definition
 \mathbf{K}_{k} = \mathbf{P}_{xz} \mathbf{P}^{\,-1}_{zz}
 \end{equation}
 %
-The corrected state $\hat{\mathbf{x}}_{k | k}$ is then the sum of the predicted state and the innovation, weighted by $\mathbf{K}_{k}$:
+The corrected state $\hat{\mathbf{x}}_{k | k}$ is the sum of the predicted state and the innovation, weighted by $\mathbf{K}_{k}$:
 %
 \begin{equation}
 \hat{\mathbf{x}}_{k | k} = \hat{\mathbf{x}}_{k | k-1} + \mathbf{K}_{k} \left( \hat{\mathbf{z}}_{k} - \mathbf{z}_{k} \right)
@@ -271,7 +271,7 @@ The vehicle's position $\mathbf{p}$ and orientation $\mathbf{q}$ are measured di
 %
 The vehicle's velocity $\mathbf{v}$, however, is not measured by either the IMU or PTAM. There is no sensor in place by which $\mathbf{v}$ can be directly measured. Therefore, velocity must be determined through a derived measurement.
 
-Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), Gaussian noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter corrects the position each time that a PTAM message arrives, only to drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter's output numerically unstable.
+Because velocity is predicted by integrating the vehicle's acceleration (Section~\ref{Process_Model}), Gaussian noise in the accelerometer can cause unbounded drift in the velocity. The resulting erroneous velocity then propagates through each successive prediction step, causing drift in the estimated position \textit{regardless of corrective position measurements from PTAM}. In this situation, the filter produces position estimates which drift at a constantly increasing rate between PTAM messages. The Kalman Filter then corrects the position each time that a PTAM message arrives, only to have it drift again a fraction of a second later when the next IMU message arrives. This kind of intermittent drift produces sharp ``bounces'' in the vehicle's estimated trajectory and makes the filter's output numerically unstable.
 
 To prevent this potentially catastrophic drift, velocity is estimated by numerical differentiation of the vehicle's position during each correction step. When a PTAM message is received, the position reading from the last PTAM message is subtracted from the current position reading. This change in position is then divided by the time step between the two PTAM messages, $\Delta t_{P}$:
 %
@@ -279,7 +279,7 @@ To prevent this potentially catastrophic drift, velocity is estimated by numeric
 \mathbf{v}_{k} = \frac{\mathbf{p}_{k,\ \text{meas.}} - \mathbf{p}_{k-1,\ \text{meas.}}}{\Delta t_{P}}
 \end{equation}
 %
-This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable.
+This pseudovelocity correction prevents unbounded velocity drift, which in turn makes the filter's output numerically stable. Including this derived measurement of velocity during each correction step keeps the predicted velocities computed by integration from drifting as quickly. Because the IMU runs so much faster than PTAM, 
 
 \subsubsection{Observation Modeling}
 

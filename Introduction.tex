@@ -4,7 +4,7 @@ Until recently, the sensing and localization capabilities of small unmanned aeri
 
 This work centers on an algorithm known as the Unscented Kalman Filter (UKF), a sensor fusion method for estimating the state of systems such as small aircraft. For years, this algorithm was inaccessible to roboticists and aerospace researchers alike due to its computational complexity. Computers capable of running the algorithm were simply too large, too heavy, and too power-hungry to be viable onboard components of small UAVs. The advent of smaller computers has changed this state of affairs. In this thesis, we present a formulation of the Unscented Kalman Filter aimed at estimating the pose of a quadcopter. This UKF formulation fuses outputs from only two sensors: an inertial measurement unit (IMU) and a downward-facing monocular camera. These two data streams are fused to estimate the vehicle's pose in real time. We propose this UKF framework as a hardware-minimal starting point for advanced multi-sensor fusion in UAV navigation.
 
-\subsection{System Applications}
+\section{System Applications}
 
 Applications for this system are wide-ranging, spanning virtually every conceivable use for a small drone. The following is a non-exhaustive list of possible applications:
 \begin{enumerate}
@@ -28,7 +28,7 @@ UAS technologies have become a desirable tool for first responders in many parts
 
 \subsubsection{Infrastructure Inspection}
 
-Infrastructure inspection is similar in several respects to 3D mapping. In both cases, small drones are preferable to manned aircraft because of their low cost, high maneuverability, and ease of use. In recent years, governments and private corporations have taken an interest in using small aircraft to automate the inspection of many types of infrastructure, including the following:
+Infrastructure inspection is similar in many respects to 3D mapping. In both cases, small drones are preferable to manned aircraft because of their low cost, high maneuverability, and ease of use. Governments and private corporations alike have taken an interest in using small aircraft to automate the inspection of many types of infrastructure, including the following:
 \begin{enumerate}
     \item Power lines,
     \item Oil rigs,

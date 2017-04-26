@@ -1,12 +1,12 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}System Applications}{2}{subsection.1.0.1}
+\contentsline {section}{\numberline {1.1}System Applications}{2}{section.1.1}
 \contentsline {subsubsection}{Mapping and 3D Reconstruction}{2}{section*.7}
 \contentsline {subsubsection}{Emergency Response}{3}{section*.8}
 \contentsline {subsubsection}{Infrastructure Inspection}{3}{section*.9}
 \contentsline {subsubsection}{Autonomous Package Delivery}{4}{section*.10}
 \contentsline {subsubsection}{Military/Defense Solutions}{4}{section*.11}
-\contentsline {section}{\numberline {1.1}Personal Motivation}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Organization of this Document}{7}{section.1.2}
+\contentsline {section}{\numberline {1.2}Personal Motivation}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organization of this Document}{7}{section.1.3}
 \contentsline {chapter}{\numberline {2}Prior Work}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Development of the Unscented Kalman Filter}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Visual-Inertial Navigation}{11}{section.2.2}
@@ -25,10 +25,10 @@
 \contentsline {chapter}{\numberline {4}Experimental Design}{28}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testing Considerations}{28}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{30}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Experimental Procedures}{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}Materials}{34}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{34}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{34}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.2}Experimental Procedures}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Materials}{35}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{35}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{35}{subsection.4.3.2}
 \contentsline {chapter}{\numberline {5}Experimental Results}{36}{chapter.5}
 \contentsline {section}{\numberline {5.1}Long Walk Trials}{36}{section.5.1}
 \contentsline {section}{\numberline {5.2}Box Pattern Trials}{42}{section.5.2}

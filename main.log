@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  25 APR 2017 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  25 APR 2017 23:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -836,19 +836,19 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout4 = `main.toc'.
 
 
-[4] (main.lot)
-\tf@lot=\write5
-\openout5 = `main.lot'.
-
- [5
-
-] (main.lof [6
+[4] (main.lof [5
 
 ])
-\tf@lof=\write6
-\openout6 = `main.lof'.
+\tf@lof=\write5
+\openout5 = `main.lof'.
 
- (Acronyms.tex [7]) [8
+ [6] (main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+ (Acronyms.tex [7
+
+]) [8
 
 ] (Introduction.tex
 Chapter 1.
@@ -860,13 +860,8 @@ l.6
      [1
 
 ]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 7.
-
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 21.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -880,7 +875,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 21.
 LaTeX Font Info:    Try loading font information for T1+zi4 on input line 21.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
 Package microtype Info: Loading generic settings for font family
@@ -893,11 +888,8 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [2]
-[3] [4]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 56.
- <CARD_gearREALLYBIG.png, id=344, 1854.127pt x 728.321pt>
+
+[2] [3] [4] <CARD_gearREALLYBIG.png, id=344, 1854.127pt x 728.321pt>
 File: CARD_gearREALLYBIG.png Graphic file (type png)
 
 <use CARD_gearREALLYBIG.png>
@@ -915,7 +907,10 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [6 <./april_tag.jpg>] [7]) (Prior_Work.tex [8]
+ [6 <./april_tag.jpg>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 87.
+ [7]) (Prior_Work.tex [8]
 Chapter 2.
 [9
 
@@ -957,21 +952,21 @@ File: whole_cart.jpg Graphic file (type jpg)
  <use whole_cart.jpg>
 Package pdftex.def Info: whole_cart.jpg used on input line 16.
 (pdftex.def)             Requested size: 250.5203pt x 187.89912pt.
-
-<cart_at_AI.jpg, id=616, 1606.0pt x 1204.5pt>
-File: cart_at_AI.jpg Graphic file (type jpg)
- <use cart_at_AI.jpg>
-Package pdftex.def Info: cart_at_AI.jpg used on input line 23.
-(pdftex.def)             Requested size: 187.89912pt x 140.91307pt.
  [28
 
- <./sensor_mount_top.jpg>] [29 <./whole_cart.jpg> <./cart_at_AI.jpg>]
-<rot_bug_rviz.png, id=634, 256.29083pt x 302.79791pt>
+ <./sensor_mount_top.jpg>] <cart_at_AI.jpg, id=629, 1606.0pt x 1204.5pt>
+File: cart_at_AI.jpg Graphic file (type jpg)
+
+<use cart_at_AI.jpg>
+Package pdftex.def Info: cart_at_AI.jpg used on input line 25.
+(pdftex.def)             Requested size: 234.87749pt x 176.14592pt.
+ [29 <./whole_cart.jpg>] [30 <./cart_at_AI.jpg>]
+<rot_bug_rviz.png, id=650, 256.29083pt x 302.79791pt>
 File: rot_bug_rviz.png Graphic file (type png)
  <use rot_bug_rviz.png>
-Package pdftex.def Info: rot_bug_rviz.png used on input line 33.
+Package pdftex.def Info: rot_bug_rviz.png used on input line 38.
 (pdftex.def)             Requested size: 187.89912pt x 222.00165pt.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 39.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
@@ -981,36 +976,36 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [30 <./rot_bug_rviz.png>] <sensor_mount_vicon.jpg, id=654, 333.245pt x 250.602
-92pt>
+
+<sensor_mount_vicon.jpg, id=653, 333.245pt x 250.60292pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
 <use sensor_mount_vicon.jpg>
-Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 46.
-(pdftex.def)             Requested size: 187.89912pt x 141.30411pt.
- [31 <./sensor_mount_vicon.jpg>]
+Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 47.
+(pdftex.def)             Requested size: 234.87749pt x 176.63301pt.
+ [31 <./rot_bug_rviz.png>]
 <bowl-shaped_world.png, id=660, 545.37083pt x 189.70876pt>
 File: bowl-shaped_world.png Graphic file (type png)
 
 <use bowl-shaped_world.png>
-Package pdftex.def Info: bowl-shaped_world.png used on input line 55.
+Package pdftex.def Info: bowl-shaped_world.png used on input line 56.
 (pdftex.def)             Requested size: 422.77661pt x 147.06906pt.
-
-<good_box_5_cropped.png, id=661, 441.31541pt x 325.88417pt>
-File: good_box_5_cropped.png Graphic file (type png)
-
-<use good_box_5_cropped.png>
-Package pdftex.def Info: good_box_5_cropped.png used on input line 64.
-(pdftex.def)             Requested size: 187.89912pt x 138.75005pt.
- [32 <./bowl-shaped_world.png> <./good_box_5_cropped.png>] <sensor_mount_bottom
-.jpg, id=672, 498.19458pt x 373.72958pt>
+ [32 <./sensor_mount_vicon.jpg> <./bowl-shaped_world.png>] <sensor_mount_bottom
+.jpg, id=667, 498.19458pt x 373.72958pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
-Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 77.
+Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 69.
 (pdftex.def)             Requested size: 187.89912pt x 140.95232pt.
- [33 <./sensor_mount_bottom.jpg>] [34])
-(Exp_Results.tex [35]
+ [33 <./sensor_mount_bottom.jpg>]
+<good_box_5_cropped.png, id=678, 441.31541pt x 325.88417pt>
+File: good_box_5_cropped.png Graphic file (type png)
+
+<use good_box_5_cropped.png>
+Package pdftex.def Info: good_box_5_cropped.png used on input line 84.
+(pdftex.def)             Requested size: 281.85585pt x 208.13252pt.
+ [34 <./good_box_5_cropped.png>]) (Exp_Results.tex
+[35]
 Chapter 5.
 [36
 
@@ -1172,15 +1167,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A16E5747D607A733F72FBE1F7071A00;2650.
+(rerunfilecheck)             Checksum: 8E21EFB7F475701FA25D4F021BA37DE0;2645.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 12186 strings out of 493334
- 184972 string characters out of 3136672
+ 12190 strings out of 493334
+ 185006 string characters out of 3136672
  285211 words of memory out of 3000000
  14769 multiletter control sequences out of 15000+200000
- 159083 words of font info for 339 fonts, out of 3000000 for 9000
+ 159479 words of font info for 342 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,13n,77p,1745b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
@@ -1197,7 +1192,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (91 pages, 12931150 bytes).
+Output written on main.pdf (91 pages, 12931461 bytes).
 PDF statistics:
  1122 PDF objects out of 1200 (max. 8388607)
  325 named destinations out of 1000 (max. 500000)

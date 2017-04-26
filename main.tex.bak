@@ -77,8 +77,8 @@
 \input{Abstract.tex}
 \input{Acknowledgments.tex}
 \tableofcontents
-\listoftables
 \listoffigures
+\listoftables
 \input{Acronyms.tex}
 \pagebreak
 

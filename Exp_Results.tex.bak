@@ -13,28 +13,28 @@ In each trial, the UKF output showed increased ``shakiness'' in the form of larg
   \label{fig:longWalk1_xyz}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[p]
   \centering
     \includegraphics[width=\textwidth]{longWalk2_xyz}
   \caption[Long Walk Trial 2]{Long Walk Trial 2 coordinate plots.}
   \label{fig:longWalk2_xyz}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[p]
   \centering
     \includegraphics[width=\textwidth]{longWalk3_xyz}
   \caption[Long Walk Trial 3]{Long Walk Trial 3 coordinate plots.}
   \label{fig:longWalk3_xyz}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[p]
   \centering
     \includegraphics[width=\textwidth]{longWalk4_xyz}
   \caption[Long Walk Trial 4]{Long Walk Trial 4 coordinate plots.}
   \label{fig:longWalk4_xyz}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[p]
   \centering
     \includegraphics[width=\textwidth]{longWalk5_xyz}
   \caption[Long Walk Trial 5]{Long Walk Trial 5 coordinate plots.}
@@ -46,7 +46,7 @@ In each trial, the UKF output showed increased ``shakiness'' in the form of larg
 
 Figures~\ref{fig:box1_3d}, \ref{fig:box2_3d}, \ref{fig:box3_3d}, \ref{fig:box4_3d}, and \ref{fig:box5_3d} plot the estimated and Vicon-measured 3D trajectories of the mobile test stand during the five box pattern trials. Each of these plots exhibits the same bowl-shaped distortion seen previously in the trials of the long walk experiment. The $z$-position of the vehicle can be seen trending upward more and more the farther the vehicle moves from the origin. This causes the apparent slant in the estimated trajectories. This altitudinal error is most pronounced at the forward-left corner in each 3D plot, where the vehicle is farthest from the origin. The estimated trajectory also becomes noticeably shakier, in terms of vertical oscillations, in the neighborhood of the forward-left corner. These oscillations begin to appear on the first (right-side) leg of the trajectory and increase in magnitude up to the forward-left corner, at which point they begin to decrease in magnitude on the way back to the starting position.
 
-The 2D trajectory plots (Figures~\ref{fig:box1_2d}, \ref{fig:box2_2d}, \ref{fig:box3_2d}, \ref{fig:box4_2d}, and \ref{fig:box5_2d}) are presented alongside the 3D plots to demonstrate the general accuracy of the UKF's estimates in planar motion. The UKF output follows the Vicon output faithfully, with some exceptions near the corners of the box pattern. This is caused partly by the bowl-shaped distortion mentioned previously, and partly by the fact that the mobile test stand moves on caster wheels. When the test stand changes direction, the caster wheels rotate underneath the cart, causing a small lateral shift in the test stand's trajectory. This is particularly apparent in Figures~\ref{fig:box2_2d} and \ref{fig:box4_2d}, where a clear ``wiggling'' can be seen as the vehicle was pulled back from the top left corner of the pattern, and in Figure~\ref{fig:box5_2d}, where the estimated trajectory ``sags'' in the bottom left corner. These lateral disturbances, though small in magnitude (likely on the order of 3--5~cm) were picked up by PTAM and overestimated due to lens distortion.
+The 2D trajectory plots (Figures~\ref{fig:box1_2d}, \ref{fig:box2_2d}, \ref{fig:box3_2d}, \ref{fig:box4_2d}, and \ref{fig:box5_2d}) are presented alongside the 3D plots to demonstrate the general accuracy of the UKF's estimates in planar motion. The UKF output follows the Vicon output faithfully, with some exceptions near the corners of the box pattern. This is caused partly by the bowl-shaped distortion mentioned previously, and partly by the fact that the mobile test stand moves on caster wheels. When the test stand changes direction, the caster wheels rotate underneath the cart, causing a small lateral shift in the test stand's trajectory. This is particularly apparent in Figures~\ref{fig:box2_2d} and \ref{fig:box4_2d}, where a clear ``wiggling'' can be seen as the vehicle was pulled back from the top left corner of the pattern, and in Figure~\ref{fig:box5_2d}, where the estimated trajectory ``sags'' in the bottom left corner. These lateral disturbances, though small in magnitude (likely on the order of 3--5~cm), were picked up by PTAM and overestimated due to lens distortion.
 
 Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous $x$-directional offset along the first leg of the trajectory. This was most likely caused by inadvertent jostling of the test stand before initializing PTAM. The test stand was rotated at an angle to Vicon's $x$-axis at the outset of the trial, causing the estimated trajectory to be computed at an angle to the ground truth trajectory. Once the test stand reached the first corner, it must have been rotated slightly, causing the estimated trajectory to rejoin the ground truth measurements provided by Vicon.
 
@@ -55,13 +55,13 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 % Box 1
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.6\textwidth]{box1_2d}
+    \includegraphics[height=0.4\textheight]{box1_2d}
   \caption[Box Pattern Trial 1 2D Trajectory]{Box Pattern Trial 1 2D Trajectory.}
   \label{fig:box1_2d}
 \end{figure}
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.7\textwidth]{box1_3d}
+    \includegraphics[height=0.4\textheight]{box1_3d}
   \caption[Box Pattern Trial 1 3D Trajectory]{Box Pattern Trial 1 3D Trajectory.}
   \label{fig:box1_3d}
 \end{figure}
@@ -70,13 +70,13 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 % Box 2
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.6\textwidth]{box2_2d}
+    \includegraphics[height=0.4\textheight]{box2_2d}
   \caption[Box Pattern Trial 2 2D Trajectory]{Box Pattern Trial 2 2D Trajectory.}
   \label{fig:box2_2d}
 \end{figure}
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.7\textwidth]{box2_3d}
+    \includegraphics[height=0.4\textheight]{box2_3d}
   \caption[Box Pattern Trial 2 3D Trajectory]{Box Pattern Trial 2 3D Trajectory.}
   \label{fig:box2_3d}
 \end{figure}
@@ -85,13 +85,13 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 % Box 3
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.6\textwidth]{box3_2d}
+    \includegraphics[height=0.4\textheight]{box3_2d}
   \caption[Box Pattern Trial 3 2D Trajectory]{Box Pattern Trial 3 2D Trajectory.}
   \label{fig:box3_2d}
 \end{figure}
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.7\textwidth]{box3_3d}
+    \includegraphics[height=0.4\textheight]{box3_3d}
   \caption[Box Pattern Trial 3 3D Trajectory]{Box Pattern Trial 3 3D Trajectory.}
   \label{fig:box3_3d}
 \end{figure}
@@ -100,13 +100,13 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 % Box 4
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.6\textwidth]{box4_2d}
+    \includegraphics[height=0.4\textheight]{box4_2d}
   \caption[Box Pattern Trial 4 2D Trajectory]{Box Pattern Trial 4 2D Trajectory.}
   \label{fig:box4_2d}
 \end{figure}
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.7\textwidth]{box4_3d}
+    \includegraphics[height=0.4\textheight]{box4_3d}
   \caption[Box Pattern Trial 4 3D Trajectory]{Box Pattern Trial 4 3D Trajectory.}
   \label{fig:box4_3d}
 \end{figure}
@@ -115,13 +115,13 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 % Box 5
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.6\textwidth]{box5_2d}
+    \includegraphics[height=0.4\textheight]{box5_2d}
   \caption[Box Pattern Trial 5 2D Trajectory]{Box Pattern Trial 5 2D Trajectory.}
   \label{fig:box5_2d}
 \end{figure}
 \begin{figure}[p]
   \centering
-    \includegraphics[height=0.7\textwidth]{box5_3d}
+    \includegraphics[height=0.4\textheight]{box5_3d}
   \caption[Box Pattern Trial 5 3D Trajectory]{Box Pattern Trial 5 3D Trajectory.}
   \label{fig:box5_3d}
 \end{figure}
