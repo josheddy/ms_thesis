@@ -43,7 +43,7 @@
 
 \hypersetup{
     pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
+    pdfstartview={XYZ null null 0.8},   
     pdftitle={Joshua Eddy MS Thesis},    % title
     pdfauthor={Joshua Eddy},     % author
     pdfnewwindow=true,      % links in new PDF window
