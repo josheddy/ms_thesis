@@ -20,25 +20,31 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Personal Motivation}{2}{section.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces CARD Team Logo}}{2}{figure.caption.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.0.1}System Applications}{2}{subsection.1.0.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Mapping and 3D Reconstruction}{2}{section*.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Emergency Response}{3}{section*.8}}
+\@writefile{toc}{\contentsline {subsubsection}{Infrastructure Inspection}{3}{section*.9}}
+\@writefile{toc}{\contentsline {subsubsection}{Autonomous Package Delivery}{4}{section*.10}}
+\@writefile{toc}{\contentsline {subsubsection}{Military/Defense Solutions}{4}{section*.11}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Personal Motivation}{5}{section.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces CARD Team Logo}}{5}{figure.caption.12}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:card_logo}{{1.1}{2}{CARD Team Logo}{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Example April Tag}}{3}{figure.caption.8}}
-\newlabel{fig:april_tag}{{1.2}{3}{Example April Tag}{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Organization of this Document}{4}{section.1.2}}
+\newlabel{fig:card_logo}{{1.1}{5}{CARD Team Logo}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Example April Tag}}{6}{figure.caption.13}}
+\newlabel{fig:april_tag}{{1.2}{6}{Example April Tag}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Organization of this Document}{7}{section.1.2}}
 \citation{Julier1997}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Prior Work}{6}{chapter.2}}
+\citation{Julier1998}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Prior Work}{9}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Prior_Work}{{2}{6}{Prior Work}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Development of the Unscented Kalman Filter}{6}{section.2.1}}
-\citation{Julier1998}
+\newlabel{ch:Prior_Work}{{2}{9}{Prior Work}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Development of the Unscented Kalman Filter}{9}{section.2.1}}
 \citation{Julier2002}
 \citation{Julier2004}
 \citation{Donavanik2016}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Visual-Inertial Navigation}{8}{section.2.2}}
 \citation{Klein2007}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Visual-Inertial Navigation}{11}{section.2.2}}
 \citation{Weiss2011}
 \citation{Shen2011}
 \citation{Weiss2011_2}
@@ -49,137 +55,131 @@
 \citation{Weiss2012}
 \citation{Rogers2014}
 \citation{Faessler2016}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{13}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Design and Implementation}{15}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Alg_Design}{{3}{13}{Algorithm Design and Implementation}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}UKF Formulation}{13}{section.3.1}}
-\newlabel{sec:ukf_formulation}{{3.1}{13}{UKF Formulation}{section.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{13}{subsection.3.1.1}}
-\newlabel{eq:state_vars}{{3.1}{13}{Prediction Step}{equation.3.1.1}{}}
-\newlabel{eq:quat_convention}{{3.2}{13}{Prediction Step}{equation.3.1.2}{}}
+\newlabel{ch:Alg_Design}{{3}{15}{Algorithm Design and Implementation}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}UKF Formulation}{15}{section.3.1}}
+\newlabel{sec:ukf_formulation}{{3.1}{15}{UKF Formulation}{section.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Prediction Step}{15}{subsection.3.1.1}}
+\newlabel{eq:state_vars}{{3.1}{15}{Prediction Step}{equation.3.1.1}{}}
+\newlabel{eq:quat_convention}{{3.2}{15}{Prediction Step}{equation.3.1.2}{}}
 \citation{Wan2000}
-\newlabel{eq:pred_state}{{3.14}{15}{Prediction Step}{equation.3.1.14}{}}
-\newlabel{eq:pred_cov}{{3.15}{15}{Prediction Step}{equation.3.1.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Correction Step}{16}{subsection.3.1.2}}
-\newlabel{eq:zHat}{{3.20}{16}{Correction Step}{equation.3.1.20}{}}
-\newlabel{eq:P_zz}{{3.21}{16}{Correction Step}{equation.3.1.21}{}}
-\newlabel{eq:P_xz}{{3.22}{16}{Correction Step}{equation.3.1.22}{}}
+\newlabel{eq:pred_state}{{3.10}{17}{Prediction Step}{equation.3.1.10}{}}
+\newlabel{eq:pred_cov}{{3.11}{17}{Prediction Step}{equation.3.1.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Correction Step}{18}{subsection.3.1.2}}
+\newlabel{eq:zHat}{{3.20}{18}{Correction Step}{equation.3.1.20}{}}
+\newlabel{eq:P_zz}{{3.21}{18}{Correction Step}{equation.3.1.21}{}}
+\newlabel{eq:P_xz}{{3.22}{18}{Correction Step}{equation.3.1.22}{}}
 \citation{Stevens2015}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Process Model}{17}{subsection.3.1.3}}
-\newlabel{Process_Model}{{3.1.3}{17}{Process Model}{subsection.3.1.3}{}}
-\newlabel{eq:proc_quat}{{3.26}{17}{Process Model}{equation.3.1.26}{}}
-\newlabel{eq:proc_ang_vel}{{3.28}{17}{Process Model}{equation.3.1.28}{}}
-\newlabel{eq:proc_acc}{{3.29}{17}{Process Model}{equation.3.1.29}{}}
-\newlabel{eq:proc_vel}{{3.31}{18}{Process Model}{equation.3.1.31}{}}
-\newlabel{eq:proc_pos}{{3.32}{18}{Process Model}{equation.3.1.32}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Observation Model}{19}{subsection.3.1.4}}
-\newlabel{Observation_Model}{{3.1.4}{19}{Observation Model}{subsection.3.1.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Quaternion Continuity Correction}{19}{section*.14}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Check for continuity between quaternion estimates.\relax }}{20}{algorithm.1}}
-\newlabel{alg:checkQuatContinuity}{{1}{20}{Check for continuity between quaternion estimates.\relax }{algorithm.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Pseudovelocity Correction}{20}{section*.15}}
-\@writefile{toc}{\contentsline {subsubsection}{Observation Modeling}{21}{section*.16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{21}{subsection.3.1.5}}
-\newlabel{sec:Q_Matrix}{{3.1.5}{21}{Process Noise Covariance Matrix}{subsection.3.1.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Process Model}{19}{subsection.3.1.3}}
+\newlabel{Process_Model}{{3.1.3}{19}{Process Model}{subsection.3.1.3}{}}
+\newlabel{eq:proc_quat}{{3.26}{19}{Process Model}{equation.3.1.26}{}}
+\newlabel{eq:proc_ang_vel}{{3.28}{19}{Process Model}{equation.3.1.28}{}}
+\newlabel{eq:proc_acc}{{3.29}{19}{Process Model}{equation.3.1.29}{}}
+\newlabel{eq:proc_vel}{{3.31}{20}{Process Model}{equation.3.1.31}{}}
+\newlabel{eq:proc_pos}{{3.32}{20}{Process Model}{equation.3.1.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Observation Model}{21}{subsection.3.1.4}}
+\newlabel{Observation_Model}{{3.1.4}{21}{Observation Model}{subsection.3.1.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Quaternion Continuity Correction}{21}{section*.19}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Check for continuity between quaternion estimates.\relax }}{22}{algorithm.1}}
+\newlabel{alg:checkQuatContinuity}{{1}{22}{Check for continuity between quaternion estimates.\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pseudovelocity Correction}{22}{section*.20}}
+\@writefile{toc}{\contentsline {subsubsection}{Observation Modeling}{23}{section*.21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{23}{subsection.3.1.5}}
+\newlabel{sec:Q_Matrix}{{3.1.5}{23}{Process Noise Covariance Matrix}{subsection.3.1.5}{}}
 \citation{Brown2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{23}{subsection.3.1.6}}
-\newlabel{sec:R_Matrix}{{3.1.6}{23}{Measurement Noise Covariance Matrix}{subsection.3.1.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Software Design Considerations}{23}{section.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces UKF Software Design}}{24}{figure.caption.17}}
-\newlabel{fig:generic_ukf}{{3.1}{24}{UKF Software Design}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Data Flow Diagram}}{25}{figure.caption.18}}
-\newlabel{fig:data_flow}{{3.2}{25}{Data Flow Diagram}{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experimental Design}{26}{chapter.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{25}{subsection.3.1.6}}
+\newlabel{sec:R_Matrix}{{3.1.6}{25}{Measurement Noise Covariance Matrix}{subsection.3.1.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Software Design Considerations}{25}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces UKF Software Design}}{26}{figure.caption.22}}
+\newlabel{fig:generic_ukf}{{3.1}{26}{UKF Software Design}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Data Flow Diagram}}{27}{figure.caption.23}}
+\newlabel{fig:data_flow}{{3.2}{27}{Data Flow Diagram}{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experimental Design}{28}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Exp_Design}{{4}{26}{Experimental Design}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Testing Considerations}{26}{section.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Sensor Mount Top View}}{26}{figure.caption.19}}
-\newlabel{fig:sensor_mount_top}{{4.1}{26}{Sensor Mount Top View}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Mobile Test Stand}}{27}{figure.caption.20}}
-\newlabel{fig:whole_cart}{{4.2}{27}{Mobile Test Stand}{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Testing Environment}}{27}{figure.caption.21}}
-\newlabel{fig:cart_at_AI}{{4.3}{27}{Testing Environment}{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{28}{subsection.4.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Rviz Visualization of Rotational Distortion}}{28}{figure.caption.22}}
-\newlabel{fig:rot_bug_rviz}{{4.4}{28}{Rviz Visualization of Rotational Distortion}{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor Mount Instrumented with Retroreflectors}}{29}{figure.caption.23}}
-\newlabel{fig:sensor_mount_vicon}{{4.5}{29}{Sensor Mount Instrumented with Retroreflectors}{figure.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Rviz Visualization of Translational (Lens) Distortion}}{30}{figure.caption.24}}
-\newlabel{fig:bowl-shaped_world}{{4.6}{30}{Rviz Visualization of Translational (Lens) Distortion}{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experimental Procedures}{30}{section.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Rviz Visualization of a Box Pattern Trajectory}}{30}{figure.caption.25}}
-\newlabel{fig:good_box}{{4.7}{30}{Rviz Visualization of a Box Pattern Trajectory}{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Sensor Mount Bottom View}}{31}{figure.caption.26}}
-\newlabel{fig:sensor_mount_bottom}{{4.8}{31}{Sensor Mount Bottom View}{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Materials}{32}{section.4.3}}
-\newlabel{sec:materials}{{4.3}{32}{Materials}{section.4.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{32}{subsection.4.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{33}{subsection.4.3.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results}{34}{chapter.5}}
+\newlabel{ch:Exp_Design}{{4}{28}{Experimental Design}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Testing Considerations}{28}{section.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Sensor Mount Top View}}{28}{figure.caption.24}}
+\newlabel{fig:sensor_mount_top}{{4.1}{28}{Sensor Mount Top View}{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Mobile Test Stand}}{29}{figure.caption.25}}
+\newlabel{fig:whole_cart}{{4.2}{29}{Mobile Test Stand}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Testing Environment}}{29}{figure.caption.26}}
+\newlabel{fig:cart_at_AI}{{4.3}{29}{Testing Environment}{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}PTAM Anomalies}{30}{subsection.4.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Rviz Visualization of Rotational Distortion}}{30}{figure.caption.27}}
+\newlabel{fig:rot_bug_rviz}{{4.4}{30}{Rviz Visualization of Rotational Distortion}{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor Mount Instrumented with Retroreflectors}}{31}{figure.caption.28}}
+\newlabel{fig:sensor_mount_vicon}{{4.5}{31}{Sensor Mount Instrumented with Retroreflectors}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Rviz Visualization of Translational (Lens) Distortion}}{32}{figure.caption.29}}
+\newlabel{fig:bowl-shaped_world}{{4.6}{32}{Rviz Visualization of Translational (Lens) Distortion}{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experimental Procedures}{32}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Rviz Visualization of a Box Pattern Trajectory}}{32}{figure.caption.30}}
+\newlabel{fig:good_box}{{4.7}{32}{Rviz Visualization of a Box Pattern Trajectory}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Sensor Mount Bottom View}}{33}{figure.caption.31}}
+\newlabel{fig:sensor_mount_bottom}{{4.8}{33}{Sensor Mount Bottom View}{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Materials}{34}{section.4.3}}
+\newlabel{sec:materials}{{4.3}{34}{Materials}{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Computation and Sensing}{34}{subsection.4.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Mobile Test Stand}{34}{subsection.4.3.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimental Results}{36}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:Exp_Results}{{5}{34}{Experimental Results}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Long Walk Trials}{34}{section.5.1}}
-\newlabel{sec:long_walk}{{5.1}{34}{Long Walk Trials}{section.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Long Walk Trial 1}}{35}{figure.caption.27}}
-\newlabel{fig:longWalk1_xyz}{{5.1}{35}{Long Walk Trial 1}{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Long Walk Trial 2}}{36}{figure.caption.28}}
-\newlabel{fig:longWalk2_xyz}{{5.2}{36}{Long Walk Trial 2}{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Long Walk Trial 3}}{37}{figure.caption.29}}
-\newlabel{fig:longWalk3_xyz}{{5.3}{37}{Long Walk Trial 3}{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Long Walk Trial 4}}{38}{figure.caption.30}}
-\newlabel{fig:longWalk4_xyz}{{5.4}{38}{Long Walk Trial 4}{figure.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Long Walk Trial 5}}{39}{figure.caption.31}}
-\newlabel{fig:longWalk5_xyz}{{5.5}{39}{Long Walk Trial 5}{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Box Pattern Trials}{40}{section.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Box Pattern Trial 1 2D Trajectory}}{41}{figure.caption.32}}
-\newlabel{fig:box1_2d}{{5.6}{41}{Box Pattern Trial 1 2D Trajectory}{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Box Pattern Trial 1 3D Trajectory}}{41}{figure.caption.33}}
-\newlabel{fig:box1_3d}{{5.7}{41}{Box Pattern Trial 1 3D Trajectory}{figure.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Box Pattern Trial 2 2D Trajectory}}{42}{figure.caption.34}}
-\newlabel{fig:box2_2d}{{5.8}{42}{Box Pattern Trial 2 2D Trajectory}{figure.caption.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Box Pattern Trial 2 3D Trajectory}}{42}{figure.caption.35}}
-\newlabel{fig:box2_3d}{{5.9}{42}{Box Pattern Trial 2 3D Trajectory}{figure.caption.35}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Box Pattern Trial 3 2D Trajectory}}{43}{figure.caption.36}}
-\newlabel{fig:box3_2d}{{5.10}{43}{Box Pattern Trial 3 2D Trajectory}{figure.caption.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Box Pattern Trial 3 3D Trajectory}}{43}{figure.caption.37}}
-\newlabel{fig:box3_3d}{{5.11}{43}{Box Pattern Trial 3 3D Trajectory}{figure.caption.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Box Pattern Trial 4 2D Trajectory}}{44}{figure.caption.38}}
-\newlabel{fig:box4_2d}{{5.12}{44}{Box Pattern Trial 4 2D Trajectory}{figure.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Box Pattern Trial 4 3D Trajectory}}{44}{figure.caption.39}}
-\newlabel{fig:box4_3d}{{5.13}{44}{Box Pattern Trial 4 3D Trajectory}{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Box Pattern Trial 5 2D Trajectory}}{45}{figure.caption.40}}
-\newlabel{fig:box5_2d}{{5.14}{45}{Box Pattern Trial 5 2D Trajectory}{figure.caption.40}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Box Pattern Trial 5 3D Trajectory}}{45}{figure.caption.41}}
-\newlabel{fig:box5_3d}{{5.15}{45}{Box Pattern Trial 5 3D Trajectory}{figure.caption.41}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Error Analysis}{46}{section.5.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Coordinate Error Mean and Variance Values}}{46}{table.caption.42}}
-\newlabel{tab:means_and_vars}{{5.1}{46}{Coordinate Error Mean and Variance Values}{table.caption.42}{}}
+\newlabel{ch:Exp_Results}{{5}{36}{Experimental Results}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Long Walk Trials}{36}{section.5.1}}
+\newlabel{sec:long_walk}{{5.1}{36}{Long Walk Trials}{section.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Long Walk Trial 1}}{37}{figure.caption.32}}
+\newlabel{fig:longWalk1_xyz}{{5.1}{37}{Long Walk Trial 1}{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Long Walk Trial 2}}{38}{figure.caption.33}}
+\newlabel{fig:longWalk2_xyz}{{5.2}{38}{Long Walk Trial 2}{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Long Walk Trial 3}}{39}{figure.caption.34}}
+\newlabel{fig:longWalk3_xyz}{{5.3}{39}{Long Walk Trial 3}{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Long Walk Trial 4}}{40}{figure.caption.35}}
+\newlabel{fig:longWalk4_xyz}{{5.4}{40}{Long Walk Trial 4}{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Long Walk Trial 5}}{41}{figure.caption.36}}
+\newlabel{fig:longWalk5_xyz}{{5.5}{41}{Long Walk Trial 5}{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Box Pattern Trials}{42}{section.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Box Pattern Trial 1 2D Trajectory}}{43}{figure.caption.37}}
+\newlabel{fig:box1_2d}{{5.6}{43}{Box Pattern Trial 1 2D Trajectory}{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Box Pattern Trial 1 3D Trajectory}}{43}{figure.caption.38}}
+\newlabel{fig:box1_3d}{{5.7}{43}{Box Pattern Trial 1 3D Trajectory}{figure.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Box Pattern Trial 2 2D Trajectory}}{44}{figure.caption.39}}
+\newlabel{fig:box2_2d}{{5.8}{44}{Box Pattern Trial 2 2D Trajectory}{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Box Pattern Trial 2 3D Trajectory}}{44}{figure.caption.40}}
+\newlabel{fig:box2_3d}{{5.9}{44}{Box Pattern Trial 2 3D Trajectory}{figure.caption.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Box Pattern Trial 3 2D Trajectory}}{45}{figure.caption.41}}
+\newlabel{fig:box3_2d}{{5.10}{45}{Box Pattern Trial 3 2D Trajectory}{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Box Pattern Trial 3 3D Trajectory}}{45}{figure.caption.42}}
+\newlabel{fig:box3_3d}{{5.11}{45}{Box Pattern Trial 3 3D Trajectory}{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Box Pattern Trial 4 2D Trajectory}}{46}{figure.caption.43}}
+\newlabel{fig:box4_2d}{{5.12}{46}{Box Pattern Trial 4 2D Trajectory}{figure.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Box Pattern Trial 4 3D Trajectory}}{46}{figure.caption.44}}
+\newlabel{fig:box4_3d}{{5.13}{46}{Box Pattern Trial 4 3D Trajectory}{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Box Pattern Trial 5 2D Trajectory}}{47}{figure.caption.45}}
+\newlabel{fig:box5_2d}{{5.14}{47}{Box Pattern Trial 5 2D Trajectory}{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Box Pattern Trial 5 3D Trajectory}}{47}{figure.caption.46}}
+\newlabel{fig:box5_3d}{{5.15}{47}{Box Pattern Trial 5 3D Trajectory}{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Error Analysis}{48}{section.5.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Coordinate Error Mean and Variance Values}}{48}{table.caption.47}}
+\newlabel{tab:means_and_vars}{{5.1}{48}{Coordinate Error Mean and Variance Values}{table.caption.47}{}}
 \citation{GpsGov}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Mean and Maximum Total Error}}{47}{table.caption.43}}
-\newlabel{tab:total_err}{{5.2}{47}{Mean and Maximum Total Error}{table.caption.43}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{49}{chapter.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Mean and Maximum Total Error}}{49}{table.caption.48}}
+\newlabel{tab:total_err}{{5.2}{49}{Mean and Maximum Total Error}{table.caption.48}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{51}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusions}{49}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Conclusions}{51}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Future Work}{52}{section.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}System Improvements}{52}{subsection.6.2.1}}
 \citation{Shen2011}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Future Work}{51}{section.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}System Improvements}{51}{subsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Integration of New Sensors}{51}{section*.44}}
+\@writefile{toc}{\contentsline {subsubsection}{Integration of New Sensors}{53}{section*.49}}
 \citation{Donavanik2016}
 \citation{Mur-Artal2015}
-\@writefile{toc}{\contentsline {subsubsection}{Improvements for Current Sensors}{53}{section*.45}}
 \citation{Weiss2012}
-\@writefile{toc}{\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{54}{subsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}System Applications}{55}{subsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Mapping and 3D Reconstruction}{55}{section*.47}}
-\@writefile{toc}{\contentsline {subsubsection}{Emergency Response}{56}{section*.48}}
-\@writefile{toc}{\contentsline {subsubsection}{Infrastructure Inspection}{56}{section*.49}}
-\@writefile{toc}{\contentsline {subsubsection}{Autonomous Package Delivery}{57}{section*.50}}
-\@writefile{toc}{\contentsline {subsubsection}{Military/Defense Solutions}{58}{section*.51}}
+\@writefile{toc}{\contentsline {subsubsection}{Improvements for Current Sensors}{55}{section*.50}}
+\@writefile{toc}{\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{55}{section*.51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{56}{subsection.6.2.2}}
 \bibstyle{ieeetr}
 \bibdata{bibliography}
 \bibcite{Julier1997}{1}
@@ -191,8 +191,8 @@
 \bibcite{Weiss2011}{7}
 \bibcite{Shen2011}{8}
 \bibcite{Weiss2011_2}{9}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{59}{Item.37}}
 \bibcite{Weiss2012}{10}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{57}{subsection.6.2.2}}
 \bibcite{Weiss2012_2}{11}
 \bibcite{Huang2013}{12}
 \bibcite{Lynen2013}{13}
@@ -203,22 +203,22 @@
 \bibcite{Brown2012}{18}
 \bibcite{GpsGov}{19}
 \bibcite{Mur-Artal2015}{20}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{62}{section*.53}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}node.cpp Listing}{62}{Appendix.1.A}}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{59}{section*.53}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}node.cpp Listing}{59}{Appendix.1.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{63}{Appendix.1.B}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{60}{Appendix.1.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{66}{Appendix.1.C}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{63}{Appendix.1.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{73}{Appendix.1.D}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{69}{Appendix.1.D}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{76}{Appendix.1.E}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{72}{Appendix.1.E}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{88}{Appendix.1.F}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{82}{Appendix.1.F}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

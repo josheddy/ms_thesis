@@ -11,19 +11,19 @@
 
 Before venturing further, we now summarize the goals of the UKF framework described previously, paying particular attention to the fundamental requirements and parameters underlying the operation of an unmanned aircraft system (UAS). This ROS package was designed with the intent of producing estimates of the state of a rotorcraft UAV in real time. Thus, the experiments testing the system's efficacy compare the filter's estimates to the ground truth as measured by Vicon. Vicon, like many commercially available motion capture systems, works by using a number of infrared cameras (usually 8--12) to track the positions of retroreflector balls in the cameras' field of view. Each camera is outfitted with infrared LED\footnote{``Light-emitting diode,'' \url{https://en.wikipedia.org/wiki/Light-emitting_diode}} bulbs which illuminate the area with infrared light. The retroreflector balls reflect this infrared light back to the cameras, allowing the balls to be tracked as they move. Sets of these retroreflectors can be grouped together in software to represent rigid objects, allowing the Vicon system to track not only the position of an object, but its orientation as well.
 
-\begin{figure}[t!]
+\begin{figure}
   \centering
-    \includegraphics[height=0.6\textwidth]{whole_cart}
+    \includegraphics[height=0.4\textwidth]{whole_cart}
   \caption[Mobile Test Stand]{The mobile test stand, fully assembled. The aluminum rail holds the sensor mount 1~meter above the floor and is marked with an adhesive metric ruler for measuring camera displacement during PTAM initialization.}
   \label{fig:whole_cart}
 \end{figure}
 
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{figure}
   \centering
     \includegraphics[width=0.4\textwidth]{cart_at_AI}
   \caption[Testing Environment]{The mobile test stand in the testing environment. The area shown is part of a larger motion capture facility. The floor is covered with rubber tiles, many of which bear April tags and QR codes for visual geometry.}
   \label{fig:cart_at_AI}
-\end{wrapfigure}
+\end{figure}
 
 The UKF framework depends upon two sensors: a global-shutter monocular camera and an IMU. The IMU used in this experiment contains a 3-axis accelerometer and 3-axis gyroscope. To simulate both sensors moving through the scene in a manner reminiscent of hovering rotorcraft flight, a rolling test stand was constructed to carry the sensors safely throughout a large motion capture environment. Mounting the sensor suite (Figure~\ref{fig:sensor_mount_top}) on a large, steady, level platform (Figure~\ref{fig:whole_cart}) allows for a high degree of control over the accelerations and angular velocities felt by the IMU, as well as the motion captured by the ventral camera. In order to validate the UKF framework's effectiveness under theoretically ideal conditions, a modern laptop computer containing an Intel i7 processor with 16~GB of RAM\footnote{``Random-access memory,'' \url{https://en.wikipedia.org/wiki/Random-access_memory}} was used for all computations. The floor of the motion capture environment (Figure~\ref{fig:cart_at_AI}) was covered with rubber tiles and strewn with a mixture of April tags and Quick Response\footnote{\url{https://en.wikipedia.org/wiki/QR_code}} (QR) codes in order to provide sufficient visual features for PTAM to track.
 
@@ -72,9 +72,9 @@ In the second experiment, the mobile test stand was moved in a rectangular ``box
 
 Prior to each trial, PTAM was initialized according to the procedure outlined in the online documentation. To initialize the algorithm, the camera was placed parallel to the floor at a distance of one meter and then perturbed by 10\% of the distance to the floor (that is, 10~cm). This perturbation tells PTAM its distance to the planar surface of the floor and thus initializes the mapping process. This initialization procedure was performed by releasing the linear bearing brake (Figure~\ref{fig:sensor_mount_bottom}) on the sensor mount and sliding the mount along the aluminum rail, using the attached adhesive ruler to perturb the camera by exactly 10~cm. After perturbing the camera, the brake was tightened, and the data recording was begun. Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} recording utility: the pose messages published by \texttt{kalman\_sense} and the pose messages published by Vicon.
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.4\textwidth}
         \centering
-        \includegraphics[width=0.5\textwidth]{sensor_mount_bottom}
+        \includegraphics[width=0.4\textwidth]{sensor_mount_bottom}
         \caption[Sensor Mount Bottom View]{The sensor mount as seen from below. The linear brake and camera lens are visible.}
         \label{fig:sensor_mount_bottom}
 \end{wrapfigure}
@@ -94,7 +94,6 @@ In Section~\ref{sec:materials}, we present information concerning the materials 
 \item Two (2) male Mini USB 2.0 to male USB Type A cables
 \end{enumerate}
 
-\pagebreak
 \subsection{Mobile Test Stand}
 \begin{enumerate}
 \item One (1) Oklahoma Sound PRC200 Premium Presentation Cart\footnote{\url{http://www.oklahomasound.com/products/product-category/single/?prod=9}}
@@ -108,4 +107,3 @@ In Section~\ref{sec:materials}, we present information concerning the materials 
 \item Two (2) $\frac{1}{2}$" Infrared Retroreflector Balls
 \item One (1) 0.7-meter Length of $\frac{1}{8}$"-thick Carbon Fiber Tube
 \end{enumerate}
-\pagebreak

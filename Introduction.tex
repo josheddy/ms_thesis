@@ -4,6 +4,55 @@ Until recently, the sensing and localization capabilities of small unmanned aeri
 
 This work centers on an algorithm known as the Unscented Kalman Filter (UKF), a sensor fusion method for estimating the state of systems such as small aircraft. For years, this algorithm was inaccessible to roboticists and aerospace researchers alike due to its computational complexity. Computers capable of running the algorithm were simply too large, too heavy, and too power-hungry to be viable onboard components of small UAVs. The advent of smaller computers has changed this state of affairs. In this thesis, we present a formulation of the Unscented Kalman Filter aimed at estimating the pose of a quadcopter. This UKF formulation fuses outputs from only two sensors: an inertial measurement unit (IMU) and a downward-facing monocular camera. These two data streams are fused to estimate the vehicle's pose in real time. We propose this UKF framework as a hardware-minimal starting point for advanced multi-sensor fusion in UAV navigation.
 
+\subsection{System Applications}
+
+Applications for this system are wide-ranging, spanning virtually every conceivable use for a small drone. The following is a non-exhaustive list of possible applications:
+\begin{enumerate}
+    \item Mapping and 3D reconstruction of structures and topography,
+    \item Emergency response,
+    \item Infrastructure inspection,
+    \item Autonomous package delivery, and
+    \item Military/defense solutions.
+\end{enumerate}
+What all of these applications have in common is the need for robust localization. In each of the above scenarios, losing GPS could cause a crash. In such an event, the vehicle itself would pose a real threat to bystanders and property. Moreover, in the case of military aircraft, the vehicle could be captured by hostile forces.
+
+\subsubsection{Mapping and 3D Reconstruction}
+
+Growing demand for so-called ``precision agriculture'' has brought with it the need to map large areas of cropland at a high speed, with a low cost point. In the past, this need has been met by using satellite imagery and human-captured photography. With the arrival of low-cost drones, this work has been offloaded to aerial robots. Outfitted with specialized sensors such as hyperspectral cameras\footnote{\url{https://en.wikipedia.org/wiki/Hyperspectral_imaging}}, small UAS are now able to provide minute-by-minute coverage of large expanses of land. More interesting still, these robots can be outfitted with reservoirs of pesticide or fertilizer and deployed to spray individual plants autonomously. It is in roles such as this that high-accuracy robust localization becomes a necessity. The accuracy required for precision agriculture can be provided by utilizing the sensor fusion techniques discussed in this thesis.
+
+The surfaces of buildings and other structures can be mapped in a similar fashion, given the appropriate sensors and the right framework by which to fuse them. 3D reconstruction has become popular among real estate agents, safety inspectors, and other parties with a vested interest in precise 3D renderings of large geometries. In this case, the aircraft must be able to localize itself precisely in order to take full advantage of onboard sense-and-avoid technologies. The ability of the aircraft to estimate its position is crucial to its ability to map hard-to-reach areas and maintain stable flight. Sensor fusion systems shine when GPS and other sensors are inevitably compromised by various environmental factors.
+
+\subsubsection{Emergency Response}
+
+UAS technologies have become a desirable tool for first responders in many parts of the world. The ability to deploy a UAV to survey forest fires or search for missing persons has been a game changer for law enforcement and emergency response teams. In the case of looking for survivors of a natural disaster, the requirements for an effective vehicle system are accurate localization and overall robustness. Vehicles sent into disaster areas will have to be able to navigate in sensor-compromising environments, sometimes at substantial speed. This use case highlights the need for redundant sensors and intelligent, failure-resistant sensor fusion.
+
+\subsubsection{Infrastructure Inspection}
+
+Infrastructure inspection is similar in several respects to 3D mapping. In both cases, small drones are preferable to manned aircraft because of their low cost, high maneuverability, and ease of use. In recent years, governments and private corporations have taken an interest in using small aircraft to automate the inspection of many types of infrastructure, including the following:
+\begin{enumerate}
+    \item Power lines,
+    \item Oil rigs,
+    \item Gas pipelines,
+    \item Railroads, and
+    \item Buildings.
+\end{enumerate}
+UAVs are an obvious ally to companies servicing most types of static infrastructure. Inspecting miles of wires or railroad track is a task well-suited to today's UAVs, which commonly ship with intuitive flight planning software. Operators---even those who have no experience flying remote-control aircraft---are now able to program missions and deploy drones with ease. The aircraft are able to survey miles of infrastructure regardless of conditions on the ground, such as flooding, ill-maintained roads, or wild animals. Operators with First-Person View (FPV) hardware can watch video streaming live from the aircraft as if they were onboard themselves. The need for robust localization here is obvious: the UAV cannot inspect anything to which it cannot navigate. Operating in the wilderness may require flying below the forest canopy or under natural overhangs that could block GPS reception. The same is true in urban environments, where tall buildings create so-called ``urban canyons'' which compromise GPS effectiveness. Large metal structures can also distort magnetometry readings and thus undermine the aircraft's ability to maintain its heading. In any case, UAVs used for large-scale inspections will be dependent upon intelligently combined sensing modalities.
+
+\subsubsection{Autonomous Package Delivery}
+
+A number of organizations, most notably Amazon\footnote{\url{https://www.amazon.com/Amazon-Prime-Air/b?node=8037720011}}, have made big bets on drones as the future of delivery services. The task of delivering goods to individual homes is no trifling matter. American homes come in all shapes and sizes and are surrounded by numerous structures and natural obstacles that could endanger a delivery aircraft and, by extension, the people and property nearby. Moreover, any drone delivery service would have to be predicated upon the ability of the UAV to land with sub-meter accuracy. Delivery drones will have to land precisely in cluttered environments amid dynamic obstacles. Visual sensing will be extremely important for identifying safe landing zones, avoiding power lines and fences, and surmounting other environmental challenges. GPS alone will not be enough to guide the vehicle safely in every conceivable circumstance. 
+
+\subsubsection{Military/Defense Solutions}
+
+Perhaps the most obvious application of a UKF fusion framework is in military operations, where precision navigation and robustness to sensor degradation are paramount for protecting soldiers in the field. As of the time of this writing, UAVs have been used in combat for years. However, augmented navigation could still make revolutionary contributions in areas such as
+\begin{enumerate}
+    \item Robust tracking of friendly and hostile elements,
+    \item Remote observation of roads and vehicle-related hazards,
+    \item Autonomous deliveries of materiel in-theater, and
+    \item Human-machine teaming.
+\end{enumerate}
+Every combat zone will constitute a hostile environment for UAV operations, especially in the presence of GPS spoofing/jamming technologies. Combat UAVs will have to be able to tolerate multiple simultaneous sensor failures. Moreover, in-theater urban flight operations bring with them all of the same difficulties mentioned above, but with the added challenge of violent enemy interdiction. Robust sensor fusion could automate the task of operational overwatch and provide mission-critical intelligence in a timely manner---but only if the vehicle can localize itself reliably in sensor-hostile environments.
+
 \section{Personal Motivation}
 
 \textit{This section is largely comprised of background information regarding certain experiences leading up to, and motivating, the research developed in my thesis. This section does not contain any technical material, and is included only to provide context to the larger work.}

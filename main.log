@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  24 APR 2017 09:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  25 APR 2017 22:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -6,8 +6,8 @@ LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -650,62 +650,62 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count135
 \c@@ppsaveapp=\count136
 )
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 48.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 48.
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 55.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 55.
+Package hyperref Info: Option `colorlinks' set `true' on input line 55.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 66.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 66.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 66.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 73.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 66.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 73.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 66.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 73.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \microtypecontext on input line 66.
+LaTeX Info: Redefining \microtypecontext on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -766,7 +766,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 66.
+Package hyperref Info: Link coloring ON on input line 73.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -776,9 +776,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
 (main.out) (main.out)
 \@outlinefile=\write3
@@ -789,18 +789,12 @@ LaTeX Info: Redefining \nameref on input line 66.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (Abstract.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-) (Acknowledgments.tex
-Overfull \hbox (1.25955pt too wide) in paragraph at lines 3--1
-\T1/futs/m/n/10.95 (-20) This the-sis presents the for-mu-la-tion and im-ple-me
-n-ta-tion of an Un-scented Kalman
- []
-
-[1
+) (Acknowledgments.tex [1
 
 ]) [2
 
 ] (main.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 2.
 
@@ -809,17 +803,17 @@ LaTeX Font Info:    Try loading font information for FML+futmi on input line 2.
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 2.
+(Font)              scaled to size 11.03998pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 2.
+(Font)              scaled to size 8.27998pt on input line 2.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 2.
+(Font)              scaled to size 6.43999pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 2.
+(Font)              scaled to size 11.03998pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 2.
+(Font)              scaled to size 8.27998pt on input line 2.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 2.
+(Font)              scaled to size 6.43999pt on input line 2.
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -858,8 +852,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] (Introduction.tex
 Chapter 1.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -870,22 +862,24 @@ l.6
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
- <CARD_gearREALLYBIG.png, id=310, 1854.127pt x 728.321pt>
-File: CARD_gearREALLYBIG.png Graphic file (type png)
 
-<use CARD_gearREALLYBIG.png>
-Package pdftex.def Info: CARD_gearREALLYBIG.png used on input line 15.
-(pdftex.def)             Requested size: 143.9978pt x 56.55542pt.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 22.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 22.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 22.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 22.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 22.
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7.
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 21.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 21.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 21.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 21.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 21.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 21.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 21.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.fd"
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
@@ -894,80 +888,89 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/m/n/9'.
+(microtype)             in font `T1/zi4/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/m/n/9'.
+(microtype)             in font `T1/zi4/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [2 <./CARD_gearREALLYBIG.png>] <april_tag.jpg, id=326, 310.15875pt x 310.49333
-pt>
+ [2]
+[3] [4]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 56.
+ <CARD_gearREALLYBIG.png, id=344, 1854.127pt x 728.321pt>
+File: CARD_gearREALLYBIG.png Graphic file (type png)
+
+<use CARD_gearREALLYBIG.png>
+Package pdftex.def Info: CARD_gearREALLYBIG.png used on input line 64.
+(pdftex.def)             Requested size: 187.89912pt x 73.80322pt.
+ [5 <./CARD_gearREALLYBIG.png>]
+<april_tag.jpg, id=362, 310.15875pt x 310.49333pt>
 File: april_tag.jpg Graphic file (type jpg)
-
-<use april_tag.jpg>
-Package pdftex.def Info: april_tag.jpg used on input line 26.
-(pdftex.def)             Requested size: 143.9978pt x 144.15048pt.
+ <use april_tag.jpg>
+Package pdftex.def Info: april_tag.jpg used on input line 75.
+(pdftex.def)             Requested size: 187.89912pt x 188.10251pt.
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/m/n/10.95'.
+(microtype)             in font `T1/zi4/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/m/n/10.95'.
+(microtype)             in font `T1/zi4/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [3 <./april_tag.jpg>]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
- [4]) (Prior_Work.tex [5]
+ [6 <./april_tag.jpg>] [7]) (Prior_Work.tex [8]
 Chapter 2.
-[6
+[9
 
-] [7] [8] [9] [10] [11]) (Alg_Design.tex [12]
+] [10] [11] [12] [13]) (Alg_Design.tex [14]
 Chapter 3.
-[13
+[15
 
-] [14] [15] [16] [17] [18]
+] [16] [17] [18] [19] [20]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 227.
- [19] [20] [21] [22] [23]
-<generic_ukf.png, id=564, 638.8668pt x 455.7828pt>
+ [21] [22] [23] [24]
+<generic_ukf.png, id=591, 638.8668pt x 455.7828pt>
 File: generic_ukf.png Graphic file (type png)
  <use generic_ukf.png>
 Package pdftex.def Info: generic_ukf.png used on input line 361.
-(pdftex.def)             Requested size: 180.0pt x 128.41115pt.
+(pdftex.def)             Requested size: 234.87749pt x 167.56598pt.
 
-[24 <./generic_ukf.png>] <data_flow.png, id=574, 370.5042pt x 256.3176pt>
+[25] [26 <./generic_ukf.png>] <data_flow.png, id=606, 370.5042pt x 256.3176pt>
 File: data_flow.png Graphic file (type png)
 
 <use data_flow.png>
 Package pdftex.def Info: data_flow.png used on input line 374.
-(pdftex.def)             Requested size: 216.0022pt x 149.43088pt.
-) (Exp_Design.tex [25 <./data_flow.png>]
+(pdftex.def)             Requested size: 281.85585pt x 194.99112pt.
+) (Exp_Design.tex [27 <./data_flow.png>]
 Chapter 4.
-<sensor_mount_top.jpg, id=580, 462.39417pt x 326.21875pt>
+<sensor_mount_top.jpg, id=612, 462.39417pt x 326.21875pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
 
 <use sensor_mount_top.jpg>
 Package pdftex.def Info: sensor_mount_top.jpg used on input line 7.
-(pdftex.def)             Requested size: 143.9978pt x 101.58968pt.
- <whole_cart.jpg, id=583, 1606.0pt x 1204.5pt>
+(pdftex.def)             Requested size: 187.89912pt x 132.56087pt.
+
+Underfull \hbox (badness 1221) in paragraph at lines 8--8
+[]\T1/futs/m/n/12 (+20) Figure 4.1: |The 3D-printed sen-sor
+ []
+
+<whole_cart.jpg, id=615, 1606.0pt x 1204.5pt>
 File: whole_cart.jpg Graphic file (type jpg)
-
-<use whole_cart.jpg>
+ <use whole_cart.jpg>
 Package pdftex.def Info: whole_cart.jpg used on input line 16.
-(pdftex.def)             Requested size: 287.98929pt x 216.0022pt.
- <cart_at_AI.jpg, id=584, 1606.0pt x 1204.5pt>
+(pdftex.def)             Requested size: 250.5203pt x 187.89912pt.
+
+<cart_at_AI.jpg, id=616, 1606.0pt x 1204.5pt>
 File: cart_at_AI.jpg Graphic file (type jpg)
-
-<use cart_at_AI.jpg>
+ <use cart_at_AI.jpg>
 Package pdftex.def Info: cart_at_AI.jpg used on input line 23.
-(pdftex.def)             Requested size: 143.9978pt x 107.99597pt.
- [26
+(pdftex.def)             Requested size: 187.89912pt x 140.91307pt.
+ [28
 
- <./sensor_mount_top.jpg>] [27 <./whole_cart.jpg> <./cart_at_AI.jpg>] <rot_bug_
-rviz.png, id=601, 256.29083pt x 302.79791pt>
+ <./sensor_mount_top.jpg>] [29 <./whole_cart.jpg> <./cart_at_AI.jpg>]
+<rot_bug_rviz.png, id=634, 256.29083pt x 302.79791pt>
 File: rot_bug_rviz.png Graphic file (type png)
-
-<use rot_bug_rviz.png>
+ <use rot_bug_rviz.png>
 Package pdftex.def Info: rot_bug_rviz.png used on input line 33.
-(pdftex.def)             Requested size: 143.9978pt x 170.12935pt.
+(pdftex.def)             Requested size: 187.89912pt x 222.00165pt.
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 34.
 
 
@@ -978,662 +981,210 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 1577) in paragraph at lines 38--39
-\T1/futs/m/n/10.95 (+20) known ca-pa-bil-i-ties and lim-i-ta-tions of the
- []
-
-[28 <./rot_bug_rviz.png>]
-<sensor_mount_vicon.jpg, id=622, 333.245pt x 250.60292pt>
+ [30 <./rot_bug_rviz.png>] <sensor_mount_vicon.jpg, id=654, 333.245pt x 250.602
+92pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
 <use sensor_mount_vicon.jpg>
 Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 46.
-(pdftex.def)             Requested size: 143.9978pt x 108.28867pt.
-
-Underfull \hbox (badness 1275) in paragraph at lines 47--47
-[]\T1/futs/m/n/10.95 (+20) Figure 4.5: |Close-up view of
- []
-
-[29 <./sensor_mount_vicon.jpg>]
-<bowl-shaped_world.png, id=628, 545.37083pt x 189.70876pt>
+(pdftex.def)             Requested size: 187.89912pt x 141.30411pt.
+ [31 <./sensor_mount_vicon.jpg>]
+<bowl-shaped_world.png, id=660, 545.37083pt x 189.70876pt>
 File: bowl-shaped_world.png Graphic file (type png)
 
 <use bowl-shaped_world.png>
 Package pdftex.def Info: bowl-shaped_world.png used on input line 55.
-(pdftex.def)             Requested size: 323.9978pt x 112.70876pt.
+(pdftex.def)             Requested size: 422.77661pt x 147.06906pt.
 
-<good_box_5_cropped.png, id=629, 441.31541pt x 325.88417pt>
+<good_box_5_cropped.png, id=661, 441.31541pt x 325.88417pt>
 File: good_box_5_cropped.png Graphic file (type png)
 
 <use good_box_5_cropped.png>
 Package pdftex.def Info: good_box_5_cropped.png used on input line 64.
-(pdftex.def)             Requested size: 143.9978pt x 106.33376pt.
- [30 <./bowl-shaped_world.png> <./good_box_5_cropped.png>] <sensor_mount_bottom
-.jpg, id=640, 498.19458pt x 373.72958pt>
+(pdftex.def)             Requested size: 187.89912pt x 138.75005pt.
+ [32 <./bowl-shaped_world.png> <./good_box_5_cropped.png>] <sensor_mount_bottom
+.jpg, id=672, 498.19458pt x 373.72958pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
 Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 77.
-(pdftex.def)             Requested size: 180.0pt x 135.02727pt.
- [31 <./sensor_mount_bottom.jpg>] [32]) [33]
-(Exp_Results.tex
+(pdftex.def)             Requested size: 187.89912pt x 140.95232pt.
+ [33 <./sensor_mount_bottom.jpg>] [34])
+(Exp_Results.tex [35]
 Chapter 5.
-[34
+[36
 
-] <longWalk1_xyz.jpg, id=703, 684.156pt x 542.025pt>
+] <longWalk1_xyz.jpg, id=735, 684.156pt x 542.025pt>
 File: longWalk1_xyz.jpg Graphic file (type jpg)
 
 <use longWalk1_xyz.jpg>
 Package pdftex.def Info: longWalk1_xyz.jpg used on input line 11.
-(pdftex.def)             Requested size: 360.0pt x 285.22076pt.
+(pdftex.def)             Requested size: 469.75499pt x 372.1781pt.
 
-<longWalk2_xyz.jpg, id=704, 1518.67375pt x 1222.5675pt>
+<longWalk2_xyz.jpg, id=736, 1518.67375pt x 1222.5675pt>
 File: longWalk2_xyz.jpg Graphic file (type jpg)
 
 <use longWalk2_xyz.jpg>
 Package pdftex.def Info: longWalk2_xyz.jpg used on input line 18.
-(pdftex.def)             Requested size: 360.0pt x 289.80315pt.
- [35 <./longWalk1_xyz.jpg>]
-<longWalk3_xyz.jpg, id=709, 1527.7075pt x 1179.40625pt>
+(pdftex.def)             Requested size: 469.75499pt x 378.15254pt.
+
+<longWalk3_xyz.jpg, id=737, 1527.7075pt x 1179.40625pt>
 File: longWalk3_xyz.jpg Graphic file (type jpg)
 
 <use longWalk3_xyz.jpg>
 Package pdftex.def Info: longWalk3_xyz.jpg used on input line 25.
-(pdftex.def)             Requested size: 360.0pt x 277.91635pt.
- [36 <./longWalk2_xyz.jpg>]
-<longWalk4_xyz.jpg, id=714, 1739.49875pt x 1352.05125pt>
+(pdftex.def)             Requested size: 469.75499pt x 362.64278pt.
+
+<longWalk4_xyz.jpg, id=738, 1739.49875pt x 1352.05125pt>
 File: longWalk4_xyz.jpg Graphic file (type jpg)
 
 <use longWalk4_xyz.jpg>
 Package pdftex.def Info: longWalk4_xyz.jpg used on input line 32.
-(pdftex.def)             Requested size: 360.0pt x 279.81302pt.
- [37 <./longWalk3_xyz.jpg>]
-<longWalk5_xyz.jpg, id=719, 1731.46875pt x 1390.19376pt>
+(pdftex.def)             Requested size: 469.75499pt x 365.1206pt.
+
+<longWalk5_xyz.jpg, id=739, 1731.46875pt x 1390.19376pt>
 File: longWalk5_xyz.jpg Graphic file (type jpg)
 
 <use longWalk5_xyz.jpg>
 Package pdftex.def Info: longWalk5_xyz.jpg used on input line 39.
-(pdftex.def)             Requested size: 360.0pt x 289.04317pt.
- [38 <./longWalk4_xyz.jpg>] [39 <./longWalk5_xyz.jpg>]
-[40
+(pdftex.def)             Requested size: 469.75499pt x 377.1604pt.
+ [37 <./longWalk1_xyz.jpg>] [38 <./longWalk2_xyz.jpg>]
+[39 <./longWalk3_xyz.jpg>] [40 <./longWalk4_xyz.jpg>] [41 <./longWalk5_xyz.jpg>
+] [42
 
-] <box1_2d.jpg, id=748, 1005.7575pt x 948.54375pt>
+] <box1_2d.jpg, id=780, 1005.7575pt x 948.54375pt>
 File: box1_2d.jpg Graphic file (type jpg)
  <use box1_2d.jpg>
 Package pdftex.def Info: box1_2d.jpg used on input line 58.
-(pdftex.def)             Requested size: 229.03271pt x 216.0022pt.
+(pdftex.def)             Requested size: 260.52394pt x 245.71425pt.
 
-<box1_3d.jpg, id=749, 1264.725pt x 948.54375pt>
+<box1_3d.jpg, id=781, 1264.725pt x 948.54375pt>
 File: box1_3d.jpg Graphic file (type jpg)
  <use box1_3d.jpg>
 Package pdftex.def Info: box1_3d.jpg used on input line 64.
-(pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [41 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=754, 949.5475pt x 948.54
+(pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
+ [43 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=786, 949.5475pt x 948.54
 375pt>
 File: box2_2d.jpg Graphic file (type jpg)
 
 <use box2_2d.jpg>
 Package pdftex.def Info: box2_2d.jpg used on input line 73.
-(pdftex.def)             Requested size: 216.23248pt x 216.0022pt.
- <box2_3d.jpg, id=755, 1264.725pt x 948.54375pt>
+(pdftex.def)             Requested size: 245.96371pt x 245.71425pt.
+ <box2_3d.jpg, id=787, 1264.725pt x 948.54375pt>
 File: box2_3d.jpg Graphic file (type jpg)
 
 <use box2_3d.jpg>
 Package pdftex.def Info: box2_3d.jpg used on input line 79.
-(pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [42 <./box2_2d.jpg> <./box2_3d.jpg>]
-<box3_2d.jpg, id=760, 983.675pt x 948.54375pt>
+(pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
+ [44 <./box2_2d.jpg> <./box2_3d.jpg>]
+<box3_2d.jpg, id=792, 983.675pt x 948.54375pt>
 File: box3_2d.jpg Graphic file (type jpg)
  <use box3_2d.jpg>
 Package pdftex.def Info: box3_2d.jpg used on input line 88.
-(pdftex.def)             Requested size: 224.00404pt x 216.0022pt.
+(pdftex.def)             Requested size: 254.80386pt x 245.71425pt.
 
-<box3_3d.jpg, id=761, 1264.725pt x 948.54375pt>
+<box3_3d.jpg, id=793, 1264.725pt x 948.54375pt>
 File: box3_3d.jpg Graphic file (type jpg)
  <use box3_3d.jpg>
 Package pdftex.def Info: box3_3d.jpg used on input line 94.
-(pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [43 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=766, 952.55875pt x 948.5
+(pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
+ [45 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=798, 952.55875pt x 948.5
 4375pt>
 File: box4_2d.jpg Graphic file (type jpg)
 
 <use box4_2d.jpg>
 Package pdftex.def Info: box4_2d.jpg used on input line 103.
-(pdftex.def)             Requested size: 216.91821pt x 216.0022pt.
- <box4_3d.jpg, id=767, 1264.725pt x 948.54375pt>
+(pdftex.def)             Requested size: 246.74373pt x 245.71425pt.
+ <box4_3d.jpg, id=799, 1264.725pt x 948.54375pt>
 File: box4_3d.jpg Graphic file (type jpg)
 
 <use box4_3d.jpg>
 Package pdftex.def Info: box4_3d.jpg used on input line 109.
-(pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [44 <./box4_2d.jpg> <./box4_3d.jpg>]
-<box5_2d.jpg, id=772, 1029.8475pt x 948.54375pt>
+(pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
+ [46 <./box4_2d.jpg> <./box4_3d.jpg>]
+<box5_2d.jpg, id=805, 1029.8475pt x 948.54375pt>
 File: box5_2d.jpg Graphic file (type jpg)
  <use box5_2d.jpg>
 Package pdftex.def Info: box5_2d.jpg used on input line 118.
-(pdftex.def)             Requested size: 234.51852pt x 216.0022pt.
+(pdftex.def)             Requested size: 266.76404pt x 245.71425pt.
 
-<box5_3d.jpg, id=773, 1264.725pt x 948.54375pt>
+<box5_3d.jpg, id=806, 1264.725pt x 948.54375pt>
 File: box5_3d.jpg Graphic file (type jpg)
  <use box5_3d.jpg>
 Package pdftex.def Info: box5_3d.jpg used on input line 124.
-(pdftex.def)             Requested size: 335.99965pt x 251.9989pt.
- [45 <./box5_2d.jpg> <./box5_3d.jpg>]
-Overfull \hbox (48.38878pt too wide) in paragraph at lines 146--160
- [][] 
- []
-
-[46
+(pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
+ [47 <./box5_2d.jpg> <./box5_3d.jpg>] [48
 
 
 
 
 
 
-]) (Conclusions.tex [47] [48]
+]) (Conclusions.tex [49] [50]
 Chapter 6.
-[49
+[51
 
-] [50] [51] [52] [53] [54] [55] [56] [57]) [58] (main.bbl [59
+] [52] [53] [54] [55]) [56] (main.bbl [57
 
 
-] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-[]\T1/futs/m/n/10.95 (+20) ``GPS Ac-cu-racy.'' [][]$\T1/zi4/m/n/10.95 http : / 
-/ www . gps . gov / systems / gps / performance /
- []
-
-) [61] (node_listing.tex
+]) [58] (node_listing.tex
 Appendix A.
-
-Overfull \hbox (45.1493pt too wide) in paragraph at lines 26--26
-[]  \T1/zi4/m/n/10.95 ros::Publisher poseStampedPub = nh.advertise<geometry_msg
-s::PoseStamped>([] 
- []
-
-
-Overfull \hbox (8.46686pt too wide) in paragraph at lines 26--26
-[]      \T1/zi4/m/n/10.95 geometry_msgs::PoseWithCovarianceStamped>("poseWithCo
-v", 1000);[] 
- []
-
-
-Overfull \hbox (23.24934pt too wide) in paragraph at lines 26--26
-[]  \T1/zi4/m/n/10.95 ros::Publisher poseArrayPub = nh.advertise<geometry_msgs:
-:PoseArray>([] 
- []
-
-
-Overfull \hbox (52.26678pt too wide) in paragraph at lines 26--26
-[]  \T1/zi4/m/n/10.95 QuadUkf ukf = QuadUkf(poseStampedPub, poseWithCovStampedP
-ub, poseArrayPub);[] 
- []
-
-) (UnscentedKf_h_listing.tex [62
+) (UnscentedKf_h_listing.tex [59
 
 
 ]
 Appendix B.
+[60
 
-Overfull \hbox (24.89183pt too wide) in paragraph at lines 88--88
-[]  \T1/zi4/m/n/10.95 UnscentedKf::Belief predictState(Eigen::VectorXd x, Eigen
-::MatrixXd P,[] 
- []
-
+] [61]) (UnscentedKf_cpp_listing.tex [62]
+Appendix C.
 [63
 
-]
-Overfull \hbox (24.89183pt too wide) in paragraph at lines 88--88
-[]  \T1/zi4/m/n/10.95 UnscentedKf::Belief correctState(Eigen::VectorXd x, Eigen
-::MatrixXd P,[] 
- []
-
-
-Overfull \hbox (22.70183pt too wide) in paragraph at lines 88--88
-[]  \T1/zi4/m/n/10.95 virtual Eigen::VectorXd processFunc(Eigen::VectorXd x, do
-uble dt) = 0;[] 
- []
-
-[64]
-Overfull \hbox (4.08687pt too wide) in paragraph at lines 88--88
-[]  \T1/zi4/m/n/10.95 Transform unscentedSensorTransform(const Eigen::MatrixXd 
-sigmaPts,[] 
- []
-
-
-Overfull \hbox (0.80177pt too wide) in paragraph at lines 88--88
-[]                                    \T1/zi4/m/n/10.95 const Eigen::MatrixXd n
-oiseCov) const;[] 
- []
-
-) (UnscentedKf_cpp_listing.tex [65]
-Appendix C.
-
-Overfull \hbox (37.4843pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 // Perform unscented transform on current estimated state
- to predict next[] 
- []
-
-
-Overfull \hbox (46.7918pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 UnscentedKf::Transform tf = unscentedStateTransform(sigma
-Pts, meanWeights,[] 
- []
-
-[66
-
-]
-Overfull \hbox (15.0367pt too wide) in paragraph at lines 217--217
-[]                                                      \T1/zi4/m/n/10.95 covar
-ianceWeights, Q, dt);[] 
- []
-
-
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 UnscentedKf::Transform sensorTf = unscentedSensorTransfor
-m(sigmaPts,[] 
- []
-
-
-Overfull \hbox (2.9917pt too wide) in paragraph at lines 217--217
-[]                                                             \T1/zi4/m/n/10.9
-5 covarianceWeights,[] 
- []
-
-
-Overfull \hbox (52.54053pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::VectorXd zPred = sensorTf.vector;     // Predicted
- measurement vector[] 
- []
-
-
-Overfull \hbox (51.71928pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd P_zz = sensorTf.covariance;  // Sensor-to
--sensor covariance[] 
- []
-
-
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd P_xz = Eigen::MatrixXd::Zero(numStates, n
-umSensors);[] 
- []
-
-[67]
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd PCorr = Eigen::MatrixXd::Zero(numStates, 
-numStates);[] 
- []
-
-
-Overfull \hbox (57.74178pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 UnscentedKf::SigmaPointSet sample = sampleStateSpace(sigm
-aPts, meanWts, dt);[] 
- []
-
-[68]
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd cov = Eigen::MatrixXd::Zero(numSensors, n
-umSensors);[] 
- []
-
-
-Overfull \hbox (42.4118pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 UnscentedKf::SigmaPointSet sample = sampleSensorSpace(sig
-maPts, meanWts);[] 
- []
-
-
-Overfull \hbox (28.17683pt too wide) in paragraph at lines 217--217
-[]\T1/zi4/m/n/10.95 Eigen::MatrixXd UnscentedKf::computeSigmaPoints(const Eigen
-::VectorXd x,[] 
- []
-
-
-Overfull \hbox (22.1542pt too wide) in paragraph at lines 217--217
-[]                                                \T1/zi4/m/n/10.95 const doubl
-e scalingCoeff) const[] 
- []
-
-
-Overfull \hbox (14.48933pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 // Compute lower Cholesky factor "A" of the given covaria
-nce matrix P[] 
- []
-
-
-Overfull \hbox (18.86932pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 // Create a matrix "Y", which is then filled columnwise w
-ith the given[] 
- []
-
-[69]
-Overfull \hbox (55.55177pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 return deviations * covWts.asDiagonal() * deviations.tran
-spose() + noiseCov;[] 
- []
-
-[70]
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 217--217
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd sigmas = Eigen::MatrixXd::Zero(numSensors
-, numCols);[] 
- []
-
-
-Overfull \hbox (50.0768pt too wide) in paragraph at lines 217--217
-[]\T1/zi4/m/n/10.95 Eigen::MatrixXd UnscentedKf::fillMatrixWithVector(const Eig
-en::VectorXd vec,[] 
- []
-
-[71]) (QuadUkf_h_listing.tex [72]
+] [64] [65] [66] [67]) (QuadUkf_h_listing.tex [68]
 Appendix D.
+[69
 
-Overfull \hbox (58.83678pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 QuadUkf(ros::Publisher poseStampedPub, ros::Publisher pos
-eWithCovStampedPub,[] 
+] [70]
+Overfull \hbox (1.24503pt too wide) in paragraph at lines 93--93
+[]  \T1/zi4/m/n/12 geometry_msgs::PoseStamped quadBeliefToPoseStamped(const Qua
+dBelief qb) const;[] 
  []
 
-[73
-
-]
-Overfull \hbox (12.84685pt too wide) in paragraph at lines 93--93
-[]      \T1/zi4/m/n/10.95 const geometry_msgs::PoseWithCovarianceStampedConstPt
-r &msg_in);[] 
- []
-
-
-Overfull \hbox (62.12177pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 Eigen::VectorXd processFunc(const Eigen::VectorXd stateVe
-c, const double dt);[] 
- []
-
-
-Overfull \hbox (8.46681pt too wide) in paragraph at lines 93--93
-[]    \T1/zi4/m/n/10.95 POS_X = 0, POS_Y = 1, POS_Z = 2, QUAT_X = 3, QUAT_Y = 4
-, QUAT_Z = 5,[] 
- []
-
-
-Overfull \hbox (41.31676pt too wide) in paragraph at lines 93--93
-[]    \T1/zi4/m/n/10.95 QUAT_W = 6, VEL_X = 7, VEL_Y = 8, VEL_Z = 9, ANGVEL_X =
- 10, ANGVEL_Y = 11,[] 
- []
-
-[74]
-Overfull \hbox (45.14928pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 const int POSE_ARRAY_SIZE = 10000;  // number of poses to
- keep for plotting[] 
- []
-
-
-Overfull \hbox (69.78676pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 geometry_msgs::PoseStamped quadBeliefToPoseStamped(const 
-QuadBelief qb) const;[] 
- []
-
-
-Overfull \hbox (41.86432pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 geometry_msgs::PoseWithCovarianceStamped quadBeliefToPose
-WithCovStamped([] 
- []
-
-
-Overfull \hbox (32.55682pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 void updatePoseArray(const geometry_msgs::PoseWithCovaria
-nceStamped p);[] 
- []
-
-
-Overfull \hbox (47.8868pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd quatIntegrationMatrix(const Eigen::Vector
-3d angVel) const;[] 
- []
-
-
-Overfull \hbox (15.03685pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 Eigen::VectorXd quadStateToEigen(const QuadUkf::QuadState
- qs) const;[] 
- []
-
-
-Overfull \hbox (9.56186pt too wide) in paragraph at lines 93--93
-[]  \T1/zi4/m/n/10.95 QuadUkf::QuadState eigenToQuadState(const Eigen::VectorXd
- x) const;[] 
- []
-
-) (QuadUkf_cpp_listing.tex [75]
+) (QuadUkf_cpp_listing.tex [71]
 Appendix E.
+[72
 
-Overfull \hbox (28.72432pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 // Define initial position, quaternion, velocity, angular
- velocity, and[] 
+] [73] [74] [75] [76]
+Overfull \hbox (15.04501pt too wide) in paragraph at lines 392--392
+[]\T1/zi4/m/n/12 geometry_msgs::PoseWithCovarianceStamped QuadUkf::quadBeliefTo
+PoseWithCovStamped([] 
  []
 
-
-Overfull \hbox (42.4118pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 Eigen::Vector3d initPosition, initVelocity, initAngVel, i
-nitAcceleration;[] 
- []
-
-
-Overfull \hbox (6.82433pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 initPosition << 0, 0, 1;  // "x = 0, y = 0, z = 1 meter a
-bove origin"[] 
- []
-
-[76
+[77] [78] [79] [80]) (CMakeLists_listing.tex [81]
+Appendix F.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+ [82
 
 ]
-Overfull \hbox (8.46686pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 QuadUkf::QuadState initState {initPosition, initQuat, ini
-tVelocity,[] 
- []
-
-
-Overfull \hbox (47.8868pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd initCov = Eigen::MatrixXd::Identity(numSt
-ates, numStates);[] 
- []
-
-
-Overfull \hbox (57.74178pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 QuadUkf::QuadBelief initBelief {initTimeStamp, init_dt, i
-nitState, initCov};[] 
- []
-
-[77]
-Overfull \hbox (55.55179pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 poseWithCovStampedPublisher = std::move(other.poseWithCov
-StampedPublisher);[] 
- []
-
-
-Overfull \hbox (39.1268pt too wide) in paragraph at lines 392--392
-[]      \T1/zi4/m/n/10.95 - xHat.state.quaternion.toRotationMatrix().inverse() 
-* GRAVITY_ACCEL;[] 
- []
-
-
-Overfull \hbox (51.17178pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 UnscentedKf::Belief b = predictState(x, xHat.covariance, 
-ProcessCovMatrixQ,[] 
- []
-
-[78]
-Overfull \hbox (27.08183pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 qb.state.quaternion = checkQuatContinuity(lastBelief.stat
-e.quaternion,[] 
- []
-
-
-Overfull \hbox (1.89687pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 z(VEL_X) = (z(POS_X) - lastPoseMsg.pose.pose.position.x) 
-/ dtPose;[] 
- []
-
-
-Overfull \hbox (1.89687pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 z(VEL_Y) = (z(POS_Y) - lastPoseMsg.pose.pose.position.y) 
-/ dtPose;[] 
- []
-
-
-Overfull \hbox (1.89687pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 z(VEL_Z) = (z(POS_Z) - lastPoseMsg.pose.pose.position.z) 
-/ dtPose;[] 
- []
-
-[79]
-Overfull \hbox (37.4843pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 // Check incoming quaternion for rotational continuity an
-d replace if not[] 
- []
-
-
-Overfull \hbox (64.31177pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 Eigen::Vector4d chosenQuat = checkQuatContinuity(lastBeli
-ef.state.quaternion,[] 
- []
-
-
-Overfull \hbox (63.76427pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 xHat.state.position = (xHat.state.velocity + lastBelief.s
-tate.velocity) / 2.0[] 
- []
-
-
-Overfull \hbox (23.24934pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 xHat.state.quaternion.coeffs() = lastBelief.state.quatern
-ion.coeffs()[] 
- []
-
-[80]
-Overfull \hbox (55.55176pt too wide) in paragraph at lines 392--392
-[] \T1/zi4/m/n/10.95 * quadPoseArray reaches POSE_ARRAY_SIZE, the last pose is 
-popped on each call.[] 
- []
-
-
-Overfull \hbox (67.87053pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 void QuadUkf::updatePoseArray(const geometry_msgs::PoseWith
-CovarianceStamped p)[] 
- []
-
-
-Overfull \hbox (39.12682pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 quadPoseArray.poses.insert(quadPoseArray.poses.begin(), 1
-, p.pose.pose);[] 
- []
-
-[81]
-Overfull \hbox (6.82436pt too wide) in paragraph at lines 392--392
-[] \T1/zi4/m/n/10.95 * Ensures rotational continuity by checking for sign-flipp
-ing in the[] 
- []
-
-
-Overfull \hbox (61.57426pt too wide) in paragraph at lines 392--392
-[]    \T1/zi4/m/n/10.95 const Eigen::Quaterniond lastQuat, const Eigen::Quatern
-iond nextQuat) const[] 
- []
-
-[82]
-Overfull \hbox (22.70183pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 p.header.stamp.nsec = (b.timeStamp - floor(b.timeStamp)) 
-* pow(10, 9);[] 
- []
-
-
-Overfull \hbox (82.37926pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 geometry_msgs::PoseWithCovarianceStamped QuadUkf::quadBelie
-fToPoseWithCovStamped([] 
- []
-
-
-Overfull \hbox (22.70183pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 p.header.stamp.nsec = (b.timeStamp - floor(b.timeStamp)) 
-* pow(10, 9);[] 
- []
-
-[83]
-Overfull \hbox (59.38428pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 Eigen::VectorXd QuadUkf::processFunc(const Eigen::VectorXd 
-x, const double dt)[] 
- []
-
-
-Overfull \hbox (48.9818pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 Eigen::MatrixXd Theta = quatIntegrationMatrix(prevState.a
-ngular_velocity);[] 
- []
-
-
-Overfull \hbox (22.15433pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 // Rotate current and previous accelerations into inertia
-l frame, then[] 
- []
-
-
-Overfull \hbox (40.22179pt too wide) in paragraph at lines 392--392
-[]      \T1/zi4/m/n/10.95 + 0.5 * (lastBelief.state.acceleration + currState.ac
-celeration) * dt;[] 
- []
-
-
-Overfull \hbox (29.81934pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 Eigen::VectorXd QuadUkf::observationFunc(const Eigen::Vecto
-rXd stateVec)[] 
- []
-
-[84]
-Overfull \hbox (30.9143pt too wide) in paragraph at lines 392--392
-[] \T1/zi4/m/n/10.95 * Given a vector of angular velocities in radians per seco
-nd, returns the[] 
- []
-
-
-Overfull \hbox (20.78558pt too wide) in paragraph at lines 392--392
-[]  \T1/zi4/m/n/10.95 // Upper left 3-by-3 block: negative skew-symmetric matri
-x of vector w[] 
- []
-
-[85]
-Overfull \hbox (51.7193pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 Eigen::VectorXd QuadUkf::quadStateToEigen(const QuadUkf::Qu
-adState qs) const[] 
- []
-
-
-Overfull \hbox (46.24431pt too wide) in paragraph at lines 392--392
-[]\T1/zi4/m/n/10.95 QuadUkf::QuadState QuadUkf::eigenToQuadState(const Eigen::V
-ectorXd x) const[] 
- []
-
-[86]) (CMakeLists_listing.tex [87]
-Appendix F.
-[88
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
- [89]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 37FA3BBC389ED382B8CF1480E432146B;2643.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+(rerunfilecheck)             Checksum: 3A16E5747D607A733F72FBE1F7071A00;2650.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 12173 strings out of 493334
- 184814 string characters out of 3136672
- 284174 words of memory out of 3000000
- 14754 multiletter control sequences out of 15000+200000
- 153505 words of font info for 328 fonts, out of 3000000 for 9000
+ 12186 strings out of 493334
+ 184972 string characters out of 3136672
+ 285211 words of memory out of 3000000
+ 14769 multiletter control sequences out of 15000+200000
+ 159083 words of font info for 339 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,77p,1748b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{C
-:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fi
+ 40i,13n,77p,1745b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Progr
@@ -1646,9 +1197,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (98 pages, 12942414 bytes).
+Output written on main.pdf (91 pages, 12931150 bytes).
 PDF statistics:
- 1153 PDF objects out of 1200 (max. 8388607)
- 332 named destinations out of 1000 (max. 500000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 325 named destinations out of 1000 (max. 500000)
  42952 words of extra memory for PDF output out of 42996 (max. 10000000)
 
