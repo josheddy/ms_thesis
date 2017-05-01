@@ -2,7 +2,7 @@
 
 \section{UKF Formulation} \label{sec:ukf_formulation}
 
-In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter. We begin with the two overarching phases of the algorithm, prediction and correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
+In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter based in part on example MATLAB code from \cite{Cao2010}. We begin with the two overarching phases of the algorithm, prediction and correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
 
 \subsection{Prediction Step} \label{sec:Prediction_Step}
 
@@ -16,7 +16,7 @@ We begin by defining the following quantities:
 \mathbf{a} &= \left\lbrace \ddot{x},\ \ddot{y},\ \ddot{z} \right\rbrace ^{T}
 \end{align}
 %
-The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{All quaternion are represented here according to the convention used in equation~\ref{eq:quat_convention}, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
+The vectors $\mathbf{p}$, $\mathbf{v}$, and $\mathbf{a}$ represent the vehicle's position, velocity, and acceleration, respectively. The quaternion\footnote{All quaternions are represented here according to the convention used in equation~\ref{eq:quat_convention}, where $q_{w}$ is the scalar component and is always placed in the last position. This convention was chosen to maintain consistency with the Eigen library's internal representation of quaternions. Unless otherwise noted, all quaternion quantities treated herein are assumed to be \textit{unit} quaternions.} $\mathbf{q}$ represents the vehicle's orientation, and the vector $\bm{\Omega}$ represents the vehicle's angular rates. We now define the state vector $\mathbf{x}$ as
 %
 \begin{equation}
 \mathbf{x} = 
@@ -166,7 +166,7 @@ To calculate the vehicle's current acceleration, we first subtract gravity from 
 \mathbf{a}_{k} = R^{g}_{b,\ k-1} \left( \mathbf{a}_{\text{meas.}} - \mathbf{g} \right)
 \end{equation}
 %
-Here $R^{g}_{b,\ k-1}$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. For a given quaternion $\mathbf{q}$, the rotation matrix $R^{g}_{b}$ would be
+Here $R^{g}_{b,\ k-1}$ is the rotation matrix representation of the previous orientation quaternion $\mathbf{q}_{k-1}$ and $\mathbf{g}$ is the vector representation of gravity in the global frame. For a given unit quaternion $\mathbf{q}$, the rotation matrix $R^{g}_{b}$, given in \cite{Shoemake1985}, is
 %
 \begin{equation}
 R^{g}_{b} =
@@ -205,7 +205,7 @@ f \left( \mathbf{x}_{k-1 | k-1} \right) =
 For purposes of noise modeling, the process function $f$ is modeled according to the relationship
 %
 \begin{equation}
-\mathbf{x}_{k | k-1} = f \left( \mathbf{x}_{k-1 | k-1},\ \bm{\delta}_{k} \right)
+\mathbf{x}_{k | k-1} = f \left( \mathbf{x}_{k-1 | k-1} \right) + \bm{\delta}_{k}
 \end{equation}
 %
 where $\bm{\delta}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{Q} \right)$ is additive Gaussian-distributed process noise, assumed to have zero mean and covariance $\mathbf{Q}$ (explored further in Section~\ref{sec:Q_Matrix}).
@@ -307,7 +307,7 @@ The matrix $\mathbf{H}$ is defined as
 where $\mathbf{I}_{m_{a} \times m_{a}}$ is a $10 \times 10$ identity matrix and $\mathbf{0}_{m_{a} \times \left(n-m_{a}\right)}$ is an empty $10 \times 6$ matrix. We model the observation function $h$ according to the relationship
 %
 \begin{equation}
-\hat{\mathbf{z}}_{k} = h \left( \mathbf{x}_{k | k-1},\ \bm{\epsilon}_{k} \right)
+\hat{\mathbf{z}}_{k} = h \left( \mathbf{x}_{k | k-1} \right) + \bm{\epsilon}_{k}
 \end{equation}
 %
 where $\bm{\epsilon}_{k} \sim \mathcal{N} \left( 0,\ \mathbf{R} \right)$ is additive Gaussian measurement noise assumed to have zero mean and covariance $\mathbf{R}$ (explored in Section~\ref{sec:R_Matrix}).

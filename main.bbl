@@ -77,6 +77,12 @@ M.~Faessler, F.~Fontana, C.~Forster, E.~Mueggler, M.~Pizzoli, and
   with a Quadrotor Micro Aerial Vehicle},'' {\em Journal of Field Robotics},
   vol.~33, no.~4, pp.~431--450, 2016.
 
+\bibitem{Cao2010}
+{Cao, Yi}, ``{Learning the Unscented Kalman Filter}.''
+  \url{https://www.mathworks.com/matlabcentral/fileexchange/18217-learning-the-unscented-kalman-filter},
+  2010.
+\newblock Accessed: 2016-10-10.
+
 \bibitem{Wan2000}
 E.~A. Wan and R.~V.~D. Merwe, ``{The Unscented Kalman Filter for Nonlinear
   Estimation},'' in {\em Proceedings of the IEEE 2000 Adaptive Systems for
@@ -87,6 +93,10 @@ E.~A. Wan and R.~V.~D. Merwe, ``{The Unscented Kalman Filter for Nonlinear
 B.~L. Stevens, F.~L. Lewis, and E.~N. Johnson, {\em {Aircraft Control and
   Simulation: Dynamics, Controls Design, and Autonomous Systems}}, pp.~1--62.
 \newblock Wiley, 2015.
+
+\bibitem{Shoemake1985}
+K.~Shoemake, ``{Animating Rotation with Quaternion Curves},'' {\em SIGGRAPH
+  Comput. Graph.}, vol.~19, pp.~245--254, July 1985.
 
 \bibitem{Brown2012}
 R.~G. Brown and P.~Y.~C. Hwang, {\em {Introduction to Random Signals and

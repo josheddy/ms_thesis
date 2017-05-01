@@ -16,9 +16,9 @@
 \contentsline {subsection}{\numberline {3.1.2}Correction Step}{18}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Process Model}{19}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Observation Model}{21}{subsection.3.1.4}
-\contentsline {subsubsection}{Quaternion Continuity Correction}{21}{section*.19}
-\contentsline {subsubsection}{Pseudovelocity Correction}{22}{section*.20}
-\contentsline {subsubsection}{Observation Modeling}{23}{section*.21}
+\contentsline {subsubsection}{Quaternion Continuity Correction}{21}{section*.18}
+\contentsline {subsubsection}{Pseudovelocity Correction}{22}{section*.19}
+\contentsline {subsubsection}{Observation Modeling}{23}{section*.20}
 \contentsline {subsection}{\numberline {3.1.5}Process Noise Covariance Matrix}{23}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Measurement Noise Covariance Matrix}{25}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}Software Design Considerations}{25}{section.3.2}
@@ -37,15 +37,15 @@
 \contentsline {section}{\numberline {6.1}Conclusions}{50}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{51}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}System Improvements}{51}{subsection.6.2.1}
-\contentsline {subsubsection}{Integration of New Sensors}{52}{section*.49}
-\contentsline {subsubsection}{Improvements for Current Sensors}{54}{section*.50}
-\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.51}
+\contentsline {subsubsection}{Integration of New Sensors}{52}{section*.48}
+\contentsline {subsubsection}{Improvements for Current Sensors}{54}{section*.49}
+\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.50}
 \contentsline {subsection}{\numberline {6.2.2}Future Experiments}{55}{subsection.6.2.2}
 \contentsline {chapter}{Bibliography}{56}{subsection.6.2.2}
-\contentsline {chapter}{Appendices}{58}{section*.53}
-\contentsline {chapter}{\numberline {A}node.cpp Listing}{58}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{59}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{62}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{68}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{71}{Appendix.1.E}
-\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{81}{Appendix.1.F}
+\contentsline {chapter}{Appendices}{59}{section*.52}
+\contentsline {chapter}{\numberline {A}node.cpp Listing}{59}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{60}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{63}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{69}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{72}{Appendix.1.E}
+\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{82}{Appendix.1.F}

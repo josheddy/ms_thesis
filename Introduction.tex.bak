@@ -70,12 +70,12 @@ I first took an interest in unmanned aircraft in the fall of 2012, my sophomore 
 
 After two years of involvement with the CARD team, I applied for an internship at the National Institute of Aerospace\footnote{\url{http://www.nianet.org}} (NIA) in Hampton, Virginia. In the summer of 2014, I was part of a team of NIA researchers working on the Flying Donkey Challenge\footnote{\url{http://www.flyingdonkey.org}}, an international engineering competition centered around the idea of ``flying donkeys,'' full-sized autonomous airplanes capable of quickly carrying cargo between small airports in rural Africa. This competition, unfortunately now defunct, was divided into a number of sub-challenges focusing on different technical objectives such as precision landing and collision avoidance. Our team's goal was to design an inexpensive navigation system that could reliably guide unmanned aircraft during a Global Positioning System (GPS) blackout. This project introduced me to many of the technologies and techniques that would later become my major research interests, particularly the Robot Operating System\footnote{\url{http://wiki.ros.org}} (ROS), Kalman Filtering, and sensor fusion.
 
-\begin{wrapfigure}{l}{0.4\textwidth}
-  \centering
-    \includegraphics[width=0.4\textwidth]{april_tag}
-  \caption[Example April Tag]{An example of an April tag.}
-  \label{fig:april_tag}
-\end{wrapfigure}
+%\begin{wrapfigure}{l}{0.4\textwidth}
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{april_tag}
+%  \caption[Example April Tag]{An example of an April tag.}
+%  \label{fig:april_tag}
+%\end{wrapfigure}
 
 Through my internship at the NIA, I met Dr.~Danette Allen, head of the NASA Langley Autonomy Incubator. During my 2014--15 academic year, Dr.~Allen sponsored the CARD team to design and build two autonomous multirotor delivery drones. These aircraft were capable of delivering 5\nobreakdash-lb packages to distances of up to 2.5~miles (or 5~miles, round trip). In addition, these vehicles were able to land precisely on 1~m$^2$ April tags such as that found in Figure~\ref{fig:april_tag}\footnote{\url{http://wiki.ros.org/apriltags\_ros}}. Following the completion of this project, I worked as a summer intern at the Autonomy Incubator, thereby further advancing my interest in Kalman filtering, sensor fusion, and visual localization.
 
