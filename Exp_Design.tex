@@ -29,16 +29,16 @@ The UKF framework depends upon two sensors: a global-shutter monocular camera an
 
 \subsection{PTAM Anomalies}
 
-During preliminary experiments, the parameter $\alpha$ (Section~\ref{sec:Prediction_Step}) was tuned such that pose estimates from the UKF would almost exactly those coming from PTAM. This is a desirable behavior given that, between PTAM and the IMU, PTAM will almost always be the more accurate sensor. However, because of this close coupling between PTAM's output and the UKF's output, idiosyncrasies in PTAM's behavior will have an outsized effect on the behavior of the filter. The experiments chosen to test the system's effectiveness were thus influenced largely by the known capabilities and limitations of the ROS PTAM implementation\footnote{From here on, ``PTAM'' refers to the particular ROS implementation of PTAM used in the experiments, not to the algorithm in general.}.
+During preliminary experiments, the parameter $\alpha$ (Section~\ref{sec:Prediction_Step}) was tuned such that pose estimates from the UKF would almost exactly track those coming from PTAM. This is a desirable behavior given that, between PTAM and the IMU, PTAM will almost always be the more accurate sensor. However, because of this close coupling between PTAM's output and the UKF's output, idiosyncrasies in PTAM's behavior will have an outsized effect on the behavior of the filter. The experiments chosen to test the system's effectiveness were thus influenced largely by the known capabilities and limitations of the ROS PTAM implementation\footnote{From here on, ``PTAM'' refers to the particular ROS implementation of PTAM used in the experiments, not to the algorithm in general.}.
 
 Previous experiments\footnote{Performed both by the author and by various other parties at NASA Langley, where the experiments described here took place.} have shown PTAM to lose tracking\footnote{``Tracking'' here refers to current pose knowledge.} frequently during large rotations. PTAM is particularly susceptible to losing tracking during \textit{pure} rotations, in which the camera rotates in place without translational motion. Worse, whenever PTAM undergoes a rotation, it interprets this as a rotation coupled with an arc-like translation, regardless of whether any translation actually took place.
 
-Figure~\ref{fig:rot_bug_rviz} shows PTAM's susceptibility to losing tracking during rotation. This Rviz\footnote{A ROS visualization utility. \url{http://wiki.ros.org/rviz}} visualization was produced by moving the cart in a square trajectory and turning the cart by 90 degrees at each corner. In the figure, the vehicle's trajectory is traced out by a series of orange arrows representing the vehicle's $x$-axis. The vehicle started at the origin (Point~1), then moved forward (in the $+y$ direction) in a straight line to Point~2. At Point~2, the cart was rotated counterclockwise in place by 90 degrees, producing the arc between Points~2 and 3. At this point, the cart was pointed in the $-x$ direction. As the figure shows, this arc extends \textit{opposite} the camera's true direction of travel. After rotating 90 degrees, the vehicle moved in a straight line in the $-x$ direction (Point~3 to Point~4), then rotated again by 90 degrees such that the cart was pointed in the $-y$ direction (Point~4 to 5). Again, the arc goes backward from the actual direction of travel, but this time its length is much greater. This was caused by rotating the vehicle at a higher speed than during the first turn, meaning that this rotation defect is velocity-dependent. From Point~5, the vehicle moves in the $-y$ direction to Point~6, rotates 90 degrees counterclockwise (Point~6 to 7), and then moves in a straight line back to a point near the origin (Point~8).
+Figure~\ref{fig:rot_bug_rviz} shows PTAM's susceptibility to losing tracking during rotation. This Rviz\footnote{A ROS visualization utility. \url{http://wiki.ros.org/rviz}} visualization was produced by moving the test stand in a square trajectory and turning the test stand by 90 degrees at each corner. In the figure, the vehicle's trajectory is traced out by a series of orange arrows representing the vehicle's $x$-axis. The vehicle started at the origin (Point~1), then moved forward (in the $+y$ direction) in a straight line to Point~2. At Point~2, the test stand was rotated counterclockwise in place by 90 degrees, producing the arc between Points~2 and 3. At this point, the test stand was pointed in the $-x$ direction. As the figure shows, this arc extends \textit{opposite} the camera's true direction of travel. After rotating 90 degrees, the vehicle moved in a straight line in the $-x$ direction (Point~3 to Point~4), then rotated again by 90 degrees such that the test stand was pointed in the $-y$ direction (Point~4 to 5). Again, the arc goes backward from the actual direction of travel, but this time its length is much greater. This was caused by rotating the vehicle at a higher speed than during the first turn, meaning that this rotation defect is velocity-dependent. From Point~5, the vehicle moves in the $-y$ direction to Point~6, rotates 90 degrees counterclockwise (Point~6 to 7), and then moves in a straight line back to a point near the origin (Point~8).
 
 \begin{figure}[t]
 \centering
     \includegraphics[width=0.4\textwidth]{rot_bug_rviz}
-  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of PTAM's rotation defect. This image was created by moving the cart in a 3~m square pattern, turning 90\textdegree\ CCW at each corner.}
+  \caption[Rviz Visualization of Rotational Distortion]{An Rviz visualization of PTAM's rotation defect. This image was created by moving the test stand in a 3~m square pattern, turning 90\textdegree\ CCW at each corner.}
   \label{fig:rot_bug_rviz}
 \end{figure}
 
@@ -64,8 +64,6 @@ In other preliminary experiments, anomalous behavior was discovered in PTAM's $z
 
 Two experiments were designed to characterize the UKF framework's effectiveness in various regimes of motion. The first experiment was a ``long walk'' in which the mobile test stand was translated in a straight line for 4--6~meters along the $y$-axis. This test was designed to characterize the effect of lens distortion on PTAM's $z$-position output, as discussed previously.
 
-In the second experiment, the mobile test stand was moved in a rectangular ``box'' pattern. This test was performed to determine the system's efficacy in planar motions indicative of hovering flight. Both experiments took place on a level floor to measure more accurately any $z$-directional distortion. Because of the rotation-translation coupling defect found in PTAM, the mobile test stand was moved carefully in each experiment such that it would undergo minimal rotation and thus accurately capture translational motion.
-
 \begin{wrapfigure}{r}{0.4\textwidth}
         \centering
         \includegraphics[width=0.4\textwidth]{sensor_mount_bottom}
@@ -73,20 +71,22 @@ In the second experiment, the mobile test stand was moved in a rectangular ``box
         \label{fig:sensor_mount_bottom}
 \end{wrapfigure}
 
+In the second experiment, the mobile test stand was moved in a rectangular ``box'' pattern. This test was performed to determine the system's efficacy in planar motions indicative of hovering flight. Both experiments took place on a level floor to measure more accurately any $z$-directional distortion. Because of the rotation-translation coupling defect found in PTAM, the mobile test stand was moved carefully in each experiment such that it would undergo minimal rotation and thus accurately capture translational motion.
+
 Prior to each trial, PTAM was initialized according to the procedure outlined in the online documentation. To initialize the algorithm, the camera was placed parallel to the floor at a distance of one meter and then perturbed by 10\% of the distance to the floor (that is, 10~cm). This perturbation tells PTAM its distance to the planar surface of the floor and thus initializes the mapping process. This initialization procedure was performed by releasing the linear bearing brake (Figure~\ref{fig:sensor_mount_bottom}) on the sensor mount and sliding the mount along the aluminum rail, using the attached adhesive ruler to perturb the camera by exactly 10~cm. After perturbing the camera, the brake was tightened, and the data recording was begun. Two data streams were recorded using the \texttt{rosbag}\footnote{\url{http://wiki.ros.org/rosbag}} recording utility: the pose messages published by \texttt{kalman\_sense} and the pose messages published by Vicon.
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+  \centering
+    \includegraphics[width=0.4\textwidth]{good_box_5_cropped}
+  \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory.}
+  \label{fig:good_box}
+\end{wrapfigure}
 
 For each long walk trial, the mobile test stand was moved forward in the $+y$ direction by 4--6~meters, being careful to perturb the stand as little as possible along the $x$-axis. Some amount of lateral instability was unavoidable, however, due to the nature of the floor on which these trials were performed. The rubber tiles covering the floor of the testing area concealed a number of power cables for nearby computers, presenting small ``bumps'' over which the test stand had to pass. These bumps caused uneven left--right perturbations to the test stand, which, though minor in magnitude, proved to be noticeable in post processing (see Chapter~\ref{ch:Exp_Results}). When the test stand had been pushed to the end of the long walk segment, it was then pulled backward in the $-y$ direction until it had approximately returned to the origin.
 
 For the box pattern trials (Figure~\ref{fig:good_box}), the mobile test stand was first moved forward in the $+y$ direction by 2.5 to 3~meters. Then, without rotating, the test stand was pushed leftward in the $-x$ direction by approximately 1~meter. The test stand was then pulled backward in the $-y$ direction by 2.5 to 3~meters, returning approximately to $y = 0$. Finally, the test stand was pushed to the right ($+x$) to return to the origin.
 
-In Section~\ref{sec:materials}, we present information concerning the materials used to construct the mobile test stand, which we refer to as ``the cart'' in various parts of this document.
-
-\begin{figure}[H]
-  \centering
-    \includegraphics[width=0.6\textwidth]{good_box_5_cropped}
-  \caption[Rviz Visualization of a Box Pattern Trajectory]{An Rviz visualization of a box pattern trajectory.}
-  \label{fig:good_box}
-\end{figure}
+In Section~\ref{sec:materials}, we present information concerning the materials used to construct the mobile test stand.
 
 \pagebreak
 \section{Materials} \label{sec:materials}

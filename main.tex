@@ -71,6 +71,7 @@
 
 \begin{document}
 
+% Front matter
 \input{Title_Page.tex}
 \pagenumbering{roman}
 \input{Abstract.tex}
@@ -81,6 +82,7 @@
 \input{Acronyms.tex}
 \pagebreak
 
+% Body content
 \pagenumbering{arabic}
 \input{Introduction.tex}
 \input{Prior_Work.tex}
@@ -93,14 +95,15 @@
 \bibliographystyle{ieeetr}
 \bibliography{bibliography}
 
+% Appendices
 \linespread{1}
 \begin{appendices}
-\input{node_listing.tex}
-\input{UnscentedKf_h_listing.tex}
-\input{UnscentedKf_cpp_listing.tex}
-\input{QuadUkf_h_listing.tex}
-\input{QuadUkf_cpp_listing.tex}
-\input{CMakeLists_listing.tex}
+    \input{node_listing.tex}
+    \input{UnscentedKf_h_listing.tex}
+    \input{UnscentedKf_cpp_listing.tex}
+    \input{QuadUkf_h_listing.tex}
+    \input{QuadUkf_cpp_listing.tex}
+    \input{CMakeLists_listing.tex}
 \end{appendices}
 
 \end{document}
