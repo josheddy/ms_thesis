@@ -16,7 +16,7 @@ With all of this being said, the UKF framework developed here still represents a
 
 \subsection{System Improvements}
 
-Experimentation with the \texttt{kalman\_sense} ROS package has revealed a number of areas for improvement. Speaking generally, the system needs enhancements to improve accuracy and to become more robust with respect to potential sensor malfunction. Further development of this work likely would center on three main areas:
+Experimentation with the \texttt{kalman\_sense} ROS package has revealed a number of areas for improvement. Speaking generally, the system needs enhancements to improve accuracy and to become more robust with respect to potential sensor malfunction. Further development of this work to augment accuracy and robustness would center on three main areas:
 \begin{enumerate}
     \item Integration of new sensors,
     \item Improvements for current sensors, and
@@ -55,6 +55,6 @@ The UKF formulation itself presents another set of opportunities for improvement
 
 \subsection{Future Experiments}
 
-Using a SLAM/VO algorithm that addresses pure rotation and lens distortion would be the easiest and most cost effective way to improve the system. Testing different visual localization algorithms would thus be an appealing avenue of inquiry. It would behoove the researcher to characterize the system's behavior under the same conditions that caused the PTAM-based implementation to fail. In particular, experiments that include pure rotations and longer translations, as well as simulated flight movement over uneven but otherwise virtually unchanging terrain would mimic real-world flight missions more closely and provide a more holistic understanding of the system's effectiveness. Additionally, mounting the sensor suite on the underside of a UAV would allow for the collection of real-world flight data, which could shed light on the system's speed limits and behavior in the presence of in-flight vibrations.
+Using a SLAM/VO algorithm that addresses pure rotation and camera lens distortion would be the easiest and most cost-effective way to improve the system. Testing different visual localization algorithms would thus be an appealing avenue of inquiry. It would behoove the researcher to characterize the system's behavior under the same conditions that caused the PTAM-based implementation to fail. In particular, experiments that include pure rotations and longer translations, as well as simulated flight movement over uneven but otherwise virtually unchanging terrain would mimic real-world flight missions more closely and provide a more holistic understanding of the system's effectiveness. Additionally, mounting the sensor suite on the underside of a UAV would allow for the collection of real-world flight data, which could shed light on the system's speed limits and behavior in the presence of in-flight vibrations.
 
 After integrating new sensors, new experiments could be devised to characterize the system's effectiveness during sensor blackouts---for example, during an indoor-outdoor transition after integrating a GPS receiver. Experiments such as this could then inform the design of heuristic models for recognizing sensor degradation and perhaps even consensus-based estimation strategies. 
