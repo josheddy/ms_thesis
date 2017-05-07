@@ -189,7 +189,7 @@ Trial & Mean $\| \bm{\varepsilon} \|$ [m] & Maximum $\| \bm{\varepsilon} \|$ [m]
 \hline
 \textbf{Mean Total Error} & 0.0668 \\
 \hline
-\textbf{Maximum Error} && 0.2596 \\
+\textbf{Overall Maximum Total Error} && 0.2596 \\
 \bottomrule
 \end{tabular}
 \label{tab:total_err}
@@ -222,4 +222,4 @@ Trial & Final $\varepsilon_{x}$ [m] & Final $\varepsilon_{y}$ [m] & Final $\vare
 \label{tab:final_err}
 \end{table}
 
-These values were computed using only the last pose collected from the UKF and the last pose collected from Vicon. The magnitudes of these error terms demonstrate that, at the moment each trial ended, the UKF's total positional error $\| \bm{\varepsilon} \|$ had always fallen to 4~cm or less, substantially below the 20+~cm of total error achieved at maximal displacement from the origin. The cause of this error behavior is currently unknown. As posited previously, this could be the result of lens distortion not eliminated by the ROS PTAM implementation. If so, this would indicate that the error shown here is primarily caused by the geometry of the camera lens, rather than by any problem intrinsic to the PTAM algorithm or the UKF algorithm. The drift---which normally would grow with time and displacement---may be small relative to this lens-based error due to the smaller translations and shorter durations of the box pattern trials. In other words, the ``normal'' drift may have been small enough to be masked by the larger lens-based drift, making it undetectable in these experiments. Further experiments of greater duration and translational magnitude may be able to confirm or refute this supposition.
+These values were computed using only the last pose collected from the UKF and the last pose collected from Vicon. The magnitudes of these error terms demonstrate that, at the moment each trial ended, the UKF's total positional error $\| \bm{\varepsilon} \|$ had always fallen to 4~cm or less, substantially below the 20+~cm of total error achieved at maximal displacement from the origin. The cause of this error behavior is currently unknown. As posited previously, this could be the result of lens distortion not eliminated by the ROS PTAM implementation. If so, this would indicate that the altitudinal error is primarily caused by the geometry of the camera lens, rather than by any problem intrinsic to the PTAM algorithm or the UKF algorithm. The drift---which normally would grow with time and displacement---may be small relative to this lens-based error due to the smaller translations and shorter durations of the box pattern trials. In other words, the ``normal'' drift may have been small enough to be masked by the larger lens-based drift, making it undetectable in these experiments. Further experiments of greater duration and translational magnitude may be able to confirm or refute this supposition.
