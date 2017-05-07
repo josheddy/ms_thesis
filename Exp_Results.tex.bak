@@ -129,9 +129,9 @@ Trial~3 (Figures~\ref{fig:box3_2d} and \ref{fig:box3_3d}) exhibits an anomalous 
 
 \section{Error Analysis}
 
-To determine the effectiveness of the UKF framework in estimating the position of a vehicle, we develop a number of statistical metrics to characterize the varieties and magnitudes of error in the filter's output. As shown in Section~\ref{sec:long_walk}, the positional error in the long walk trials is effectively unbounded. Because of the lens distortion defect, moving the vehicle in long translations produces ever-increasing altitudinal error which distorts lateral sensitivity. As a result, in this section, we examine only the box pattern trials to characterize the system's error in a scenario where the combination of sensors being used would be a more reasonable choice.
+To assess the effectiveness of the UKF framework in estimating the position of the vehicle, we developed a number of statistical metrics to characterize the types and magnitudes of error in the filter's output. As shown previously (in Section~\ref{sec:long_walk}), the positional error in the long walk trials is effectively unbounded. Because of the lens distortion defect, moving the vehicle in long translations produces ever-increasing altitudinal error which, in turn, seems to distort lateral sensitivity. As a result, in this section, we examine only the box pattern trials, which were comprised of shorter translations. The box pattern trials demonstrate the system's error in a scenario where PTAM's defects would have a limited influence on the filter.
 
-Positional errors in the UKF output were computed after each trial per the following relationships:
+Positional errors in the UKF output were computed after each box pattern trial per the following relationships:
 %
 \begin{align}
 \varepsilon_{x} &= x_{\text{Vicon}} - x_{\text{UKF}} \\
@@ -139,7 +139,7 @@ Positional errors in the UKF output were computed after each trial per the follo
 \varepsilon_{z} &= z_{\text{Vicon}} - z_{\text{UKF}}
 \end{align}
 %
-These positional errors were computed over the length of each coordinate time history, creating an error history for each trial. The mean coordinate errors and their variances were then computed from these error histories to characterize the Gaussian noise distribution in each data set. The terms $\mu_{x}$, $\mu_{y}$, and $\mu_{z}$ encode the mean error in $x$, $y$, and $z$, respectively. The associated variances of these errors are represented by $\sigma_{x}^{2}$, $\sigma_{y}^{2}$, and $\sigma_{z}^{2}$. These statistics are presented in Table~\ref{tab:means_and_vars}.
+These coordinate errors were computed over the length of each time history, creating an error history for each trial. The mean coordinate errors and their variances were then computed from these error histories to characterize the Gaussian noise distribution in each data set. The terms $\mu_{x}$, $\mu_{y}$, and $\mu_{z}$ encode the mean error in $x$, $y$, and $z$, respectively. The associated variances of these errors are represented by $\sigma_{x}^{2}$, $\sigma_{y}^{2}$, and $\sigma_{z}^{2}$. These statistics are presented in Table~\ref{tab:means_and_vars}.
 
 \begin{table}[h]\centering
 \caption[Coordinate Error Mean and Variance Values]{Coordinate error mean and variance values by trial.}
@@ -153,11 +153,13 @@ Trial & $\mu_{x}$ [m] & $\sigma_{x}^{2}$ [m$^{2}$] & $\mu_{y}$ [m] & $\sigma_{y}
 4 & $-$3.9788e$-$04 & 7.5902e$-$04 & 0.0199 & 8.0152e$-$04 & $-$0.0219 & 0.0033 \\
 5 & $-$0.0170 & 0.0019 & 0.0279 & 0.0036 & $-$0.0372 & 0.0034 \\
 \hline
-\textbf{Grand Mean} & $-$0.0129 &  & 0.0143 &  & $-$0.0351 & \\
+\textbf{Mean Coord. Error} & $-$0.0129 &  & 0.0143 &  & $-$0.0351 & \\
 \bottomrule
 \end{tabular}
 \label{tab:means_and_vars}
 \end{table}
+
+Table~\ref{tab:means_and_vars} shows that the mean coordinate errors are (1) small in magnitude, being less than 4~cm in any direction, and (2) close to zero, supporting our intuition of a zero-mean Gaussian distribution. The variance values are also small in magnitude, being on the order of $10^{-3}$~m$^{2}$ or less in all cases. This indicates a tight distribution about the mean, implying that large erroneous spikes were rare during testing.
 
 The positional errors were composed into a positional error vector $\bm{\varepsilon}$ describing the offset between ground truth and the estimated trajectory at a given point in time:
 %
@@ -171,13 +173,13 @@ The norm of this error vector is the total Euclidean offset $\| \bm{\varepsilon}
 \| \bm{\varepsilon} \| = \sqrt{\varepsilon_{x}^{2} + \varepsilon_{y}^{2} + \varepsilon_{z}^{2}} 
 \end{equation}
 %
-The total Euclidean offset encodes the straight-line distance between ground truth and the estimated position, offering a measure of total positional error at each point in time. The total Euclidean offset was computed over the entire error history in order to characterize the evolution of the error over time. This total error history was then analyzed for each experimental trial in order to determine the mean total error and maximum total error (Table~\ref{tab:total_err}).
+The total Euclidean offset encodes the straight-line distance between ground truth and the estimated position, providing a measure of total positional error at each point in time. The total Euclidean offset was computed over the entire error history in order to characterize the evolution of the error over time. This total error history was then analyzed for each experimental trial to determine the mean total error and maximum total error (Table~\ref{tab:total_err}).
 
 \begin{table}[h]\centering
-\caption[Mean and Maximum Total Error]{Mean and maximum total error by trial.}
+\caption[Mean Total Error and Maximum Total Error]{Mean total error and maximum total error by trial.}
 \begin{tabular}[c]{crr}
 \toprule
-Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}}$ [m] \\
+Trial & Mean $\| \bm{\varepsilon} \|$ [m] & Maximum $\| \bm{\varepsilon} \|$ [m] \\
 \hline
 1 & 0.0460 & 0.1145 \\
 2 & 0.0691 & 0.1999 \\
@@ -185,7 +187,7 @@ Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}
 4 & 0.0636 & 0.1508 \\
 5 & 0.0856 & 0.2497 \\
 \hline
-\textbf{Grand Mean} & 0.0668 \\
+\textbf{Mean Total Error} & 0.0668 \\
 \hline
 \textbf{Maximum Error} && 0.2596 \\
 \bottomrule
@@ -193,4 +195,31 @@ Trial & Mean $\| \bm{\varepsilon} \|$ [m] & $\| \bm{\varepsilon} \|_{\text{max.}
 \label{tab:total_err}
 \end{table}
 
-From Table~\ref{tab:means_and_vars}, we can see that the mean coordinate errors are (1) small in magnitude, being less than 4~cm in any direction, and (2) close to zero, supporting our intuition of a zero-mean Gaussian distribution. The variance values are also small in magnitude, being on the order of $10^{-3}$~m$^{2}$ or less in all cases. This indicates a tight distribution about the mean, implying that large erroneous spikes were rare during testing. Table~\ref{tab:total_err} shows that the system ran with a mean total error of 0.0668~m and a maximum error of 0.2596~m, indicating that the system was able to estimate the vehicle's position consistently with sub-meter accuracy over the length of each trial. The maximum error, though large, still falls within the 4.9-m radius that is realizable with today's smartphone GPS receivers (\cite{GpsGov}), suggesting that the system could prove to be a reasonable choice for navigating environments where centimeter-level accuracy is not required.
+Table~\ref{tab:total_err} shows that the system ran with a mean total error of 0.0668~m and a maximum error of 0.2596~m, indicating that the system was able to estimate the vehicle's position consistently with sub-meter accuracy over the length of each trial. The maximum error, though large, still falls within the 4.9-m radius that is realizable with today's smartphone GPS receivers \cite{GpsGov}, suggesting that the system could prove to be a reasonable choice for navigating environments where centimeter-level accuracy is not required.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.6\textwidth]{box_error_diagram}
+  \caption[Box Pattern Error Behavior]{The system exhibits altitudinal error which increases as the vehicle moves farther from the origin and decreases as the vehicle returns to the origin.}
+  \label{fig:box_error_diagram}
+\end{figure}
+
+In real-world applications, it is common for a SLAM algorithm to exhibit error as a function of both total displacement and mission time, with drift increasing over time as the vehicle moves. It is noteworthy, then, that the UKF's output exhibited error only as a function of total displacement, specifically \textit{from the origin}. Figure~\ref{fig:box_error_diagram} demonstrates how the UKF's error grew as the vehicle moved farther from the origin, but decreased as the vehicle returned to the origin, producing a consistently bowl-shaped distortion in the estimated trajectory. The UKF's output also showed no obvious drift as a function of time during periods when the vehicle was stationary. This error behavior is confirmed by the final coordinate error and final total error values presented in Table~\ref{tab:final_err}. 
+
+\begin{table}[h]\centering
+\caption[Final Coordinate Error and Final Total Error]{Final coordinate error and total error by trial.}
+\begin{tabular}[c]{crrrr}
+\toprule
+Trial & Final $\varepsilon_{x}$ [m] & Final $\varepsilon_{y}$ [m] & Final $\varepsilon_{z}$ [m] & Final $\| \bm{\varepsilon} \|$ [m] \\
+\hline
+1 & 0.0047 & 0.0027 & $-$0.0129 & 0.0140 \\
+2 & 0.0105 & $-$0.0083 & 0.0043 & 0.0141 \\
+3 & $-$0.0054 & 0.0090 & $-$0.0225 & 0.0248 \\
+4 & $-$0.0236 & 0.0096 & $-$0.0309 & 0.0400 \\
+5 & 0.0087 & $-$0.0029 & $-$0.0175 & 0.0198 \\
+\bottomrule
+\end{tabular}
+\label{tab:final_err}
+\end{table}
+
+These values were computed using only the last pose collected from the UKF and the last pose collected from Vicon. The magnitudes of these error terms demonstrate that, at the moment each trial ended, the UKF's total positional error $\| \bm{\varepsilon} \|$ had always fallen to 4~cm or less, substantially below the 20+~cm of total error achieved at maximal displacement from the origin. The cause of this error behavior is currently unknown. As posited previously, this could be the result of lens distortion not eliminated by the ROS PTAM implementation. If so, this would indicate that the error shown here is primarily caused by the geometry of the camera lens, rather than by any problem intrinsic to the PTAM algorithm or the UKF algorithm. The drift---which normally would grow with time and displacement---may be small relative to this lens-based error due to the smaller translations and shorter durations of the box pattern trials. In other words, the ``normal'' drift may have been small enough to be masked by the larger lens-based drift, making it undetectable in these experiments. Further experiments of greater duration and translational magnitude may be able to confirm or refute this supposition.

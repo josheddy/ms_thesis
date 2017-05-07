@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  1 MAY 2017 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  7 MAY 2017 00:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -650,62 +650,62 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count135
 \c@@ppsaveapp=\count136
 )
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 55.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 55.
-Package hyperref Info: Option `colorlinks' set `true' on input line 55.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 54.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 54.
+Package hyperref Info: Option `colorlinks' set `true' on input line 54.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 72.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 72.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 72.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 72.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 72.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 73.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 72.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \microtypecontext on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 72.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -766,7 +766,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 72.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -776,9 +776,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (main.out) (main.out)
 \@outlinefile=\write3
@@ -889,7 +889,7 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-[2] [3] [4] <CARD_gearREALLYBIG.png, id=342, 1854.127pt x 728.321pt>
+[2] [3] [4] <CARD_gearREALLYBIG.png, id=346, 1854.127pt x 728.321pt>
 File: CARD_gearREALLYBIG.png Graphic file (type png)
 
 <use CARD_gearREALLYBIG.png>
@@ -916,23 +916,23 @@ Chapter 3.
 
 ] [16] [17] [18] [19] [20]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 227.
+put line 229.
  [21] [22] [23] [24]
-<generic_ukf.png, id=588, 638.8668pt x 455.7828pt>
+<generic_ukf.png, id=593, 638.8668pt x 455.7828pt>
 File: generic_ukf.png Graphic file (type png)
  <use generic_ukf.png>
-Package pdftex.def Info: generic_ukf.png used on input line 361.
+Package pdftex.def Info: generic_ukf.png used on input line 363.
 (pdftex.def)             Requested size: 234.87749pt x 167.56598pt.
 
-[25] [26 <./generic_ukf.png>] <data_flow.png, id=603, 370.5042pt x 256.3176pt>
+[25] [26 <./generic_ukf.png>] <data_flow.png, id=608, 370.5042pt x 256.3176pt>
 File: data_flow.png Graphic file (type png)
 
 <use data_flow.png>
-Package pdftex.def Info: data_flow.png used on input line 374.
+Package pdftex.def Info: data_flow.png used on input line 376.
 (pdftex.def)             Requested size: 281.85585pt x 194.99112pt.
 ) (Exp_Design.tex [27 <./data_flow.png>]
 Chapter 4.
-<sensor_mount_top.jpg, id=609, 462.39417pt x 326.21875pt>
+<sensor_mount_top.jpg, id=614, 462.39417pt x 326.21875pt>
 File: sensor_mount_top.jpg Graphic file (type jpg)
 
 <use sensor_mount_top.jpg>
@@ -943,21 +943,21 @@ Underfull \hbox (badness 1221) in paragraph at lines 8--8
 []\T1/futs/m/n/12 (+20) Figure 4.1: |The 3D-printed sen-sor
  []
 
-<whole_cart.jpg, id=612, 1606.0pt x 1204.5pt>
+<whole_cart.jpg, id=617, 1606.0pt x 1204.5pt>
 File: whole_cart.jpg Graphic file (type jpg)
  <use whole_cart.jpg>
 Package pdftex.def Info: whole_cart.jpg used on input line 16.
 (pdftex.def)             Requested size: 250.5203pt x 187.89912pt.
  [28
 
- <./sensor_mount_top.jpg>] <cart_at_AI.jpg, id=626, 1606.0pt x 1204.5pt>
+ <./sensor_mount_top.jpg>] <cart_at_AI.jpg, id=631, 1606.0pt x 1204.5pt>
 File: cart_at_AI.jpg Graphic file (type jpg)
 
 <use cart_at_AI.jpg>
 Package pdftex.def Info: cart_at_AI.jpg used on input line 25.
 (pdftex.def)             Requested size: 234.87749pt x 176.14592pt.
  [29 <./whole_cart.jpg>] [30 <./cart_at_AI.jpg>]
-<rot_bug_rviz.png, id=647, 256.29083pt x 302.79791pt>
+<rot_bug_rviz.png, id=652, 256.29083pt x 302.79791pt>
 File: rot_bug_rviz.png Graphic file (type png)
  <use rot_bug_rviz.png>
 Package pdftex.def Info: rot_bug_rviz.png used on input line 40.
@@ -972,7 +972,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [31 <./rot_bug_rviz.png>] <sensor_mount_vicon.jpg, id=656, 333.245pt x 250.602
+ [31 <./rot_bug_rviz.png>] <sensor_mount_vicon.jpg, id=661, 333.245pt x 250.602
 92pt>
 File: sensor_mount_vicon.jpg Graphic file (type jpg)
 
@@ -980,21 +980,21 @@ File: sensor_mount_vicon.jpg Graphic file (type jpg)
 Package pdftex.def Info: sensor_mount_vicon.jpg used on input line 49.
 (pdftex.def)             Requested size: 234.87749pt x 176.63301pt.
 
-<bowl-shaped_world.png, id=658, 545.37083pt x 189.70876pt>
+<bowl-shaped_world.png, id=663, 545.37083pt x 189.70876pt>
 File: bowl-shaped_world.png Graphic file (type png)
 
 <use bowl-shaped_world.png>
 Package pdftex.def Info: bowl-shaped_world.png used on input line 58.
 (pdftex.def)             Requested size: 422.77661pt x 147.06906pt.
  [32 <./sensor_mount_vicon.jpg>]
-<sensor_mount_bottom.jpg, id=663, 498.19458pt x 373.72958pt>
+<sensor_mount_bottom.jpg, id=668, 498.19458pt x 373.72958pt>
 File: sensor_mount_bottom.jpg Graphic file (type jpg)
 
 <use sensor_mount_bottom.jpg>
 Package pdftex.def Info: sensor_mount_bottom.jpg used on input line 71.
 (pdftex.def)             Requested size: 187.89912pt x 140.95232pt.
  [33 <./bowl-shaped_world.png> <./sensor_mount_bottom.jpg>] <good_box_5_cropped
-.png, id=675, 441.31541pt x 325.88417pt>
+.png, id=680, 441.31541pt x 325.88417pt>
 File: good_box_5_cropped.png Graphic file (type png)
 
 <use good_box_5_cropped.png>
@@ -1005,35 +1005,35 @@ Package pdftex.def Info: good_box_5_cropped.png used on input line 86.
 Chapter 5.
 [36
 
-] <longWalk1_xyz.jpg, id=733, 684.156pt x 542.025pt>
+] <longWalk1_xyz.jpg, id=738, 684.156pt x 542.025pt>
 File: longWalk1_xyz.jpg Graphic file (type jpg)
 
 <use longWalk1_xyz.jpg>
 Package pdftex.def Info: longWalk1_xyz.jpg used on input line 11.
 (pdftex.def)             Requested size: 469.75499pt x 372.1781pt.
 
-<longWalk2_xyz.jpg, id=734, 1518.67375pt x 1222.5675pt>
+<longWalk2_xyz.jpg, id=739, 1518.67375pt x 1222.5675pt>
 File: longWalk2_xyz.jpg Graphic file (type jpg)
 
 <use longWalk2_xyz.jpg>
 Package pdftex.def Info: longWalk2_xyz.jpg used on input line 18.
 (pdftex.def)             Requested size: 469.75499pt x 378.15254pt.
 
-<longWalk3_xyz.jpg, id=735, 1527.7075pt x 1179.40625pt>
+<longWalk3_xyz.jpg, id=740, 1527.7075pt x 1179.40625pt>
 File: longWalk3_xyz.jpg Graphic file (type jpg)
 
 <use longWalk3_xyz.jpg>
 Package pdftex.def Info: longWalk3_xyz.jpg used on input line 25.
 (pdftex.def)             Requested size: 469.75499pt x 362.64278pt.
 
-<longWalk4_xyz.jpg, id=736, 1739.49875pt x 1352.05125pt>
+<longWalk4_xyz.jpg, id=741, 1739.49875pt x 1352.05125pt>
 File: longWalk4_xyz.jpg Graphic file (type jpg)
 
 <use longWalk4_xyz.jpg>
 Package pdftex.def Info: longWalk4_xyz.jpg used on input line 32.
 (pdftex.def)             Requested size: 469.75499pt x 365.1206pt.
 
-<longWalk5_xyz.jpg, id=737, 1731.46875pt x 1390.19376pt>
+<longWalk5_xyz.jpg, id=742, 1731.46875pt x 1390.19376pt>
 File: longWalk5_xyz.jpg Graphic file (type jpg)
 
 <use longWalk5_xyz.jpg>
@@ -1043,79 +1043,94 @@ Package pdftex.def Info: longWalk5_xyz.jpg used on input line 39.
 [39 <./longWalk3_xyz.jpg>] [40 <./longWalk4_xyz.jpg>] [41 <./longWalk5_xyz.jpg>
 ] [42
 
-] <box1_2d.jpg, id=778, 1005.7575pt x 948.54375pt>
+] <box1_2d.jpg, id=783, 1005.7575pt x 948.54375pt>
 File: box1_2d.jpg Graphic file (type jpg)
  <use box1_2d.jpg>
 Package pdftex.def Info: box1_2d.jpg used on input line 58.
 (pdftex.def)             Requested size: 260.52394pt x 245.71425pt.
 
-<box1_3d.jpg, id=779, 1264.725pt x 948.54375pt>
+<box1_3d.jpg, id=784, 1264.725pt x 948.54375pt>
 File: box1_3d.jpg Graphic file (type jpg)
  <use box1_3d.jpg>
 Package pdftex.def Info: box1_3d.jpg used on input line 64.
 (pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
- [43 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=784, 949.5475pt x 948.54
+ [43 <./box1_2d.jpg> <./box1_3d.jpg>] <box2_2d.jpg, id=789, 949.5475pt x 948.54
 375pt>
 File: box2_2d.jpg Graphic file (type jpg)
 
 <use box2_2d.jpg>
 Package pdftex.def Info: box2_2d.jpg used on input line 73.
 (pdftex.def)             Requested size: 245.96371pt x 245.71425pt.
- <box2_3d.jpg, id=785, 1264.725pt x 948.54375pt>
+ <box2_3d.jpg, id=790, 1264.725pt x 948.54375pt>
 File: box2_3d.jpg Graphic file (type jpg)
 
 <use box2_3d.jpg>
 Package pdftex.def Info: box2_3d.jpg used on input line 79.
 (pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
  [44 <./box2_2d.jpg> <./box2_3d.jpg>]
-<box3_2d.jpg, id=790, 983.675pt x 948.54375pt>
+<box3_2d.jpg, id=795, 983.675pt x 948.54375pt>
 File: box3_2d.jpg Graphic file (type jpg)
  <use box3_2d.jpg>
 Package pdftex.def Info: box3_2d.jpg used on input line 88.
 (pdftex.def)             Requested size: 254.80386pt x 245.71425pt.
 
-<box3_3d.jpg, id=791, 1264.725pt x 948.54375pt>
+<box3_3d.jpg, id=796, 1264.725pt x 948.54375pt>
 File: box3_3d.jpg Graphic file (type jpg)
  <use box3_3d.jpg>
 Package pdftex.def Info: box3_3d.jpg used on input line 94.
 (pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
- [45 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=796, 952.55875pt x 948.5
+ [45 <./box3_2d.jpg> <./box3_3d.jpg>] <box4_2d.jpg, id=801, 952.55875pt x 948.5
 4375pt>
 File: box4_2d.jpg Graphic file (type jpg)
 
 <use box4_2d.jpg>
 Package pdftex.def Info: box4_2d.jpg used on input line 103.
 (pdftex.def)             Requested size: 246.74373pt x 245.71425pt.
- <box4_3d.jpg, id=797, 1264.725pt x 948.54375pt>
+ <box4_3d.jpg, id=802, 1264.725pt x 948.54375pt>
 File: box4_3d.jpg Graphic file (type jpg)
 
 <use box4_3d.jpg>
 Package pdftex.def Info: box4_3d.jpg used on input line 109.
 (pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
  [46 <./box4_2d.jpg> <./box4_3d.jpg>]
-<box5_2d.jpg, id=803, 1029.8475pt x 948.54375pt>
+<box5_2d.jpg, id=808, 1029.8475pt x 948.54375pt>
 File: box5_2d.jpg Graphic file (type jpg)
  <use box5_2d.jpg>
 Package pdftex.def Info: box5_2d.jpg used on input line 118.
 (pdftex.def)             Requested size: 266.76404pt x 245.71425pt.
 
-<box5_3d.jpg, id=804, 1264.725pt x 948.54375pt>
+<box5_3d.jpg, id=809, 1264.725pt x 948.54375pt>
 File: box5_3d.jpg Graphic file (type jpg)
  <use box5_3d.jpg>
 Package pdftex.def Info: box5_3d.jpg used on input line 124.
 (pdftex.def)             Requested size: 327.60497pt x 245.71425pt.
- [47 <./box5_2d.jpg> <./box5_3d.jpg>] [48
+ [47 <./box5_2d.jpg> <./box5_3d.jpg>]
+Overfull \hbox (2.5124pt too wide) in paragraph at lines 146--160
+ [][] 
+ []
+
+[48
 
 
 
 
 
 
-]) (Conclusions.tex [49]
+] <box_error_diagram.png, id=827, 592.614pt x 332.442pt>
+File: box_error_diagram.png Graphic file (type png)
+
+<use box_error_diagram.png>
+Package pdftex.def Info: box_error_diagram.png used on input line 202.
+(pdftex.def)             Requested size: 281.85585pt x 158.11449pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49]) (Conclusions.tex [50 <./box_error_diagram.png>] [51]
 Chapter 6.
-[50
+[52
 
-] [51] [52] [53] [54]) [55] (main.bbl [56
+] [53] [54] [55] [56]) [57] (main.bbl [58
 
 
 ]
@@ -1130,62 +1145,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--85
 d-[]kalman-[]filter$[][]\T1/futs/m/n/12 (+20) ,
  []
 
-[57]) [58] (node_listing.tex
+[59]) [60] (node_listing.tex
 Appendix A.
-) (UnscentedKf_h_listing.tex [59
+) (UnscentedKf_h_listing.tex [61
 
 
 ]
 Appendix B.
-[60
+[62
 
-] [61]) (UnscentedKf_cpp_listing.tex [62]
+] [63]) (UnscentedKf_cpp_listing.tex [64]
 Appendix C.
-[63
+[65
 
-] [64] [65] [66] [67]) (QuadUkf_h_listing.tex [68]
+] [66] [67] [68] [69]) (QuadUkf_h_listing.tex [70]
 Appendix D.
-[69
+[71
 
-] [70]
+] [72]
 Overfull \hbox (1.24503pt too wide) in paragraph at lines 93--93
 []  \T1/zi4/m/n/12 geometry_msgs::PoseStamped quadBeliefToPoseStamped(const Qua
 dBelief qb) const;[] 
  []
 
-) (QuadUkf_cpp_listing.tex [71]
+) (QuadUkf_cpp_listing.tex [73]
 Appendix E.
-[72
+[74
 
-] [73] [74] [75] [76]
+] [75] [76] [77] [78]
 Overfull \hbox (15.04501pt too wide) in paragraph at lines 392--392
 []\T1/zi4/m/n/12 geometry_msgs::PoseWithCovarianceStamped QuadUkf::quadBeliefTo
 PoseWithCovStamped([] 
  []
 
-[77] [78] [79] [80]) (CMakeLists_listing.tex [81]
+[79] [80] [81] [82]) (CMakeLists_listing.tex [83]
 Appendix F.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
- [82
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+ [84
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7EA9CEECDD91FE23DF7255C67ADFA211;2645.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+(rerunfilecheck)             Checksum: A17D10BB0F0F75C4744782E5841A1DFD;2645.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 12189 strings out of 493334
- 184970 string characters out of 3136672
- 285302 words of memory out of 3000000
- 14767 multiletter control sequences out of 15000+200000
+ 12200 strings out of 493334
+ 185179 string characters out of 3136672
+ 285452 words of memory out of 3000000
+ 14773 multiletter control sequences out of 15000+200000
  159585 words of font info for 344 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,77p,1745b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,77p,1745b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Pr
@@ -1200,9 +1215,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (91 pages, 12898247 bytes).
+Output written on main.pdf (93 pages, 13152459 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
- 325 named destinations out of 1000 (max. 500000)
- 42947 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1139 PDF objects out of 1200 (max. 8388607)
+ 329 named destinations out of 1000 (max. 500000)
+ 42952 words of extra memory for PDF output out of 42996 (max. 10000000)
 

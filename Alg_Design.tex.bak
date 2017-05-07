@@ -2,7 +2,7 @@
 
 \section{UKF Formulation} \label{sec:ukf_formulation}
 
-In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter based in part on example MATLAB code from \cite{Cao2010}. We begin with the two overarching phases of the algorithm, prediction and correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
+In this section, we develop a formulation of the Unscented Kalman Filter for estimating the state of a quadcopter based in large part on example MATLAB code from \cite{Cao2010}. We begin with the two overarching phases of the algorithm, prediction and correction. Then we develop a kinematic process model which describes the vehicle's motion over time. After this, we develop an observation model which describes the relationship between the vehicle's state and the vehicle's sensor readings. Finally, we explore noise models which describe the Gaussian noise present in both the process and observation models.
 
 \subsection{Prediction Step} \label{sec:Prediction_Step}
 
@@ -136,13 +136,15 @@ The corrected covariance $\mathbf{P}_{k | k}$ is the difference between the pred
 
 \subsection{Process Model} \label{Process_Model}
 
-To propagate the vehicle's state forward in time, we perform a number of integration operations on the linear accelerations and angular rates measured by the IMU. To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{\text{meas.}}$ per the relationship given in \cite{Stevens2015},
+Here we develop a process model for a small rotorcraft based on a similar model presented in \cite{Weiss2012_2}. This process model propagates the vehicle's state forward in time by performing a number of integration operations on the linear accelerations and angular rates measured by the IMU.
+
+To determine the orientation of the vehicle at some time $k$, we integrate the measured angular rate vector $\bm{\Omega}_{\text{meas.}}$ per the relationship given in \cite{Stevens2015},
 %
 \begin{equation} \label{eq:proc_quat}
 \mathbf{q}_{k} = \mathbf{q}_{k-1} + \frac{1}{2} \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \mathbf{q}_{k-1} \Delta t
 \end{equation}
 %
-where $\mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \in \mathbb{R}^{4 \times 4}$ is the angular rate integration matrix defined by
+where $\mathbf{\Theta} \left( \bm{\Omega}_{k} \right) \in \mathbb{R}^{4 \times 4}$ is the quaternion multiplication matrix defined by
 %
 \begin{equation}
 \mathbf{\Theta} \left( \bm{\Omega}_{k} \right) =

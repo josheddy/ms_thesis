@@ -33,19 +33,19 @@
 \contentsline {section}{\numberline {5.1}Long Walk Trials}{36}{section.5.1}
 \contentsline {section}{\numberline {5.2}Box Pattern Trials}{42}{section.5.2}
 \contentsline {section}{\numberline {5.3}Error Analysis}{48}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{50}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{50}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{51}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}System Improvements}{51}{subsection.6.2.1}
-\contentsline {subsubsection}{Integration of New Sensors}{52}{section*.48}
-\contentsline {subsubsection}{Improvements for Current Sensors}{54}{section*.49}
-\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{54}{section*.50}
-\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{55}{subsection.6.2.2}
-\contentsline {chapter}{Bibliography}{56}{subsection.6.2.2}
-\contentsline {chapter}{Appendices}{59}{section*.52}
-\contentsline {chapter}{\numberline {A}node.cpp Listing}{59}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{60}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{63}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{69}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{72}{Appendix.1.E}
-\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{82}{Appendix.1.F}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{52}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{52}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{53}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}System Improvements}{53}{subsection.6.2.1}
+\contentsline {subsubsection}{Integration of New Sensors}{54}{section*.50}
+\contentsline {subsubsection}{Improvements for Current Sensors}{56}{section*.51}
+\contentsline {subsubsection}{Refinements to the Underlying Algorithm}{56}{section*.52}
+\contentsline {subsection}{\numberline {6.2.2}Future Experiments}{57}{subsection.6.2.2}
+\contentsline {chapter}{Bibliography}{58}{subsection.6.2.2}
+\contentsline {chapter}{Appendices}{61}{section*.54}
+\contentsline {chapter}{\numberline {A}node.cpp Listing}{61}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}UnscentedKf.h Listing}{62}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}UnscentedKf.cpp Listing}{65}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}QuadUkf.h Listing}{71}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}QuadUkf.cpp Listing}{74}{Appendix.1.E}
+\contentsline {chapter}{\numberline {F}CMakeLists.txt Listing}{84}{Appendix.1.F}

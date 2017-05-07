@@ -8,7 +8,6 @@
 \usepackage{setspace}
 \usepackage{textcomp}
 \usepackage{booktabs}
-%\usepackage[letterpaper, total={6.5in, 9in}]{geometry}
 
 % Math packages
 \usepackage{amssymb}
