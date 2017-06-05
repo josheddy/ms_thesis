@@ -1,12 +1,42 @@
-\chapter*{Abstract}
+\begin{center}
+{\large 
+A Hardware-Minimal Unscented Kalman Filter Framework for Visual-Inertial Navigation of Small Unmanned Aircraft
+}
+
+\vspace{2em}
+
+Joshua Galen Eddy
+
+\vspace{2em}
+
+ABSTRACT
+
+\vspace{1em}
+
+\end{center}
 
 This thesis presents the formulation and implementation of an Unscented Kalman Filter (UKF) framework for fusion of visual and inertial sensor data in unmanned aircraft navigation. Specifically, we fuse sensor readings from a 3-axis accelerometer, 3-axis gyroscope, and a Simultaneous Localization and Mapping (SLAM) algorithm to estimate the pose of an aircraft, such as a quadcopter, capable of hovering flight. We discuss the formulation of our UKF fusion algorithm, the development of a Robot Operating System (ROS) software package implementing the algorithm, and experiments in which this algorithm was used to track the motion of a physical vehicle simulating hovering flight in an indoor environment. In laboratory testing, the system was able to localize the test vehicle consistently with a mean total positional error of less than 7~cm and an overall maximum total error of less than 26~cm, as compared to the output of a Vicon motion capture system. We discuss possible applications of this system and future work that may build upon the results developed herein.
 
 \thispagestyle{empty}
 
-\chapter*{Abstract (General Audience)}
+\pagebreak
 
-% Written in a non-specialist language with the aim of sharing the value, importance and broad impact of the research with the general public.
+\begin{center}
+{\large 
+A Hardware-Minimal Unscented Kalman Filter Framework for Visual-Inertial Navigation of Small Unmanned Aircraft
+}
+
+\vspace{2em}
+
+Joshua Galen Eddy
+
+\vspace{2em}
+
+ABSTRACT (GENERAL AUDIENCE)
+
+\vspace{1em}
+
+\end{center}
 
 This thesis presents the development and implementation of a software framework for estimating the position of a drone during flight. This framework is based on an algorithm known as the Unscented Kalman Filter (UKF), a recursive method of estimating the state of a highly nonlinear system, such as an aircraft. In this thesis, we present a UKF formulation specially designed for a quadcopter carrying an Inertial Measurement Unit (IMU) and a downward-facing camera. The UKF fuses data from each of these sensors to track the position of the quadcopter over time. This work supports a number of similar efforts in the robotics and aerospace communities to navigate in GPS-denied environments with minimal hardware and minimal computational complexity. The software framework explored in this thesis provides a means for roboticists to easily implement similar UKF-based state estimators for a wide variety of systems, including surface vessels, undersea vehicles, and automobiles. We test the system's effectiveness by comparing its position estimates to those of a commercial motion capture system and then discuss possible applications.
 
